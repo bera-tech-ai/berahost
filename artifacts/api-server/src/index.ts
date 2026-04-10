@@ -133,13 +133,18 @@ async function main() {
   });
 
   httpServer.listen(port, () => {
-    logger.info({ port }, "BERAHOST API Server listening");
+    const serverEnv = process.env["NODE_ENV"] ?? "development";
+    const replitDomains = process.env["REPLIT_DOMAINS"] ?? "dev";
+    logger.info({ port, env: serverEnv, domain: replitDomains }, "BERAHOST API Server listening");
 
     // After the server is up and Socket.io is wired, restore any bots
     // that were running before the server restarted
-    restoreRunningBots().catch((err) => {
-      logger.error({ err }, "Failed during bot restore on startup");
-    });
+    logger.info("Bot auto-restore starting...");
+    restoreRunningBots()
+      .then(() => logger.info("Bot auto-restore complete"))
+      .catch((err) => {
+        logger.error({ err }, "Bot auto-restore FAILED");
+      });
 
     // ─── Self-keepalive ────────────────────────────────────────────────────
     // Replit Autoscale scales to ZERO instances when there is no inbound
