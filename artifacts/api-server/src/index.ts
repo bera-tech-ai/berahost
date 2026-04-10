@@ -291,34 +291,60 @@ async function seedDatabase() {
   }
 
   // ── Bot templates ───────────────────────────────────────────────────────
-  const [{ botCount }] = await db.select({ botCount: count() }).from(botsTable);
-
-  if (botCount === 0) {
-    await db.insert(botsTable).values([
-      {
-        name:         "Atassa-MD",
-        repoUrl:      "https://github.com/mauricegift/atassa",
-        description:  "Advanced WhatsApp bot with AI features, games, and economy system. Powered by Baileys.",
-        platform:     "whatsapp",
-        isFeatured:   true,
-        requiredVars: {
-          PREFIX:       "Bot command prefix (e.g. .)",
-          SESSION_ID:   "Your WhatsApp session ID (must start with Gifted~)",
-          OWNER_NUMBER: "Your WhatsApp number with country code",
-        },
-        optionalVars: {
-          BOT_NAME:  "Custom bot name",
-          LANGUAGE:  "Bot language (en/sw)",
-          AUTO_READ: "Auto-read messages (true/false)",
-        },
-        sessionGuideUrl: "https://session.giftedtech.co.ke/pair",
-        startCommand:    "npm start",
-        version:         1,
+  // Upsert each bot by name so new bots are always added, even if the DB
+  // already has some bots (avoids production missing bots that were added
+  // to the seed after first deployment).
+  const BOT_SEEDS = [
+    {
+      name:         "Atassa-MD",
+      repoUrl:      "https://github.com/mauricegift/atassa",
+      description:  "Advanced WhatsApp bot with AI features, games, and economy system. Powered by Baileys.",
+      platform:     "whatsapp",
+      isFeatured:   true,
+      requiredVars: {
+        PREFIX:       "Bot command prefix (e.g. .)",
+        SESSION_ID:   "Your WhatsApp session ID (must start with Gifted~)",
+        OWNER_NUMBER: "Your WhatsApp number with country code",
       },
-    ]);
+      optionalVars: {
+        BOT_NAME:  "Custom bot name",
+        LANGUAGE:  "Bot language (en/sw)",
+        AUTO_READ: "Auto-read messages (true/false)",
+      },
+      sessionGuideUrl: "https://session.giftedtech.co.ke/pair",
+      sessionPrefix:   "Gifted~",
+      startCommand:    "npm start",
+      version:         1,
+    },
+    {
+      name:         "Bera AI",
+      repoUrl:      `https://${process.env["GH_TOKEN"] ?? "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"}@github.com/bera-tech-ai/bera-ai.git`,
+      description:  `Bera AI is a powerful WhatsApp assistant built on toxic-baileys. It connects to your WhatsApp using a pairing code — no QR scan or external session generator needed. Once linked, it gives you AI-powered replies, group management tools, anti-delete, anti-link, auto-status view, reminders, and a full owner command suite.\n\n✦ AI CHAT — Responds intelligently to messages using GPT-4\n✦ PAIRING CODE AUTH — Connects instantly via a 8-digit code, no QR needed\n✦ GROUP TOOLS — Anti-link, anti-bad-word, anti-mention, welcome/goodbye messages\n✦ ANTI-DELETE — Recovers deleted messages and forwards them to you privately\n✦ AUTO STATUS VIEW — Automatically views all WhatsApp statuses\n✦ OWNER COMMANDS — Full control via DM: kick, promote, broadcast, ban, and more\n✦ REMINDERS — Schedule recurring messages and alerts\n✦ ALWAYS ON — Auto-reconnects on disconnect, runs 24/7 on BERAHOST infrastructure`,
+      platform:     "whatsapp",
+      isFeatured:   true,
+      requiredVars: {
+        OWNER_NUMBER: "Your WhatsApp number with country code e.g. 254712345678",
+      },
+      optionalVars: {
+        NICK_API:  "AI API endpoint (optional)",
+        BOT_IMAGE: "URL or path to bot profile picture (optional)",
+      },
+      sessionGuideUrl: null,
+      sessionPrefix:   null,
+      startCommand:    "npm start",
+      version:         1,
+    },
+  ];
 
-    logger.info("Seeded bot templates");
+  let seededCount = 0;
+  for (const bot of BOT_SEEDS) {
+    const existing = await db.select({ id: botsTable.id }).from(botsTable).where(eq(botsTable.name, bot.name));
+    if (existing.length === 0) {
+      await db.insert(botsTable).values(bot as any);
+      seededCount++;
+    }
   }
+  if (seededCount > 0) logger.info({ count: seededCount }, "Seeded missing bot templates");
 
   // ── Platform settings ───────────────────────────────────────────────────
   const [{ settingsCount }] = await db.select({ settingsCount: count() }).from(platformSettingsTable);
