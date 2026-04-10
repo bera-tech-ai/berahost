@@ -274,6 +274,27 @@ const execAsync = promisify(exec);
 // In-memory map of running processes
 export const runningProcesses = new Map<number, ChildProcess>();
 
+/**
+ * Write a line of text to a running bot's stdin.
+ * This is how users answer prompts like "Enter your phone number:" directly
+ * from the BERAHOST terminal console — the input is piped into the child process
+ * as if the user had typed it in a real terminal.
+ *
+ * Returns true if the input was delivered, false if the process is not running
+ * or has no stdin (e.g. it was spawned with stdio:'ignore').
+ */
+export function sendStdin(deploymentId: number, input: string): boolean {
+  const proc = runningProcesses.get(deploymentId);
+  if (!proc || !proc.stdin || proc.stdin.destroyed) return false;
+  try {
+    // Append a newline so the child's readline/readlineSync sees a complete line
+    proc.stdin.write(input.endsWith("\n") ? input : `${input}\n`);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 // Track deployments that were intentionally stopped by a user or admin.
 // Any exit NOT in this set is treated as unexpected → triggers auto-restart.
 const intentionallyStopped = new Set<number>();
@@ -1116,7 +1137,7 @@ for (const candidate of candidates) {
         BASE_PATH: undefined as any,
       },
       detached: true,   // makes bash a process-group leader so we can kill the whole tree
-      stdio: ["ignore", "pipe", "pipe"],
+      stdio: ["pipe", "pipe", "pipe"], // stdin piped so users can send input from the BERAHOST console
     });
 
     if (!botProcess.pid) {

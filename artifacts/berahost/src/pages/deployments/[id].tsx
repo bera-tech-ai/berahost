@@ -65,6 +65,10 @@ export default function DeploymentConsole() {
   const [envVars, setEnvVars] = useState<Record<string, string>>({});
   const [cloneDialogOpen, setCloneDialogOpen] = useState(false);
 
+  // ── Interactive terminal stdin ────────────────────────────────────────────
+  const [terminalInput, setTerminalInput] = useState("");
+  const terminalInputRef = useRef<HTMLInputElement>(null);
+
   // ── Pairing code / Connect flow ──────────────────────────────────────────
   const [connectOpen, setConnectOpen] = useState(false);
   const [phoneInput, setPhoneInput] = useState("");
@@ -221,6 +225,15 @@ export default function DeploymentConsole() {
     a.click();
   };
 
+  // Send a line of text to the bot's stdin via Socket.io
+  const sendTerminalInput = useCallback(() => {
+    const line = terminalInput.trim();
+    if (!line || !socket) return;
+    socket.emit("stdin:deployment", { deploymentId, input: line });
+    setTerminalInput("");
+    terminalInputRef.current?.focus();
+  }, [terminalInput, socket, deploymentId]);
+
   const getStatusColor = (status: string) => {
     switch (status) {
       case "running": return "text-accent border-accent/30 bg-accent/10";
@@ -233,8 +246,9 @@ export default function DeploymentConsole() {
 
   // Classify a log entry into a severity level by combining the stored
   // logType with keyword analysis of the actual log line text.
-  const classifyLog = (type: string, line: string): "error" | "warn" | "success" | "system" | "info" => {
+  const classifyLog = (type: string, line: string): "error" | "warn" | "success" | "system" | "stdin" | "info" => {
     const t = type?.toLowerCase() ?? "";
+    if (t === "stdin") return "stdin";
     const l = line?.toLowerCase() ?? "";
 
     if (t === "error" || t === "stderr") return "error";
@@ -275,6 +289,7 @@ export default function DeploymentConsole() {
     warn:    { text: "text-yellow-400", border: "border-l-2 border-yellow-500/50", badge: "bg-yellow-500/20 text-yellow-400", badgeText: "WRN" },
     success: { text: "text-emerald-400",border: "border-l-2 border-emerald-500/50",badge: "bg-emerald-500/20 text-emerald-400",badgeText: "OK " },
     system:  { text: "text-primary",    border: "border-l-2 border-primary/40",    badge: "bg-primary/15 text-primary",    badgeText: "SYS" },
+    stdin:   { text: "text-cyan-300",   border: "border-l-2 border-cyan-500/50",   badge: "bg-cyan-500/20 text-cyan-300",  badgeText: "IN " },
     info:    { text: "text-foreground/80", border: "border-l border-transparent",  badge: "",                               badgeText: "" },
   };
 
@@ -450,7 +465,7 @@ export default function DeploymentConsole() {
               </div>
             </CardHeader>
             <CardContent className="p-0">
-              <ScrollArea className="h-[520px]">
+              <ScrollArea className="h-[460px]">
                 <div className="p-4 font-mono text-xs leading-relaxed overflow-x-auto">
                   {logs.length === 0 ? (
                     <div className="text-muted-foreground/40 text-center py-16">
@@ -478,6 +493,36 @@ export default function DeploymentConsole() {
                   <div ref={logsEndRef} />
                 </div>
               </ScrollArea>
+
+              {/* ── Interactive stdin input bar ─────────────────────────────── */}
+              <div className="border-t border-white/10 bg-black/60 px-3 py-2 flex items-center gap-2">
+                <span className="font-mono text-xs text-cyan-400 select-none shrink-0">
+                  {isRunning ? "▶" : "■"}
+                </span>
+                <input
+                  ref={terminalInputRef}
+                  type="text"
+                  value={terminalInput}
+                  onChange={(e) => setTerminalInput(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") { e.preventDefault(); sendTerminalInput(); }
+                  }}
+                  placeholder={
+                    isRunning
+                      ? "Type input and press Enter to send to bot (e.g. phone number for pairing code)..."
+                      : "Bot is not running"
+                  }
+                  disabled={!isRunning}
+                  className="flex-1 bg-transparent border-none outline-none font-mono text-xs text-cyan-100 placeholder:text-muted-foreground/40 disabled:opacity-40 disabled:cursor-not-allowed"
+                />
+                <button
+                  onClick={sendTerminalInput}
+                  disabled={!isRunning || !terminalInput.trim()}
+                  className="shrink-0 font-mono text-[10px] px-2 py-1 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-500/30 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                >
+                  SEND
+                </button>
+              </div>
             </CardContent>
           </Card>
         </TabsContent>

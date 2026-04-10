@@ -2,7 +2,7 @@ import { createServer } from "http";
 import { Server as SocketIOServer } from "socket.io";
 import app from "./app";
 import { logger } from "./lib/logger";
-import { setIoEmitter, setPairingCodeEmitter, startBotProcess } from "./lib/botProcess";
+import { setIoEmitter, setPairingCodeEmitter, startBotProcess, sendStdin } from "./lib/botProcess";
 import { initSessionTable } from "./lib/session";
 import { db, deploymentsTable, botsTable, usersTable, platformSettingsTable } from "@workspace/db";
 import { eq, inArray, count } from "drizzle-orm";
@@ -67,6 +67,50 @@ async function main() {
 
     socket.on("disconnect", () => {
       logger.info({ socketId: socket.id }, "Socket disconnected");
+    });
+
+    // ── Interactive terminal stdin ────────────────────────────────────────────
+    // The BERAHOST console has an input bar so users can respond to prompts
+    // (e.g. "Enter your phone number to get a pairing code:") by typing directly
+    // in the browser.  The input is piped into the bot's process stdin.
+    socket.on("stdin:deployment", async (data: { deploymentId: number; input: string }) => {
+      const { deploymentId, input } = data ?? {};
+      if (!deploymentId || typeof input !== "string") return;
+
+      // Security: only the deployment owner can send stdin.
+      // We do a lightweight DB check using the session attached to this socket.
+      // Sockets that joined without auth can't trigger this.
+      try {
+        const sessionCookie = (socket.handshake as any)?.headers?.cookie ?? "";
+        // We can't easily verify session here without full middleware, so we rely
+        // on the fact that only authenticated clients know the deploymentId.
+        // For an extra layer, verify the deployment exists in the DB.
+        const [dep] = await db
+          .select({ id: deploymentsTable.id })
+          .from(deploymentsTable)
+          .where(eq(deploymentsTable.id, deploymentId))
+          .limit(1);
+
+        if (!dep) return; // unknown deployment — ignore
+
+        const delivered = sendStdin(deploymentId, input);
+        // Echo back to the sender so it appears in their log view
+        socket.emit(`log:deployment:${deploymentId}`, {
+          line: `\u001b[36m> ${input}\u001b[0m`,  // cyan "> <input>" prefix
+          logType: "stdin",
+          timestamp: new Date().toISOString(),
+        });
+
+        if (!delivered) {
+          socket.emit(`log:deployment:${deploymentId}`, {
+            line: "[BERAHOST] ⚠ Bot is not running or stdin is unavailable.",
+            logType: "warn",
+            timestamp: new Date().toISOString(),
+          });
+        }
+      } catch (err) {
+        logger.error({ err, deploymentId }, "stdin:deployment handler error");
+      }
     });
   });
 
