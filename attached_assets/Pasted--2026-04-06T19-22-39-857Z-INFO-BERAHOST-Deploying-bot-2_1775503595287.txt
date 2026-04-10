@@ -1,0 +1,222 @@
+[2026-04-06T19:22:39.857Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T19:22:39.886Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-06T19:22:40.512Z] [INFO  ] [BERAHOST] Starting bot (node index.js)...
+[2026-04-06T19:22:40.610Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_1)...
+[2026-04-06T19:22:40.639Z] [INFO  ] [BERAHOST] Bot started with PID 1152
+[2026-04-06T19:22:43.354Z] [STDOUT] added 4 packages, removed 4 packages, and audited 600 packages in 2s
+[2026-04-06T19:22:43.383Z] [STDOUT] 98 packages are looking for funding
+[2026-04-06T19:22:43.411Z] [STDOUT] run `npm fund` for details
+[2026-04-06T19:22:43.429Z] [STDOUT] 33 vulnerabilities (1 low, 19 moderate, 13 high)
+[2026-04-06T19:22:43.460Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T19:22:43.490Z] [STDOUT] npm audit fix
+[2026-04-06T19:22:43.521Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T19:22:43.535Z] [STDOUT] [BERAHOST] Cache integrity check failed â€” clearing cache and reinstalling from scratch...
+[2026-04-06T19:22:43.551Z] [STDOUT] npm audit fix --force
+[2026-04-06T19:22:43.581Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T19:22:43.611Z] [STDOUT] a different dependency.
+[2026-04-06T19:22:43.642Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T19:22:45.125Z] [STDOUT] run `npm fund` for details
+[2026-04-06T19:22:45.126Z] [STDOUT] up to date, audited 600 packages in 1s
+[2026-04-06T19:22:45.156Z] [STDOUT] 98 packages are looking for funding
+[2026-04-06T19:22:45.202Z] [STDOUT] 33 vulnerabilities (1 low, 19 moderate, 13 high)
+[2026-04-06T19:22:45.227Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T19:22:45.232Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T19:22:45.232Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T19:22:45.262Z] [STDOUT] npm audit fix
+[2026-04-06T19:22:45.292Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T19:22:45.323Z] [STDOUT] npm audit fix --force
+[2026-04-06T19:22:45.353Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T19:22:45.383Z] [STDOUT] a different dependency.
+[2026-04-06T19:22:45.413Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T19:22:45.780Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T19:22:45.800Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T19:22:45.801Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T19:22:45.846Z] [STDOUT] [BERAHOST] ./node_modules/gifted-baileys/lib/Socket/socket.js already patched â€” skipping
+[2026-04-06T19:22:45.850Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T19:22:45.934Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T19:22:46.013Z] [STDERR] node:internal/modules/cjs/loader:1424
+[2026-04-06T19:22:46.041Z] [STDERR] throw err;
+[2026-04-06T19:22:46.047Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T19:22:46.069Z] [STDERR] ^
+[2026-04-06T19:22:46.097Z] [STDERR] Error: Cannot find module '../util/async'
+[2026-04-06T19:22:46.126Z] [STDERR] Require stack:
+[2026-04-06T19:22:46.145Z] [INFO  ] [BERAHOST] â†» Auto-restart 1/10 in 0s...
+[2026-04-06T19:22:46.155Z] [STDERR] - /tmp/berahost_dep_24/node_modules/fs-extra/lib/copy/copy.js
+[2026-04-06T19:22:46.183Z] [STDERR] - /tmp/berahost_dep_24/node_modules/fs-extra/lib/copy/index.js
+[2026-04-06T19:22:46.212Z] [STDERR] - /tmp/berahost_dep_24/node_modules/fs-extra/lib/index.js
+[2026-04-06T19:22:46.231Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T19:22:46.242Z] [STDERR] - /tmp/berahost_dep_24/config.js
+[2026-04-06T19:22:46.260Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T19:22:46.270Z] [STDERR] - /tmp/berahost_dep_24/gift/database/database.js
+[2026-04-06T19:22:46.300Z] [STDERR] - /tmp/berahost_dep_24/gift/database/settings.js
+[2026-04-06T19:22:46.329Z] [STDERR] - /tmp/berahost_dep_24/gift/gmdHelpers.js
+[2026-04-06T19:22:46.358Z] [STDERR] - /tmp/berahost_dep_24/index.js
+[2026-04-06T19:22:46.387Z] [STDERR] at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+[2026-04-06T19:22:46.416Z] [STDERR] at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+[2026-04-06T19:22:46.445Z] [STDERR] at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+[2026-04-06T19:22:46.474Z] [STDERR] at Module._load (node:internal/modules/cjs/loader:1227:37)
+[2026-04-06T19:22:46.503Z] [STDERR] at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+[2026-04-06T19:22:46.531Z] [STDERR] at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+[2026-04-06T19:22:46.560Z] [STDERR] at Module.require (node:internal/modules/cjs/loader:1504:12)
+[2026-04-06T19:22:46.589Z] [STDERR] at require (node:internal/modules/helpers:152:16)
+[2026-04-06T19:22:46.617Z] [STDERR] at Object.<anonymous> (/tmp/berahost_dep_24/node_modules/fs-extra/lib/copy/copy.js:9:44)
+[2026-04-06T19:22:46.618Z] [INFO  ] [BERAHOST] Starting bot (node index.js)...
+[2026-04-06T19:22:46.646Z] [STDERR] at Module._compile (node:internal/modules/cjs/loader:1761:14) {
+[2026-04-06T19:22:46.675Z] [STDERR] code: 'MODULE_NOT_FOUND',
+[2026-04-06T19:22:46.704Z] [STDERR] requireStack: [
+[2026-04-06T19:22:46.712Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_1)...
+[2026-04-06T19:22:46.732Z] [STDERR] '/tmp/berahost_dep_24/node_modules/fs-extra/lib/copy/copy.js',
+[2026-04-06T19:22:46.737Z] [INFO  ] [BERAHOST] Bot started with PID 1238
+[2026-04-06T19:22:46.761Z] [STDERR] '/tmp/berahost_dep_24/node_modules/fs-extra/lib/copy/index.js',
+[2026-04-06T19:22:46.789Z] [STDERR] '/tmp/berahost_dep_24/node_modules/fs-extra/lib/index.js',
+[2026-04-06T19:22:46.818Z] [STDERR] '/tmp/berahost_dep_24/config.js',
+[2026-04-06T19:22:46.847Z] [STDERR] '/tmp/berahost_dep_24/gift/database/database.js',
+[2026-04-06T19:22:46.876Z] [STDERR] '/tmp/berahost_dep_24/gift/database/settings.js',
+[2026-04-06T19:22:46.905Z] [STDERR] '/tmp/berahost_dep_24/gift/gmdHelpers.js',
+[2026-04-06T19:22:46.933Z] [STDERR] '/tmp/berahost_dep_24/index.js'
+[2026-04-06T19:22:46.965Z] [STDERR] ]
+[2026-04-06T19:22:46.994Z] [STDERR] }
+[2026-04-06T19:22:47.023Z] [STDERR] Node.js v24.13.0
+[2026-04-06T19:22:49.050Z] [STDOUT] removed 1 package, and audited 600 packages in 2s
+[2026-04-06T19:22:49.050Z] [STDOUT] 98 packages are looking for funding
+[2026-04-06T19:22:49.079Z] [STDOUT] run `npm fund` for details
+[2026-04-06T19:22:49.116Z] [STDOUT] 33 vulnerabilities (1 low, 19 moderate, 13 high)
+[2026-04-06T19:22:49.146Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T19:22:49.175Z] [STDOUT] npm audit fix
+[2026-04-06T19:22:49.204Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T19:22:49.208Z] [STDOUT] [BERAHOST] Cache integrity check failed â€” clearing cache and reinstalling from scratch...
+[2026-04-06T19:22:49.233Z] [STDOUT] npm audit fix --force
+[2026-04-06T19:22:49.262Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T19:22:49.290Z] [STDOUT] a different dependency.
+[2026-04-06T19:22:49.319Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T19:22:50.667Z] [STDOUT] 98 packages are looking for funding
+[2026-04-06T19:22:50.668Z] [STDOUT] up to date, audited 600 packages in 1s
+[2026-04-06T19:22:50.700Z] [STDOUT] run `npm fund` for details
+[2026-04-06T19:22:50.747Z] [STDOUT] 33 vulnerabilities (1 low, 19 moderate, 13 high)
+[2026-04-06T19:22:50.769Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T19:22:50.773Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T19:22:50.776Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T19:22:50.805Z] [STDOUT] npm audit fix
+[2026-04-06T19:22:50.833Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T19:22:50.862Z] [STDOUT] npm audit fix --force
+[2026-04-06T19:22:50.891Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T19:22:50.920Z] [STDOUT] a different dependency.
+[2026-04-06T19:22:50.949Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T19:22:51.253Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T19:22:51.261Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T19:22:51.261Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T19:22:51.323Z] [STDOUT] [BERAHOST] ./node_modules/gifted-baileys/lib/Socket/socket.js already patched â€” skipping
+[2026-04-06T19:22:51.328Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T19:22:51.402Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T19:22:51.464Z] [STDERR] node:internal/modules/cjs/loader:1424
+[2026-04-06T19:22:51.493Z] [STDERR] throw err;
+[2026-04-06T19:22:51.497Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T19:22:51.522Z] [STDERR] ^
+[2026-04-06T19:22:51.551Z] [STDERR] Error: Cannot find module '../util/async'
+[2026-04-06T19:22:51.580Z] [STDERR] Require stack:
+[2026-04-06T19:22:51.581Z] [INFO  ] [BERAHOST] â†» Auto-restart 2/10 in 5s...
+[2026-04-06T19:22:51.608Z] [STDERR] - /tmp/berahost_dep_24/node_modules/fs-extra/lib/copy/copy.js
+[2026-04-06T19:22:51.638Z] [STDERR] - /tmp/berahost_dep_24/node_modules/fs-extra/lib/copy/index.js
+[2026-04-06T19:22:51.667Z] [STDERR] - /tmp/berahost_dep_24/node_modules/fs-extra/lib/index.js
+[2026-04-06T19:22:51.695Z] [STDERR] - /tmp/berahost_dep_24/config.js
+[2026-04-06T19:22:51.724Z] [STDERR] - /tmp/berahost_dep_24/gift/database/database.js
+[2026-04-06T19:22:51.753Z] [STDERR] - /tmp/berahost_dep_24/gift/database/settings.js
+[2026-04-06T19:22:51.783Z] [STDERR] - /tmp/berahost_dep_24/gift/gmdHelpers.js
+[2026-04-06T19:22:51.811Z] [STDERR] - /tmp/berahost_dep_24/index.js
+[2026-04-06T19:22:51.840Z] [STDERR] at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+[2026-04-06T19:22:51.869Z] [STDERR] at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+[2026-04-06T19:22:51.899Z] [STDERR] at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+[2026-04-06T19:22:51.928Z] [STDERR] at Module._load (node:internal/modules/cjs/loader:1227:37)
+[2026-04-06T19:22:51.957Z] [STDERR] at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+[2026-04-06T19:22:51.986Z] [STDERR] at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+[2026-04-06T19:22:52.015Z] [STDERR] at Module.require (node:internal/modules/cjs/loader:1504:12)
+[2026-04-06T19:22:52.048Z] [STDERR] at require (node:internal/modules/helpers:152:16)
+[2026-04-06T19:22:52.077Z] [STDERR] at Object.<anonymous> (/tmp/berahost_dep_24/node_modules/fs-extra/lib/copy/copy.js:9:44)
+[2026-04-06T19:22:52.106Z] [STDERR] at Module._compile (node:internal/modules/cjs/loader:1761:14) {
+[2026-04-06T19:22:52.134Z] [STDERR] code: 'MODULE_NOT_FOUND',
+[2026-04-06T19:22:52.164Z] [STDERR] requireStack: [
+[2026-04-06T19:22:52.194Z] [STDERR] '/tmp/berahost_dep_24/node_modules/fs-extra/lib/copy/copy.js',
+[2026-04-06T19:22:52.224Z] [STDERR] '/tmp/berahost_dep_24/node_modules/fs-extra/lib/copy/index.js',
+[2026-04-06T19:22:52.253Z] [STDERR] '/tmp/berahost_dep_24/node_modules/fs-extra/lib/index.js',
+[2026-04-06T19:22:52.282Z] [STDERR] '/tmp/berahost_dep_24/config.js',
+[2026-04-06T19:22:52.310Z] [STDERR] '/tmp/berahost_dep_24/gift/database/database.js',
+[2026-04-06T19:22:52.340Z] [STDERR] '/tmp/berahost_dep_24/gift/database/settings.js',
+[2026-04-06T19:22:52.370Z] [STDERR] '/tmp/berahost_dep_24/gift/gmdHelpers.js',
+[2026-04-06T19:22:52.402Z] [STDERR] '/tmp/berahost_dep_24/index.js'
+[2026-04-06T19:22:52.430Z] [STDERR] ]
+[2026-04-06T19:22:52.462Z] [STDERR] }
+[2026-04-06T19:22:52.491Z] [STDERR] Node.js v24.13.0
+[2026-04-06T19:22:56.667Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T19:22:56.696Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T19:22:57.066Z] [INFO  ] [BERAHOST] Starting bot (node index.js)...
+[2026-04-06T19:22:57.161Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_1)...
+[2026-04-06T19:22:57.187Z] [INFO  ] [BERAHOST] Bot started with PID 1331
+[2026-04-06T19:22:59.759Z] [STDOUT] removed 1 package, and audited 600 packages in 2s
+[2026-04-06T19:22:59.759Z] [STDOUT] 98 packages are looking for funding
+[2026-04-06T19:22:59.789Z] [STDOUT] run `npm fund` for details
+[2026-04-06T19:22:59.837Z] [STDOUT] 33 vulnerabilities (1 low, 19 moderate, 13 high)
+[2026-04-06T19:22:59.866Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T19:22:59.895Z] [STDOUT] npm audit fix
+[2026-04-06T19:22:59.924Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T19:22:59.930Z] [STDOUT] [BERAHOST] Cache integrity check failed â€” clearing cache and reinstalling from scratch...
+[2026-04-06T19:22:59.952Z] [STDOUT] npm audit fix --force
+[2026-04-06T19:22:59.981Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T19:23:00.010Z] [STDOUT] a different dependency.
+[2026-04-06T19:23:00.039Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T19:23:01.611Z] [STDOUT] 98 packages are looking for funding
+[2026-04-06T19:23:01.611Z] [STDOUT] up to date, audited 600 packages in 1s
+[2026-04-06T19:23:01.641Z] [STDOUT] run `npm fund` for details
+[2026-04-06T19:23:01.711Z] [STDOUT] 33 vulnerabilities (1 low, 19 moderate, 13 high)
+[2026-04-06T19:23:01.742Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T19:23:01.742Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T19:23:01.748Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T19:23:01.771Z] [STDOUT] npm audit fix
+[2026-04-06T19:23:01.800Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T19:23:01.829Z] [STDOUT] npm audit fix --force
+[2026-04-06T19:23:01.858Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T19:23:01.900Z] [STDOUT] a different dependency.
+[2026-04-06T19:23:01.929Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T19:23:02.246Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T19:23:02.254Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T19:23:02.255Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T19:23:02.300Z] [STDOUT] [BERAHOST] ./node_modules/gifted-baileys/lib/Socket/socket.js already patched â€” skipping
+[2026-04-06T19:23:02.305Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T19:23:02.363Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T19:23:02.423Z] [STDERR] node:internal/modules/cjs/loader:1424
+[2026-04-06T19:23:02.452Z] [STDERR] throw err;
+[2026-04-06T19:23:02.458Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T19:23:02.481Z] [STDERR] ^
+[2026-04-06T19:23:02.510Z] [STDERR] Error: Cannot find module '../util/async'
+[2026-04-06T19:23:02.539Z] [STDERR] Require stack:
+[2026-04-06T19:23:02.547Z] [INFO  ] [BERAHOST] â†» Auto-restart 3/10 in 10s...
+[2026-04-06T19:23:02.568Z] [STDERR] - /tmp/berahost_dep_24/node_modules/fs-extra/lib/copy/copy.js
+[2026-04-06T19:23:02.598Z] [STDERR] - /tmp/berahost_dep_24/node_modules/fs-extra/lib/copy/index.js
+[2026-04-06T19:23:02.627Z] [STDERR] - /tmp/berahost_dep_24/node_modules/fs-extra/lib/index.js
+[2026-04-06T19:23:02.656Z] [STDERR] - /tmp/berahost_dep_24/config.js
+[2026-04-06T19:23:02.685Z] [STDERR] - /tmp/berahost_dep_24/gift/database/database.js
+[2026-04-06T19:23:02.714Z] [STDERR] - /tmp/berahost_dep_24/gift/database/settings.js
+[2026-04-06T19:23:02.743Z] [STDERR] - /tmp/berahost_dep_24/gift/gmdHelpers.js
+[2026-04-06T19:23:02.771Z] [STDERR] - /tmp/berahost_dep_24/index.js
+[2026-04-06T19:23:02.801Z] [STDERR] at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+[2026-04-06T19:23:02.830Z] [STDERR] at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+[2026-04-06T19:23:02.859Z] [STDERR] at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+[2026-04-06T19:23:02.888Z] [STDERR] at Module._load (node:internal/modules/cjs/loader:1227:37)
+[2026-04-06T19:23:02.922Z] [STDERR] at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+[2026-04-06T19:23:02.950Z] [STDERR] at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+[2026-04-06T19:23:02.979Z] [STDERR] at Module.require (node:internal/modules/cjs/loader:1504:12)
+[2026-04-06T19:23:03.008Z] [STDERR] at require (node:internal/modules/helpers:152:16)
+[2026-04-06T19:23:03.037Z] [STDERR] at Object.<anonymous> (/tmp/berahost_dep_24/node_modules/fs-extra/lib/copy/copy.js:9:44)
+[2026-04-06T19:23:03.066Z] [STDERR] at Module._compile (node:internal/modules/cjs/loader:1761:14) {
+[2026-04-06T19:23:03.095Z] [STDERR] code: 'MODULE_NOT_FOUND',
+[2026-04-06T19:23:03.124Z] [STDERR] requireStack: [
+[2026-04-06T19:23:03.153Z] [STDERR] '/tmp/berahost_dep_24/node_modules/fs-extra/lib/copy/copy.js',
+[2026-04-06T19:23:03.182Z] [STDERR] '/tmp/berahost_dep_24/node_modules/fs-extra/lib/copy/index.js',
+[2026-04-06T19:23:03.210Z] [STDERR] '/tmp/berahost_dep_24/node_modules/fs-extra/lib/index.js',
+[2026-04-06T19:23:03.239Z] [STDERR] '/tmp/berahost_dep_24/config.js',
+[2026-04-06T19:23:03.268Z] [STDERR] '/tmp/berahost_dep_24/gift/database/database.js',
+[2026-04-06T19:23:03.297Z] [STDERR] '/tmp/berahost_dep_24/gift/database/settings.js',
+[2026-04-06T19:23:03.326Z] [STDERR] '/tmp/berahost_dep_24/gift/gmdHelpers.js',
+[2026-04-06T19:23:03.355Z] [STDERR] '/tmp/berahost_dep_24/index.js'
+[2026-04-06T19:23:03.384Z] [STDERR] ]
+[2026-04-06T19:23:03.413Z] [STDERR] }
+[2026-04-06T19:23:03.442Z] [STDERR] Node.js v24.13.0

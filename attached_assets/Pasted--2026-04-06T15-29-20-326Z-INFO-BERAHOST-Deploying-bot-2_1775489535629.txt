@@ -1,0 +1,217 @@
+[2026-04-06T15:29:20.326Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T15:29:20.357Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-06T15:29:21.020Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-06T15:29:21.150Z] [INFO  ] [BERAHOST] Bot started with PID 911
+[2026-04-06T15:29:34.710Z] [STDERR] npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+[2026-04-06T15:29:34.839Z] [STDERR] npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
+[2026-04-06T15:29:35.036Z] [STDERR] npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+[2026-04-06T15:29:35.037Z] [STDERR] npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+[2026-04-06T15:29:35.334Z] [STDERR] npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[2026-04-06T15:29:35.335Z] [STDERR] npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+[2026-04-06T15:29:35.396Z] [STDERR] npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+[2026-04-06T15:29:35.398Z] [STDERR] npm warn deprecated dottie@2.0.7: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+[2026-04-06T15:29:35.524Z] [STDERR] npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+[2026-04-06T15:29:36.236Z] [STDERR] npm warn deprecated gauge@4.0.4: This package is no longer supported.
+[2026-04-06T15:29:36.609Z] [STDERR] npm warn deprecated querystring@0.2.1: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+[2026-04-06T15:29:37.698Z] [STDERR] npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+[2026-04-06T15:29:37.747Z] [STDERR] npm warn deprecated tar@6.2.1: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[2026-04-06T15:29:40.825Z] [STDERR] npm warn deprecated fluent-ffmpeg@2.1.3: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+[2026-04-06T15:29:44.632Z] [STDOUT] added 663 packages, and audited 664 packages in 23s
+[2026-04-06T15:29:44.632Z] [STDOUT] 102 packages are looking for funding
+[2026-04-06T15:29:44.662Z] [STDOUT] run `npm fund` for details
+[2026-04-06T15:29:44.695Z] [STDOUT] 38 vulnerabilities (3 low, 19 moderate, 16 high)
+[2026-04-06T15:29:44.726Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T15:29:44.756Z] [STDOUT] npm audit fix
+[2026-04-06T15:29:44.768Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T15:29:44.774Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T15:29:44.786Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T15:29:44.817Z] [STDOUT] npm audit fix --force
+[2026-04-06T15:29:44.847Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T15:29:44.877Z] [STDOUT] a different dependency.
+[2026-04-06T15:29:44.909Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T15:29:45.355Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T15:29:45.363Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T15:29:45.364Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T15:29:45.414Z] [STDOUT] [BERAHOST] Applied AES-GCM patch (callback monkey-patch) to ./node_modules/gifted-baileys/lib/Socket/socket.js
+[2026-04-06T15:29:45.419Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T15:29:45.485Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T15:29:45.738Z] [STDOUT] â„¹ï¸  DATABASE_URL Empty, Using Path
+[2026-04-06T15:29:46.569Z] [STDERR] node:events:486
+[2026-04-06T15:29:46.599Z] [STDERR] throw er; // Unhandled 'error' event
+[2026-04-06T15:29:46.628Z] [STDERR] ^
+[2026-04-06T15:29:46.650Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T15:29:46.657Z] [STDERR] Error: listen EADDRINUSE: address already in use :::3101
+[2026-04-06T15:29:46.686Z] [STDERR] at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+[2026-04-06T15:29:46.716Z] [STDERR] at listenInCluster (node:net:1997:12)
+[2026-04-06T15:29:46.738Z] [INFO  ] [BERAHOST] â†» Auto-restart 1/10 in 0s...
+[2026-04-06T15:29:46.745Z] [STDERR] at Server.listen (node:net:2102:7)
+[2026-04-06T15:29:46.774Z] [STDERR] at app.listen (/tmp/berahost_dep_22/node_modules/express/lib/application.js:635:24)
+[2026-04-06T15:29:46.804Z] [STDERR] at Object.<anonymous> (/tmp/berahost_dep_22/index.js:132:5)
+[2026-04-06T15:29:46.828Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T15:29:46.833Z] [STDERR] at Module._compile (node:internal/modules/cjs/loader:1761:14)
+[2026-04-06T15:29:46.858Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T15:29:46.863Z] [STDERR] at Object..js (node:internal/modules/cjs/loader:1893:10)
+[2026-04-06T15:29:46.893Z] [STDERR] at Module.load (node:internal/modules/cjs/loader:1481:32)
+[2026-04-06T15:29:46.922Z] [STDERR] at Module._load (node:internal/modules/cjs/loader:1300:12)
+[2026-04-06T15:29:46.952Z] [STDERR] at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+[2026-04-06T15:29:46.981Z] [STDERR] Emitted 'error' event on Server instance at:
+[2026-04-06T15:29:47.011Z] [STDERR] at emitErrorNT (node:net:1976:8)
+[2026-04-06T15:29:47.040Z] [STDERR] at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+[2026-04-06T15:29:47.072Z] [STDERR] code: 'EADDRINUSE',
+[2026-04-06T15:29:47.102Z] [STDERR] errno: -98,
+[2026-04-06T15:29:47.132Z] [STDERR] syscall: 'listen',
+[2026-04-06T15:29:47.161Z] [STDERR] address: '::',
+[2026-04-06T15:29:47.191Z] [STDERR] port: 3101
+[2026-04-06T15:29:47.221Z] [STDERR] }
+[2026-04-06T15:29:47.246Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-06T15:29:47.250Z] [STDERR] Node.js v24.13.0
+[2026-04-06T15:29:47.343Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_1)...
+[2026-04-06T15:29:47.368Z] [INFO  ] [BERAHOST] Bot started with PID 1150
+[2026-04-06T15:29:50.170Z] [STDOUT] removed 3 packages, and audited 662 packages in 2s
+[2026-04-06T15:29:50.171Z] [STDOUT] 102 packages are looking for funding
+[2026-04-06T15:29:50.200Z] [STDOUT] run `npm fund` for details
+[2026-04-06T15:29:50.233Z] [STDOUT] 38 vulnerabilities (3 low, 19 moderate, 16 high)
+[2026-04-06T15:29:50.263Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T15:29:50.292Z] [STDOUT] npm audit fix
+[2026-04-06T15:29:50.322Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T15:29:50.352Z] [STDOUT] npm audit fix --force
+[2026-04-06T15:29:50.381Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T15:29:50.415Z] [STDOUT] a different dependency.
+[2026-04-06T15:29:50.428Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T15:29:50.434Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T15:29:50.444Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T15:29:51.028Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T15:29:51.250Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T15:29:51.251Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T15:29:51.314Z] [STDOUT] [BERAHOST] ./node_modules/gifted-baileys/lib/Socket/socket.js already patched â€” skipping
+[2026-04-06T15:29:51.319Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T15:29:51.401Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T15:29:51.653Z] [STDOUT] â„¹ï¸  DATABASE_URL Empty, Using Path
+[2026-04-06T15:29:52.501Z] [STDERR] node:events:486
+[2026-04-06T15:29:52.535Z] [STDERR] throw er; // Unhandled 'error' event
+[2026-04-06T15:29:52.557Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T15:29:52.564Z] [STDERR] ^
+[2026-04-06T15:29:52.594Z] [STDERR] Error: listen EADDRINUSE: address already in use :::3101
+[2026-04-06T15:29:52.623Z] [STDERR] at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+[2026-04-06T15:29:52.650Z] [INFO  ] [BERAHOST] â†» Auto-restart 2/10 in 5s...
+[2026-04-06T15:29:52.653Z] [STDERR] at listenInCluster (node:net:1997:12)
+[2026-04-06T15:29:52.682Z] [STDERR] at Server.listen (node:net:2102:7)
+[2026-04-06T15:29:52.712Z] [STDERR] at app.listen (/tmp/berahost_dep_22/node_modules/express/lib/application.js:635:24)
+[2026-04-06T15:29:52.742Z] [STDERR] at Object.<anonymous> (/tmp/berahost_dep_22/index.js:132:5)
+[2026-04-06T15:29:52.771Z] [STDERR] at Module._compile (node:internal/modules/cjs/loader:1761:14)
+[2026-04-06T15:29:52.802Z] [STDERR] at Object..js (node:internal/modules/cjs/loader:1893:10)
+[2026-04-06T15:29:52.832Z] [STDERR] at Module.load (node:internal/modules/cjs/loader:1481:32)
+[2026-04-06T15:29:52.861Z] [STDERR] at Module._load (node:internal/modules/cjs/loader:1300:12)
+[2026-04-06T15:29:52.891Z] [STDERR] at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+[2026-04-06T15:29:52.920Z] [STDERR] Emitted 'error' event on Server instance at:
+[2026-04-06T15:29:52.949Z] [STDERR] at emitErrorNT (node:net:1976:8)
+[2026-04-06T15:29:52.979Z] [STDERR] at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+[2026-04-06T15:29:53.008Z] [STDERR] code: 'EADDRINUSE',
+[2026-04-06T15:29:53.038Z] [STDERR] errno: -98,
+[2026-04-06T15:29:53.067Z] [STDERR] syscall: 'listen',
+[2026-04-06T15:29:53.096Z] [STDERR] address: '::',
+[2026-04-06T15:29:53.126Z] [STDERR] port: 3101
+[2026-04-06T15:29:53.156Z] [STDERR] }
+[2026-04-06T15:29:53.185Z] [STDERR] Node.js v24.13.0
+[2026-04-06T15:29:57.741Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T15:29:57.770Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T15:29:58.146Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-06T15:29:58.246Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_1)...
+[2026-04-06T15:29:58.270Z] [INFO  ] [BERAHOST] Bot started with PID 1216
+[2026-04-06T15:30:01.197Z] [STDOUT] removed 1 package, and audited 662 packages in 2s
+[2026-04-06T15:30:01.198Z] [STDOUT] 102 packages are looking for funding
+[2026-04-06T15:30:01.229Z] [STDOUT] run `npm fund` for details
+[2026-04-06T15:30:01.271Z] [STDOUT] 38 vulnerabilities (3 low, 19 moderate, 16 high)
+[2026-04-06T15:30:01.302Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T15:30:01.332Z] [STDOUT] npm audit fix
+[2026-04-06T15:30:01.363Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T15:30:01.393Z] [STDOUT] npm audit fix --force
+[2026-04-06T15:30:01.423Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T15:30:01.454Z] [STDOUT] a different dependency.
+[2026-04-06T15:30:01.466Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T15:30:01.485Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T15:30:01.649Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T15:30:02.080Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T15:30:02.310Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T15:30:02.311Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T15:30:02.377Z] [STDOUT] [BERAHOST] ./node_modules/gifted-baileys/lib/Socket/socket.js already patched â€” skipping
+[2026-04-06T15:30:02.381Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T15:30:02.453Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T15:30:02.757Z] [STDOUT] â„¹ï¸  DATABASE_URL Empty, Using Path
+[2026-04-06T15:30:03.607Z] [STDERR] node:events:486
+[2026-04-06T15:30:03.637Z] [STDERR] throw er; // Unhandled 'error' event
+[2026-04-06T15:30:03.658Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T15:30:03.666Z] [STDERR] ^
+[2026-04-06T15:30:03.695Z] [STDERR] Error: listen EADDRINUSE: address already in use :::3101
+[2026-04-06T15:30:03.724Z] [STDERR] at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+[2026-04-06T15:30:03.749Z] [INFO  ] [BERAHOST] â†» Auto-restart 3/10 in 10s...
+[2026-04-06T15:30:03.753Z] [STDERR] at listenInCluster (node:net:1997:12)
+[2026-04-06T15:30:03.782Z] [STDERR] at Server.listen (node:net:2102:7)
+[2026-04-06T15:30:03.811Z] [STDERR] at app.listen (/tmp/berahost_dep_22/node_modules/express/lib/application.js:635:24)
+[2026-04-06T15:30:03.840Z] [STDERR] at Object.<anonymous> (/tmp/berahost_dep_22/index.js:132:5)
+[2026-04-06T15:30:03.869Z] [STDERR] at Module._compile (node:internal/modules/cjs/loader:1761:14)
+[2026-04-06T15:30:03.898Z] [STDERR] at Object..js (node:internal/modules/cjs/loader:1893:10)
+[2026-04-06T15:30:03.927Z] [STDERR] at Module.load (node:internal/modules/cjs/loader:1481:32)
+[2026-04-06T15:30:03.955Z] [STDERR] at Module._load (node:internal/modules/cjs/loader:1300:12)
+[2026-04-06T15:30:03.985Z] [STDERR] at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+[2026-04-06T15:30:04.015Z] [STDERR] Emitted 'error' event on Server instance at:
+[2026-04-06T15:30:04.044Z] [STDERR] at emitErrorNT (node:net:1976:8)
+[2026-04-06T15:30:04.078Z] [STDERR] at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+[2026-04-06T15:30:04.107Z] [STDERR] code: 'EADDRINUSE',
+[2026-04-06T15:30:04.136Z] [STDERR] errno: -98,
+[2026-04-06T15:30:04.165Z] [STDERR] syscall: 'listen',
+[2026-04-06T15:30:04.195Z] [STDERR] address: '::',
+[2026-04-06T15:30:04.225Z] [STDERR] port: 3101
+[2026-04-06T15:30:04.254Z] [STDERR] }
+[2026-04-06T15:30:04.284Z] [STDERR] Node.js v24.13.0
+[2026-04-06T15:30:13.840Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T15:30:13.870Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T15:30:14.272Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-06T15:30:14.396Z] [INFO  ] [BERAHOST] Bot started with PID 1284
+[2026-04-06T15:30:14.555Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_1)...
+[2026-04-06T15:30:17.293Z] [STDOUT] 102 packages are looking for funding
+[2026-04-06T15:30:17.294Z] [STDOUT] removed 1 package, and audited 662 packages in 2s
+[2026-04-06T15:30:17.323Z] [STDOUT] run `npm fund` for details
+[2026-04-06T15:30:17.364Z] [STDOUT] 38 vulnerabilities (3 low, 19 moderate, 16 high)
+[2026-04-06T15:30:17.394Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T15:30:17.423Z] [STDOUT] npm audit fix
+[2026-04-06T15:30:17.453Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T15:30:17.483Z] [STDOUT] npm audit fix --force
+[2026-04-06T15:30:17.512Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T15:30:17.542Z] [STDOUT] a different dependency.
+[2026-04-06T15:30:17.548Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T15:30:17.572Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T15:30:17.734Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T15:30:18.124Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T15:30:18.337Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T15:30:18.338Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T15:30:18.390Z] [STDOUT] [BERAHOST] ./node_modules/gifted-baileys/lib/Socket/socket.js already patched â€” skipping
+[2026-04-06T15:30:18.396Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T15:30:18.462Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T15:30:18.733Z] [STDOUT] â„¹ï¸  DATABASE_URL Empty, Using Path
+[2026-04-06T15:30:19.639Z] [STDERR] node:events:486
+[2026-04-06T15:30:19.668Z] [STDERR] throw er; // Unhandled 'error' event
+[2026-04-06T15:30:19.690Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T15:30:19.697Z] [STDERR] ^
+[2026-04-06T15:30:19.725Z] [STDERR] Error: listen EADDRINUSE: address already in use :::3101
+[2026-04-06T15:30:19.754Z] [STDERR] at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+[2026-04-06T15:30:19.778Z] [INFO  ] [BERAHOST] â†» Auto-restart 4/10 in 20s...
+[2026-04-06T15:30:19.784Z] [STDERR] at listenInCluster (node:net:1997:12)
+[2026-04-06T15:30:19.813Z] [STDERR] at Server.listen (node:net:2102:7)
+[2026-04-06T15:30:19.843Z] [STDERR] at app.listen (/tmp/berahost_dep_22/node_modules/express/lib/application.js:635:24)
+[2026-04-06T15:30:19.871Z] [STDERR] at Object.<anonymous> (/tmp/berahost_dep_22/index.js:132:5)
+[2026-04-06T15:30:19.901Z] [STDERR] at Module._compile (node:internal/modules/cjs/loader:1761:14)
+[2026-04-06T15:30:19.930Z] [STDERR] at Object..js (node:internal/modules/cjs/loader:1893:10)
+[2026-04-06T15:30:19.959Z] [STDERR] at Module.load (node:internal/modules/cjs/loader:1481:32)
+[2026-04-06T15:30:19.988Z] [STDERR] at Module._load (node:internal/modules/cjs/loader:1300:12)
+[2026-04-06T15:30:20.018Z] [STDERR] at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+[2026-04-06T15:30:20.047Z] [STDERR] Emitted 'error' event on Server instance at:
+[2026-04-06T15:30:20.077Z] [STDERR] at emitErrorNT (node:net:1976:8)
+[2026-04-06T15:30:20.106Z] [STDERR] at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+[2026-04-06T15:30:20.136Z] [STDERR] code: 'EADDRINUSE',
+[2026-04-06T15:30:20.167Z] [STDERR] errno: -98,
+[2026-04-06T15:30:20.197Z] [STDERR] syscall: 'listen',
+[2026-04-06T15:30:20.226Z] [STDERR] address: '::',
+[2026-04-06T15:30:20.256Z] [STDERR] port: 3101
+[2026-04-06T15:30:20.285Z] [STDERR] }
+[2026-04-06T15:30:20.315Z] [STDERR] Node.js v24.13.0

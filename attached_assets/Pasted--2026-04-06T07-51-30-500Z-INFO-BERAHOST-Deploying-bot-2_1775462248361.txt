@@ -1,0 +1,231 @@
+[2026-04-06T07:51:30.500Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T07:51:30.530Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-06T07:51:31.619Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-06T07:51:31.747Z] [INFO  ] [BERAHOST] Bot started with PID 315
+[2026-04-06T07:51:31.810Z] [STDOUT] [BERAHOST] Patched preload.js for Node.js 24 crypto compat
+[2026-04-06T07:51:44.715Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T07:51:44.746Z] [STDERR] npm warn EBADENGINE   package: 'flash-md-v3@3.0.0',
+[2026-04-06T07:51:44.777Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x', npm: '9.x' },
+[2026-04-06T07:51:44.809Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T07:51:44.840Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T07:51:46.613Z] [STDERR] npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+[2026-04-06T07:51:46.795Z] [STDERR] npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
+[2026-04-06T07:51:47.051Z] [STDERR] npm warn deprecated har-validator@5.1.5: this library is no longer supported
+[2026-04-06T07:51:47.986Z] [STDERR] npm warn deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+[2026-04-06T07:51:48.079Z] [STDERR] npm warn deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+[2026-04-06T07:51:48.204Z] [STDERR] npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+[2026-04-06T07:51:48.903Z] [STDERR] npm warn deprecated puppeteer@23.11.1: < 24.15.0 is no longer supported
+[2026-04-06T07:51:49.443Z] [STDERR] npm warn deprecated ruhend-scraper@9.0.8:
+[2026-04-06T07:51:49.867Z] [STDERR] npm warn deprecated fluent-ffmpeg@2.1.3: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+[2026-04-06T07:52:02.302Z] [STDOUT] 104 packages are looking for funding
+[2026-04-06T07:52:02.304Z] [STDOUT] added 680 packages, and audited 681 packages in 30s
+[2026-04-06T07:52:02.332Z] [STDOUT] run `npm fund` for details
+[2026-04-06T07:52:02.381Z] [STDOUT] 38 vulnerabilities (1 low, 26 moderate, 9 high, 2 critical)
+[2026-04-06T07:52:02.394Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T07:52:02.397Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T07:52:02.411Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T07:52:02.441Z] [STDOUT] npm audit fix
+[2026-04-06T07:52:02.471Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T07:52:02.481Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T07:52:02.489Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T07:52:02.501Z] [STDOUT] npm audit fix --force
+[2026-04-06T07:52:02.518Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T07:52:02.531Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T07:52:02.540Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T07:52:02.561Z] [STDOUT] a different dependency.
+[2026-04-06T07:52:02.587Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T07:52:02.590Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T07:52:02.735Z] [STDOUT] > flash-md-v3@3.0.0 start
+[2026-04-06T07:52:02.768Z] [STDOUT] > node --loader ./preload.js index.js
+[2026-04-06T07:52:03.177Z] [STDERR] (node:577) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+[2026-04-06T07:52:03.207Z] [STDERR] --import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("./preload.js", pathToFileURL("./"));'
+[2026-04-06T07:52:03.237Z] [STDERR] (Use `node --trace-warnings ...` to show where the warning was created)
+[2026-04-06T07:52:05.504Z] [STDOUT] âœ… Connected to WhatsApp
+[2026-04-06T07:52:05.508Z] [STDOUT] â”œâ”€ ðŸ¤– Bot: Flash-MD v3.0.0
+[2026-04-06T07:52:05.509Z] [STDOUT] [ðŸ“… 06/04/2026 10:52:05] [âœ… CONNECTED]
+[2026-04-06T07:52:05.537Z] [STDOUT] â”œâ”€ ðŸ“± Number: 254787527753
+[2026-04-06T07:52:05.567Z] [STDOUT] â”œâ”€ ðŸ”‘ LID: 233620836974620@lid
+[2026-04-06T07:52:05.596Z] [STDOUT] â”œâ”€ âš™ï¸ Mode: private
+[2026-04-06T07:52:05.625Z] [STDOUT] â””â”€ ðŸ“Š Commands: 161 loaded
+[2026-04-06T07:52:07.847Z] [STDOUT] âœ… Start message sent to owner: 254742063632@s.whatsapp.net
+[2026-04-06T07:52:08.733Z] [STDOUT] [ðŸ“… 06/04/2026 10:52:08] [ðŸ”„ RECONNECTING]
+[2026-04-06T07:52:08.735Z] [STDOUT] â”œâ”€ ðŸ”¢ Attempt: 1
+[2026-04-06T07:52:08.764Z] [STDOUT] â”œâ”€ ðŸ”Œ Reason: Unknown
+[2026-04-06T07:52:08.766Z] [STDOUT] â””â”€ â³ Delay: 5 seconds
+[2026-04-06T07:52:08.796Z] [STDOUT] [ðŸ“… 06/04/2026 10:52:08] [âŒ ERROR]
+[2026-04-06T07:52:08.803Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T07:52:08.827Z] [STDOUT] â”œâ”€ ðŸ”§ Context: Connection
+[2026-04-06T07:52:08.858Z] [STDOUT] â””â”€ ðŸ’¬ Error: Unrecoverable disconnect: Error: Stream Errored (device_removed)
+[2026-04-06T07:52:08.891Z] [INFO  ] [BERAHOST] â†» Auto-restart 1/10 in 0s...
+[2026-04-06T07:52:08.980Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T07:52:09.011Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T07:52:09.365Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-06T07:52:09.463Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_3)...
+[2026-04-06T07:52:09.489Z] [INFO  ] [BERAHOST] Bot started with PID 601
+[2026-04-06T07:52:09.818Z] [STDOUT] [BERAHOST] Patched preload.js for Node.js 24 crypto compat
+[2026-04-06T07:52:10.474Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T07:52:10.504Z] [STDERR] npm warn EBADENGINE   package: 'flash-md-v3@3.0.0',
+[2026-04-06T07:52:10.534Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x', npm: '9.x' },
+[2026-04-06T07:52:10.564Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T07:52:10.594Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T07:52:12.206Z] [STDOUT] added 2 packages, removed 1 package, and audited 683 packages in 2s
+[2026-04-06T07:52:12.206Z] [STDOUT] 106 packages are looking for funding
+[2026-04-06T07:52:12.237Z] [STDOUT] run `npm fund` for details
+[2026-04-06T07:52:12.280Z] [STDOUT] 38 vulnerabilities (1 low, 26 moderate, 9 high, 2 critical)
+[2026-04-06T07:52:12.302Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T07:52:12.308Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T07:52:12.310Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T07:52:12.341Z] [STDOUT] npm audit fix
+[2026-04-06T07:52:12.372Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T07:52:12.403Z] [STDOUT] npm audit fix --force
+[2026-04-06T07:52:12.435Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T07:52:12.466Z] [STDOUT] a different dependency.
+[2026-04-06T07:52:12.498Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T07:52:12.577Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T07:52:12.700Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T07:52:12.731Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T07:52:12.751Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T07:52:12.798Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T07:52:12.945Z] [STDOUT] > flash-md-v3@3.0.0 start
+[2026-04-06T07:52:12.974Z] [STDOUT] > node --loader ./preload.js index.js
+[2026-04-06T07:52:13.387Z] [STDERR] (node:654) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+[2026-04-06T07:52:13.417Z] [STDERR] --import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("./preload.js", pathToFileURL("./"));'
+[2026-04-06T07:52:13.447Z] [STDERR] (Use `node --trace-warnings ...` to show where the warning was created)
+[2026-04-06T07:52:19.955Z] [STDOUT] [ðŸ“… 06/04/2026 10:52:19] [ðŸ”„ RECONNECTING]
+[2026-04-06T07:52:19.958Z] [STDOUT] â”œâ”€ ðŸ”Œ Reason: Unknown
+[2026-04-06T07:52:19.989Z] [STDOUT] â”œâ”€ ðŸ”¢ Attempt: 1
+[2026-04-06T07:52:20.017Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T07:52:20.019Z] [STDOUT] â””â”€ â³ Delay: 5 seconds
+[2026-04-06T07:52:20.049Z] [STDOUT] [ðŸ“… 06/04/2026 10:52:19] [âŒ ERROR]
+[2026-04-06T07:52:20.080Z] [STDOUT] â”œâ”€ ðŸ”§ Context: Connection
+[2026-04-06T07:52:20.108Z] [INFO  ] [BERAHOST] â†» Auto-restart 2/10 in 5s...
+[2026-04-06T07:52:20.110Z] [STDOUT] â””â”€ ðŸ’¬ Error: Unrecoverable disconnect: Error: Connection Failure
+[2026-04-06T07:52:25.202Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T07:52:25.234Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T07:52:25.555Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-06T07:52:25.652Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_3)...
+[2026-04-06T07:52:25.681Z] [INFO  ] [BERAHOST] Bot started with PID 678
+[2026-04-06T07:52:26.001Z] [STDOUT] [BERAHOST] Patched preload.js for Node.js 24 crypto compat
+[2026-04-06T07:52:26.603Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T07:52:26.637Z] [STDERR] npm warn EBADENGINE   package: 'flash-md-v3@3.0.0',
+[2026-04-06T07:52:26.668Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x', npm: '9.x' },
+[2026-04-06T07:52:26.699Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T07:52:26.730Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T07:52:27.930Z] [STDOUT] 106 packages are looking for funding
+[2026-04-06T07:52:27.931Z] [STDOUT] removed 1 package, and audited 683 packages in 2s
+[2026-04-06T07:52:27.960Z] [STDOUT] run `npm fund` for details
+[2026-04-06T07:52:27.997Z] [STDOUT] 38 vulnerabilities (1 low, 26 moderate, 9 high, 2 critical)
+[2026-04-06T07:52:28.016Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T07:52:28.026Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T07:52:28.055Z] [STDOUT] npm audit fix
+[2026-04-06T07:52:28.088Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T07:52:28.117Z] [STDOUT] npm audit fix --force
+[2026-04-06T07:52:28.147Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T07:52:28.176Z] [STDOUT] a different dependency.
+[2026-04-06T07:52:28.199Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T07:52:28.205Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T07:52:28.291Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T07:52:28.420Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T07:52:28.451Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T07:52:28.465Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T07:52:28.510Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T07:52:28.651Z] [STDOUT] > flash-md-v3@3.0.0 start
+[2026-04-06T07:52:28.681Z] [STDOUT] > node --loader ./preload.js index.js
+[2026-04-06T07:52:29.053Z] [STDERR] (node:731) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+[2026-04-06T07:52:29.084Z] [STDERR] --import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("./preload.js", pathToFileURL("./"));'
+[2026-04-06T07:52:29.114Z] [STDERR] (Use `node --trace-warnings ...` to show where the warning was created)
+[2026-04-06T07:52:34.512Z] [STDOUT] â”œâ”€ ðŸ”Œ Reason: Unknown
+[2026-04-06T07:52:34.512Z] [STDOUT] [ðŸ“… 06/04/2026 10:52:34] [ðŸ”„ RECONNECTING]
+[2026-04-06T07:52:34.542Z] [STDOUT] â”œâ”€ ðŸ”¢ Attempt: 1
+[2026-04-06T07:52:34.571Z] [STDOUT] â””â”€ â³ Delay: 5 seconds
+[2026-04-06T07:52:34.579Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T07:52:34.603Z] [STDOUT] [ðŸ“… 06/04/2026 10:52:34] [âŒ ERROR]
+[2026-04-06T07:52:34.633Z] [STDOUT] â”œâ”€ ðŸ”§ Context: Connection
+[2026-04-06T07:52:34.663Z] [STDOUT] â””â”€ ðŸ’¬ Error: Unrecoverable disconnect: Error: Connection Failure
+[2026-04-06T07:52:34.671Z] [INFO  ] [BERAHOST] â†» Auto-restart 3/10 in 10s...
+[2026-04-06T07:52:44.947Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T07:52:44.978Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T07:52:45.303Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-06T07:52:45.430Z] [INFO  ] [BERAHOST] Bot started with PID 755
+[2026-04-06T07:52:45.580Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_3)...
+[2026-04-06T07:52:45.746Z] [STDOUT] [BERAHOST] Patched preload.js for Node.js 24 crypto compat
+[2026-04-06T07:52:46.387Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T07:52:46.416Z] [STDERR] npm warn EBADENGINE   package: 'flash-md-v3@3.0.0',
+[2026-04-06T07:52:46.446Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x', npm: '9.x' },
+[2026-04-06T07:52:46.481Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T07:52:46.511Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T07:52:47.779Z] [STDOUT] removed 1 package, and audited 683 packages in 2s
+[2026-04-06T07:52:47.780Z] [STDOUT] 106 packages are looking for funding
+[2026-04-06T07:52:47.811Z] [STDOUT] run `npm fund` for details
+[2026-04-06T07:52:47.851Z] [STDOUT] 38 vulnerabilities (1 low, 26 moderate, 9 high, 2 critical)
+[2026-04-06T07:52:47.871Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T07:52:47.882Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T07:52:47.912Z] [STDOUT] npm audit fix
+[2026-04-06T07:52:47.943Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T07:52:47.973Z] [STDOUT] npm audit fix --force
+[2026-04-06T07:52:48.004Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T07:52:48.034Z] [STDOUT] a different dependency.
+[2026-04-06T07:52:48.055Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T07:52:48.065Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T07:52:48.132Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T07:52:48.255Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T07:52:48.286Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T07:52:48.303Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T07:52:48.350Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T07:52:48.487Z] [STDOUT] > flash-md-v3@3.0.0 start
+[2026-04-06T07:52:48.517Z] [STDOUT] > node --loader ./preload.js index.js
+[2026-04-06T07:52:48.903Z] [STDERR] (node:808) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+[2026-04-06T07:52:48.935Z] [STDERR] --import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("./preload.js", pathToFileURL("./"));'
+[2026-04-06T07:52:48.965Z] [STDERR] (Use `node --trace-warnings ...` to show where the warning was created)
+[2026-04-06T07:52:52.496Z] [STDOUT] [ðŸ“… 06/04/2026 10:52:52] [ðŸ”„ RECONNECTING]
+[2026-04-06T07:52:52.496Z] [STDOUT] [ðŸ“… 06/04/2026 10:52:52] [âŒ ERROR]
+[2026-04-06T07:52:52.497Z] [STDOUT] â”œâ”€ ðŸ”Œ Reason: Unknown
+[2026-04-06T07:52:52.525Z] [STDOUT] â”œâ”€ ðŸ”§ Context: Connection
+[2026-04-06T07:52:52.527Z] [STDOUT] â”œâ”€ ðŸ”¢ Attempt: 1
+[2026-04-06T07:52:52.555Z] [STDOUT] â””â”€ ðŸ’¬ Error: Unrecoverable disconnect: Error: Connection Failure
+[2026-04-06T07:52:52.556Z] [STDOUT] â””â”€ â³ Delay: 5 seconds
+[2026-04-06T07:52:52.558Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T07:52:52.647Z] [INFO  ] [BERAHOST] â†» Auto-restart 4/10 in 20s...
+[2026-04-06T07:53:12.921Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T07:53:12.952Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T07:53:13.288Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-06T07:53:13.413Z] [INFO  ] [BERAHOST] Bot started with PID 832
+[2026-04-06T07:53:13.559Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_3)...
+[2026-04-06T07:53:13.711Z] [STDOUT] [BERAHOST] Patched preload.js for Node.js 24 crypto compat
+[2026-04-06T07:53:14.323Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T07:53:14.352Z] [STDERR] npm warn EBADENGINE   package: 'flash-md-v3@3.0.0',
+[2026-04-06T07:53:14.382Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x', npm: '9.x' },
+[2026-04-06T07:53:14.411Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T07:53:14.440Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T07:53:15.731Z] [STDOUT] removed 1 package, and audited 683 packages in 2s
+[2026-04-06T07:53:15.731Z] [STDOUT] 106 packages are looking for funding
+[2026-04-06T07:53:15.761Z] [STDOUT] run `npm fund` for details
+[2026-04-06T07:53:15.796Z] [STDOUT] 38 vulnerabilities (1 low, 26 moderate, 9 high, 2 critical)
+[2026-04-06T07:53:15.815Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T07:53:15.826Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T07:53:15.858Z] [STDOUT] npm audit fix
+[2026-04-06T07:53:15.894Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T07:53:15.930Z] [STDOUT] npm audit fix --force
+[2026-04-06T07:53:15.964Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T07:53:15.999Z] [STDOUT] a different dependency.
+[2026-04-06T07:53:16.002Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T07:53:16.030Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T07:53:16.085Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T07:53:16.209Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T07:53:16.240Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T07:53:16.257Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T07:53:16.306Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T07:53:16.454Z] [STDOUT] > flash-md-v3@3.0.0 start
+[2026-04-06T07:53:16.484Z] [STDOUT] > node --loader ./preload.js index.js
+[2026-04-06T07:53:16.882Z] [STDERR] (node:885) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+[2026-04-06T07:53:16.911Z] [STDERR] --import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("./preload.js", pathToFileURL("./"));'
+[2026-04-06T07:53:16.942Z] [STDERR] (Use `node --trace-warnings ...` to show where the warning was created)
+[2026-04-06T07:53:20.866Z] [STDOUT] [ðŸ“… 06/04/2026 10:53:20] [ðŸ”„ RECONNECTING]
+[2026-04-06T07:53:20.867Z] [STDOUT] â”œâ”€ ðŸ”Œ Reason: Unknown
+[2026-04-06T07:53:20.902Z] [STDOUT] â”œâ”€ ðŸ”¢ Attempt: 1
+[2026-04-06T07:53:20.930Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T07:53:20.932Z] [STDOUT] â””â”€ â³ Delay: 5 seconds
+[2026-04-06T07:53:20.962Z] [STDOUT] [ðŸ“… 06/04/2026 10:53:20] [âŒ ERROR]
+[2026-04-06T07:53:20.992Z] [STDOUT] â”œâ”€ ðŸ”§ Context: Connection
+[2026-04-06T07:53:21.018Z] [INFO  ] [BERAHOST] â†» Auto-restart 5/10 in 40s...
+[2026-04-06T07:53:21.023Z] [STDOUT] â””â”€ ðŸ’¬ Error: Unrecoverable disconnect: Error: Connection Failure

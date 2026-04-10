@@ -1,0 +1,596 @@
+[2026-04-05T08:43:27.052Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-05T08:43:27.083Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-05T08:43:28.269Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-05T08:43:28.514Z] [INFO  ] [BERAHOST] Bot started with PID 233
+[2026-04-05T08:43:46.377Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-05T08:43:46.449Z] [STDERR] npm warn EBADENGINE   package: 'silent-wolf-bot@2.1.0',
+[2026-04-05T08:43:46.485Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x' },
+[2026-04-05T08:43:46.548Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-05T08:43:46.578Z] [STDERR] npm warn EBADENGINE }
+[2026-04-05T08:43:50.581Z] [STDERR] npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+[2026-04-05T08:43:50.667Z] [STDERR] npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
+[2026-04-05T08:43:51.656Z] [STDERR] npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+[2026-04-05T08:43:52.984Z] [STDERR] npm warn deprecated glob@11.1.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[2026-04-05T08:43:54.066Z] [STDERR] npm warn deprecated ruhend-scraper@9.0.8:
+[2026-04-05T08:44:00.158Z] [STDOUT] > silent-wolf-bot@2.1.0 postinstall
+[2026-04-05T08:44:00.192Z] [STDOUT] > node scripts/patch-modules.cjs 2>/dev/null || true
+[2026-04-05T08:44:00.349Z] [STDOUT] added 409 packages, and audited 410 packages in 31s
+[2026-04-05T08:44:00.349Z] [STDOUT] run `npm fund` for details
+[2026-04-05T08:44:00.376Z] [STDOUT] 9 vulnerabilities (3 moderate, 6 high)
+[2026-04-05T08:44:00.379Z] [STDOUT] 96 packages are looking for funding
+[2026-04-05T08:44:00.447Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-05T08:44:00.478Z] [STDOUT] npm audit fix
+[2026-04-05T08:44:00.547Z] [STDOUT] To address all issues (including breaking changes), run:
+[2026-04-05T08:44:00.578Z] [STDOUT] npm audit fix --force
+[2026-04-05T08:44:00.608Z] [STDOUT] Run `npm audit` for details.
+[2026-04-05T08:44:00.972Z] [STDOUT] > silent-wolf-bot@2.1.0 start
+[2026-04-05T08:44:01.002Z] [STDOUT] > node --no-warnings --expose-gc --max-old-space-size=1024 --max-semi-space-size=64 --experimental-global-webcrypto index.js
+[2026-04-05T08:44:01.304Z] [STDOUT] [WOLF TECH BWM XMD FAMILY] Starting...
+[2026-04-05T08:44:01.485Z] [STDOUT] [WOLF TECH BWM XMD FAMILY] Fetching bot files...
+[2026-04-05T08:44:03.474Z] [STDOUT] [WOLF TECH BWM XMD FAMILY] Bot loaded successfully.
+[2026-04-05T08:44:04.106Z] [STDOUT] [PG] No DATABASE_URL set â€” running on SQLite only (set DATABASE_URL in .env to enable PostgreSQL)
+[2026-04-05T08:44:04.110Z] [STDOUT] â—‡ injecting env (0) from .env // tip: âŒ˜ enable debugging { debug: true }
+[2026-04-05T08:44:04.182Z] [STDOUT] ðŸ—ï¸  Platform : Replit
+[2026-04-05T08:44:04.182Z] [STDOUT] â”Œâ”€â”€â”€â”€â”€â”€â”€ã€” ðŸº WOLFBOT CONTROL CORE ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:44:04.211Z] [STDOUT] ðŸ”Œ  Port     : 3102
+[2026-04-05T08:44:04.246Z] [STDOUT] ðŸ“‚  Logs     : /logs
+[2026-04-05T08:44:04.276Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:44:06.155Z] [STDERR] [WOLF-ERR] â±ï¸  08:44:06  â–¸ Unhandled rejection: libuuid.so.1: cannot open shared object file: No such file or directory
+[2026-04-05T08:44:06.156Z] [STDERR] [WOLF-ERR] â±ï¸  08:44:06  â–¸ Unhandled rejection: libuuid.so.1: cannot open shared object file: No such file or directory
+[2026-04-05T08:44:06.189Z] [STDERR] [WOLF-ERR] â±ï¸  08:44:06  â–¸ Unhandled rejection: libuuid.so.1: cannot open shared object file: No such file or directory
+[2026-04-05T08:44:06.248Z] [STDERR] [WOLF-ERR] â±ï¸  08:44:06  â–¸ Unhandled rejection: libuuid.so.1: cannot open shared object file: No such file or directory
+[2026-04-05T08:44:09.532Z] [STDOUT] â”Œâ”€ã€” ðŸº WOLFBOT v1.1.5 Â· RECONNECTED ã€•â”€â”€â”€â”€â”
+[2026-04-05T08:44:09.532Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ” RECONNECTED ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:44:09.561Z] [STDOUT] â–£  Status   : âœ… Silent â€” no spam message sent
+[2026-04-05T08:44:09.562Z] [STDOUT] â–£  Platform      : ðŸŒ€ Replit
+[2026-04-05T08:44:09.591Z] [STDOUT] â–£  Owner    : +254787527753
+[2026-04-05T08:44:09.591Z] [STDOUT] â–£  Time          : 08:44:09
+[2026-04-05T08:44:09.621Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:44:09.622Z] [STDOUT] â–£  Prefix        : "."
+[2026-04-05T08:44:09.652Z] [STDOUT] â–£  Mode          : public
+[2026-04-05T08:44:09.682Z] [STDOUT] â–£  Owner         : +254787527753
+[2026-04-05T08:44:09.713Z] [STDOUT] â–£  Commands      : 2236
+[2026-04-05T08:44:09.743Z] [STDOUT] â–£  SQLite        : ready (native)
+[2026-04-05T08:44:09.773Z] [STDOUT] â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-05T08:44:09.804Z] [STDOUT] â–£  Database      : not set
+[2026-04-05T08:44:09.834Z] [STDOUT] â–£  PostgreSQL    : not connected
+[2026-04-05T08:44:09.864Z] [STDOUT] â–£  Pterodactyl   : not set
+[2026-04-05T08:44:09.894Z] [STDOUT] â–£  Paystack      : set
+[2026-04-05T08:44:09.925Z] [STDOUT] â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-05T08:44:09.956Z] [STDOUT] â–£  Anti-Delete   : on
+[2026-04-05T08:44:09.989Z] [STDOUT] â–£  Status Detect : on
+[2026-04-05T08:44:10.019Z] [STDOUT] â–£  Member Detect : on
+[2026-04-05T08:44:10.050Z] [STDOUT] â–£  Auto-Reconnect: on
+[2026-04-05T08:44:10.081Z] [STDOUT] â–£  Wolf AI       : on
+[2026-04-05T08:44:10.112Z] [STDOUT] â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-05T08:44:10.145Z] [STDOUT] â–£  Auth State    : Registered  Â·  0k
+[2026-04-05T08:44:10.176Z] [STDOUT] â–£  JID Manager   : âœ” ready
+[2026-04-05T08:44:10.210Z] [STDOUT] â–£  Status Reply  : âœ” ready
+[2026-04-05T08:44:10.241Z] [STDOUT] â–£  QuickConnect  : drain 45s
+[2026-04-05T08:44:10.271Z] [STDOUT] â–£  Disk Manager  : âœ” ACTIVE
+[2026-04-05T08:44:10.302Z] [STDOUT] â–£  Scheduler     : 11:44 EAT
+[2026-04-05T08:44:10.332Z] [STDOUT] â–£  Menu Media    : text-only
+[2026-04-05T08:44:10.362Z] [STDOUT] â–£  Status Antidel: pending
+[2026-04-05T08:44:10.393Z] [STDOUT] â–£  Member Groups : 0 groups tracked
+[2026-04-05T08:44:10.423Z] [STDOUT] â–£  Coinflip      : 0 users  Â·  0 bets
+[2026-04-05T08:44:10.454Z] [STDOUT] â–£  RPS           : 0 players
+[2026-04-05T08:44:10.485Z] [STDOUT] â–£  Snake         : 0 players
+[2026-04-05T08:44:10.515Z] [STDOUT] â–£  Tetris        : 0 players
+[2026-04-05T08:44:10.545Z] [STDOUT] â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-05T08:44:10.575Z] [STDOUT] â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  100%  â–¸  ALL SYSTEMS ONLINE âœ“
+[2026-04-05T08:44:10.605Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:45:28.281Z] [STDOUT] [WOLF-WARN] â±ï¸  08:45:10  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 25801ms
+[2026-04-05T08:45:28.320Z] [STDOUT] â•â•â•â•â•â•â•â•ã€” SYSTEM STATUS â–£ LIVE ã€•â•â•â•â•â•â•â•â•
+[2026-04-05T08:45:28.346Z] [STDOUT] [WOLF-WARN] â±ï¸  08:45:20  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 4999ms
+[2026-04-05T08:45:28.350Z] [STDOUT] [WOLF-SYS] â±ï¸  08:45:13
+[2026-04-05T08:45:28.447Z] [STDOUT] â–¸ âš ï¸ Memory peak: 374MB
+[2026-04-05T08:45:29.706Z] [STDOUT] [WOLF-WARN] â±ï¸  08:45:28  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 2823ms
+[2026-04-05T08:45:33.367Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ‘‘ OWNER CMD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:45:33.399Z] [STDOUT] â–£  Sender   : +254787527753
+[2026-04-05T08:45:33.429Z] [STDOUT] â–£  Command  : .ping
+[2026-04-05T08:45:33.461Z] [STDOUT] â–£  Where    : DM
+[2026-04-05T08:45:33.492Z] [STDOUT] â–£  Status   :  âœ” done  (1ms)
+[2026-04-05T08:45:33.523Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:46:25.546Z] [STDOUT] [WOLF-WARN] â±ï¸  08:46:13  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 20377ms
+[2026-04-05T08:46:27.146Z] [STDOUT] [WOLF-WARN] â±ï¸  08:46:27  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 8398ms
+[2026-04-05T08:46:35.746Z] [STDOUT] [WOLF-WARN] â±ï¸  08:46:35  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 3488ms
+[2026-04-05T08:46:35.820Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ—‘ï¸ STATUS AD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:46:35.849Z] [STDOUT] â–£  Action   : ðŸ’¾ Stored 0.09MB
+[2026-04-05T08:46:35.878Z] [STDOUT] â–£  Type     : image
+[2026-04-05T08:46:35.908Z] [STDOUT] â–£  ID       : AC4BADEA84E4...
+[2026-04-05T08:46:35.937Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:46:40.073Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ“² STATUS REPLY ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:46:40.105Z] [STDOUT] â–£  Action   : ðŸ” Reply detected from owner
+[2026-04-05T08:46:40.136Z] [STDOUT] â–£  From     : 0
+[2026-04-05T08:46:40.166Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:46:57.263Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ—‘ï¸ STATUS AD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:46:57.292Z] [STDOUT] â–£  Action   : ðŸ’¾ Stored 0.08MB
+[2026-04-05T08:46:57.326Z] [STDOUT] â–£  Type     : image
+[2026-04-05T08:46:57.356Z] [STDOUT] â–£  ID       : A5BADEFFF94D...
+[2026-04-05T08:46:57.386Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:47:46.348Z] [STDOUT] [WOLF-WARN] â±ï¸  08:47:39  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 28601ms
+[2026-04-05T08:47:46.367Z] [STDOUT] [WOLF-WARN] â±ï¸  08:47:46  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 1590ms
+[2026-04-05T08:48:11.136Z] [STDOUT] â•â•â•â•â•â•â•â•ã€” SYSTEM STATUS â–£ LIVE ã€•â•â•â•â•â•â•â•â•
+[2026-04-05T08:48:11.166Z] [STDOUT] [WOLF-SYS] â±ï¸  08:48:11
+[2026-04-05T08:48:11.196Z] [STDOUT] â–¸ âš ï¸ Memory peak: 366MB
+[2026-04-05T08:49:05.894Z] [STDOUT] [WOLF-SYS] â±ï¸  08:49:05  â–¸ ðŸ“¤ Antiedit: Edit alert sent to owner DM: +120363362839073981 â†’ Group Chat
+[2026-04-05T08:49:05.975Z] [STDOUT] [WOLF-SYS] â±ï¸  08:49:05  â–¸ ðŸ“¤ Antiedit: Edit alert sent to owner DM: +120363362839073981 â†’ Group Chat
+[2026-04-05T08:49:06.367Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ—‘ï¸ STATUS AD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:49:06.398Z] [STDOUT] â–£  Action   : ðŸ’¾ Stored 1.54MB
+[2026-04-05T08:49:06.429Z] [STDOUT] â–£  Type     : video
+[2026-04-05T08:49:06.429Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ—‘ï¸ STATUS AD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:49:06.459Z] [STDOUT] â–£  Action   : ðŸ’¾ Stored 0.07MB
+[2026-04-05T08:49:06.460Z] [STDOUT] â–£  ID       : A5DEFFAC5780...
+[2026-04-05T08:49:06.489Z] [STDOUT] â–£  Type     : image
+[2026-04-05T08:49:06.491Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:49:06.519Z] [STDOUT] â–£  ID       : AC6E45DC4957...
+[2026-04-05T08:49:06.550Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:49:06.642Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ—‘ï¸ STATUS AD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:49:06.672Z] [STDOUT] â–£  Action   : ðŸ’¾ Stored 0.04MB
+[2026-04-05T08:49:06.701Z] [STDOUT] â–£  Type     : image
+[2026-04-05T08:49:06.731Z] [STDOUT] â–£  ID       : A52881475914...
+[2026-04-05T08:49:06.760Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:49:07.155Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ—‘ï¸ STATUS AD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:49:07.188Z] [STDOUT] â–£  Action   : ðŸ’¾ Stored 0.12MB
+[2026-04-05T08:49:07.218Z] [STDOUT] â–£  Type     : video
+[2026-04-05T08:49:07.248Z] [STDOUT] â–£  ID       : A578A3ED9F23...
+[2026-04-05T08:49:07.278Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:49:21.642Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ—‘ï¸ STATUS AD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:49:21.672Z] [STDOUT] â–£  Action   : ðŸ’¾ Stored 0.04MB
+[2026-04-05T08:49:21.701Z] [STDOUT] â–£  Type     : image
+[2026-04-05T08:49:21.730Z] [STDOUT] â–£  ID       : A52881475914...
+[2026-04-05T08:49:21.760Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:49:21.856Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ—‘ï¸ STATUS AD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:49:21.886Z] [STDOUT] â–£  Action   : ðŸ’¾ Stored 0.12MB
+[2026-04-05T08:49:21.916Z] [STDOUT] â–£  Type     : video
+[2026-04-05T08:49:21.946Z] [STDOUT] [WOLF-SYS] â±ï¸  08:49:21  â–¸ ðŸ“¤ Antiedit: Edit alert sent to owner DM: +254747746851 â†’ Group Chat
+[2026-04-05T08:49:21.947Z] [STDOUT] â–£  ID       : A578A3ED9F23...
+[2026-04-05T08:49:21.949Z] [STDOUT] [WOLF-SYS] â±ï¸  08:49:21  â–¸ ðŸ“¤ Antiedit: Edit alert sent to owner DM: +254747746851 â†’ Group Chat
+[2026-04-05T08:49:21.957Z] [STDOUT] [WOLF-SYS] â±ï¸  08:49:21  â–¸ ðŸ“¤ Antiedit: Edit alert sent to owner DM: +254747746851 â†’ Group Chat
+[2026-04-05T08:49:21.977Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:49:22.574Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ‘¥ GROUP MSG ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:49:22.606Z] [STDOUT] â–£  From     : +120363362839073981
+[2026-04-05T08:49:22.636Z] [STDOUT] â–£  Text     : "[Image: Adi mimi acha nideleâ€¦"
+[2026-04-05T08:49:22.666Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:49:22.863Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ—‘ï¸ STATUS AD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:49:22.892Z] [STDOUT] â–£  Action   : ðŸ’¾ Stored 0.04MB
+[2026-04-05T08:49:22.922Z] [STDOUT] â–£  Type     : image
+[2026-04-05T08:49:22.952Z] [STDOUT] â–£  ID       : A52881475914...
+[2026-04-05T08:49:22.981Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:49:23.091Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ—‘ï¸ STATUS AD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:49:23.124Z] [STDOUT] â–£  Action   : ðŸ’¾ Stored 0.07MB
+[2026-04-05T08:49:23.154Z] [STDOUT] â–£  Type     : image
+[2026-04-05T08:49:23.176Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ—‘ï¸ STATUS AD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:49:23.184Z] [STDOUT] â–£  ID       : AC6E45DC4957...
+[2026-04-05T08:49:23.207Z] [STDOUT] â–£  Action   : ðŸ’¾ Stored 0.12MB
+[2026-04-05T08:49:23.213Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:49:23.238Z] [STDOUT] â–£  Type     : video
+[2026-04-05T08:49:23.268Z] [STDOUT] â–£  ID       : A578A3ED9F23...
+[2026-04-05T08:49:23.299Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:49:25.491Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ—‘ï¸ STATUS AD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:49:25.522Z] [STDOUT] â–£  Action   : ðŸ’¾ Stored 0.07MB
+[2026-04-05T08:49:25.552Z] [STDOUT] â–£  Type     : image
+[2026-04-05T08:49:25.583Z] [STDOUT] â–£  ID       : AC6E45DC4957...
+[2026-04-05T08:49:25.613Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:49:37.662Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ‘¥ GROUP MSG ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:49:37.692Z] [STDOUT] â–£  From     : +165721967476843
+[2026-04-05T08:49:37.723Z] [STDOUT] â–£  Text     : "[Image: ðŸ’šâœ¨ ð—™ð—¢ð—¨ð—¥ð—§ð—˜ð—˜ð—¡â€¦"
+[2026-04-05T08:49:37.767Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:49:39.355Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ—‘ï¸ STATUS AD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:49:39.386Z] [STDOUT] â–£  Action   : ðŸ’¾ Stored 0.13MB
+[2026-04-05T08:49:39.418Z] [STDOUT] â–£  Type     : video
+[2026-04-05T08:49:39.449Z] [STDOUT] â–£  ID       : AC398EF85353...
+[2026-04-05T08:49:39.479Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:49:39.605Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ—‘ï¸ STATUS AD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:49:39.649Z] [STDOUT] â–£  Action   : ðŸ’¾ Stored 1.54MB
+[2026-04-05T08:49:39.680Z] [STDOUT] â–£  Type     : video
+[2026-04-05T08:49:39.711Z] [STDOUT] â–£  ID       : A5DEFFAC5780...
+[2026-04-05T08:49:39.742Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:49:39.945Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ—‘ï¸ STATUS AD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:49:39.976Z] [STDOUT] â–£  Action   : ðŸ’¾ Stored 1.54MB
+[2026-04-05T08:49:40.008Z] [STDOUT] â–£  Type     : video
+[2026-04-05T08:49:40.038Z] [STDOUT] â–£  ID       : A5DEFFAC5780...
+[2026-04-05T08:49:40.069Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:49:46.942Z] [STDOUT] â–¸ ðŸŽ¨ Stickers saved: 2
+[2026-04-05T08:49:46.942Z] [STDOUT] â•â•â•â•â•â•â•â•ã€” SYSTEM STATUS â–£ LIVE ã€•â•â•â•â•â•â•â•â•
+[2026-04-05T08:49:46.973Z] [STDOUT] â–¸ ðŸ“¸ Antiedit: Saved image media v1: ACCD0B4B6B101BA0230F75...
+[2026-04-05T08:49:46.974Z] [STDOUT] [WOLF-SYS] â±ï¸  08:49:46
+[2026-04-05T08:49:47.002Z] [STDOUT] â–¸ ðŸ“¸ Antiedit: Saved image media v1: AC7B6165487ECCF5609005...
+[2026-04-05T08:49:54.242Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ‘¥ GROUP MSG ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:49:54.271Z] [STDOUT] â–£  From     : +184435190304889
+[2026-04-05T08:49:54.301Z] [STDOUT] â–£  Text     : "My master , I trust replit oâ€¦"
+[2026-04-05T08:49:54.331Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:49:55.667Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ—‘ï¸ STATUS AD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:49:55.697Z] [STDOUT] â–£  Action   : ðŸ’¾ Stored 0.03MB
+[2026-04-05T08:49:55.727Z] [STDOUT] â–£  Type     : image
+[2026-04-05T08:49:55.757Z] [STDOUT] â–£  ID       : AC7164E357F4...
+[2026-04-05T08:49:55.788Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:49:56.213Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ—‘ï¸ STATUS AD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:49:56.242Z] [STDOUT] â–£  Action   : ðŸ’¾ Stored 0.02MB
+[2026-04-05T08:49:56.272Z] [STDOUT] â–£  Type     : image
+[2026-04-05T08:49:56.302Z] [STDOUT] â–£  ID       : A52FD8E3711D...
+[2026-04-05T08:49:56.331Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:49:57.168Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ—‘ï¸ STATUS AD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:49:57.197Z] [STDOUT] â–£  Action   : ðŸ’¾ Stored 0.07MB
+[2026-04-05T08:49:57.227Z] [STDOUT] â–£  Type     : image
+[2026-04-05T08:49:57.257Z] [STDOUT] â–£  ID       : A558DD119ED0...
+[2026-04-05T08:49:57.287Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:49:57.370Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ—‘ï¸ STATUS AD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:49:57.401Z] [STDOUT] â–£  Action   : ðŸ’¾ Stored 0.05MB
+[2026-04-05T08:49:57.433Z] [STDOUT] â–£  Type     : image
+[2026-04-05T08:49:57.463Z] [STDOUT] â–£  ID       : ACA5B82758FA...
+[2026-04-05T08:49:57.494Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:49:58.653Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ‘¥ GROUP MSG ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:49:58.683Z] [STDOUT] â–£  From     : +254747746851
+[2026-04-05T08:49:58.716Z] [STDOUT] â–£  Text     : "ðŸ˜‚ðŸ˜‚ðŸ˜‚"
+[2026-04-05T08:49:58.747Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:50:12.647Z] [STDOUT] [WOLF-WARN] â±ï¸  08:50:12  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 1150ms
+[2026-04-05T08:50:34.055Z] [STDOUT] [WOLF-WARN] â±ï¸  08:50:33  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 16454ms
+[2026-04-05T08:50:36.205Z] [STDOUT] [WOLF-SYS] â±ï¸  08:50:36  â–¸ [STATUS-AD] Protocol revoke detected via upsert for 3ABAC3768207CDFEF92C
+[2026-04-05T08:50:36.209Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ‘¥ GROUP MSG ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:50:36.216Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ’¬ DM MSG ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:50:36.240Z] [STDOUT] â–£  From     : +247566713258194
+[2026-04-05T08:50:36.244Z] [STDOUT] â–£  From     : +120363149486987592
+[2026-04-05T08:50:36.258Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ‘¥ GROUP MSG ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:50:36.261Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ‘‘ OWNER CMD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:50:36.270Z] [STDOUT] â–£  Text     : "Ohh yea Leo nakuundia"
+[2026-04-05T08:50:36.273Z] [STDOUT] â–£  Text     : "[Image: ðŸ˜²Fuel Scandal: New â€¦"
+[2026-04-05T08:50:36.275Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ‘¥ GROUP MSG ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:50:36.287Z] [STDOUT] â–£  From     : +254747746851
+[2026-04-05T08:50:36.290Z] [STDOUT] â–£  Sender   : +254787527753
+[2026-04-05T08:50:36.301Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:50:36.302Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:50:36.304Z] [STDOUT] â–£  From     : +247566713258194
+[2026-04-05T08:50:36.315Z] [STDOUT] â–£  Text     : "ðŸ˜‚ðŸ˜‚"
+[2026-04-05T08:50:36.319Z] [STDOUT] â–£  Command  : .ping
+[2026-04-05T08:50:36.334Z] [STDOUT] â–£  Text     : "Bora nkona github CLI basic â€¦"
+[2026-04-05T08:50:36.344Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:50:36.347Z] [STDOUT] â–£  Where    : DM
+[2026-04-05T08:50:36.368Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:50:36.376Z] [STDOUT] â–£  Status   :  âœ” done  (1ms)
+[2026-04-05T08:50:36.405Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:50:36.416Z] [STDOUT] [WOLF-SYS] â±ï¸  08:50:36  â–¸ [CHANNEL-REACT] âœ“ Reacted with ðŸ©· | Total: 1 | Next in ~5.87 min
+[2026-04-05T08:50:36.465Z] [STDOUT] [WOLF-SYS] â±ï¸  08:50:36  â–¸ [STATUS-AD] Protocol revoke detected via upsert for 3A510D1A40F7E5D234C2
+[2026-04-05T08:50:36.469Z] [STDOUT] [WOLF-SYS] â±ï¸  08:50:36  â–¸ [STATUS-AD] Protocol revoke detected via upsert for 3A47B6ECAFA78F4674C7
+[2026-04-05T08:50:36.470Z] [STDOUT] [WOLF-SYS] â±ï¸  08:50:36  â–¸ [STATUS-AD] Protocol revoke detected via upsert for AC436241E8A8732065FE9280EC7A12B7
+[2026-04-05T08:50:36.488Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ‘¥ GROUP MSG ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:50:36.517Z] [STDOUT] â–£  From     : +254747746851
+[2026-04-05T08:50:36.546Z] [STDOUT] â–£  Text     : "I can never trust AI no mattâ€¦"
+[2026-04-05T08:50:36.576Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:50:37.718Z] [STDERR] [WOLF-ERR] â±ï¸  08:50:37  â–¸ âŒ Antiedit: Media download error: Cannot derive from empty media key
+[2026-04-05T08:50:38.101Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ—‘ï¸ STATUS AD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:50:38.131Z] [STDOUT] â–£  Action   : ðŸ’¾ Stored 0.07MB
+[2026-04-05T08:50:38.160Z] [STDOUT] â–£  Type     : image
+[2026-04-05T08:50:38.189Z] [STDOUT] â–£  ID       : A558DD119ED0...
+[2026-04-05T08:50:38.218Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:50:39.486Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ—‘ï¸ STATUS AD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:50:39.516Z] [STDOUT] â–£  Action   : ðŸ’¾ Stored 5.10MB
+[2026-04-05T08:50:39.547Z] [STDOUT] â–£  Type     : video
+[2026-04-05T08:50:39.577Z] [STDOUT] â–£  ID       : A50E64907AFC...
+[2026-04-05T08:50:39.606Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:50:54.129Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ“² STATUS REPLY ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:50:54.159Z] [STDOUT] â–£  Action   : ðŸ” Reply detected from owner
+[2026-04-05T08:50:54.192Z] [STDOUT] â–£  From     : 0
+[2026-04-05T08:50:54.221Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:50:54.977Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ—‘ï¸ STATUS AD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:50:55.006Z] [STDOUT] â–£  Action   : ðŸ’¾ Stored 0.07MB
+[2026-04-05T08:50:55.036Z] [STDOUT] â–£  Type     : image
+[2026-04-05T08:50:55.066Z] [STDOUT] â–£  ID       : A558DD119ED0...
+[2026-04-05T08:50:55.096Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:50:55.228Z] [STDOUT] [WOLF-SYS] â±ï¸  08:50:55  â–¸ ðŸ“¤ Antiedit: Edit alert sent to owner DM: +254796299159 â†’ Group Chat
+[2026-04-05T08:51:31.946Z] [STDOUT] [WOLF-WARN] â±ï¸  08:51:17  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 3302ms
+[2026-04-05T08:51:31.947Z] [STDOUT] [WOLF-SYS] â±ï¸  08:51:18  â–¸ [STATUS-AD] Protocol revoke detected via upsert for AC2F2090BA282B48781FB5544A9ADDF1
+[2026-04-05T08:51:34.145Z] [STDOUT] [WOLF-SYS] â±ï¸  08:51:19  â–¸ [STATUS-AD] Protocol revoke detected via upsert for ACE247242F05237945FA5F06F867320D
+[2026-04-05T08:51:43.581Z] [STDOUT] [WOLF-WARN] â±ï¸  08:51:24  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 2302ms
+[2026-04-05T08:51:43.633Z] [STDOUT] â•â•â•â•â•â•â•â•ã€” SYSTEM STATUS â–£ LIVE ã€•â•â•â•â•â•â•â•â•
+[2026-04-05T08:51:43.659Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ—‘ï¸ STATUS AD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:51:43.662Z] [STDOUT] [WOLF-SYS] â±ï¸  08:51:30
+[2026-04-05T08:51:43.690Z] [STDOUT] â–¸ âš ï¸ Memory peak: 369MB
+[2026-04-05T08:51:43.690Z] [STDOUT] â–£  Action   : ðŸ’¾ Stored 0.05MB
+[2026-04-05T08:51:43.718Z] [STDOUT] [WOLF-WARN] â±ï¸  08:51:30  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 1099ms
+[2026-04-05T08:51:43.720Z] [STDOUT] â–£  Type     : image
+[2026-04-05T08:51:43.745Z] [STDOUT] [WOLF-WARN] â±ï¸  08:51:43  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 8015ms
+[2026-04-05T08:51:43.750Z] [STDOUT] â–£  ID       : A5A70BE4E278...
+[2026-04-05T08:51:43.780Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:51:44.239Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ’¬ USER CMD ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:51:44.240Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ’¬ DM MSG ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:51:44.268Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ‘¥ GROUP MSG ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:51:44.269Z] [STDOUT] â–£  Sender   : +LID:43113670...
+[2026-04-05T08:51:44.269Z] [STDOUT] â–£  From     : +43113670250666
+[2026-04-05T08:51:44.297Z] [STDOUT] â–£  From     : +184435190304889
+[2026-04-05T08:51:44.298Z] [STDOUT] â–£  Command  : .ping
+[2026-04-05T08:51:44.299Z] [STDOUT] â–£  Text     : ".ping"
+[2026-04-05T08:51:44.326Z] [STDOUT] â–£  Text     : "I also have a full git explaâ€¦"
+[2026-04-05T08:51:44.327Z] [STDOUT] â–£  Where    : DM
+[2026-04-05T08:51:44.329Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:51:44.355Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:51:44.356Z] [STDOUT] â–£  Status   :  âœ” done  (0ms)
+[2026-04-05T08:51:44.385Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:52:00.540Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ“² STATUS REPLY ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:52:00.570Z] [STDOUT] â–£  Action   : ðŸ” Reply detected from owner
+[2026-04-05T08:52:00.600Z] [STDOUT] â–£  From     : 0
+[2026-04-05T08:52:00.630Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:52:55.234Z] [STDOUT] [WOLF-WARN] â±ï¸  08:52:55  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 16476ms
+[2026-04-05T08:52:57.347Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ‘¥ GROUP MSG ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:52:57.946Z] [STDOUT] â–£  From     : +254796299159
+[2026-04-05T08:52:58.446Z] [STDOUT] â–£  Text     : "Nomata the sakamstanses nomaâ€¦"
+[2026-04-05T08:52:58.646Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:53:02.748Z] [STDOUT] [WOLF-WARN] â±ï¸  08:53:02  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 2704ms
+[2026-04-05T08:54:07.346Z] [STDOUT] [WOLF-INFO] â±ï¸  08:53:51  â–¸ ðŸ”„ Reconnecting in 3s (attempt 1)...
+[2026-04-05T08:54:09.746Z] [STDOUT] [WOLF-WARN] â±ï¸  08:53:49  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 41799ms
+[2026-04-05T08:54:11.845Z] [STDOUT] [WOLF-INFO] â±ï¸  08:53:49  â–¸ ðŸ”— Close reason: 408 - Connection was lost
+[2026-04-05T08:54:12.146Z] [STDOUT] [WOLF-WARN] â±ï¸  08:53:56  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 2101ms
+[2026-04-05T08:54:14.246Z] [STDOUT] [WOLF-WARN] â±ï¸  08:54:04  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 2800ms
+[2026-04-05T08:54:15.047Z] [STDOUT] [WOLF-WARN] â±ï¸  08:54:15  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 5599ms
+[2026-04-05T08:54:15.047Z] [STDOUT] [WOLF-WARN] â±ï¸  08:54:15  â–¸ âš ï¸ Connection taking longer than expected...
+[2026-04-05T08:55:19.646Z] [STDOUT] [WOLF-SYS] â±ï¸  08:55:04  â–¸ ðŸ”„ Antiedit: Socket updated after reconnect
+[2026-04-05T08:55:19.746Z] [STDOUT] [WOLF-WARN] â±ï¸  08:55:06  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 4599ms
+[2026-04-05T08:55:20.147Z] [STDOUT] [WOLF-INFO] â±ï¸  08:55:06  â–¸ ðŸ”‘ sock.user â†’ id: 254787527753:98@s.whatsapp.net | lid: 233620836974620:98@lid
+[2026-04-05T08:55:21.146Z] [STDOUT] [WOLF-SYS] â±ï¸  08:55:06  â–¸ [BOT-JID] id=254787527753:98@s.whatsapp.net lid=233620836974620:98@lid
+[2026-04-05T08:55:21.546Z] [STDOUT] [WOLF-WARN] â±ï¸  08:55:12  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 1300ms
+[2026-04-05T08:55:21.546Z] [STDOUT] [WOLF-INFO] â±ï¸  08:55:06  â–¸ ðŸ“± Cached owner LIDâ†’Phone: 233620836974620 â†’ 254787527753
+[2026-04-05T08:55:22.347Z] [STDOUT] [WOLF-OK] â±ï¸  08:55:06  â–¸ Loaded owner: 254787527753@s.whatsapp.net
+[2026-04-05T08:55:24.546Z] [STDOUT] â”Œâ”€ã€” ðŸº WOLFBOT v1.1.5 Â· RECONNECTED ã€•â”€â”€â”€â”€â”
+[2026-04-05T08:55:24.648Z] [STDOUT] â–£  Platform      : ðŸŒ€ Replit
+[2026-04-05T08:55:24.847Z] [STDOUT] â–£  Time          : 08:55:06
+[2026-04-05T08:55:25.846Z] [STDOUT] â–£  Prefix        : "."
+[2026-04-05T08:55:26.446Z] [STDOUT] â–£  Mode          : public
+[2026-04-05T08:55:26.646Z] [STDOUT] â–£  Owner         : +254787527753
+[2026-04-05T08:55:26.946Z] [STDOUT] â–£  Commands      : 2236
+[2026-04-05T08:55:27.946Z] [STDOUT] â–£  SQLite        : ready (native)
+[2026-04-05T08:55:28.346Z] [STDOUT] â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-05T08:55:28.546Z] [STDOUT] â–£  Database      : not set
+[2026-04-05T08:55:29.246Z] [STDOUT] â–£  PostgreSQL    : not connected
+[2026-04-05T08:55:29.446Z] [STDOUT] â–£  Pterodactyl   : not set
+[2026-04-05T08:55:30.147Z] [STDOUT] â–£  Paystack      : set
+[2026-04-05T08:55:30.846Z] [STDOUT] â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-05T08:55:30.946Z] [STDOUT] â–£  Anti-Delete   : on
+[2026-04-05T08:55:32.947Z] [STDOUT] â–£  Status Detect : on
+[2026-04-05T08:55:33.746Z] [STDOUT] â–£  Member Detect : on
+[2026-04-05T08:55:35.546Z] [STDOUT] â–£  Auto-Reconnect: on
+[2026-04-05T08:55:38.147Z] [STDOUT] â–£  Wolf AI       : on
+[2026-04-05T08:55:38.348Z] [STDOUT] â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-05T08:55:40.447Z] [STDOUT] â–£  Auth State    : Registered  Â·  1051k
+[2026-04-05T08:55:41.647Z] [STDOUT] â–£  JID Manager   : âœ” ready
+[2026-04-05T08:55:42.347Z] [STDOUT] â–£  Status Reply  : âœ” ready
+[2026-04-05T08:55:43.346Z] [STDOUT] â–£  QuickConnect  : drain 45s
+[2026-04-05T08:55:43.746Z] [STDOUT] â–£  Disk Manager  : âœ” ACTIVE
+[2026-04-05T08:55:46.046Z] [STDOUT] â–£  Scheduler     : 11:44 EAT
+[2026-04-05T08:55:46.446Z] [STDOUT] â–£  Menu Media    : text-only
+[2026-04-05T08:55:47.047Z] [STDOUT] â–£  Status Antidel: pending
+[2026-04-05T08:55:48.546Z] [STDOUT] â–£  Member Groups : 0 groups tracked
+[2026-04-05T08:55:49.246Z] [STDOUT] â–£  Coinflip      : 0 users  Â·  0 bets
+[2026-04-05T08:55:51.146Z] [STDOUT] â–£  RPS           : 0 players
+[2026-04-05T08:55:52.346Z] [STDOUT] â–£  Snake         : 0 players
+[2026-04-05T08:55:54.046Z] [STDOUT] â–£  Tetris        : 0 players
+[2026-04-05T08:55:54.746Z] [STDOUT] â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-05T08:55:56.446Z] [STDOUT] â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  100%  â–¸  ALL SYSTEMS ONLINE âœ“
+[2026-04-05T08:56:02.746Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:56:05.246Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ” RECONNECTED ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T08:56:09.546Z] [STDOUT] â–£  Status   : âœ… Silent â€” no spam message sent
+[2026-04-05T08:56:11.946Z] [STDOUT] â–£  Owner    : +254787527753
+[2026-04-05T08:56:14.146Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T08:56:20.346Z] [STDOUT] [WOLF-INFO] â±ï¸  08:56:15  â–¸ âš ï¸ Could not fetch remote channels: The operation was aborted due to timeout
+[2026-04-05T08:56:21.246Z] [STDOUT] [WOLF-WARN] â±ï¸  08:56:16  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 52599ms
+[2026-04-05T08:56:53.745Z] [STDOUT] [WOLF-WARN] â±ï¸  08:56:40  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 18601ms
+[2026-04-05T08:57:00.446Z] [STDOUT] [WOLF-INFO] â±ï¸  08:56:48  â–¸ âš ï¸ Could not fetch remote groups: The operation was aborted due to timeout
+[2026-04-05T08:57:04.447Z] [STDOUT] â•â•â•â•â•â•â•â•ã€” SYSTEM STATUS â–£ LIVE ã€•â•â•â•â•â•â•â•â•
+[2026-04-05T08:57:06.047Z] [STDOUT] [WOLF-SYS] â±ï¸  08:57:01
+[2026-04-05T08:57:07.547Z] [STDOUT] â–¸ âš ï¸ Memory peak: 370MB
+[2026-04-05T08:57:08.646Z] [STDOUT] [WOLF-WARN] â±ï¸  08:57:01  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 16601ms
+[2026-04-05T08:57:31.547Z] [STDOUT] [WOLF-WARN] â±ï¸  08:57:29  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 22700ms
+[2026-04-05T08:57:43.346Z] [STDOUT] [WOLF-WARN] â±ï¸  08:57:43  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 8700ms
+[2026-04-05T08:58:22.446Z] [STDOUT] [WOLF-WARN] â±ï¸  08:58:04  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 16298ms
+[2026-04-05T08:58:59.145Z] [STDOUT] [WOLF-WARN] â±ï¸  08:58:49  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 40102ms
+[2026-04-05T08:59:33.847Z] [STDOUT] [WOLF-WARN] â±ï¸  08:59:18  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 23800ms
+[2026-04-05T08:59:55.946Z] [STDOUT] [WOLF-WARN] â±ï¸  08:59:30  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 7099ms
+[2026-04-05T08:59:59.546Z] [STDOUT] [WOLF-WARN] â±ï¸  08:59:58  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 23100ms
+[2026-04-05T09:00:09.347Z] [STDOUT] [WOLF-INFO] â±ï¸  09:00:09  â–¸ ðŸ”— Close reason: 408 - Connection was lost
+[2026-04-05T09:00:19.180Z] [STDOUT] [WOLF-INFO] â±ï¸  09:00:09  â–¸ ðŸ”„ Reconnecting in 5s (attempt 2)...
+[2026-04-05T09:00:19.346Z] [STDOUT] â•â•â•â•â•â•â•â•ã€” SYSTEM STATUS â–£ LIVE ã€•â•â•â•â•â•â•â•â•
+[2026-04-05T09:00:20.246Z] [STDOUT] [WOLF-SYS] â±ï¸  09:00:09
+[2026-04-05T09:00:20.546Z] [STDOUT] â–¸ âš ï¸ Memory peak: 370MB
+[2026-04-05T09:01:40.849Z] [STDOUT] [WOLF-WARN] â±ï¸  09:01:25  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 82401ms
+[2026-04-05T09:01:42.145Z] [STDOUT] [WOLF-WARN] â±ï¸  09:01:32  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 1600ms
+[2026-04-05T09:02:03.046Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-05T09:02:03.346Z] [INFO  ] [BERAHOST] â†» Auto-restart 1/5 in 5s...
+[2026-04-05T09:02:08.549Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-05T09:02:08.746Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-05T09:02:48.445Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-05T09:02:49.846Z] [INFO  ] [BERAHOST] Bot started with PID 930
+[2026-04-05T09:06:40.445Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-05T09:06:40.645Z] [STDERR] npm warn EBADENGINE   package: 'silent-wolf-bot@2.1.0',
+[2026-04-05T09:06:41.646Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x' },
+[2026-04-05T09:06:41.746Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-05T09:06:41.845Z] [STDERR] npm warn EBADENGINE }
+[2026-04-05T09:15:13.484Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-05T09:15:13.884Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-05T09:16:43.985Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-05T09:16:45.884Z] [INFO  ] [BERAHOST] Bot started with PID 92
+[2026-04-05T09:39:37.436Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-05T09:39:38.137Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-05T09:41:19.495Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-05T09:41:21.935Z] [INFO  ] [BERAHOST] Bot started with PID 91
+[2026-04-05T10:51:02.772Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-05T10:51:02.802Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-05T10:51:33.733Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-05T10:51:36.786Z] [INFO  ] [BERAHOST] Bot started with PID 91
+[2026-04-05T10:56:26.881Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-05T10:56:26.918Z] [STDERR] npm warn EBADENGINE   package: 'silent-wolf-bot@2.1.0',
+[2026-04-05T10:56:26.947Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x' },
+[2026-04-05T10:56:26.988Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-05T10:56:27.017Z] [STDERR] npm warn EBADENGINE }
+[2026-04-05T10:56:30.089Z] [STDERR] npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+[2026-04-05T10:56:32.095Z] [STDERR] npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
+[2026-04-05T10:56:33.526Z] [STDERR] npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+[2026-04-05T10:56:36.205Z] [STDERR] npm warn deprecated glob@11.1.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[2026-04-05T10:56:37.688Z] [STDERR] npm warn deprecated ruhend-scraper@9.0.8:
+[2026-04-05T10:56:43.693Z] [STDOUT] > silent-wolf-bot@2.1.0 postinstall
+[2026-04-05T10:56:43.724Z] [STDOUT] > node scripts/patch-modules.cjs 2>/dev/null || true
+[2026-04-05T10:56:43.813Z] [STDOUT] 96 packages are looking for funding
+[2026-04-05T10:56:43.814Z] [STDOUT] added 409 packages, and audited 410 packages in 4m
+[2026-04-05T10:56:43.889Z] [STDOUT] run `npm fund` for details
+[2026-04-05T10:56:44.120Z] [STDOUT] 9 vulnerabilities (3 moderate, 6 high)
+[2026-04-05T10:56:44.187Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-05T10:56:44.220Z] [STDOUT] npm audit fix
+[2026-04-05T10:56:44.286Z] [STDOUT] To address all issues (including breaking changes), run:
+[2026-04-05T10:56:44.314Z] [STDOUT] npm audit fix --force
+[2026-04-05T10:56:44.330Z] [STDOUT] > silent-wolf-bot@2.1.0 start
+[2026-04-05T10:56:44.386Z] [STDOUT] Run `npm audit` for details.
+[2026-04-05T10:56:44.387Z] [STDOUT] > node --no-warnings --expose-gc --max-old-space-size=1024 --max-semi-space-size=64 --experimental-global-webcrypto index.js
+[2026-04-05T10:56:44.695Z] [STDOUT] [WOLF TECH BWM XMD FAMILY] Starting...
+[2026-04-05T10:56:45.189Z] [STDOUT] [WOLF TECH BWM XMD FAMILY] Fetching bot files...
+[2026-04-05T10:56:47.612Z] [STDOUT] [WOLF TECH BWM XMD FAMILY] Bot loaded successfully.
+[2026-04-05T10:56:49.410Z] [STDOUT] [PG] No DATABASE_URL set â€” running on SQLite only (set DATABASE_URL in .env to enable PostgreSQL)
+[2026-04-05T10:56:49.415Z] [STDOUT] â—‡ injecting env (0) from .env // tip: âŒ˜ multiple files { path: ['.env.local', '.env'] }
+[2026-04-05T10:56:49.500Z] [STDOUT] â”Œâ”€â”€â”€â”€â”€â”€â”€ã€” ðŸº WOLFBOT CONTROL CORE ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T10:56:49.501Z] [STDOUT] ðŸ—ï¸  Platform : Replit
+[2026-04-05T10:56:49.586Z] [STDOUT] ðŸ”Œ  Port     : 3102
+[2026-04-05T10:56:49.616Z] [STDOUT] ðŸ“‚  Logs     : /logs
+[2026-04-05T10:56:49.687Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T10:56:53.122Z] [STDERR] [WOLF-ERR] â±ï¸  10:56:53  â–¸ Unhandled rejection: libuuid.so.1: cannot open shared object file: No such file or directory
+[2026-04-05T10:56:53.123Z] [STDERR] [WOLF-ERR] â±ï¸  10:56:53  â–¸ Unhandled rejection: libuuid.so.1: cannot open shared object file: No such file or directory
+[2026-04-05T10:56:53.191Z] [STDERR] [WOLF-ERR] â±ï¸  10:56:53  â–¸ Unhandled rejection: libuuid.so.1: cannot open shared object file: No such file or directory
+[2026-04-05T10:56:53.219Z] [STDERR] [WOLF-ERR] â±ï¸  10:56:53  â–¸ Unhandled rejection: libuuid.so.1: cannot open shared object file: No such file or directory
+[2026-04-05T10:56:56.480Z] [STDOUT] â”Œâ”€ã€” ðŸº WOLFBOT v1.1.5 Â· RECONNECTED ã€•â”€â”€â”€â”€â”
+[2026-04-05T10:56:56.481Z] [STDOUT] â”Œâ”€â”€ã€” ðŸ” RECONNECTED ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T10:56:56.509Z] [STDOUT] â–£  Status   : âœ… Silent â€” no spam message sent
+[2026-04-05T10:56:56.510Z] [STDOUT] â–£  Platform      : ðŸŒ€ Replit
+[2026-04-05T10:56:56.538Z] [STDOUT] â–£  Owner    : +254787527753
+[2026-04-05T10:56:56.539Z] [STDOUT] â–£  Time          : 10:56:56
+[2026-04-05T10:56:56.567Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T10:56:56.568Z] [STDOUT] â–£  Prefix        : "."
+[2026-04-05T10:56:56.596Z] [STDOUT] â–£  Mode          : public
+[2026-04-05T10:56:56.625Z] [STDOUT] â–£  Owner         : +254787527753
+[2026-04-05T10:56:56.654Z] [STDOUT] â–£  Commands      : 2236
+[2026-04-05T10:56:56.683Z] [STDOUT] â–£  SQLite        : ready (native)
+[2026-04-05T10:56:56.712Z] [STDOUT] â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-05T10:56:56.740Z] [STDOUT] â–£  Database      : not set
+[2026-04-05T10:56:56.769Z] [STDOUT] â–£  PostgreSQL    : not connected
+[2026-04-05T10:56:56.803Z] [STDOUT] â–£  Pterodactyl   : not set
+[2026-04-05T10:56:56.832Z] [STDOUT] â–£  Paystack      : set
+[2026-04-05T10:56:56.863Z] [STDOUT] â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-05T10:56:56.892Z] [STDOUT] â–£  Anti-Delete   : on
+[2026-04-05T10:56:56.922Z] [STDOUT] â–£  Status Detect : on
+[2026-04-05T10:56:56.950Z] [STDOUT] â–£  Member Detect : on
+[2026-04-05T10:56:56.979Z] [STDOUT] â–£  Auto-Reconnect: on
+[2026-04-05T10:56:57.008Z] [STDOUT] â–£  Wolf AI       : on
+[2026-04-05T10:56:57.038Z] [STDOUT] â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-05T10:56:57.067Z] [STDOUT] â–£  Auth State    : Registered  Â·  0k
+[2026-04-05T10:56:57.096Z] [STDOUT] â–£  JID Manager   : âœ” ready
+[2026-04-05T10:56:57.125Z] [STDOUT] â–£  Status Reply  : âœ” ready
+[2026-04-05T10:56:57.155Z] [STDOUT] â–£  QuickConnect  : drain 45s
+[2026-04-05T10:56:57.184Z] [STDOUT] â–£  Disk Manager  : âœ” ACTIVE
+[2026-04-05T10:56:57.213Z] [STDOUT] â–£  Scheduler     : 13:56 EAT
+[2026-04-05T10:56:57.241Z] [STDOUT] â–£  Menu Media    : text-only
+[2026-04-05T10:56:57.270Z] [STDOUT] â–£  Status Antidel: pending
+[2026-04-05T10:56:57.299Z] [STDOUT] â–£  Member Groups : 0 groups tracked
+[2026-04-05T10:56:57.328Z] [STDOUT] â–£  Coinflip      : 0 users  Â·  0 bets
+[2026-04-05T10:56:57.358Z] [STDOUT] â–£  RPS           : 0 players
+[2026-04-05T10:56:57.387Z] [STDOUT] â–£  Snake         : 0 players
+[2026-04-05T10:56:57.416Z] [STDOUT] â–£  Tetris        : 0 players
+[2026-04-05T10:56:57.445Z] [STDOUT] â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-05T10:56:57.474Z] [STDOUT] â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  100%  â–¸  ALL SYSTEMS ONLINE âœ“
+[2026-04-05T10:56:57.503Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+[2026-04-05T10:58:00.786Z] [STDOUT] [WOLF-WARN] â±ï¸  10:57:50  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 20000ms
+[2026-04-05T10:58:06.586Z] [STDOUT] â•â•â•â•â•â•â•â•ã€” SYSTEM STATUS â–£ LIVE ã€•â•â•â•â•â•â•â•â•
+[2026-04-05T10:58:06.787Z] [STDOUT] [WOLF-SYS] â±ï¸  10:57:56
+[2026-04-05T10:58:07.087Z] [STDOUT] â–¸ âš ï¸ Memory peak: 373MB
+[2026-04-05T10:58:07.751Z] [STDOUT] [WOLF-WARN] â±ï¸  10:57:56  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 1900ms
+[2026-04-05T10:58:07.767Z] [STDOUT] [WOLF-WARN] â±ï¸  10:58:07  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 6280ms
+[2026-04-05T10:59:51.926Z] [STDOUT] [WOLF-WARN] â±ï¸  10:59:47  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 14700ms
+[2026-04-05T11:00:25.187Z] [STDOUT] [WOLF-WARN] â±ï¸  11:00:13  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 15300ms
+[2026-04-05T11:01:27.186Z] [STDOUT] [WOLF-WARN] â±ï¸  11:01:03  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 44800ms
+[2026-04-05T11:01:28.222Z] [STDOUT] [WOLF-INFO] â±ï¸  11:01:09  â–¸ ðŸ”„ Reconnecting in 3s (attempt 1)...
+[2026-04-05T11:01:29.086Z] [STDOUT] [WOLF-INFO] â±ï¸  11:01:08  â–¸ ðŸ”— Close reason: 408 - Connection was lost
+[2026-04-05T11:01:32.186Z] [STDOUT] [WOLF-WARN] â±ï¸  11:01:31  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 23200ms
+[2026-04-05T11:01:33.086Z] [STDOUT] â•â•â•â•â•â•â•â•ã€” SYSTEM STATUS â–£ LIVE ã€•â•â•â•â•â•â•â•â•
+[2026-04-05T11:01:34.786Z] [STDOUT] [WOLF-SYS] â±ï¸  11:01:32
+[2026-04-05T11:01:34.886Z] [STDOUT] â–¸ âš ï¸ Memory peak: 361MB
+[2026-04-05T11:01:43.986Z] [STDOUT] [WOLF-WARN] â±ï¸  11:01:43  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 1500ms
+[2026-04-05T11:01:47.386Z] [STDERR] [WOLF-ERR] â±ï¸  11:01:47  â–¸ Unhandled rejection: Unsupported state or unable to authenticate data
+[2026-04-05T11:01:50.487Z] [STDOUT] [WOLF-WARN] â±ï¸  11:01:50  â–¸ âš ï¸ Connection taking longer than expected...
+[2026-04-05T11:02:13.118Z] [STDERR] [WOLF-ERR] â±ï¸  11:02:11  â–¸ Unhandled rejection: Unsupported state or unable to authenticate data
+[2026-04-05T11:02:40.586Z] [STDOUT] [WOLF-INFO] â±ï¸  11:02:36  â–¸ ðŸ”„ Reconnecting in 5s (attempt 2)...
+[2026-04-05T11:02:40.786Z] [STDOUT] [WOLF-INFO] â±ï¸  11:02:36  â–¸ ðŸ”— Close reason: 408 - Connection was lost
+[2026-04-05T11:02:56.220Z] [STDOUT] [WOLF-WARN] â±ï¸  11:02:55  â–¸ âš ï¸ Connection taking longer than expected...
+[2026-04-05T11:03:27.586Z] [STDERR] [WOLF-ERR] â±ï¸  11:03:13  â–¸ Unhandled rejection: Unsupported state or unable to authenticate data
+[2026-04-05T11:03:48.986Z] [STDOUT] [WOLF-INFO] â±ï¸  11:03:42  â–¸ ðŸ”„ Reconnecting in 7s (attempt 3)...
+[2026-04-05T11:03:48.987Z] [STDOUT] [WOLF-INFO] â±ï¸  11:03:42  â–¸ ðŸ”— Close reason: 408 - Connection was lost
+[2026-04-05T11:03:49.586Z] [STDOUT] [WOLF-WARN] â±ï¸  11:03:40  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 10300ms
+[2026-04-05T11:04:04.323Z] [STDOUT] [WOLF-WARN] â±ï¸  11:04:02  â–¸ âš ï¸ Connection taking longer than expected...
+[2026-04-05T11:04:20.885Z] [STDERR] [WOLF-ERR] â±ï¸  11:04:19  â–¸ Unhandled rejection: Unsupported state or unable to authenticate data
+[2026-04-05T11:04:46.086Z] [STDOUT] [WOLF-INFO] â±ï¸  11:04:44  â–¸ ðŸ”„ Reconnecting in 10s (attempt 4)...
+[2026-04-05T11:04:46.486Z] [STDOUT] [WOLF-INFO] â±ï¸  11:04:44  â–¸ ðŸ”— Close reason: 408 - Connection was lost
+[2026-04-05T11:05:11.286Z] [STDOUT] [WOLF-WARN] â±ï¸  11:05:07  â–¸ âš ï¸ Connection taking longer than expected...
+[2026-04-05T11:05:37.986Z] [STDERR] [WOLF-ERR] â±ï¸  11:05:25  â–¸ Unhandled rejection: Unsupported state or unable to authenticate data
+[2026-04-05T11:05:41.486Z] [STDOUT] [WOLF-WARN] â±ï¸  11:05:38  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 1600ms
+[2026-04-05T11:05:50.289Z] [STDOUT] [WOLF-INFO] â±ï¸  11:05:50  â–¸ ðŸ”— Close reason: 408 - Connection was lost
+[2026-04-05T11:05:52.086Z] [STDOUT] [WOLF-INFO] â±ï¸  11:05:50  â–¸ ðŸ”„ Reconnecting in 15s (attempt 5)...
+[2026-04-05T11:06:55.686Z] [STDOUT] [WOLF-WARN] â±ï¸  11:06:44  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 29600ms
+[2026-04-05T11:06:55.986Z] [STDOUT] [WOLF-WARN] â±ï¸  11:06:44  â–¸ âš ï¸ Connection taking longer than expected...
+[2026-04-05T11:06:56.286Z] [STDOUT] [WOLF-INFO] â±ï¸  11:06:45  â–¸ ðŸ”„ Reconnecting in 23s (attempt 6)...
+[2026-04-05T11:06:58.988Z] [STDOUT] [WOLF-INFO] â±ï¸  11:06:45  â–¸ ðŸ”— Close reason: 408 - Connection was lost
+[2026-04-05T11:07:01.186Z] [STDOUT] [WOLF-WARN] â±ï¸  11:07:00  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 5300ms
+[2026-04-05T11:07:59.086Z] [STDOUT] [WOLF-WARN] â±ï¸  11:07:55  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 39601ms
+[2026-04-05T11:07:59.186Z] [STDOUT] [WOLF-WARN] â±ï¸  11:07:55  â–¸ âš ï¸ Connection taking longer than expected...
+[2026-04-05T11:07:59.486Z] [STDOUT] [WOLF-INFO] â±ï¸  11:07:55  â–¸ ðŸ”— Close reason: 408 - Connection was lost
+[2026-04-05T11:07:59.686Z] [STDOUT] [WOLF-INFO] â±ï¸  11:07:55  â–¸ ðŸ”„ Reconnecting in 30s (attempt 7)...
+[2026-04-05T11:08:31.487Z] [STDOUT] [WOLF-WARN] â±ï¸  11:08:23  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 1200ms
+[2026-04-05T11:08:32.831Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-05T11:08:32.861Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-05T11:08:33.468Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-05T11:08:33.598Z] [INFO  ] [BERAHOST] Bot started with PID 42
+[2026-04-05T11:08:34.686Z] [STDOUT] [WOLF-WARN] â±ï¸  11:08:29  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 1400ms
+[2026-04-05T11:08:37.427Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-05T11:08:37.457Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-05T11:08:37.799Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-05T11:08:37.917Z] [INFO  ] [BERAHOST] Bot started with PID 66
+[2026-04-05T11:09:37.986Z] [STDOUT] [WOLF-WARN] â±ï¸  11:09:25  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 45400ms
+[2026-04-05T11:09:38.987Z] [STDOUT] [WOLF-WARN] â±ï¸  11:09:25  â–¸ âš ï¸ Connection taking longer than expected...
+[2026-04-05T11:09:55.286Z] [STDOUT] [WOLF-WARN] â±ï¸  11:09:35  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 5200ms
+[2026-04-05T11:09:56.786Z] [STDOUT] [WOLF-INFO] â±ï¸  11:09:29  â–¸ ðŸ”— Close reason: 408 - Connection was lost
+[2026-04-05T11:09:58.986Z] [STDOUT] [WOLF-INFO] â±ï¸  11:09:30  â–¸ ðŸ”„ Reconnecting in 30s (attempt 8)...
+[2026-04-05T11:10:02.686Z] [STDOUT] [WOLF-WARN] â±ï¸  11:09:51  â–¸ âš ï¸ [EVENT-LOOP] Lag detected: 1200ms
+[2026-04-05T11:28:30.225Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-05T11:28:30.262Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-05T11:28:30.657Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-05T11:28:30.780Z] [INFO  ] [BERAHOST] Bot started with PID 42
+[2026-04-05T11:33:24.001Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-05T11:33:24.030Z] [STDERR] npm warn EBADENGINE   package: 'silent-wolf-bot@2.1.0',
+[2026-04-05T11:33:24.091Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x' },
+[2026-04-05T11:33:24.120Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-05T11:33:24.150Z] [STDERR] npm warn EBADENGINE }
+[2026-04-05T11:33:28.328Z] [STDERR] npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+[2026-04-05T11:33:30.713Z] [STDERR] npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
+[2026-04-05T11:33:33.293Z] [STDERR] npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+[2026-04-05T11:33:37.197Z] [STDERR] npm warn deprecated glob@11.1.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[2026-04-05T11:33:39.721Z] [STDERR] npm warn deprecated ruhend-scraper@9.0.8:
+[2026-04-05T11:59:19.990Z] [STDOUT] > silent-wolf-bot@2.1.0 postinstall
+[2026-04-05T11:59:19.991Z] [STDERR] npm notice
+[2026-04-05T11:59:21.014Z] [STDOUT] 9 vulnerabilities (3 moderate, 6 high)
+[2026-04-05T11:59:21.014Z] [STDOUT] > node scripts/patch-modules.cjs 2>/dev/null || true
+[2026-04-05T11:59:21.015Z] [STDERR] npm notice New minor version of npm available! 11.6.2 -> 11.12.1
+[2026-04-05T11:59:21.015Z] [STDOUT] 96 packages are looking for funding
+[2026-04-05T11:59:21.044Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-05T11:59:21.045Z] [STDOUT] run `npm fund` for details
+[2026-04-05T11:59:21.045Z] [STDERR] npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.12.1
+[2026-04-05T11:59:21.090Z] [STDOUT] added 409 packages, and audited 410 packages in 31m
+[2026-04-05T11:59:21.094Z] [STDOUT] npm audit fix
+[2026-04-05T11:59:21.095Z] [STDERR] npm notice To update run: npm install -g npm@11.12.1
+[2026-04-05T11:59:21.127Z] [STDOUT] To address all issues (including breaking changes), run:
+[2026-04-05T11:59:21.128Z] [STDERR] npm notice
+[2026-04-05T11:59:21.192Z] [STDOUT] npm audit fix --force
+[2026-04-05T11:59:21.221Z] [STDOUT] Run `npm audit` for details.
+[2026-04-05T11:59:21.823Z] [STDOUT] > silent-wolf-bot@2.1.0 start
+[2026-04-05T11:59:21.853Z] [STDOUT] > node --no-warnings --expose-gc --max-old-space-size=1024 --max-semi-space-size=64 --experimental-global-webcrypto index.js
+[2026-04-05T11:59:22.416Z] [STDOUT] [WOLF TECH BWM XMD FAMILY] Starting...
+[2026-04-05T11:59:22.697Z] [STDOUT] [WOLF TECH BWM XMD FAMILY] Fetching bot files...
+[2026-04-05T11:59:27.423Z] [STDOUT] [WOLF TECH BWM XMD FAMILY] Bot loaded successfully.
+[2026-04-05T11:59:30.824Z] [STDOUT] [PG] No DATABASE_URL set â€” running on SQLite only (set DATABASE_URL in .env to enable PostgreSQL)
+[2026-04-05T11:59:30.826Z] [STDOUT] â—‡ injecting env (0) from .env // tip: â—ˆ secrets for agents [www.dotenvx.com]
+[2026-04-05T11:59:30.997Z] [STDOUT] â”Œâ”€â”€â”€â”€â”€â”€â”€ã€” ðŸº WOLFBOT CONTROL CORE ã€•â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+[2026-04-05T11:59:31.027Z] [STDOUT] ðŸ—ï¸  Platform : Replit
+[2026-04-05T11:59:31.090Z] [STDOUT] ðŸ”Œ  Port     : 3100
+[2026-04-05T11:59:31.125Z] [STDOUT] ðŸ“‚  Logs     : /logs
+[2026-04-05T11:59:31.195Z] [STDOUT] â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜

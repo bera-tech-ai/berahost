@@ -1,0 +1,64 @@
+[2026-04-06T18:38:28.401Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T18:38:28.432Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-06T18:38:29.212Z] [INFO  ] [BERAHOST] Starting bot (node index.js)...
+[2026-04-06T18:38:29.337Z] [INFO  ] [BERAHOST] Bot started with PID 276
+[2026-04-06T18:38:29.455Z] [STDERR] npm warn config optional Use `--omit=optional` to exclude optional dependencies, or
+[2026-04-06T18:38:29.827Z] [STDERR] npm warn config `--include=optional` to include them.
+[2026-04-06T18:38:29.858Z] [STDERR] npm warn config
+[2026-04-06T18:38:29.889Z] [STDERR] npm warn config       Default value does install optional deps unless otherwise omitted.
+[2026-04-06T18:38:45.303Z] [STDERR] npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+[2026-04-06T18:38:45.436Z] [STDERR] npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
+[2026-04-06T18:38:45.668Z] [STDERR] npm warn deprecated dottie@2.0.7: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+[2026-04-06T18:38:46.663Z] [STDERR] npm warn deprecated querystring@0.2.1: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+[2026-04-06T18:38:47.229Z] [STDERR] npm warn deprecated tar@6.2.1: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[2026-04-06T18:38:47.285Z] [STDERR] npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+[2026-04-06T18:38:50.168Z] [STDERR] npm warn deprecated fluent-ffmpeg@2.1.3: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+[2026-04-06T18:38:53.531Z] [STDOUT] 98 packages are looking for funding
+[2026-04-06T18:38:53.531Z] [STDOUT] added 596 packages, and audited 597 packages in 24s
+[2026-04-06T18:38:53.561Z] [STDOUT] run `npm fund` for details
+[2026-04-06T18:38:53.584Z] [STDOUT] 33 vulnerabilities (1 low, 19 moderate, 13 high)
+[2026-04-06T18:38:53.615Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T18:38:53.646Z] [STDOUT] npm audit fix
+[2026-04-06T18:38:53.647Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T18:38:53.654Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T18:38:53.680Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T18:38:53.711Z] [STDOUT] npm audit fix --force
+[2026-04-06T18:38:53.742Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T18:38:53.773Z] [STDOUT] a different dependency.
+[2026-04-06T18:38:53.803Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T18:38:54.139Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T18:38:54.147Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T18:38:54.148Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T18:38:54.190Z] [STDOUT] [BERAHOST] Applied AES-GCM patch (callback monkey-patch) to ./node_modules/gifted-baileys/lib/Socket/socket.js
+[2026-04-06T18:38:54.194Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T18:38:54.248Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T18:38:54.457Z] [STDOUT] â„¹ï¸  DATABASE_URL Empty, Using Path
+[2026-04-06T18:38:55.232Z] [STDOUT] âœ… Server Running on Port: 3123
+[2026-04-06T18:38:55.639Z] [STDOUT] âœ… Session File Loaded
+[2026-04-06T18:38:55.671Z] [STDOUT] âœ… Database Synchronized.
+[2026-04-06T18:38:55.789Z] [STDOUT] âœ… Bot Settings Initialized
+[2026-04-06T18:38:55.896Z] [STDOUT] âœ… Group Settings Initialized.
+[2026-04-06T18:38:56.213Z] [INFO  ] [BERAHOST] âœ“ Bot settings synced (OWNER_NUMBER, PREFIX) â†’ gift/database/database.db
+[2026-04-06T18:38:56.267Z] [STDOUT] ðŸ•— Connecting Bot...
+[2026-04-06T18:38:56.320Z] [INFO  ] [BERAHOST] âœ“ Bot settings synced (OWNER_NUMBER, PREFIX) â†’ gift/database/database.db
+[2026-04-06T18:38:57.008Z] [STDOUT] âœ… Connection Instance is Online
+[2026-04-06T18:38:57.419Z] [STDERR] âŒ Group join failed for LZE4CoZNhLB28z5jtqwNLA: growth-locked
+[2026-04-06T18:38:58.612Z] [STDOUT] âœ… LID store initialized => 10060 Mappings from 67 Groups
+[2026-04-06T18:38:58.711Z] [STDERR] Participant cache update failed: rate-overlimit
+[2026-04-06T18:38:58.975Z] [STDERR] Participant cache update failed: rate-overlimit
+[2026-04-06T18:38:59.375Z] [STDERR] Participant cache update failed: rate-overlimit
+[2026-04-06T18:39:00.284Z] [STDERR] Participant cache update failed: rate-overlimit
+[2026-04-06T18:39:00.332Z] [STDERR] Participant cache update failed: rate-overlimit
+[2026-04-06T18:39:00.562Z] [STDERR] Participant cache update failed: rate-overlimit
+[2026-04-06T18:39:00.895Z] [STDERR] Participant cache update failed: rate-overlimit
+[2026-04-06T18:39:00.902Z] [STDERR] Participant cache update failed: rate-overlimit
+[2026-04-06T18:39:01.127Z] [STDERR] Participant cache update failed: rate-overlimit
+[2026-04-06T18:39:01.159Z] [STDERR] Participant cache update failed: rate-overlimit
+[2026-04-06T18:39:01.209Z] [STDERR] Participant cache update failed: rate-overlimit
+[2026-04-06T18:39:01.359Z] [STDERR] Participant cache update failed: rate-overlimit
+[2026-04-06T18:39:01.398Z] [STDERR] Participant cache update failed: rate-overlimit
+[2026-04-06T18:39:01.566Z] [STDERR] Participant cache update failed: rate-overlimit
+[2026-04-06T18:39:01.982Z] [STDERR] Participant cache update failed: rate-overlimit
+[2026-04-06T18:39:01.995Z] [STDERR] Participant cache update failed: rate-overlimit
+[2026-04-06T18:39:03.614Z] [STDOUT] ðŸ’œ Connected to Whatsapp, Active!
+[2026-04-06T18:39:07.800Z] [STDERR] Participant cache update failed: rate-overlimit

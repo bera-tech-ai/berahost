@@ -1,0 +1,989 @@
+[2026-04-05T20:42:21.439Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-05T20:42:21.475Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-05T20:42:22.546Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-05T20:42:22.681Z] [INFO  ] [BERAHOST] Bot started with PID 57
+[2026-04-05T20:42:47.013Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-05T20:42:47.043Z] [STDERR] npm warn EBADENGINE   package: 'flash-md-v3@3.0.0',
+[2026-04-05T20:42:47.073Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x', npm: '9.x' },
+[2026-04-05T20:42:47.103Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-05T20:42:47.133Z] [STDERR] npm warn EBADENGINE }
+[2026-04-05T20:42:47.771Z] [STDERR] npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
+[2026-04-05T20:42:48.402Z] [STDERR] npm warn deprecated har-validator@5.1.5: this library is no longer supported
+[2026-04-05T20:42:49.802Z] [STDERR] npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+[2026-04-05T20:42:50.187Z] [STDERR] npm warn deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+[2026-04-05T20:42:50.643Z] [STDERR] npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+[2026-04-05T20:42:50.840Z] [STDERR] npm warn deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+[2026-04-05T20:42:51.642Z] [STDERR] npm warn deprecated puppeteer@23.11.1: < 24.15.0 is no longer supported
+[2026-04-05T20:42:52.175Z] [STDERR] npm warn deprecated ruhend-scraper@9.0.8:
+[2026-04-05T20:42:52.591Z] [STDERR] npm warn deprecated fluent-ffmpeg@2.1.3: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+[2026-04-05T20:43:06.817Z] [STDOUT] 104 packages are looking for funding
+[2026-04-05T20:43:06.820Z] [STDOUT] added 680 packages, and audited 681 packages in 44s
+[2026-04-05T20:43:06.849Z] [STDOUT] run `npm fund` for details
+[2026-04-05T20:43:06.867Z] [STDOUT] 38 vulnerabilities (1 low, 26 moderate, 9 high, 2 critical)
+[2026-04-05T20:43:06.867Z] [STDERR] npm notice
+[2026-04-05T20:43:06.898Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-05T20:43:06.902Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-05T20:43:06.904Z] [STDERR] npm notice New minor version of npm available! 11.6.2 -> 11.12.1
+[2026-04-05T20:43:06.928Z] [STDOUT] npm audit fix
+[2026-04-05T20:43:06.934Z] [STDERR] npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.12.1
+[2026-04-05T20:43:06.956Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-05T20:43:06.964Z] [STDERR] npm notice To update run: npm install -g npm@11.12.1
+[2026-04-05T20:43:06.985Z] [STDOUT] npm audit fix --force
+[2026-04-05T20:43:06.993Z] [STDERR] npm notice
+[2026-04-05T20:43:07.014Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-05T20:43:07.043Z] [STDOUT] a different dependency.
+[2026-04-05T20:43:07.072Z] [STDOUT] Run `npm audit` for details.
+[2026-04-05T20:43:07.194Z] [STDOUT] > flash-md-v3@3.0.0 start
+[2026-04-05T20:43:07.223Z] [STDOUT] > node --loader ./preload.js index.js
+[2026-04-05T20:43:07.300Z] [STDERR] node:internal/modules/run_main:107
+[2026-04-05T20:43:07.301Z] [STDERR] TypeError: Cannot set property crypto of #<Object> which has only a getter
+[2026-04-05T20:43:07.329Z] [STDERR] triggerUncaughtException(
+[2026-04-05T20:43:07.332Z] [STDERR] at file:///tmp/berahost_dep_14/preload.js:2:29818
+[2026-04-05T20:43:07.346Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-05T20:43:07.359Z] [STDERR] ^
+[2026-04-05T20:43:07.363Z] [STDERR] at ModuleJob.run (node:internal/modules/esm/module_job:413:25)
+[2026-04-05T20:43:07.393Z] [STDERR] at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+[2026-04-05T20:43:07.423Z] [STDERR] at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:660:26)
+[2026-04-05T20:43:07.432Z] [INFO  ] [BERAHOST] â†» Auto-restart 1/10 in 0s...
+[2026-04-05T20:43:07.453Z] [STDERR] at async AsyncLoaderHooksOnLoaderHookWorker.register (node:internal/modules/esm/hooks:181:7)
+[2026-04-05T20:43:07.483Z] [STDERR] at async initializeAsyncLoaderHooksOnLoaderHookWorker (node:internal/modules/esm/worker:76:5)
+[2026-04-05T20:43:07.515Z] [STDERR] at async customizedModuleWorker (node:internal/modules/esm/worker:161:24)
+[2026-04-05T20:43:07.518Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-05T20:43:07.545Z] [STDERR] Node.js v24.13.0
+[2026-04-05T20:43:07.547Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-05T20:43:07.873Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-05T20:43:07.971Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_3)...
+[2026-04-05T20:43:07.994Z] [INFO  ] [BERAHOST] Bot started with PID 289
+[2026-04-05T20:43:08.875Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-05T20:43:08.905Z] [STDERR] npm warn EBADENGINE   package: 'flash-md-v3@3.0.0',
+[2026-04-05T20:43:08.935Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x', npm: '9.x' },
+[2026-04-05T20:43:08.964Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-05T20:43:08.994Z] [STDERR] npm warn EBADENGINE }
+[2026-04-05T20:43:10.633Z] [STDOUT] added 2 packages, removed 1 package, and audited 683 packages in 2s
+[2026-04-05T20:43:10.633Z] [STDOUT] 106 packages are looking for funding
+[2026-04-05T20:43:10.664Z] [STDOUT] run `npm fund` for details
+[2026-04-05T20:43:10.691Z] [STDOUT] 38 vulnerabilities (1 low, 26 moderate, 9 high, 2 critical)
+[2026-04-05T20:43:10.711Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-05T20:43:10.721Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-05T20:43:10.750Z] [STDOUT] npm audit fix
+[2026-04-05T20:43:10.778Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-05T20:43:10.807Z] [STDOUT] npm audit fix --force
+[2026-04-05T20:43:10.835Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-05T20:43:10.865Z] [STDOUT] a different dependency.
+[2026-04-05T20:43:10.894Z] [STDOUT] Run `npm audit` for details.
+[2026-04-05T20:43:11.150Z] [STDOUT] > flash-md-v3@3.0.0 start
+[2026-04-05T20:43:11.179Z] [STDOUT] > node --loader ./preload.js index.js
+[2026-04-05T20:43:11.249Z] [STDERR] node:internal/modules/run_main:107
+[2026-04-05T20:43:11.250Z] [STDERR] TypeError: Cannot set property crypto of #<Object> which has only a getter
+[2026-04-05T20:43:11.278Z] [STDERR] triggerUncaughtException(
+[2026-04-05T20:43:11.280Z] [STDERR] at file:///tmp/berahost_dep_14/preload.js:2:29818
+[2026-04-05T20:43:11.290Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-05T20:43:11.307Z] [STDERR] ^
+[2026-04-05T20:43:11.310Z] [STDERR] at ModuleJob.run (node:internal/modules/esm/module_job:413:25)
+[2026-04-05T20:43:11.340Z] [STDERR] at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+[2026-04-05T20:43:11.370Z] [STDERR] at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:660:26)
+[2026-04-05T20:43:11.378Z] [INFO  ] [BERAHOST] â†» Auto-restart 2/10 in 5s...
+[2026-04-05T20:43:11.401Z] [STDERR] at async AsyncLoaderHooksOnLoaderHookWorker.register (node:internal/modules/esm/hooks:181:7)
+[2026-04-05T20:43:11.431Z] [STDERR] at async initializeAsyncLoaderHooksOnLoaderHookWorker (node:internal/modules/esm/worker:76:5)
+[2026-04-05T20:43:11.461Z] [STDERR] at async customizedModuleWorker (node:internal/modules/esm/worker:161:24)
+[2026-04-05T20:43:11.491Z] [STDERR] Node.js v24.13.0
+[2026-04-05T20:43:16.471Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-05T20:43:16.502Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-05T20:43:16.852Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-05T20:43:16.953Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_3)...
+[2026-04-05T20:43:16.980Z] [INFO  ] [BERAHOST] Bot started with PID 343
+[2026-04-05T20:43:18.173Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-05T20:43:18.204Z] [STDERR] npm warn EBADENGINE   package: 'flash-md-v3@3.0.0',
+[2026-04-05T20:43:18.234Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x', npm: '9.x' },
+[2026-04-05T20:43:18.264Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-05T20:43:18.294Z] [STDERR] npm warn EBADENGINE }
+[2026-04-05T20:43:20.226Z] [STDOUT] removed 1 package, and audited 683 packages in 3s
+[2026-04-05T20:43:20.227Z] [STDOUT] 106 packages are looking for funding
+[2026-04-05T20:43:20.257Z] [STDOUT] run `npm fund` for details
+[2026-04-05T20:43:20.298Z] [STDOUT] 38 vulnerabilities (1 low, 26 moderate, 9 high, 2 critical)
+[2026-04-05T20:43:20.321Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-05T20:43:20.327Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-05T20:43:20.358Z] [STDOUT] npm audit fix
+[2026-04-05T20:43:20.387Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-05T20:43:20.416Z] [STDOUT] npm audit fix --force
+[2026-04-05T20:43:20.445Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-05T20:43:20.474Z] [STDOUT] a different dependency.
+[2026-04-05T20:43:20.503Z] [STDOUT] Run `npm audit` for details.
+[2026-04-05T20:43:20.579Z] [STDERR] mv: cannot overwrite '/tmp/berahost_nm_cache/bot_3/bot_3.tmp'
+[2026-04-05T20:43:20.580Z] [STDERR] : Directory not empty
+[2026-04-05T20:43:20.799Z] [STDOUT] > flash-md-v3@3.0.0 start
+[2026-04-05T20:43:20.830Z] [STDOUT] > node --loader ./preload.js index.js
+[2026-04-05T20:43:20.917Z] [STDERR] TypeError: Cannot set property crypto of #<Object> which has only a getter
+[2026-04-05T20:43:20.918Z] [STDERR] node:internal/modules/run_main:107
+[2026-04-05T20:43:20.949Z] [STDERR] at file:///tmp/berahost_dep_14/preload.js:2:29818
+[2026-04-05T20:43:20.950Z] [STDERR] triggerUncaughtException(
+[2026-04-05T20:43:20.957Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-05T20:43:20.978Z] [STDERR] at ModuleJob.run (node:internal/modules/esm/module_job:413:25)
+[2026-04-05T20:43:20.980Z] [STDERR] ^
+[2026-04-05T20:43:21.009Z] [STDERR] at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+[2026-04-05T20:43:21.038Z] [STDERR] at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:660:26)
+[2026-04-05T20:43:21.043Z] [INFO  ] [BERAHOST] â†» Auto-restart 3/10 in 10s...
+[2026-04-05T20:43:21.067Z] [STDERR] at async AsyncLoaderHooksOnLoaderHookWorker.register (node:internal/modules/esm/hooks:181:7)
+[2026-04-05T20:43:21.097Z] [STDERR] at async initializeAsyncLoaderHooksOnLoaderHookWorker (node:internal/modules/esm/worker:76:5)
+[2026-04-05T20:43:21.126Z] [STDERR] at async customizedModuleWorker (node:internal/modules/esm/worker:161:24)
+[2026-04-05T20:43:21.156Z] [STDERR] Node.js v24.13.0
+[2026-04-05T20:43:31.130Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-05T20:43:31.159Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-05T20:43:31.522Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-05T20:43:31.639Z] [INFO  ] [BERAHOST] Bot started with PID 397
+[2026-04-05T20:43:31.807Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_3)...
+[2026-04-05T20:43:32.694Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-05T20:43:32.724Z] [STDERR] npm warn EBADENGINE   package: 'flash-md-v3@3.0.0',
+[2026-04-05T20:43:32.754Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x', npm: '9.x' },
+[2026-04-05T20:43:32.784Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-05T20:43:32.814Z] [STDERR] npm warn EBADENGINE }
+[2026-04-05T20:43:34.442Z] [STDOUT] 106 packages are looking for funding
+[2026-04-05T20:43:34.443Z] [STDOUT] removed 1 package, and audited 683 packages in 2s
+[2026-04-05T20:43:34.472Z] [STDOUT] run `npm fund` for details
+[2026-04-05T20:43:34.515Z] [STDOUT] 38 vulnerabilities (1 low, 26 moderate, 9 high, 2 critical)
+[2026-04-05T20:43:34.531Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-05T20:43:34.544Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-05T20:43:34.573Z] [STDOUT] npm audit fix
+[2026-04-05T20:43:34.602Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-05T20:43:34.630Z] [STDOUT] npm audit fix --force
+[2026-04-05T20:43:34.659Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-05T20:43:34.688Z] [STDOUT] a different dependency.
+[2026-04-05T20:43:34.717Z] [STDOUT] Run `npm audit` for details.
+[2026-04-05T20:43:34.892Z] [STDERR] mv: cannot overwrite '/tmp/berahost_nm_cache/bot_3/bot_3.tmp': Directory not empty
+[2026-04-05T20:43:35.036Z] [STDOUT] > flash-md-v3@3.0.0 start
+[2026-04-05T20:43:35.066Z] [STDOUT] > node --loader ./preload.js index.js
+[2026-04-05T20:43:35.130Z] [STDERR] node:internal/modules/run_main:107
+[2026-04-05T20:43:35.130Z] [STDERR] TypeError: Cannot set property crypto of #<Object> which has only a getter
+[2026-04-05T20:43:35.159Z] [STDERR] triggerUncaughtException(
+[2026-04-05T20:43:35.160Z] [STDERR] at file:///tmp/berahost_dep_14/preload.js:2:29818
+[2026-04-05T20:43:35.188Z] [STDERR] ^
+[2026-04-05T20:43:35.189Z] [STDERR] at ModuleJob.run (node:internal/modules/esm/module_job:413:25)
+[2026-04-05T20:43:35.218Z] [STDERR] at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+[2026-04-05T20:43:35.248Z] [STDERR] at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:660:26)
+[2026-04-05T20:43:35.277Z] [STDERR] at async AsyncLoaderHooksOnLoaderHookWorker.register (node:internal/modules/esm/hooks:181:7)
+[2026-04-05T20:43:35.307Z] [STDERR] at async initializeAsyncLoaderHooksOnLoaderHookWorker (node:internal/modules/esm/worker:76:5)
+[2026-04-05T20:43:35.337Z] [STDERR] at async customizedModuleWorker (node:internal/modules/esm/worker:161:24)
+[2026-04-05T20:43:35.340Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-05T20:43:35.366Z] [STDERR] Node.js v24.13.0
+[2026-04-05T20:43:35.427Z] [INFO  ] [BERAHOST] â†» Auto-restart 4/10 in 20s...
+[2026-04-05T20:43:55.705Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-05T20:43:55.736Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-05T20:43:56.074Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-05T20:43:56.199Z] [INFO  ] [BERAHOST] Bot started with PID 451
+[2026-04-05T20:43:56.360Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_3)...
+[2026-04-05T20:43:57.403Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-05T20:43:57.449Z] [STDERR] npm warn EBADENGINE   package: 'flash-md-v3@3.0.0',
+[2026-04-05T20:43:57.478Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x', npm: '9.x' },
+[2026-04-05T20:43:57.508Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-05T20:43:57.538Z] [STDERR] npm warn EBADENGINE }
+[2026-04-05T20:43:59.484Z] [STDOUT] removed 1 package, and audited 683 packages in 3s
+[2026-04-05T20:43:59.490Z] [STDOUT] 106 packages are looking for funding
+[2026-04-05T20:43:59.521Z] [STDOUT] run `npm fund` for details
+[2026-04-05T20:43:59.573Z] [STDOUT] 38 vulnerabilities (1 low, 26 moderate, 9 high, 2 critical)
+[2026-04-05T20:43:59.590Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-05T20:43:59.604Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-05T20:43:59.635Z] [STDOUT] npm audit fix
+[2026-04-05T20:43:59.667Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-05T20:43:59.698Z] [STDOUT] npm audit fix --force
+[2026-04-05T20:43:59.729Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-05T20:43:59.759Z] [STDOUT] a different dependency.
+[2026-04-05T20:43:59.789Z] [STDOUT] Run `npm audit` for details.
+[2026-04-05T20:44:00.020Z] [STDERR] mv: cannot overwrite '/tmp/berahost_nm_cache/bot_3/bot_3.tmp': Directory not empty
+[2026-04-05T20:44:00.216Z] [STDOUT] > flash-md-v3@3.0.0 start
+[2026-04-05T20:44:00.247Z] [STDOUT] > node --loader ./preload.js index.js
+[2026-04-05T20:44:00.343Z] [STDERR] TypeError: Cannot set property crypto of #<Object> which has only a getter
+[2026-04-05T20:44:00.343Z] [STDERR] node:internal/modules/run_main:107
+[2026-04-05T20:44:00.373Z] [STDERR] at file:///tmp/berahost_dep_14/preload.js:2:29818
+[2026-04-05T20:44:00.373Z] [STDERR] triggerUncaughtException(
+[2026-04-05T20:44:00.402Z] [STDERR] at ModuleJob.run (node:internal/modules/esm/module_job:413:25)
+[2026-04-05T20:44:00.403Z] [STDERR] ^
+[2026-04-05T20:44:00.431Z] [STDERR] at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+[2026-04-05T20:44:00.461Z] [STDERR] at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:660:26)
+[2026-04-05T20:44:00.490Z] [STDERR] at async AsyncLoaderHooksOnLoaderHookWorker.register (node:internal/modules/esm/hooks:181:7)
+[2026-04-05T20:44:00.519Z] [STDERR] at async initializeAsyncLoaderHooksOnLoaderHookWorker (node:internal/modules/esm/worker:76:5)
+[2026-04-05T20:44:00.548Z] [STDERR] at async customizedModuleWorker (node:internal/modules/esm/worker:161:24)
+[2026-04-05T20:44:00.574Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-05T20:44:00.576Z] [STDERR] Node.js v24.13.0
+[2026-04-05T20:44:00.660Z] [INFO  ] [BERAHOST] â†» Auto-restart 5/10 in 40s...
+[2026-04-05T20:44:41.738Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-05T20:44:41.838Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-05T20:44:55.670Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-05T20:44:56.438Z] [INFO  ] [BERAHOST] Bot started with PID 505
+[2026-04-05T20:44:57.137Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_3)...
+[2026-04-05T20:48:48.937Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-05T20:48:49.737Z] [STDERR] npm warn EBADENGINE   package: 'flash-md-v3@3.0.0',
+[2026-04-05T20:48:50.337Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x', npm: '9.x' },
+[2026-04-05T20:48:50.437Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-05T20:48:51.537Z] [STDERR] npm warn EBADENGINE }
+[2026-04-05T20:53:51.183Z] [WARN  ] [BERAHOST] âš  No output for 5 min â€” bot appears stuck, forcing restart...
+[2026-04-05T20:53:52.037Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=â€”, signal=SIGTERM) â€” scheduling restart...
+[2026-04-05T20:53:52.737Z] [INFO  ] [BERAHOST] â†» Auto-restart 6/10 in 80s...
+[2026-04-05T20:55:21.638Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-05T20:55:22.138Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-05T20:56:07.737Z] [STDOUT] removed 1 package, and audited 683 packages in 10m
+[2026-04-05T20:56:11.437Z] [STDOUT] 106 packages are looking for funding
+[2026-04-05T20:56:11.538Z] [STDOUT] run `npm fund` for details
+[2026-04-05T20:56:21.638Z] [STDOUT] 38 vulnerabilities (1 low, 26 moderate, 9 high, 2 critical)
+[2026-04-05T20:56:22.737Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-05T20:56:22.938Z] [STDOUT] npm audit fix
+[2026-04-05T20:56:23.137Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-05T20:56:23.437Z] [STDOUT] npm audit fix --force
+[2026-04-05T20:56:25.038Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-05T20:56:25.337Z] [STDOUT] a different dependency.
+[2026-04-05T20:56:25.637Z] [STDOUT] Run `npm audit` for details.
+[2026-04-05T20:56:28.038Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-05T20:56:30.138Z] [INFO  ] [BERAHOST] Bot started with PID 531
+[2026-04-05T20:56:30.837Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_3)...
+[2026-04-06T00:27:11.145Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T00:27:11.182Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-06T00:27:11.891Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-06T00:27:12.023Z] [INFO  ] [BERAHOST] Bot started with PID 44
+[2026-04-06T00:32:18.588Z] [WARN  ] [BERAHOST] âš  No output for 5 min â€” bot appears stuck, forcing restart...
+[2026-04-06T00:32:20.031Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=â€”, signal=SIGTERM) â€” scheduling restart...
+[2026-04-06T00:32:21.430Z] [INFO  ] [BERAHOST] â†» Auto-restart 1/10 in 0s...
+[2026-04-06T00:32:25.730Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T00:32:26.930Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T00:33:29.630Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-06T00:33:31.330Z] [INFO  ] [BERAHOST] Bot started with PID 109
+[2026-04-06T00:38:41.630Z] [WARN  ] [BERAHOST] âš  No output for 5 min â€” bot appears stuck, forcing restart...
+[2026-04-06T00:38:45.930Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=â€”, signal=SIGTERM) â€” scheduling restart...
+[2026-04-06T00:38:47.430Z] [INFO  ] [BERAHOST] â†» Auto-restart 2/10 in 5s...
+[2026-04-06T00:38:53.330Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T00:38:53.930Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T00:41:18.729Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-06T00:41:26.430Z] [STDERR] [BERAHOST] Error: Command failed: git clone --depth=1 https://github.com/franceking1/Flash-Md-V3 /tmp/berahost_dep_14
+fatal: destination path '/tmp/berahost_dep_14' already exists and is not an empty directory.
+[2026-04-06T05:54:09.061Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T05:54:09.098Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-06T05:54:09.551Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-06T05:54:09.682Z] [INFO  ] [BERAHOST] Bot started with PID 287
+[2026-04-06T05:54:23.337Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T05:54:23.368Z] [STDERR] npm warn EBADENGINE   package: 'flash-md-v3@3.0.0',
+[2026-04-06T05:54:23.398Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x', npm: '9.x' },
+[2026-04-06T05:54:23.458Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T05:54:23.489Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T05:54:25.396Z] [STDERR] npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+[2026-04-06T05:54:25.534Z] [STDERR] npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
+[2026-04-06T05:54:25.761Z] [STDERR] npm warn deprecated har-validator@5.1.5: this library is no longer supported
+[2026-04-06T05:54:26.720Z] [STDERR] npm warn deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+[2026-04-06T05:54:26.822Z] [STDERR] npm warn deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+[2026-04-06T05:54:26.911Z] [STDERR] npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+[2026-04-06T05:54:27.682Z] [STDERR] npm warn deprecated puppeteer@23.11.1: < 24.15.0 is no longer supported
+[2026-04-06T05:54:28.157Z] [STDERR] npm warn deprecated ruhend-scraper@9.0.8:
+[2026-04-06T05:54:28.533Z] [STDERR] npm warn deprecated fluent-ffmpeg@2.1.3: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+[2026-04-06T05:54:41.713Z] [STDOUT] added 680 packages, and audited 681 packages in 32s
+[2026-04-06T05:54:41.775Z] [STDOUT] 38 vulnerabilities (1 low, 26 moderate, 9 high, 2 critical)
+[2026-04-06T05:54:41.805Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T05:54:41.836Z] [STDOUT] npm audit fix
+[2026-04-06T05:54:41.866Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T05:54:41.898Z] [STDOUT] npm audit fix --force
+[2026-04-06T05:54:41.906Z] [STDOUT] 104 packages are looking for funding
+[2026-04-06T05:54:41.929Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T05:54:41.936Z] [STDOUT] run `npm fund` for details
+[2026-04-06T05:54:41.959Z] [STDOUT] a different dependency.
+[2026-04-06T05:54:41.987Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T05:54:41.989Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T05:54:42.234Z] [STDOUT] > flash-md-v3@3.0.0 start
+[2026-04-06T05:54:42.264Z] [STDOUT] > node --loader ./preload.js index.js
+[2026-04-06T05:54:42.623Z] [STDERR] (node:514) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+[2026-04-06T05:54:42.653Z] [STDERR] --import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("./preload.js", pathToFileURL("./"));'
+[2026-04-06T05:54:42.684Z] [STDERR] (Use `node --trace-warnings ...` to show where the warning was created)
+[2026-04-06T05:54:45.208Z] [STDOUT] âœ… Connected to WhatsApp
+[2026-04-06T05:54:45.210Z] [STDOUT] [ðŸ“… 06/04/2026 08:54:45] [âœ… CONNECTED]
+[2026-04-06T05:54:45.211Z] [STDOUT] â”œâ”€ ðŸ¤– Bot: Flash-MD v3.0.0
+[2026-04-06T05:54:45.244Z] [STDOUT] â”œâ”€ ðŸ“± Number: 254787527753
+[2026-04-06T05:54:45.275Z] [STDOUT] â”œâ”€ ðŸ”‘ LID: 233620836974620@lid
+[2026-04-06T05:54:45.305Z] [STDOUT] â”œâ”€ âš™ï¸ Mode: private
+[2026-04-06T05:54:45.335Z] [STDOUT] â””â”€ ðŸ“Š Commands: 161 loaded
+[2026-04-06T05:54:47.636Z] [STDOUT] âœ… Start message sent to owner: 254742063632@s.whatsapp.net
+[2026-04-06T05:55:06.332Z] [STDOUT] [ðŸ“… 06/04/2026 08:55:06] [ðŸ‘¤ PRIVATE]
+[2026-04-06T05:55:06.362Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: Me (254742063632@s.whatsapp.net)
+[2026-04-06T05:55:06.529Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: Me (+254787527753:1)
+[2026-04-06T05:55:06.561Z] [STDOUT] â”œâ”€ ðŸ“ Message: *FLASH-MD IS CONNECTED*
+[2026-04-06T05:55:06.593Z] [STDOUT] *ðŸš€ Version 3.0.0*
+[2026-04-06T05:55:06.624Z] [STDOUT] *ðŸ“Œ Commands:* 161
+[2026-04-06T05:55:06.656Z] [STDOUT] *âš™ï¸ Prefixes: [No Prefix]*
+[2026-04-06T05:55:06.687Z] [STDOUT] *ðŸ‘‘ Mode:* private
+[2026-04-06T05:55:06.719Z] [STDOUT] *ðŸ“ž Anticall:* false
+[2026-04-06T05:55:06.753Z] [STDOUT] *ðŸ—‘ï¸ Antidelete:* true
+[2026-04-06T05:55:06.785Z] [STDOUT] *âœï¸ Antiedit:* true
+[2026-04-06T05:55:06.816Z] [STDOUT] *ðŸ“– Auto Read:* false
+[2026-04-06T05:55:06.848Z] [STDOUT] *ðŸ‘ï¸ Auto View:* true
+[2026-04-06T05:55:06.879Z] [STDOUT] *â¤ï¸ Auto Like:* true
+[2026-04-06T05:55:06.911Z] [STDOUT] *ðŸ’¬ DM Presence:* none
+[2026-04-06T05:55:06.943Z] [STDOUT] *ðŸ‘¥ Group Presence:* none
+[2026-04-06T05:55:06.987Z] [STDOUT] *ðŸ“… Date:* 06/04/2026
+[2026-04-06T05:55:07.020Z] [STDOUT] *â° Time:* 08:54:45
+[2026-04-06T05:55:07.051Z] [STDOUT] â””â”€ ðŸ” Details: extendedTextMessage | Private | 3EB098E2F3C1A409DDC57E
+[2026-04-06T06:01:13.689Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: Me (+254787527753:1)
+[2026-04-06T06:01:13.749Z] [STDOUT] [ðŸ“… 06/04/2026 09:01:12] [ðŸ‘¤ PRIVATE]
+[2026-04-06T06:01:13.791Z] [STDOUT] [ðŸ“… 06/04/2026 09:01:13] [âŒ ERROR]
+[2026-04-06T06:01:13.793Z] [STDOUT] [ðŸ“… 06/04/2026 09:01:13] [ðŸ‘¤ PRIVATE]
+[2026-04-06T06:01:13.794Z] [STDOUT] [ðŸ“… 06/04/2026 09:01:13] [ðŸ‘¤ PRIVATE]
+[2026-04-06T06:01:13.821Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: ðð„ðð„ðƒðˆð‚ð“ðŸ«†ðŸ«† (+254799034899)
+[2026-04-06T06:01:13.822Z] [STDOUT] [ðŸ“… 06/04/2026 09:01:13] [âŒ ERROR]
+[2026-04-06T06:01:13.823Z] [STDOUT] â”œâ”€ ðŸ”§ Context: Unauthorized Access
+[2026-04-06T06:01:13.830Z] [STDERR] Closing open session in favor of incoming prekey bundle
+[2026-04-06T06:01:13.831Z] [STDOUT] Closing session: SessionEntry {
+[2026-04-06T06:01:13.832Z] [STDOUT] [ðŸ“… 06/04/2026 09:01:13] [ðŸ‘¤ PRIVATE]
+[2026-04-06T06:01:13.835Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: Me (+254787527753:1)
+[2026-04-06T06:01:13.850Z] [STDOUT] [ðŸ“… 06/04/2026 09:01:13] [ðŸ‘¤ PRIVATE]
+[2026-04-06T06:01:13.851Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: ðŸ‘‘ AFRICANPRINCE ðŸ‘‘ (+254716841821)
+[2026-04-06T06:01:13.852Z] [STDOUT] [ðŸ“… 06/04/2026 09:01:13] [âŒ ERROR]
+[2026-04-06T06:01:13.859Z] [STDOUT] â”œâ”€ ðŸ‘¤ User: 254716841821@s.whatsapp.net
+[2026-04-06T06:01:13.861Z] [STDOUT] [ðŸ“… 06/04/2026 09:01:13] [ðŸ‘¤ PRIVATE]
+[2026-04-06T06:01:13.862Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: Me (+254787527753:1)
+[2026-04-06T06:01:13.865Z] [STDOUT] [ðŸ“… 06/04/2026 09:01:13] [âš¡ COMMAND]
+[2026-04-06T06:01:13.876Z] [STDOUT] [ðŸ“… 06/04/2026 09:01:13] [ðŸ‘¤ PRIVATE]
+[2026-04-06T06:01:13.880Z] [STDOUT] â”œâ”€ ðŸ‘¤ Executed By: Me (+2547875277531)
+[2026-04-06T06:01:13.880Z] [STDOUT] â”œâ”€ ðŸŽ¯ Command: Ping
+[2026-04-06T06:01:13.881Z] [STDOUT] [ðŸ“… 06/04/2026 09:01:13] [ðŸ‘¤ PRIVATE]
+[2026-04-06T06:01:13.883Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: MJ7 (+254706903338)
+[2026-04-06T06:01:13.887Z] [STDOUT] [ðŸ“… 06/04/2026 09:01:13] [ðŸ‘¤ PRIVATE]
+[2026-04-06T06:01:13.888Z] [STDOUT] [ðŸ“… 06/04/2026 09:01:13] [ðŸ‘¤ PRIVATE]
+[2026-04-06T06:01:13.890Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: innoh (+254759512195)
+[2026-04-06T06:01:13.892Z] [STDOUT] [ðŸ“… 06/04/2026 09:01:13] [âŒ ERROR]
+[2026-04-06T06:01:13.895Z] [STDOUT] â”œâ”€ ðŸ‘¤ User: 254759512195@s.whatsapp.net
+[2026-04-06T06:01:13.907Z] [STDOUT] Closing session: SessionEntry {
+[2026-04-06T06:01:13.908Z] [STDOUT] [ðŸ“… 06/04/2026 09:01:13] [ðŸ‘¤ PRIVATE]
+[2026-04-06T06:01:13.909Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: Me (+254787527753:1)
+[2026-04-06T06:01:13.910Z] [STDOUT] â”œâ”€ ðŸ“ Message: .ping
+[2026-04-06T06:01:13.913Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: Me (20397286285438@lid)
+[2026-04-06T06:01:13.916Z] [STDOUT] â”œâ”€ ðŸ”§ Context: Unauthorized Access
+[2026-04-06T06:01:13.917Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: ðð„ðð„ðƒðˆð‚ð“ðŸ«†ðŸ«† (status@broadcast)
+[2026-04-06T06:01:13.919Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: MJ7 (status@broadcast)
+[2026-04-06T06:01:13.938Z] [STDOUT] â”œâ”€ ðŸ“ Message: Hidden talent ðŸ¤£
+[2026-04-06T06:01:13.939Z] [STDOUT] â”œâ”€ ðŸ‘¤ User: 254799034899@s.whatsapp.net
+[2026-04-06T06:01:13.943Z] [STDOUT] _chains: {
+[2026-04-06T06:01:13.943Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: Me (254787527753@s.whatsapp.net)
+[2026-04-06T06:01:13.946Z] [STDOUT] â”œâ”€ ðŸ“ Message:
+[2026-04-06T06:01:13.948Z] [STDOUT] â”œâ”€ ðŸ“ Message: ZARA  color beige, white and black size 37-42 @ksh 1100 within thika makongeni and kiganjo delivery is free.
+[2026-04-06T06:01:13.959Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: ðŸ‘‘ AFRICANPRINCE ðŸ‘‘ (status@broadcast)
+[2026-04-06T06:01:13.959Z] [STDOUT] â”œâ”€ ðŸ”§ Context: Unauthorized Access
+[2026-04-06T06:01:13.969Z] [STDOUT] â””â”€ ðŸ’¬ Error: User not authorized in private mode
+[2026-04-06T06:01:13.969Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: Me (20397286285438@lid)
+[2026-04-06T06:01:13.969Z] [STDOUT] â”œâ”€ ðŸ“ Message: Ping
+[2026-04-06T06:01:13.969Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: Unknown (120363424315838002@newsletter)
+[2026-04-06T06:01:13.972Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: innoh (status@broadcast)
+[2026-04-06T06:01:13.972Z] [STDOUT] â””â”€ ðŸ“ Location: Private Chat
+[2026-04-06T06:01:13.975Z] [STDOUT] â”œâ”€ ðŸ“ Message: "Daddy Kula hiyo"
+[2026-04-06T06:01:13.977Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: innoh (status@broadcast)
+[2026-04-06T06:01:13.990Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: Mentor Collins (status@broadcast)
+[2026-04-06T06:01:13.990Z] [STDOUT] â”œâ”€ ðŸ“ Message: *ðŸª„If people  are making money ðŸ’° ðŸ¤‘ you can also make money ðŸ’¯ðŸŽ‰ðŸ¥³ we said this is business not job so you must have starting capital ðŸ¥³ðŸŽ‰ hapa Apex motors unajoin na 5000 pekee with cashback of 10,000 ðŸŽ‰type addðŸ”¥ðŸ¤ðŸŽŠ*
+[2026-04-06T06:01:13.999Z] [STDOUT] â”œâ”€ ðŸ”§ Context: Unauthorized Access
+[2026-04-06T06:01:14.000Z] [STDOUT] â””â”€ ðŸ’¬ Error: User not authorized in private mode
+[2026-04-06T06:01:14.000Z] [STDOUT] _chains: {
+[2026-04-06T06:01:14.001Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: Me (20397286285438@lid)
+[2026-04-06T06:01:14.002Z] [STDOUT] â”œâ”€ ðŸ“ Message: Pinging...
+[2026-04-06T06:01:14.003Z] [STDOUT] â””â”€ ðŸ” Details: conversation | Private | ACD5E2C39FB2B160AF3E849AC06B891E
+[2026-04-06T06:01:14.004Z] [STDOUT] â”œâ”€ ðŸ‘¤ User: 254720389618@s.whatsapp.net
+[2026-04-06T06:01:14.028Z] [STDOUT] â””â”€ ðŸ” Details: senderKeyDistributionMessage | Private | AC7A69866A2F37D0E6E190DF553CCA36
+[2026-04-06T06:01:14.030Z] [STDOUT] 'Bag11yr8pj5x5IeEUK7FS6ebWAOqt02Pq0VzWQiQ+69F': { chainKey: [Object], chainType: 1, messageKeys: {} }
+[2026-04-06T06:01:14.030Z] [STDOUT] â””â”€ ðŸ’¬ Error: User not authorized in private mode
+[2026-04-06T06:01:14.031Z] [STDOUT] *ð€ð“ð€ð’ð’ð€-ðŒðƒ ð‚ðŽððð„ð‚ð“ð„ðƒ*
+[2026-04-06T06:01:14.032Z] [STDOUT] â””â”€ ðŸ” Details: senderKeyDistributionMessage | Private | ACD4D1444132C6FE8F766810AE8E7EBD
+[2026-04-06T06:01:14.033Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: Unknown (+Unknown)
+[2026-04-06T06:01:14.040Z] [STDOUT] â””â”€ ðŸ” Details: conversation | Private | AC8F60547ED5C8B8D06884DD289F9CD9
+[2026-04-06T06:01:14.051Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: innoh (+254759512195)
+[2026-04-06T06:01:14.068Z] [STDOUT] The laughter ðŸ˜‚
+[2026-04-06T06:01:14.068Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: Mentor Collins (+254720389618)
+[2026-04-06T06:01:14.069Z] [STDOUT] â””â”€ ðŸ” Details: imageMessage | Private | A557EE14479A513D215CBCEA76FBBA02
+[2026-04-06T06:01:14.070Z] [STDOUT] 'BR3HdpfaP+4kYutS3ts9T393vo7PZSxb5OwF/nNBoDQd': { chainKey: [Object], chainType: 2, messageKeys: [Object] },
+[2026-04-06T06:01:14.071Z] [STDOUT] â””â”€ ðŸ” Details: extendedTextMessage | Private | 3EB02B84F26C7875B8A1F4
+[2026-04-06T06:01:14.071Z] [STDOUT] â””â”€ ðŸ’¬ Error: User not authorized in private mode
+[2026-04-06T06:01:14.082Z] [STDOUT] },
+[2026-04-06T06:01:14.097Z] [STDOUT] ðð«ðžðŸð¢ð±       : *[ . ]*
+[2026-04-06T06:01:14.098Z] [STDOUT] â”œâ”€ ðŸ“ Message: Yes
+[2026-04-06T06:01:14.101Z] [STDOUT] â”œâ”€ ðŸ“ Message: 10k bonus received congratulations ðŸ’¥
+[2026-04-06T06:01:14.101Z] [STDOUT] â”œâ”€ ðŸ“ Message: *ðŸš€Easter Monday Hustle ModeðŸš€*
+[2026-04-06T06:01:14.102Z] [STDOUT] The bond
+[2026-04-06T06:01:14.103Z] [STDOUT] 'BWoTUqRODpb8sg+NuNpvHQtYuvehgNiR7xjohT8bZfN6': { chainKey: [Object], chainType: 1, messageKeys: {} }
+[2026-04-06T06:01:14.116Z] [STDOUT] registrationId: 115,
+[2026-04-06T06:01:14.126Z] [STDOUT] ðð¥ð®ð ð¢ð§ð¬      : *270*
+[2026-04-06T06:01:14.128Z] [STDOUT] â””â”€ ðŸ” Details: conversation | Private | A5D63909EA497A1B052568E84843AD82
+[2026-04-06T06:01:14.130Z] [STDOUT] â””â”€ ðŸ” Details: imageMessage | Private | A5122BCB27931185C22DC0DCE1B4513C
+[2026-04-06T06:01:14.131Z] [STDOUT] *ðŸ’ŽItâ€™s Easter Mondayâ€¦but no time to slow downðŸ˜Ž*
+[2026-04-06T06:01:14.138Z] [STDOUT] I miss you Champâ¤ï¸
+[2026-04-06T06:01:14.139Z] [STDOUT] },
+[2026-04-06T06:01:14.151Z] [STDOUT] currentRatchet: {
+[2026-04-06T06:01:14.155Z] [STDOUT] ðŒð¨ððž        : *public*
+[2026-04-06T06:01:14.170Z] [STDOUT] [ðŸ“… 06/04/2026 09:01:13] [âŒ ERROR]
+[2026-04-06T06:01:14.170Z] [STDOUT] [ðŸ“… 06/04/2026 09:01:13] [âŒ ERROR]
+[2026-04-06T06:01:14.171Z] [STDOUT] *ðŸ’ŽAcademic writing jobs are loaded on the siteðŸ”¥ðŸ”¥*
+[2026-04-06T06:01:14.172Z] [STDOUT] registrationId: 115,
+[2026-04-06T06:01:14.172Z] [STDOUT] â””â”€ ðŸ” Details: senderKeyDistributionMessage | Private | AC38F10A333699FCDE276FB1AD3F6255
+[2026-04-06T06:01:14.182Z] [STDOUT] ephemeralKeyPair: {
+[2026-04-06T06:01:14.185Z] [STDOUT] ðŽð°ð§ðžð«       : *254787527753*
+[2026-04-06T06:01:14.199Z] [STDOUT] â”œâ”€ ðŸ”§ Context: Unauthorized Access
+[2026-04-06T06:01:14.199Z] [STDOUT] â”œâ”€ ðŸ”§ Context: Unauthorized Access
+[2026-04-06T06:01:14.200Z] [STDOUT] *ðŸ’ŽWhile others are resting,weâ€™re staying locked inâ€”focused,consistent and chasing the bagðŸ’°*
+[2026-04-06T06:01:14.202Z] [STDOUT] currentRatchet: {
+[2026-04-06T06:01:14.203Z] [STDOUT] [ðŸ“… 06/04/2026 09:01:13] [âŒ ERROR]
+[2026-04-06T06:01:14.212Z] [STDOUT] pubKey: <Buffer 05 a8 35 d7 2a fc a6 3e 71 e4 87 84 50 ae c5 4b a7 9b 58 03 aa b7 4d 8f ab 45 73 59 08 90 fb af 45>,
+[2026-04-06T06:01:14.214Z] [STDOUT] ð“ð®ð­ð¨ð«ð¢ðšð¥ð¬     : *youtube.com/@giftedtechnexus*
+[2026-04-06T06:01:14.228Z] [STDOUT] â”œâ”€ ðŸ‘¤ User: 254759512195@s.whatsapp.net
+[2026-04-06T06:01:14.228Z] [STDOUT] â””â”€ ðŸ’¬ Error: User not authorized in private mode
+[2026-04-06T06:01:14.229Z] [STDOUT] ðŸ’ŽOpportunities donâ€™t wait and neither do weðŸ‘Œ
+[2026-04-06T06:01:14.232Z] [STDOUT] ephemeralKeyPair: {
+[2026-04-06T06:01:14.234Z] [STDOUT] â”œâ”€ ðŸ”§ Context: Unauthorized Access
+[2026-04-06T06:01:14.243Z] [STDOUT] privKey: <Buffer 38 f6 d6 d9 1b c1 2c 6d 9b fb 15 af eb 0f bc 34 56 1c 5b ce a2 4b aa b1 df 42 ac 17 9f aa fc 41>
+[2026-04-06T06:01:14.244Z] [STDOUT] ð”ð©ððšð­ðžð¬      : *https://whatsapp.com/channel/0029VbCpYtZLtOj5LDuj7Q1p*
+[2026-04-06T06:01:14.257Z] [STDOUT] â””â”€ ðŸ’¬ Error: User not authorized in private mode
+[2026-04-06T06:01:14.257Z] [STDOUT] *ðŸ’ŽNo excusesâŽNo delaysâŽJust resultsâŽ*
+[2026-04-06T06:01:14.262Z] [STDOUT] pubKey: <Buffer 05 6a 13 52 a4 4e 0e 96 fc b2 0f 8d b8 da 6f 1d 0b 58 ba f7 a1 80 d8 91 ef 18 e8 85 3f 1b 65 f3 7a>,
+[2026-04-06T06:01:14.264Z] [STDOUT] â”œâ”€ ðŸ‘¤ User: 254706903338@s.whatsapp.net
+[2026-04-06T06:01:14.272Z] [STDOUT] ðð¨ð­ðž:  Bot may take some few seconds/minutes to sync before being ready to use.
+[2026-04-06T06:01:14.273Z] [STDOUT] },
+[2026-04-06T06:01:14.286Z] [STDOUT] *ðŸ’ŽLetâ€™s get itðŸ’ªðŸ”¥*
+[2026-04-06T06:01:14.291Z] [STDOUT] privKey: <Buffer d0 9f 5b c0 59 77 e1 77 a7 91 c5 90 db 3e 55 f5 fe bc 57 b9 99 46 f2 74 4c f5 b9 f2 ad d0 8b 72>
+[2026-04-06T06:01:14.295Z] [STDOUT] â””â”€ ðŸ’¬ Error: User not authorized in private mode
+[2026-04-06T06:01:14.301Z] [STDOUT] > *Â©ðŸðŸŽðŸðŸ“ ð€ð“ð€ð’ð’ð€-ðŒðƒ ð•ðŸ“*
+[2026-04-06T06:01:14.303Z] [STDOUT] lastRemoteEphemeralKey: <Buffer 05 9c 71 7c 25 1f f6 fa 92 df 66 07 97 f4 3e b9 f6 ba 6c c3 fe d9 ee cf 1d 56 b3 58 03 ca db 5b 30>,
+[2026-04-06T06:01:14.316Z] [STDOUT] â””â”€ ðŸ” Details: senderKeyDistributionMessage | Private | ACF5999A759ADB05B3A5F531EF26A043
+[2026-04-06T06:01:14.321Z] [STDOUT] },
+[2026-04-06T06:01:14.330Z] [STDOUT] â””â”€ ðŸ” Details: extendedTextMessage | Private | GIFTED-B8BC30A0064891B273
+[2026-04-06T06:01:14.334Z] [STDOUT] previousCounter: 0,
+[2026-04-06T06:01:14.352Z] [STDOUT] lastRemoteEphemeralKey: <Buffer 05 1d c7 76 97 da 3f ee 24 62 eb 52 de db 3d 4f 7f 77 be 8e cf 65 2c 5b e4 ec 05 fe 73 41 a0 34 1d>,
+[2026-04-06T06:01:14.364Z] [STDOUT] rootKey: <Buffer 3e b8 3d d3 f5 34 b5 06 db 43 0f e8 8d 72 97 6c 74 e1 a1 5a 5c a6 17 4f a0 b3 dc c5 f1 b8 3b 44>
+[2026-04-06T06:01:14.382Z] [STDOUT] previousCounter: 0,
+[2026-04-06T06:01:14.394Z] [STDOUT] },
+[2026-04-06T06:01:14.412Z] [STDOUT] rootKey: <Buffer 12 f0 20 e3 65 d8 8d fe 6f 3c 22 8b 21 cc 30 f9 5b 7a 12 a7 8f b3 49 c8 d6 d9 f1 ed e7 93 c5 43>
+[2026-04-06T06:01:14.425Z] [STDOUT] indexInfo: {
+[2026-04-06T06:01:14.443Z] [STDOUT] },
+[2026-04-06T06:01:14.455Z] [STDOUT] baseKey: <Buffer 05 63 af 38 77 f4 f9 b5 35 19 80 4d 8b 7a ff 48 20 6b 30 1f af cb 4e a0 bc 2b 3e 10 68 c6 48 53 6c>,
+[2026-04-06T06:01:14.474Z] [STDOUT] indexInfo: {
+[2026-04-06T06:01:14.486Z] [STDOUT] baseKeyType: 1,
+[2026-04-06T06:01:14.504Z] [STDOUT] baseKey: <Buffer 05 2b 6e ff 82 eb 5f 17 04 25 91 11 7f 58 b9 aa 77 eb 0a be 04 a1 43 54 ad dc 43 43 a8 14 20 cd 24>,
+[2026-04-06T06:01:14.517Z] [STDOUT] closed: -1,
+[2026-04-06T06:01:14.534Z] [STDOUT] baseKeyType: 2,
+[2026-04-06T06:01:14.548Z] [STDOUT] used: 1775454887511,
+[2026-04-06T06:01:14.565Z] [STDOUT] closed: -1,
+[2026-04-06T06:01:14.578Z] [STDOUT] created: 1775454887511,
+[2026-04-06T06:01:14.597Z] [STDOUT] used: 1775455273465,
+[2026-04-06T06:01:14.611Z] [STDOUT] remoteIdentityKey: <Buffer 05 b0 f2 ec 32 4e 0e 1d 63 60 2c 34 f0 e0 af a5 78 74 31 55 d8 84 3d 44 0f 1c 2a 3c a9 af c3 e1 0e>
+[2026-04-06T06:01:14.633Z] [STDOUT] created: 1775455273465,
+[2026-04-06T06:01:14.642Z] [STDOUT] },
+[2026-04-06T06:01:14.673Z] [STDOUT] remoteIdentityKey: <Buffer 05 b0 f2 ec 32 4e 0e 1d 63 60 2c 34 f0 e0 af a5 78 74 31 55 d8 84 3d 44 0f 1c 2a 3c a9 af c3 e1 0e>
+[2026-04-06T06:01:14.679Z] [STDOUT] pendingPreKey: {
+[2026-04-06T06:01:14.707Z] [STDOUT] }
+[2026-04-06T06:01:14.710Z] [STDOUT] signedKeyId: 1,
+[2026-04-06T06:01:14.739Z] [STDOUT] }
+[2026-04-06T06:01:14.741Z] [STDOUT] baseKey: <Buffer 05 63 af 38 77 f4 f9 b5 35 19 80 4d 8b 7a ff 48 20 6b 30 1f af cb 4e a0 bc 2b 3e 10 68 c6 48 53 6c>,
+[2026-04-06T06:01:14.776Z] [STDOUT] preKeyId: 45
+[2026-04-06T06:01:14.810Z] [STDOUT] }
+[2026-04-06T06:01:14.841Z] [STDOUT] }
+[2026-04-06T06:01:35.148Z] [STDERR] Closing open session in favor of incoming prekey bundle
+[2026-04-06T06:01:35.327Z] [STDOUT] Closing session: SessionEntry {
+[2026-04-06T06:01:35.357Z] [STDOUT] _chains: {
+[2026-04-06T06:01:35.388Z] [STDOUT] 'BR3HdpfaP+4kYutS3ts9T393vo7PZSxb5OwF/nNBoDQd': { chainKey: [Object], chainType: 2, messageKeys: [Object] },
+[2026-04-06T06:01:35.418Z] [STDOUT] 'BWoTUqRODpb8sg+NuNpvHQtYuvehgNiR7xjohT8bZfN6': { chainKey: [Object], chainType: 1, messageKeys: {} }
+[2026-04-06T06:01:35.447Z] [STDOUT] },
+[2026-04-06T06:01:35.477Z] [STDOUT] registrationId: 115,
+[2026-04-06T06:01:35.508Z] [STDOUT] currentRatchet: {
+[2026-04-06T06:01:35.538Z] [STDOUT] ephemeralKeyPair: {
+[2026-04-06T06:01:35.567Z] [STDOUT] pubKey: <Buffer 05 6a 13 52 a4 4e 0e 96 fc b2 0f 8d b8 da 6f 1d 0b 58 ba f7 a1 80 d8 91 ef 18 e8 85 3f 1b 65 f3 7a>,
+[2026-04-06T06:01:35.597Z] [STDOUT] privKey: <Buffer d0 9f 5b c0 59 77 e1 77 a7 91 c5 90 db 3e 55 f5 fe bc 57 b9 99 46 f2 74 4c f5 b9 f2 ad d0 8b 72>
+[2026-04-06T06:01:35.627Z] [STDOUT] },
+[2026-04-06T06:01:35.657Z] [STDOUT] lastRemoteEphemeralKey: <Buffer 05 1d c7 76 97 da 3f ee 24 62 eb 52 de db 3d 4f 7f 77 be 8e cf 65 2c 5b e4 ec 05 fe 73 41 a0 34 1d>,
+[2026-04-06T06:01:35.686Z] [STDOUT] previousCounter: 0,
+[2026-04-06T06:01:35.716Z] [STDOUT] rootKey: <Buffer 12 f0 20 e3 65 d8 8d fe 6f 3c 22 8b 21 cc 30 f9 5b 7a 12 a7 8f b3 49 c8 d6 d9 f1 ed e7 93 c5 43>
+[2026-04-06T06:01:35.746Z] [STDOUT] },
+[2026-04-06T06:01:35.775Z] [STDOUT] indexInfo: {
+[2026-04-06T06:01:35.804Z] [STDOUT] baseKey: <Buffer 05 2b 6e ff 82 eb 5f 17 04 25 91 11 7f 58 b9 aa 77 eb 0a be 04 a1 43 54 ad dc 43 43 a8 14 20 cd 24>,
+[2026-04-06T06:01:35.835Z] [STDOUT] baseKeyType: 2,
+[2026-04-06T06:01:35.864Z] [STDOUT] closed: -1,
+[2026-04-06T06:01:35.893Z] [STDOUT] used: 1775455273465,
+[2026-04-06T06:01:35.923Z] [STDOUT] created: 1775455273465,
+[2026-04-06T06:01:35.953Z] [STDOUT] remoteIdentityKey: <Buffer 05 b0 f2 ec 32 4e 0e 1d 63 60 2c 34 f0 e0 af a5 78 74 31 55 d8 84 3d 44 0f 1c 2a 3c a9 af c3 e1 0e>
+[2026-04-06T06:01:35.982Z] [STDOUT] }
+[2026-04-06T06:01:36.012Z] [STDOUT] }
+[2026-04-06T06:01:49.873Z] [STDOUT] Closing session: SessionEntry {
+[2026-04-06T06:01:49.902Z] [STDOUT] _chains: {
+[2026-04-06T06:01:49.940Z] [STDOUT] 'BdMADDM751m7uJEv8YF0EAxoMl+kZdGSW4khK6vOCf9X': { chainKey: [Object], chainType: 2, messageKeys: [Object] },
+[2026-04-06T06:01:49.970Z] [STDOUT] BTmysuuzCFvw7KVjgjoIr7Halc72lNgI1ggv9XuXsd9L: { chainKey: [Object], chainType: 1, messageKeys: {} }
+[2026-04-06T06:01:50.000Z] [STDOUT] },
+[2026-04-06T06:01:50.030Z] [STDOUT] registrationId: 115,
+[2026-04-06T06:01:50.059Z] [STDOUT] currentRatchet: {
+[2026-04-06T06:01:50.090Z] [STDOUT] ephemeralKeyPair: {
+[2026-04-06T06:01:50.120Z] [STDOUT] pubKey: <Buffer 05 39 b2 b2 eb b3 08 5b f0 ec a5 63 82 3a 08 af b1 da 95 ce f6 94 d8 08 d6 08 2f f5 7b 97 b1 df 4b>,
+[2026-04-06T06:01:50.150Z] [STDOUT] privKey: <Buffer b8 d6 b2 89 c2 5e ff ac 3b 43 9b ca dc b7 94 df 94 aa 1a 77 79 6e 08 c1 2f 02 bb 2a 5f 1d c6 71>
+[2026-04-06T06:01:50.179Z] [STDOUT] },
+[2026-04-06T06:01:50.209Z] [STDOUT] lastRemoteEphemeralKey: <Buffer 05 d3 00 0c 33 3b e7 59 bb b8 91 2f f1 81 74 10 0c 68 32 5f a4 65 d1 92 5b 89 21 2b ab ce 09 ff 57>,
+[2026-04-06T06:01:50.239Z] [STDOUT] previousCounter: 0,
+[2026-04-06T06:01:50.269Z] [STDOUT] rootKey: <Buffer 7d 5b 5a 8d ee b8 dd ed 05 17 b3 db e5 d9 a9 8a c1 b6 6f 41 07 1b cf e4 14 4b 14 ab ab 4a ef 99>
+[2026-04-06T06:01:50.298Z] [STDOUT] },
+[2026-04-06T06:01:50.328Z] [STDOUT] indexInfo: {
+[2026-04-06T06:01:50.359Z] [STDOUT] baseKey: <Buffer 05 f0 9c c9 17 ea 1a 7d 97 2d d0 44 19 cb 03 6a 79 3e 64 fb fd f1 b7 7c c4 7a 15 cc 9a 6d 73 38 6b>,
+[2026-04-06T06:01:50.389Z] [STDOUT] baseKeyType: 2,
+[2026-04-06T06:01:50.420Z] [STDOUT] closed: -1,
+[2026-04-06T06:01:50.450Z] [STDOUT] used: 1775455295133,
+[2026-04-06T06:01:50.479Z] [STDOUT] created: 1775455295133,
+[2026-04-06T06:01:50.509Z] [STDOUT] remoteIdentityKey: <Buffer 05 b0 f2 ec 32 4e 0e 1d 63 60 2c 34 f0 e0 af a5 78 74 31 55 d8 84 3d 44 0f 1c 2a 3c a9 af c3 e1 0e>
+[2026-04-06T06:01:50.538Z] [STDOUT] }
+[2026-04-06T06:01:50.568Z] [STDOUT] }
+[2026-04-06T06:01:55.033Z] [STDOUT] Closing session: SessionEntry {
+[2026-04-06T06:01:55.063Z] [STDOUT] _chains: {
+[2026-04-06T06:01:55.093Z] [STDOUT] 'BYQEh/8TJToPzeUS1lNwcDAbZ9HhlC/S1UnupTnij8kd': { chainKey: [Object], chainType: 1, messageKeys: {} }
+[2026-04-06T06:01:55.122Z] [STDOUT] },
+[2026-04-06T06:01:55.152Z] [STDOUT] registrationId: 115,
+[2026-04-06T06:01:55.182Z] [STDOUT] currentRatchet: {
+[2026-04-06T06:01:55.212Z] [STDOUT] ephemeralKeyPair: {
+[2026-04-06T06:01:55.241Z] [STDOUT] pubKey: <Buffer 05 84 04 87 ff 13 25 3a 0f cd e5 12 d6 53 70 70 30 1b 67 d1 e1 94 2f d2 d5 49 ee a5 39 e2 8f c9 1d>,
+[2026-04-06T06:01:55.270Z] [STDOUT] privKey: <Buffer 90 39 52 9f 6d ae 3f 04 81 60 c0 c1 e9 7e 89 69 0f 5f 4c 82 64 77 6a d9 24 e6 d1 c4 2f 66 27 4c>
+[2026-04-06T06:01:55.300Z] [STDOUT] },
+[2026-04-06T06:01:55.330Z] [STDOUT] lastRemoteEphemeralKey: <Buffer 05 9c 71 7c 25 1f f6 fa 92 df 66 07 97 f4 3e b9 f6 ba 6c c3 fe d9 ee cf 1d 56 b3 58 03 ca db 5b 30>,
+[2026-04-06T06:01:55.360Z] [STDOUT] previousCounter: 0,
+[2026-04-06T06:01:55.389Z] [STDOUT] rootKey: <Buffer c3 f2 e0 79 ec 44 c7 31 88 f7 0c 25 56 f9 0c ba 1c e2 5e 49 da db e4 dd 6b 02 48 cf f4 80 85 99>
+[2026-04-06T06:01:55.419Z] [STDOUT] },
+[2026-04-06T06:01:55.449Z] [STDOUT] indexInfo: {
+[2026-04-06T06:01:55.478Z] [STDOUT] baseKey: <Buffer 05 07 56 aa 6f d0 79 16 53 ce 4b 8a f4 ae 1a 26 ad 03 f2 10 44 c5 c4 0a 2f c2 89 ce 6a bf 10 04 24>,
+[2026-04-06T06:01:55.508Z] [STDOUT] baseKeyType: 1,
+[2026-04-06T06:01:55.537Z] [STDOUT] closed: -1,
+[2026-04-06T06:01:55.567Z] [STDOUT] used: 1775455309853,
+[2026-04-06T06:01:55.596Z] [STDOUT] created: 1775455309853,
+[2026-04-06T06:01:55.626Z] [STDOUT] remoteIdentityKey: <Buffer 05 b0 f2 ec 32 4e 0e 1d 63 60 2c 34 f0 e0 af a5 78 74 31 55 d8 84 3d 44 0f 1c 2a 3c a9 af c3 e1 0e>
+[2026-04-06T06:01:55.656Z] [STDOUT] },
+[2026-04-06T06:01:55.685Z] [STDOUT] pendingPreKey: {
+[2026-04-06T06:01:55.715Z] [STDOUT] signedKeyId: 1,
+[2026-04-06T06:01:55.745Z] [STDOUT] baseKey: <Buffer 05 07 56 aa 6f d0 79 16 53 ce 4b 8a f4 ae 1a 26 ad 03 f2 10 44 c5 c4 0a 2f c2 89 ce 6a bf 10 04 24>,
+[2026-04-06T06:01:55.775Z] [STDOUT] preKeyId: 33
+[2026-04-06T06:01:55.805Z] [STDOUT] }
+[2026-04-06T06:01:55.834Z] [STDOUT] }
+[2026-04-06T06:02:00.155Z] [STDOUT] Closing session: SessionEntry {
+[2026-04-06T06:02:00.184Z] [STDOUT] _chains: {
+[2026-04-06T06:02:00.214Z] [STDOUT] 'BVWKJ8VcRhYBaqustK20eNPJuMvp5l2du20d+lTjyVMk': { chainKey: [Object], chainType: 1, messageKeys: {} }
+[2026-04-06T06:02:00.244Z] [STDOUT] },
+[2026-04-06T06:02:00.273Z] [STDOUT] registrationId: 115,
+[2026-04-06T06:02:00.303Z] [STDOUT] currentRatchet: {
+[2026-04-06T06:02:00.332Z] [STDOUT] ephemeralKeyPair: {
+[2026-04-06T06:02:00.362Z] [STDOUT] pubKey: <Buffer 05 55 8a 27 c5 5c 46 16 01 6a ab ac b4 ad b4 78 d3 c9 b8 cb e9 e6 5d 9d bb 6d 1d fa 54 e3 c9 53 24>,
+[2026-04-06T06:02:00.391Z] [STDOUT] privKey: <Buffer 20 e8 45 85 46 b6 1e 0c fd cd 12 7a 86 ae 89 a8 48 c8 89 03 72 6e 79 fc 5f 5c 17 46 3c 57 2d 57>
+[2026-04-06T06:02:00.421Z] [STDOUT] },
+[2026-04-06T06:02:00.450Z] [STDOUT] lastRemoteEphemeralKey: <Buffer 05 9c 71 7c 25 1f f6 fa 92 df 66 07 97 f4 3e b9 f6 ba 6c c3 fe d9 ee cf 1d 56 b3 58 03 ca db 5b 30>,
+[2026-04-06T06:02:00.480Z] [STDOUT] previousCounter: 0,
+[2026-04-06T06:02:00.510Z] [STDOUT] rootKey: <Buffer f5 fc c1 56 b6 b1 93 b1 1b 35 5c cc ae 52 81 e3 8a c9 4f 87 a4 19 cb b3 4a 12 8f 9c 92 30 90 ee>
+[2026-04-06T06:02:00.539Z] [STDOUT] },
+[2026-04-06T06:02:00.570Z] [STDOUT] indexInfo: {
+[2026-04-06T06:02:00.600Z] [STDOUT] baseKey: <Buffer 05 e2 63 e9 b6 a2 b6 ff 2f d6 d7 81 b1 56 51 af 56 53 27 6c 25 de 91 64 cd e6 06 22 57 e5 c2 c4 21>,
+[2026-04-06T06:02:00.629Z] [STDOUT] baseKeyType: 1,
+[2026-04-06T06:02:00.659Z] [STDOUT] closed: -1,
+[2026-04-06T06:02:00.689Z] [STDOUT] used: 1775455315016,
+[2026-04-06T06:02:00.719Z] [STDOUT] created: 1775455315016,
+[2026-04-06T06:02:00.749Z] [STDOUT] remoteIdentityKey: <Buffer 05 b0 f2 ec 32 4e 0e 1d 63 60 2c 34 f0 e0 af a5 78 74 31 55 d8 84 3d 44 0f 1c 2a 3c a9 af c3 e1 0e>
+[2026-04-06T06:02:00.778Z] [STDOUT] },
+[2026-04-06T06:02:00.808Z] [STDOUT] pendingPreKey: {
+[2026-04-06T06:02:00.837Z] [STDOUT] signedKeyId: 1,
+[2026-04-06T06:02:00.867Z] [STDOUT] baseKey: <Buffer 05 e2 63 e9 b6 a2 b6 ff 2f d6 d7 81 b1 56 51 af 56 53 27 6c 25 de 91 64 cd e6 06 22 57 e5 c2 c4 21>,
+[2026-04-06T06:02:00.897Z] [STDOUT] preKeyId: 60
+[2026-04-06T06:02:00.926Z] [STDOUT] }
+[2026-04-06T06:02:00.956Z] [STDOUT] }
+[2026-04-06T06:02:06.431Z] [STDOUT] [ðŸ“… 06/04/2026 09:02:06] [ðŸ‘¤ PRIVATE]
+[2026-04-06T06:02:06.461Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: dj rays 254 (status@broadcast)
+[2026-04-06T06:02:06.492Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: dj rays 254 (+254704895154)
+[2026-04-06T06:02:06.523Z] [STDOUT] â”œâ”€ ðŸ“ Message: KENYAN HEATWAVE MASHUP DROPPING SOON ALBRIGHT EDITION VOL.1
+[2026-04-06T06:02:06.552Z] [STDOUT] â””â”€ ðŸ” Details: senderKeyDistributionMessage | Private | A52295EC8012893404D6637A6BF8A66A
+[2026-04-06T06:02:06.620Z] [STDOUT] [ðŸ“… 06/04/2026 09:02:06] [âŒ ERROR]
+[2026-04-06T06:02:06.653Z] [STDOUT] â”œâ”€ ðŸ”§ Context: Unauthorized Access
+[2026-04-06T06:02:06.684Z] [STDOUT] â”œâ”€ ðŸ‘¤ User: 254704895154@s.whatsapp.net
+[2026-04-06T06:02:06.715Z] [STDOUT] â””â”€ ðŸ’¬ Error: User not authorized in private mode
+[2026-04-06T06:10:45.456Z] [STDOUT] â”œâ”€ ðŸ”Œ Reason: Connection Closed
+[2026-04-06T06:10:45.458Z] [STDOUT] [ðŸ“… 06/04/2026 09:10:35] [ðŸ”„ RECONNECTING]
+[2026-04-06T06:10:45.957Z] [STDOUT] â”œâ”€ ðŸ”¢ Attempt: 1
+[2026-04-06T06:10:46.157Z] [STDOUT] â””â”€ â³ Delay: 5 seconds
+[2026-04-06T06:12:11.636Z] [STDOUT] [ðŸ“… 06/04/2026 09:12:11] [âœ… CONNECTED]
+[2026-04-06T06:12:11.636Z] [STDOUT] âœ… Connected to WhatsApp
+[2026-04-06T06:12:11.674Z] [STDOUT] â”œâ”€ ðŸ¤– Bot: Flash-MD v3.0.0
+[2026-04-06T06:12:11.703Z] [STDOUT] â”œâ”€ ðŸ“± Number: 254787527753
+[2026-04-06T06:12:11.733Z] [STDOUT] â”œâ”€ ðŸ”‘ LID: 233620836974620@lid
+[2026-04-06T06:12:11.763Z] [STDOUT] â”œâ”€ âš™ï¸ Mode: private
+[2026-04-06T06:12:11.792Z] [STDOUT] â””â”€ ðŸ“Š Commands: 161 loaded
+[2026-04-06T06:12:14.327Z] [STDOUT] âœ… Start message sent to owner: 254742063632@s.whatsapp.net
+[2026-04-06T06:12:14.429Z] [STDOUT] [ðŸ“… 06/04/2026 09:12:14] [ðŸ‘¤ PRIVATE]
+[2026-04-06T06:12:14.429Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: Me (+254787527753:1)
+[2026-04-06T06:12:14.458Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: Me (254742063632@s.whatsapp.net)
+[2026-04-06T06:12:14.460Z] [STDOUT] â”œâ”€ ðŸ“ Message: *FLASH-MD IS CONNECTED*
+[2026-04-06T06:12:14.491Z] [STDOUT] *ðŸš€ Version 3.0.0*
+[2026-04-06T06:12:14.522Z] [STDOUT] *ðŸ“Œ Commands:* 161
+[2026-04-06T06:12:14.554Z] [STDOUT] *âš™ï¸ Prefixes: [No Prefix]*
+[2026-04-06T06:12:14.585Z] [STDOUT] *ðŸ‘‘ Mode:* private
+[2026-04-06T06:12:14.616Z] [STDOUT] *ðŸ“ž Anticall:* false
+[2026-04-06T06:12:14.649Z] [STDOUT] *ðŸ—‘ï¸ Antidelete:* true
+[2026-04-06T06:12:14.680Z] [STDOUT] *âœï¸ Antiedit:* true
+[2026-04-06T06:12:14.717Z] [STDOUT] *ðŸ“– Auto Read:* false
+[2026-04-06T06:12:14.748Z] [STDOUT] *ðŸ‘ï¸ Auto View:* true
+[2026-04-06T06:12:14.779Z] [STDOUT] *â¤ï¸ Auto Like:* true
+[2026-04-06T06:12:14.811Z] [STDOUT] *ðŸ’¬ DM Presence:* none
+[2026-04-06T06:12:14.842Z] [STDOUT] *ðŸ‘¥ Group Presence:* none
+[2026-04-06T06:12:14.873Z] [STDOUT] *ðŸ“… Date:* 06/04/2026
+[2026-04-06T06:12:14.904Z] [STDOUT] *â° Time:* 09:12:11
+[2026-04-06T06:12:14.935Z] [STDOUT] â””â”€ ðŸ” Details: extendedTextMessage | Private | 3EB05E09AA6B00E87E2FF6
+[2026-04-06T06:12:58.935Z] [STDOUT] â”œâ”€ ðŸ‘¤ Executed By: Me (+2547875277531)
+[2026-04-06T06:12:58.936Z] [STDOUT] [ðŸ“… 06/04/2026 09:12:58] [ðŸ‘¤ PRIVATE]
+[2026-04-06T06:12:58.937Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: Me (+254787527753:1)
+[2026-04-06T06:12:58.948Z] [STDOUT] [ðŸ“… 06/04/2026 09:12:58] [âš¡ COMMAND]
+[2026-04-06T06:12:58.966Z] [STDOUT] â”œâ”€ ðŸŽ¯ Command: Menu
+[2026-04-06T06:12:58.970Z] [STDOUT] â”œâ”€ ðŸ“ Message: Menu
+[2026-04-06T06:12:58.971Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: Me (20397286285438@lid)
+[2026-04-06T06:12:58.995Z] [STDOUT] â””â”€ ðŸ“ Location: Private Chat
+[2026-04-06T06:12:58.999Z] [STDOUT] â””â”€ ðŸ” Details: conversation | Private | AC8A8EF9503C1A8D524C3B5F7F57CBFE
+[2026-04-06T06:12:59.426Z] [STDOUT] [ðŸ“… 06/04/2026 09:12:59] [ðŸ‘¤ PRIVATE]
+[2026-04-06T06:12:59.427Z] [STDOUT] â”œâ”€ ðŸ“ Message: â•­â”â”â”â’ FLASH-MD-V3 3.0.0 â’â”â”â”â•®
+[2026-04-06T06:12:59.457Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: Me (20397286285438@lid)
+[2026-04-06T06:12:59.457Z] [STDOUT] â”ƒ ðŸ§© *Commands:* 161
+[2026-04-06T06:12:59.487Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: Me (+254787527753:1)
+[2026-04-06T06:12:59.487Z] [STDOUT] â”ƒ ðŸª„ *Prefix:*
+[2026-04-06T06:12:59.517Z] [STDOUT] â”ƒ â° *Time:* 09:12:58
+[2026-04-06T06:12:59.547Z] [STDOUT] â”ƒ ðŸŒ *Timezone:* Africa/Nairobi
+[2026-04-06T06:12:59.580Z] [STDOUT] â”ƒ ðŸ“… *Date:* 06/04/2026
+[2026-04-06T06:12:59.610Z] [STDOUT] â”ƒ ðŸ”‹ *Uptime:* 18 m, 15 s
+[2026-04-06T06:12:59.640Z] [STDOUT] â”ƒ ðŸ’» *Platform:* PANEL
+[2026-04-06T06:12:59.670Z] [STDOUT] â”ƒ ðŸ’¾ *RAM:* 2.79/3.82 GB
+[2026-04-06T06:12:59.700Z] [STDOUT] â”ƒ ðŸ‘¥ *Users:* 17,521
+[2026-04-06T06:12:59.729Z] [STDOUT] â”ƒ ðŸ‘‘ *Owner:* FLASH-MD Owner
+[2026-04-06T06:12:59.759Z] [STDOUT] â•°â”â”â”â”â”â”â’ Vá´‡Ê€sÉªá´É´ 3.0.0 â’â”â”â”â”â”â•¯
+[2026-04-06T06:12:59.789Z] [STDOUT] *â•­â”€â”€â’ AI â’â”€â”€â”€âŠ·*
+[2026-04-06T06:12:59.819Z] [STDOUT] â”‚â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:12:59.848Z] [STDOUT] â”‚â”‚ 1. á´…á´‡á´‡á´˜sá´‡á´‡á´‹
+[2026-04-06T06:12:59.878Z] [STDOUT] â”‚â”‚ 2. É¢á´‡á´ÉªÉ´Éª
+[2026-04-06T06:12:59.908Z] [STDOUT] â”‚â”‚ 3. É¢á´˜á´›
+[2026-04-06T06:12:59.938Z] [STDOUT] â”‚â”‚ 4. Éªá´á´€É¢ÉªÉ´á´‡
+[2026-04-06T06:12:59.968Z] [STDOUT] â”‚â”‚ 5. ÊŸÊŸá´€á´á´€
+[2026-04-06T06:12:59.998Z] [STDOUT] â”‚â”‚ 6. vÉªsÉªá´É´
+[2026-04-06T06:13:00.030Z] [STDOUT] â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:00.060Z] [STDOUT] â•°â•â•â•â•â•â•â•â•â•â•â•â•â•â•âŠ·
+[2026-04-06T06:13:00.090Z] [STDOUT] *â•­â”€â”€â’ CONVERTER â’â”€â”€â”€âŠ·*
+[2026-04-06T06:13:00.120Z] [STDOUT] â”‚â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:00.150Z] [STDOUT] â”‚â”‚ 7. á´‡á´á´á´Éªx
+[2026-04-06T06:13:00.181Z] [STDOUT] â”‚â”‚ 8. sá´›Éªá´„á´‹á´‡Ê€
+[2026-04-06T06:13:00.216Z] [STDOUT] â”‚â”‚ 9. á´›á´€á´‹á´‡
+[2026-04-06T06:13:00.246Z] [STDOUT] â”‚â”‚ 10. á´›á´Éªá´É¢
+[2026-04-06T06:13:00.276Z] [STDOUT] â”‚â”‚ 11. á´›á´á´á´˜3
+[2026-04-06T06:13:00.306Z] [STDOUT] â”‚â”‚ 12. á´›Ê€Éªá´
+[2026-04-06T06:13:00.339Z] [STDOUT] â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:00.369Z] [STDOUT] â•°â•â•â•â•â•â•â•â•â•â•â•â•â•â•âŠ·
+[2026-04-06T06:13:00.400Z] [STDOUT] *â•­â”€â”€â’ DOWNLOAD â’â”€â”€â”€âŠ·*
+[2026-04-06T06:13:00.429Z] [STDOUT] â”‚â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:00.460Z] [STDOUT] â”‚â”‚ 13. á´€ÊŸÊŸá´…ÊŸ
+[2026-04-06T06:13:00.489Z] [STDOUT] â”‚â”‚ 14. á´€á´˜á´‹
+[2026-04-06T06:13:00.519Z] [STDOUT] â”‚â”‚ 15. Ò“Ê™
+[2026-04-06T06:13:00.549Z] [STDOUT] â”‚â”‚ 16. Ò“Ê™2
+[2026-04-06T06:13:00.580Z] [STDOUT] â”‚â”‚ 17. É¢Éªá´›á´„ÊŸá´É´á´‡
+[2026-04-06T06:13:00.610Z] [STDOUT] â”‚â”‚ 18. Éªá´á´€É¢á´‡-á´…ÊŸ
+[2026-04-06T06:13:00.642Z] [STDOUT] â”‚â”‚ 19. ÉªÉ´sá´›á´€
+[2026-04-06T06:13:00.674Z] [STDOUT] â”‚â”‚ 20. á´á´‡á´…Éªá´€Ò“ÉªÊ€á´‡
+[2026-04-06T06:13:00.705Z] [STDOUT] â”‚â”‚ 21. á´˜á´sá´›s
+[2026-04-06T06:13:00.735Z] [STDOUT] â”‚â”‚ 22. sá´˜á´á´›ÉªÒ“Ê
+[2026-04-06T06:13:00.765Z] [STDOUT] â”‚â”‚ 23. sá´›á´Ê€Ê
+[2026-04-06T06:13:00.795Z] [STDOUT] â”‚â”‚ 24. á´›É¢s
+[2026-04-06T06:13:00.825Z] [STDOUT] â”‚â”‚ 25. á´›Éªá´‹á´›á´á´‹
+[2026-04-06T06:13:00.855Z] [STDOUT] â”‚â”‚ 26. á´›á´¡Éªá´›á´›á´‡Ê€
+[2026-04-06T06:13:00.886Z] [STDOUT] â”‚â”‚ 27. vÉªá´…á´‡á´-á´…ÊŸ
+[2026-04-06T06:13:00.916Z] [STDOUT] â”‚â”‚ 28. Êá´›á´á´˜4
+[2026-04-06T06:13:00.945Z] [STDOUT] â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:00.975Z] [STDOUT] â•°â•â•â•â•â•â•â•â•â•â•â•â•â•â•âŠ·
+[2026-04-06T06:13:01.005Z] [STDOUT] *â•­â”€â”€â’ FLASH PICS â’â”€â”€â”€âŠ·*
+[2026-04-06T06:13:01.035Z] [STDOUT] â”‚â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:01.065Z] [STDOUT] â”‚â”‚ 29. Ê™á´‡sá´›-á´¡á´€ÊŸÊŸá´˜
+[2026-04-06T06:13:01.096Z] [STDOUT] â”‚â”‚ 30. Ê€á´€É´á´…á´á´
+[2026-04-06T06:13:01.126Z] [STDOUT] â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:01.156Z] [STDOUT] â•°â•â•â•â•â•â•â•â•â•â•â•â•â•â•âŠ·
+[2026-04-06T06:13:01.196Z] [STDOUT] *â•­â”€â”€â’ FINANCE â’â”€â”€â”€âŠ·*
+[2026-04-06T06:13:01.232Z] [STDOUT] â”‚â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:01.262Z] [STDOUT] â”‚â”‚ 31. á´„á´œÊ€Ê€á´‡É´á´„Ê
+[2026-04-06T06:13:01.292Z] [STDOUT] â”‚â”‚ 32. á´‡xá´„Êœá´€É´É¢á´‡
+[2026-04-06T06:13:01.322Z] [STDOUT] â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:01.352Z] [STDOUT] â•°â•â•â•â•â•â•â•â•â•â•â•â•â•â•âŠ·
+[2026-04-06T06:13:01.382Z] [STDOUT] *â•­â”€â”€â’ FUN â’â”€â”€â”€âŠ·*
+[2026-04-06T06:13:01.412Z] [STDOUT] â”‚â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:01.442Z] [STDOUT] â”‚â”‚ 33. á´€á´…vÉªá´„á´‡
+[2026-04-06T06:13:01.472Z] [STDOUT] â”‚â”‚ 34. Ò“ÊŸÉªá´˜
+[2026-04-06T06:13:01.502Z] [STDOUT] â”‚â”‚ 35. Êœá´€á´„á´‹
+[2026-04-06T06:13:01.532Z] [STDOUT] â”‚â”‚ 36. á´Šá´á´‹á´‡s
+[2026-04-06T06:13:01.562Z] [STDOUT] â”‚â”‚ 37. ÊŸá´vá´‡
+[2026-04-06T06:13:01.592Z] [STDOUT] â”‚â”‚ 38. á´›Ê€ÉªvÉªá´€
+[2026-04-06T06:13:01.622Z] [STDOUT] â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:01.652Z] [STDOUT] â•°â•â•â•â•â•â•â•â•â•â•â•â•â•â•âŠ·
+[2026-04-06T06:13:01.682Z] [STDOUT] *â•­â”€â”€â’ GENERAL â’â”€â”€â”€âŠ·*
+[2026-04-06T06:13:01.712Z] [STDOUT] â”‚â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:01.742Z] [STDOUT] â”‚â”‚ 39. á´€ÊŸÉªvá´‡
+[2026-04-06T06:13:01.771Z] [STDOUT] â”‚â”‚ 40. Ê™ÉªÊ™ÊŸá´‡
+[2026-04-06T06:13:01.801Z] [STDOUT] â”‚â”‚ 41. Ê™Ê€á´á´€á´…á´„á´€sá´›
+[2026-04-06T06:13:01.831Z] [STDOUT] â”‚â”‚ 42. á´„Ê€á´‡á´€á´›á´‡
+[2026-04-06T06:13:01.861Z] [STDOUT] â”‚â”‚ 43. á´‡vá´€ÊŸ
+[2026-04-06T06:13:01.891Z] [STDOUT] â”‚â”‚ 44. Êœá´‡ÊŸá´˜
+[2026-04-06T06:13:01.921Z] [STDOUT] â”‚â”‚ 45. Êœá´sá´›
+[2026-04-06T06:13:01.950Z] [STDOUT] â”‚â”‚ 46. ÉªÉ´sá´˜ÉªÊ€á´‡
+[2026-04-06T06:13:01.982Z] [STDOUT] â”‚â”‚ 47. á´á´€á´›Êœ
+[2026-04-06T06:13:02.016Z] [STDOUT] â”‚â”‚ 48. á´á´‡É´á´œ
+[2026-04-06T06:13:02.054Z] [STDOUT] â”‚â”‚ 49. É´á´˜á´
+[2026-04-06T06:13:02.084Z] [STDOUT] â”‚â”‚ 50. á´á´¡É´á´‡Ê€
+[2026-04-06T06:13:02.115Z] [STDOUT] â”‚â”‚ 51. á´˜á´€ÉªÊ€
+[2026-04-06T06:13:02.145Z] [STDOUT] â”‚â”‚ 52. á´˜ÉªÉ´É¢
+[2026-04-06T06:13:02.175Z] [STDOUT] â”‚â”‚ 53. á´˜á´ÊŸÊŸ
+[2026-04-06T06:13:02.205Z] [STDOUT] â”‚â”‚ 54. Ê€á´‡á´˜á´
+[2026-04-06T06:13:02.235Z] [STDOUT] â”‚â”‚ 55. ss
+[2026-04-06T06:13:02.265Z] [STDOUT] â”‚â”‚ 56. á´›Ê€á´›
+[2026-04-06T06:13:02.295Z] [STDOUT] â”‚â”‚ 57. á´œá´˜á´›Éªá´á´‡
+[2026-04-06T06:13:02.325Z] [STDOUT] â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:02.354Z] [STDOUT] â•°â•â•â•â•â•â•â•â•â•â•â•â•â•â•âŠ·
+[2026-04-06T06:13:02.384Z] [STDOUT] *â•­â”€â”€â’ GROUP â’â”€â”€â”€âŠ·*
+[2026-04-06T06:13:02.414Z] [STDOUT] â”‚â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:02.444Z] [STDOUT] â”‚â”‚ 58. á´€á´…á´…
+[2026-04-06T06:13:02.473Z] [STDOUT] â”‚â”‚ 59. á´€É´á´›ÉªÊŸÉªÉ´á´‹
+[2026-04-06T06:13:02.503Z] [STDOUT] â”‚â”‚ 60. á´€á´˜á´˜Ê€á´vá´‡
+[2026-04-06T06:13:02.534Z] [STDOUT] â”‚â”‚ 61. á´…á´‡á´á´á´›á´‡
+[2026-04-06T06:13:02.564Z] [STDOUT] â”‚â”‚ 62. á´…á´‡sá´„
+[2026-04-06T06:13:02.594Z] [STDOUT] â”‚â”‚ 63. á´…Éªsá´€á´˜
+[2026-04-06T06:13:02.624Z] [STDOUT] â”‚â”‚ 64. á´…Éªsá´€á´˜-á´Ò“Ò“
+[2026-04-06T06:13:02.654Z] [STDOUT] â”‚â”‚ 65. á´…Éªsá´€á´˜1
+[2026-04-06T06:13:02.683Z] [STDOUT] â”‚â”‚ 66. á´…Éªsá´€á´˜7
+[2026-04-06T06:13:02.713Z] [STDOUT] â”‚â”‚ 67. á´…Éªsá´€á´˜90
+[2026-04-06T06:13:02.743Z] [STDOUT] â”‚â”‚ 68. Ò“á´œÊŸÊŸÉ¢á´˜á´˜
+[2026-04-06T06:13:02.773Z] [STDOUT] â”‚â”‚ 69. ÊœÉªá´…á´‡á´›á´€É¢
+[2026-04-06T06:13:02.803Z] [STDOUT] â”‚â”‚ 70. ÉªÉ´Ò“á´
+[2026-04-06T06:13:02.833Z] [STDOUT] â”‚â”‚ 71. ÉªÉ´vÉªá´›á´‡
+[2026-04-06T06:13:02.862Z] [STDOUT] â”‚â”‚ 72. á´‹Éªá´„á´‹
+[2026-04-06T06:13:02.892Z] [STDOUT] â”‚â”‚ 73. á´‹Éªá´„á´‹á´€ÊŸÊŸ
+[2026-04-06T06:13:02.922Z] [STDOUT] â”‚â”‚ 74. ÊŸá´‡Ò“á´›
+[2026-04-06T06:13:02.953Z] [STDOUT] â”‚â”‚ 75. ÊŸá´á´„á´‹
+[2026-04-06T06:13:02.982Z] [STDOUT] â”‚â”‚ 76. á´É´ÊŸÉªÉ´á´‡
+[2026-04-06T06:13:03.013Z] [STDOUT] â”‚â”‚ 77. á´˜Ê€á´á´á´á´›á´‡
+[2026-04-06T06:13:03.043Z] [STDOUT] â”‚â”‚ 78. Ê€á´‡á´Šá´‡á´„á´›
+[2026-04-06T06:13:03.073Z] [STDOUT] â”‚â”‚ 79. Ê€á´‡É´á´€á´á´‡
+[2026-04-06T06:13:03.103Z] [STDOUT] â”‚â”‚ 80. Ê€á´‡Ï™
+[2026-04-06T06:13:03.134Z] [STDOUT] â”‚â”‚ 81. Ê€á´‡vá´á´‹á´‡
+[2026-04-06T06:13:03.165Z] [STDOUT] â”‚â”‚ 82. á´›á´€É¢á´€ÊŸÊŸ
+[2026-04-06T06:13:03.195Z] [STDOUT] â”‚â”‚ 83. á´œÉ´ÊŸá´á´„á´‹
+[2026-04-06T06:13:03.225Z] [STDOUT] â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:03.255Z] [STDOUT] â•°â•â•â•â•â•â•â•â•â•â•â•â•â•â•âŠ·
+[2026-04-06T06:13:03.285Z] [STDOUT] *â•­â”€â”€â’ LOGO â’â”€â”€â”€âŠ·*
+[2026-04-06T06:13:03.315Z] [STDOUT] â”‚â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:03.345Z] [STDOUT] â”‚â”‚ 84. 1917
+[2026-04-06T06:13:03.375Z] [STDOUT] â”‚â”‚ 85. á´€Ê€á´‡É´á´€
+[2026-04-06T06:13:03.405Z] [STDOUT] â”‚â”‚ 86. Ê™á´á´á´
+[2026-04-06T06:13:03.436Z] [STDOUT] â”‚â”‚ 87. á´„á´€á´›
+[2026-04-06T06:13:03.465Z] [STDOUT] â”‚â”‚ 88. á´„ÊœÉªÊŸá´…
+[2026-04-06T06:13:03.495Z] [STDOUT] â”‚â”‚ 89. á´„Êœá´á´„á´ÊŸá´€á´›á´‡
+[2026-04-06T06:13:03.525Z] [STDOUT] â”‚â”‚ 90. á´„ÊŸá´á´›Êœ
+[2026-04-06T06:13:03.556Z] [STDOUT] â”‚â”‚ 91. á´…Ê€á´€É¢á´É´Ê™á´€ÊŸÊŸ
+[2026-04-06T06:13:03.585Z] [STDOUT] â”‚â”‚ 92. Ò“Ê€á´á´¢á´‡É´
+[2026-04-06T06:13:03.615Z] [STDOUT] â”‚â”‚ 93. É¢á´ÊŸá´…
+[2026-04-06T06:13:03.645Z] [STDOUT] â”‚â”‚ 94. É¢Ê€á´€Ò“Ò“Éªá´›Éª
+[2026-04-06T06:13:03.675Z] [STDOUT] â”‚â”‚ 95. Êœá´€á´„á´‹á´‡Ê€
+[2026-04-06T06:13:03.704Z] [STDOUT] â”‚â”‚ 96. ÉªÉ´á´„á´€É´á´…á´‡sá´„á´‡É´á´›
+[2026-04-06T06:13:03.734Z] [STDOUT] â”‚â”‚ 97. ÊŸá´‡á´€vá´‡s
+[2026-04-06T06:13:03.764Z] [STDOUT] â”‚â”‚ 98. ÊŸÉªÉ¢Êœá´›
+[2026-04-06T06:13:03.798Z] [STDOUT] â”‚â”‚ 99. á´á´‡á´„Êœá´€É´Éªá´„á´€ÊŸ
+[2026-04-06T06:13:03.828Z] [STDOUT] â”‚â”‚ 100. É´á´€Ê€á´œá´›á´
+[2026-04-06T06:13:03.858Z] [STDOUT] â”‚â”‚ 101. É´ÉªÉ¢Êœá´›
+[2026-04-06T06:13:03.888Z] [STDOUT] â”‚â”‚ 102. á´˜á´œÊ€á´˜ÊŸá´‡
+[2026-04-06T06:13:03.918Z] [STDOUT] â”‚â”‚ 103. Ê€á´€ÉªÉ´
+[2026-04-06T06:13:03.949Z] [STDOUT] â”‚â”‚ 104. sá´€É´á´…
+[2026-04-06T06:13:03.986Z] [STDOUT] â”‚â”‚ 105. sá´›á´‡á´‡ÊŸ
+[2026-04-06T06:13:04.016Z] [STDOUT] â”‚â”‚ 106. sá´œÉ´ÊŸÉªÉ¢Êœá´›
+[2026-04-06T06:13:04.046Z] [STDOUT] â”‚â”‚ 107. sá´œÉ´sá´‡á´›
+[2026-04-06T06:13:04.076Z] [STDOUT] â”‚â”‚ 108. á´›Êá´˜á´
+[2026-04-06T06:13:04.106Z] [STDOUT] â”‚â”‚ 109. á´¡á´€á´›á´‡Ê€
+[2026-04-06T06:13:04.137Z] [STDOUT] â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:04.167Z] [STDOUT] â•°â•â•â•â•â•â•â•â•â•â•â•â•â•â•âŠ·
+[2026-04-06T06:13:04.198Z] [STDOUT] *â•­â”€â”€â’ OWNER â’â”€â”€â”€âŠ·*
+[2026-04-06T06:13:04.227Z] [STDOUT] â”‚â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:04.258Z] [STDOUT] â”‚â”‚ 110. á´‡xá´‡á´„
+[2026-04-06T06:13:04.289Z] [STDOUT] â”‚â”‚ 111. á´‡xá´‡á´„-Êœá´‡ÊŸá´˜
+[2026-04-06T06:13:04.319Z] [STDOUT] â”‚â”‚ 112. sá´œá´…á´
+[2026-04-06T06:13:04.349Z] [STDOUT] â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:04.379Z] [STDOUT] â•°â•â•â•â•â•â•â•â•â•â•â•â•â•â•âŠ·
+[2026-04-06T06:13:04.422Z] [STDOUT] *â•­â”€â”€â’ SEARCH â’â”€â”€â”€âŠ·*
+[2026-04-06T06:13:04.452Z] [STDOUT] â”‚â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:04.481Z] [STDOUT] â”‚â”‚ 113. á´…á´‡Ò“ÉªÉ´á´‡
+[2026-04-06T06:13:04.511Z] [STDOUT] â”‚â”‚ 114. Ò“á´‡á´›á´„Êœ
+[2026-04-06T06:13:04.541Z] [STDOUT] â”‚â”‚ 115. É¢Éªá´›Êœá´œÊ™
+[2026-04-06T06:13:04.571Z] [STDOUT] â”‚â”‚ 116. É¢á´á´É¢ÊŸá´‡
+[2026-04-06T06:13:04.601Z] [STDOUT] â”‚â”‚ 117. Éªá´á´…Ê™
+[2026-04-06T06:13:04.632Z] [STDOUT] â”‚â”‚ 118. ÊŸÊÊ€Éªá´„s
+[2026-04-06T06:13:04.662Z] [STDOUT] â”‚â”‚ 119. á´˜ÊŸá´€Ê
+[2026-04-06T06:13:04.692Z] [STDOUT] â”‚â”‚ 120. á´˜ÊŸá´€ÊÊŸÉªsá´›
+[2026-04-06T06:13:04.721Z] [STDOUT] â”‚â”‚ 121. sÊœá´€á´¢á´€á´
+[2026-04-06T06:13:04.751Z] [STDOUT] â”‚â”‚ 122. sá´›Éªá´„á´‹á´‡Ê€sá´‡á´€Ê€á´„Êœ
+[2026-04-06T06:13:04.781Z] [STDOUT] â”‚â”‚ 123. á´¡á´‡á´€á´›Êœá´‡Ê€
+[2026-04-06T06:13:04.811Z] [STDOUT] â”‚â”‚ 124. Êá´›á´á´˜3
+[2026-04-06T06:13:04.845Z] [STDOUT] â”‚â”‚ 125. Êá´›s
+[2026-04-06T06:13:04.875Z] [STDOUT] â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:04.905Z] [STDOUT] â•°â•â•â•â•â•â•â•â•â•â•â•â•â•â•âŠ·
+[2026-04-06T06:13:04.935Z] [STDOUT] *â•­â”€â”€â’ USER â’â”€â”€â”€âŠ·*
+[2026-04-06T06:13:04.965Z] [STDOUT] â”‚â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:04.995Z] [STDOUT] â”‚â”‚ 126. á´€á´œá´›á´Ê™Éªá´
+[2026-04-06T06:13:05.025Z] [STDOUT] â”‚â”‚ 127. Ê™ÊŸá´á´„á´‹
+[2026-04-06T06:13:05.055Z] [STDOUT] â”‚â”‚ 128. á´…á´‡ÊŸ
+[2026-04-06T06:13:05.085Z] [STDOUT] â”‚â”‚ 129. É¢á´‡á´›á´˜á´˜
+[2026-04-06T06:13:05.115Z] [STDOUT] â”‚â”‚ 130. á´ÊÉ¢Ê€á´á´œá´˜s
+[2026-04-06T06:13:05.159Z] [STDOUT] â”‚â”‚ 131. Ê€á´‡sá´›á´€Ê€á´›
+[2026-04-06T06:13:05.188Z] [STDOUT] â”‚â”‚ 132. sá´‡á´›Ê™Éªá´
+[2026-04-06T06:13:05.217Z] [STDOUT] â”‚â”‚ 133. á´œÉ´Ê™ÊŸá´á´„á´‹
+[2026-04-06T06:13:05.248Z] [STDOUT] â”‚â”‚ 134. á´¡Êœá´Éªs
+[2026-04-06T06:13:05.278Z] [STDOUT] â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:05.308Z] [STDOUT] â•°â•â•â•â•â•â•â•â•â•â•â•â•â•â•âŠ·
+[2026-04-06T06:13:05.338Z] [STDOUT] *â•­â”€â”€â’ USER â’â”€â”€â”€âŠ·*
+[2026-04-06T06:13:05.372Z] [STDOUT] â”‚â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:05.402Z] [STDOUT] â”‚â”‚ 135. á´€á´›á´›á´˜
+[2026-04-06T06:13:05.431Z] [STDOUT] â”‚â”‚ 136. á´…á´‡á´›á´€ÉªÊŸs
+[2026-04-06T06:13:05.464Z] [STDOUT] â”‚â”‚ 137. á´‡ÊŸá´‡á´á´‡É´á´›
+[2026-04-06T06:13:05.494Z] [STDOUT] â”‚â”‚ 138. á´‡vá´€ÊŸ2
+[2026-04-06T06:13:05.524Z] [STDOUT] â”‚â”‚ 139. Ò“á´€á´„á´›
+[2026-04-06T06:13:05.554Z] [STDOUT] â”‚â”‚ 140. Ï™á´œá´á´›á´‡s
+[2026-04-06T06:13:05.584Z] [STDOUT] â”‚â”‚ 141. vv
+[2026-04-06T06:13:05.614Z] [STDOUT] â”‚â”‚ 142. vv2
+[2026-04-06T06:13:05.643Z] [STDOUT] â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:05.673Z] [STDOUT] â•°â•â•â•â•â•â•â•â•â•â•â•â•â•â•âŠ·
+[2026-04-06T06:13:05.702Z] [STDOUT] *â•­â”€â”€â’ WHATSAPP â’â”€â”€â”€âŠ·*
+[2026-04-06T06:13:05.732Z] [STDOUT] â”‚â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:05.762Z] [STDOUT] â”‚â”‚ 143. á´€Ê€á´„ÊœÉªvá´‡
+[2026-04-06T06:13:05.792Z] [STDOUT] â”‚â”‚ 144. Ê™Éªá´¢á´˜Ê€á´Ò“ÉªÊŸá´‡
+[2026-04-06T06:13:05.821Z] [STDOUT] â”‚â”‚ 145. Ê™ÊŸá´á´„á´‹ÊŸÉªsá´›
+[2026-04-06T06:13:05.851Z] [STDOUT] â”‚â”‚ 146. Ò“á´œÊŸÊŸá´˜á´˜
+[2026-04-06T06:13:05.881Z] [STDOUT] â”‚â”‚ 147. É¢Ê€á´á´œá´˜á´€á´…á´…
+[2026-04-06T06:13:05.910Z] [STDOUT] â”‚â”‚ 148. ÊŸá´€sá´›sá´‡á´‡É´
+[2026-04-06T06:13:05.940Z] [STDOUT] â”‚â”‚ 149. ÊŸá´á´„á´€á´›Éªá´É´
+[2026-04-06T06:13:05.970Z] [STDOUT] â”‚â”‚ 150. á´Êá´…á´˜
+[2026-04-06T06:13:05.999Z] [STDOUT] â”‚â”‚ 151. á´Êá´É´ÊŸÉªÉ´á´‡
+[2026-04-06T06:13:06.029Z] [STDOUT] â”‚â”‚ 152. á´Êsá´›á´€á´›á´œs
+[2026-04-06T06:13:06.059Z] [STDOUT] â”‚â”‚ 153. á´É´á´¡á´€
+[2026-04-06T06:13:06.089Z] [STDOUT] â”‚â”‚ 154. á´˜ÉªÉ´
+[2026-04-06T06:13:06.119Z] [STDOUT] â”‚â”‚ 155. á´˜Ê€Éªvá´€á´„Ê
+[2026-04-06T06:13:06.149Z] [STDOUT] â”‚â”‚ 156. Ê€á´‡á´á´vá´‡á´…á´˜
+[2026-04-06T06:13:06.178Z] [STDOUT] â”‚â”‚ 157. sá´€vá´‡
+[2026-04-06T06:13:06.209Z] [STDOUT] â”‚â”‚ 158. sá´›á´€Ê€
+[2026-04-06T06:13:06.239Z] [STDOUT] â”‚â”‚ 159. á´œÉ´á´˜ÉªÉ´
+[2026-04-06T06:13:06.269Z] [STDOUT] â”‚â”‚ 160. á´œÉ´sá´›á´€Ê€
+[2026-04-06T06:13:06.299Z] [STDOUT] â”‚â”‚ 161. vá´„á´€Ê€á´…
+[2026-04-06T06:13:06.328Z] [STDOUT] â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+[2026-04-06T06:13:06.358Z] [STDOUT] â•°â•â•â•â•â•â•â•â•â•â•â•â•â•â•âŠ·
+[2026-04-06T06:13:06.388Z] [STDOUT] â””â”€ ðŸ” Details: extendedTextMessage | Private | 3EB0E46DA41B31AF3432AB
+[2026-04-06T06:15:24.618Z] [STDOUT] [ðŸ“… 06/04/2026 09:15:17] [ðŸ‘¤ PRIVATE]
+[2026-04-06T06:15:25.356Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: Me (43113670250666@lid)
+[2026-04-06T06:15:25.356Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: Me (+254787527753:1)
+[2026-04-06T06:15:26.056Z] [STDOUT] â”œâ”€ ðŸ“ Message: Ping
+[2026-04-06T06:15:26.257Z] [STDOUT] â””â”€ ðŸ” Details: conversation | Private | AC2D790F26FDB8AB7C0E842CA961527D
+[2026-04-06T06:15:26.756Z] [STDOUT] [ðŸ“… 06/04/2026 09:15:17] [âš¡ COMMAND]
+[2026-04-06T06:15:26.857Z] [STDOUT] â”œâ”€ ðŸ‘¤ Executed By: Me (+2547875277531)
+[2026-04-06T06:15:27.057Z] [STDOUT] â”œâ”€ ðŸŽ¯ Command: Ping
+[2026-04-06T06:15:27.256Z] [STDOUT] â””â”€ ðŸ“ Location: Private Chat
+[2026-04-06T06:23:43.355Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: Freddie (+254707599134)
+[2026-04-06T06:23:43.356Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: Freddie (+254707599134)
+[2026-04-06T06:23:43.357Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: Me (+254787527753:1)
+[2026-04-06T06:23:43.357Z] [STDOUT] [ðŸ“… 06/04/2026 09:23:41] [ðŸ‘¤ PRIVATE]
+[2026-04-06T06:23:43.357Z] [STDOUT] [ðŸ“… 06/04/2026 09:23:41] [ðŸ‘¤ PRIVATE]
+[2026-04-06T06:23:43.357Z] [STDOUT] [ðŸ“… 06/04/2026 09:23:41] [ðŸ‘¤ PRIVATE]
+[2026-04-06T06:23:43.357Z] [STDOUT] â””â”€ ðŸ’¬ Error: User not authorized in private mode
+[2026-04-06T06:23:43.357Z] [STDOUT] â””â”€ ðŸ“ Location: Private Chat
+[2026-04-06T06:23:43.357Z] [STDOUT] [ðŸ“… 06/04/2026 09:23:41] [âš¡ COMMAND]
+[2026-04-06T06:23:43.357Z] [STDOUT] [ðŸ“… 06/04/2026 09:23:41] [ðŸ‘¤ PRIVATE]
+[2026-04-06T06:23:43.956Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: Me (+254787527753:1)
+[2026-04-06T06:23:43.956Z] [STDOUT] [ðŸ“… 06/04/2026 09:23:42] [ðŸ‘¤ PRIVATE]
+[2026-04-06T06:23:43.956Z] [STDOUT] [ðŸ“… 06/04/2026 09:23:42] [ðŸ‘¤ PRIVATE]
+[2026-04-06T06:23:43.957Z] [STDOUT] [ðŸ“… 06/04/2026 09:23:41] [ðŸ‘¤ PRIVATE]
+[2026-04-06T06:23:43.957Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: xibs (status@broadcast)
+[2026-04-06T06:23:43.957Z] [STDOUT] [ðŸ“… 06/04/2026 09:23:42] [âŒ ERROR]
+[2026-04-06T06:23:43.958Z] [STDOUT] â”œâ”€ ðŸ”§ Context: Unauthorized Access
+[2026-04-06T06:23:43.958Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: Freddie (status@broadcast)
+[2026-04-06T06:23:44.456Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: Freddie (status@broadcast)
+[2026-04-06T06:23:44.456Z] [STDOUT] â”œâ”€ ðŸ“ Message: ðŸŒ„
+[2026-04-06T06:23:44.457Z] [STDOUT] â”œâ”€ ðŸ‘¤ Executed By: Me (+2547875277531)
+[2026-04-06T06:23:44.457Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: Me (20397286285438@lid)
+[2026-04-06T06:23:44.457Z] [STDOUT] â”œâ”€ ðŸ“ Message: To more wins
+[2026-04-06T06:23:44.457Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: Me (20397286285438@lid)
+[2026-04-06T06:23:44.458Z] [STDOUT] â”œâ”€ ðŸ“ Message: Deepseek hello
+[2026-04-06T06:23:44.458Z] [STDOUT] â”œâ”€ ðŸ“ Message: Ping
+[2026-04-06T06:23:44.856Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: Unknown (120363354023106228@newsletter)
+[2026-04-06T06:23:44.856Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: xibs (+255778206718)
+[2026-04-06T06:23:44.857Z] [STDOUT] â””â”€ ðŸ” Details: videoMessage | Private | A53D3396E310CD36A09474B20E59FCC0
+[2026-04-06T06:23:44.857Z] [STDOUT] â”œâ”€ ðŸ’¬ Chat: Me (43113670250666@lid)
+[2026-04-06T06:23:44.857Z] [STDOUT] â””â”€ ðŸ” Details: conversation | Private | ACEA7D4ADA6C78821421CF1567159A5A
+[2026-04-06T06:23:44.857Z] [STDOUT] â”œâ”€ ðŸ‘¤ User: 255778206718@s.whatsapp.net
+[2026-04-06T06:23:44.857Z] [STDOUT] â”œâ”€ ðŸŽ¯ Command: Deepseek
+[2026-04-06T06:23:45.157Z] [STDOUT] â””â”€ ðŸ” Details: conversation | Private | AC3688CA255D569C32B648F119EA1EF1
+[2026-04-06T06:23:45.157Z] [STDOUT] â”œâ”€ ðŸ“ Message: Wacha ntasoma Wednesday morning ðŸ˜‚ðŸ˜‚
+[2026-04-06T06:23:45.157Z] [STDOUT] #Kajumper.ðŸ”¥
+[2026-04-06T06:23:45.158Z] [STDOUT] â””â”€ ðŸ’¬ Error: User not authorized in private mode
+[2026-04-06T06:23:45.656Z] [STDOUT] [ðŸ“… 06/04/2026 09:23:41] [âŒ ERROR]
+[2026-04-06T06:23:45.657Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: Unknown (+Unknown)
+[2026-04-06T06:23:45.657Z] [STDOUT] â”œâ”€ ðŸ‘¤ Sender: Me (+254787527753:1)
+[2026-04-06T06:23:45.658Z] [STDOUT] â””â”€ ðŸ” Details: imageMessage | Private | A5E5CDA2F3AC971C77D4702B206360BC
+[2026-04-06T06:23:45.658Z] [STDOUT] [ðŸ“… 06/04/2026 09:23:41] [âš¡ COMMAND]
+[2026-04-06T06:23:46.357Z] [STDOUT] â””â”€ ðŸ” Details: videoMessage | Private | A50B7869F956C71B29DA15BFCE247DA6
+[2026-04-06T06:23:46.357Z] [STDOUT] â”œâ”€ ðŸ‘¤ Executed By: Me (+2547875277531)
+[2026-04-06T06:23:46.956Z] [STDOUT] â”œâ”€ ðŸ”§ Context: Unauthorized Access
+[2026-04-06T06:23:46.957Z] [STDOUT] â”œâ”€ ðŸ“ Message: *KHAN-MD under maintenance*
+[2026-04-06T06:23:46.957Z] [STDOUT] â”œâ”€ ðŸ“ Message: Pinging...
+[2026-04-06T06:23:46.957Z] [STDOUT] â”œâ”€ ðŸŽ¯ Command: Ping
+[2026-04-06T06:23:46.958Z] [STDOUT] [ðŸ“… 06/04/2026 09:23:41] [âŒ ERROR]
+[2026-04-06T06:23:47.757Z] [STDOUT] â”œâ”€ ðŸ‘¤ User: 254707599134@s.whatsapp.net
+[2026-04-06T06:23:47.757Z] [STDOUT] bot is down ðŸ‘Ž don't deploy KHAN MD
+[2026-04-06T06:23:47.758Z] [STDOUT] â””â”€ ðŸ” Details: extendedTextMessage | Private | 3EB07D17030988E6030E29
+[2026-04-06T06:23:47.758Z] [STDOUT] â””â”€ ðŸ“ Location: Private Chat
+[2026-04-06T06:23:47.759Z] [STDOUT] â”œâ”€ ðŸ”§ Context: Unauthorized Access
+[2026-04-06T06:23:48.056Z] [STDOUT] â””â”€ ðŸ’¬ Error: User not authorized in private mode
+[2026-04-06T06:23:48.057Z] [STDOUT] Use Jawad md now
+[2026-04-06T06:23:48.058Z] [STDOUT] â”œâ”€ ðŸ‘¤ User: 254707599134@s.whatsapp.net
+[2026-04-06T06:23:48.657Z] [STDOUT] *Filhal Jawad md use krain KHAN MD bot abhi under fixing ha "*
+[2026-04-06T06:23:48.857Z] [STDOUT] â””â”€ ðŸ” Details: conversation | Private | A5984F469E8CFF0B43CB8F1AD060E46F
+[2026-04-06T06:23:49.156Z] [STDOUT] [ðŸ“… 06/04/2026 09:23:41] [âŒ ERROR]
+[2026-04-06T06:23:49.557Z] [STDOUT] â”œâ”€ ðŸ”§ Context: Unauthorized Access
+[2026-04-06T06:23:50.257Z] [STDOUT] â””â”€ ðŸ’¬ Error: User not authorized in private mode
+[2026-04-06T06:27:55.156Z] [STDOUT] [ðŸ“… 06/04/2026 09:27:50] [ðŸ”„ RECONNECTING]
+[2026-04-06T06:27:55.257Z] [STDOUT] â”œâ”€ ðŸ”Œ Reason: Connection Lost
+[2026-04-06T06:27:55.656Z] [STDOUT] â”œâ”€ ðŸ”¢ Attempt: 1
+[2026-04-06T06:27:56.057Z] [STDOUT] â””â”€ â³ Delay: 5 seconds
+[2026-04-06T06:31:32.556Z] [STDERR] file:///tmp/berahost_dep_14/node_modules/@whiskeysockets/baileys/lib/Socket/socket.js:65
+[2026-04-06T06:31:32.557Z] [STDOUT] [ðŸ“… 06/04/2026 09:31:23] [âŒ ERROR]
+[2026-04-06T06:31:32.656Z] [STDOUT] â”œâ”€ ðŸ”§ Context: Command Execution
+[2026-04-06T06:31:32.656Z] [STDERR] throw new Boom('Connection Closed', { statusCode: DisconnectReason.connectionClosed });
+[2026-04-06T06:31:32.856Z] [STDOUT] â”œâ”€ ðŸŽ¯ Command: Ping
+[2026-04-06T06:31:32.856Z] [STDERR] ^
+[2026-04-06T06:31:33.156Z] [STDOUT] â”œâ”€ ðŸ‘¤ User: 254787527753:1@s.whatsapp.net
+[2026-04-06T06:31:33.156Z] [STDERR] Error: Connection Closed
+[2026-04-06T06:31:33.356Z] [STDOUT] â””â”€ ðŸ’¬ Error: Connection Closed
+[2026-04-06T06:31:33.357Z] [STDERR] at sendRawMessage (file:///tmp/berahost_dep_14/node_modules/@whiskeysockets/baileys/lib/Socket/socket.js:65:19)
+[2026-04-06T06:31:33.557Z] [STDERR] at sendNode (file:///tmp/berahost_dep_14/node_modules/@whiskeysockets/baileys/lib/Socket/socket.js:84:16)
+[2026-04-06T06:31:33.756Z] [STDERR] at file:///tmp/berahost_dep_14/node_modules/@whiskeysockets/baileys/lib/Socket/messages-send.js:997:23
+[2026-04-06T06:31:33.956Z] [STDERR] at async file:///tmp/berahost_dep_14/node_modules/@whiskeysockets/baileys/lib/Utils/auth-utils.js:248:40 {
+[2026-04-06T06:31:35.256Z] [STDERR] data: null,
+[2026-04-06T06:31:35.557Z] [STDERR] isBoom: true,
+[2026-04-06T06:31:35.756Z] [STDERR] isServer: false,
+[2026-04-06T06:31:35.956Z] [STDERR] output: {
+[2026-04-06T06:31:36.256Z] [STDERR] statusCode: 428,
+[2026-04-06T06:31:36.456Z] [STDERR] payload: {
+[2026-04-06T06:31:36.457Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T06:31:36.656Z] [STDERR] statusCode: 428,
+[2026-04-06T06:31:36.756Z] [STDERR] error: 'Precondition Required',
+[2026-04-06T06:31:36.856Z] [INFO  ] [BERAHOST] â†» Auto-restart 3/10 in 10s...
+[2026-04-06T06:31:36.856Z] [STDERR] message: 'Connection Closed'
+[2026-04-06T06:31:37.056Z] [STDERR] },
+[2026-04-06T06:31:37.156Z] [STDERR] headers: {}
+[2026-04-06T06:31:37.257Z] [STDERR] }
+[2026-04-06T06:31:37.356Z] [STDERR] }
+[2026-04-06T06:31:37.556Z] [STDERR] Node.js v24.13.0
+[2026-04-06T06:31:47.456Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T06:31:47.557Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T06:32:06.856Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-06T06:32:07.957Z] [INFO  ] [BERAHOST] Bot started with PID 584
+[2026-04-06T06:32:09.264Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_3)...
+[2026-04-06T06:36:02.857Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T06:36:02.957Z] [STDERR] npm warn EBADENGINE   package: 'flash-md-v3@3.0.0',
+[2026-04-06T06:36:03.157Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x', npm: '9.x' },
+[2026-04-06T06:36:03.557Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T06:36:05.257Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T06:52:33.187Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T06:52:33.217Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-06T06:52:33.277Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T06:52:33.306Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-06T06:52:34.611Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-06T06:52:34.733Z] [INFO  ] [BERAHOST] Bot started with PID 69
+[2026-04-06T06:52:51.715Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-06T06:52:52.129Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T06:52:52.183Z] [STDERR] npm warn EBADENGINE   package: 'flash-md-v3@3.0.0',
+[2026-04-06T06:52:52.214Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x', npm: '9.x' },
+[2026-04-06T06:52:52.282Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T06:52:52.313Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T06:52:54.915Z] [INFO  ] [BERAHOST] Bot started with PID 70
+[2026-04-06T06:52:55.394Z] [STDERR] npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.

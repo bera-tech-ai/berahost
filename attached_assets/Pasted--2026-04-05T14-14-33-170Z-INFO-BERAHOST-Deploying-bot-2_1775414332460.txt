@@ -1,0 +1,260 @@
+[2026-04-05T14:14:33.170Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-05T14:14:33.200Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-05T14:14:33.993Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-05T14:14:34.114Z] [INFO  ] [BERAHOST] Bot started with PID 215
+[2026-04-05T14:14:46.806Z] [STDERR] npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+[2026-04-05T14:14:46.958Z] [STDERR] npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
+[2026-04-05T14:14:47.040Z] [STDERR] npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+[2026-04-05T14:14:47.045Z] [STDERR] npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+[2026-04-05T14:14:47.163Z] [STDERR] npm warn deprecated dottie@2.0.7: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+[2026-04-05T14:14:47.166Z] [STDERR] npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[2026-04-05T14:14:47.256Z] [STDERR] npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+[2026-04-05T14:14:47.257Z] [STDERR] npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+[2026-04-05T14:14:47.277Z] [STDERR] npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+[2026-04-05T14:14:48.328Z] [STDERR] npm warn deprecated querystring@0.2.1: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+[2026-04-05T14:14:48.575Z] [STDERR] npm warn deprecated gauge@4.0.4: This package is no longer supported.
+[2026-04-05T14:14:49.076Z] [STDERR] npm warn deprecated tar@6.2.1: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[2026-04-05T14:14:49.111Z] [STDERR] npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+[2026-04-05T14:14:55.917Z] [STDERR] npm warn deprecated fluent-ffmpeg@2.1.3: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+[2026-04-05T14:18:05.461Z] [STDOUT] added 663 packages, and audited 664 packages in 4m
+[2026-04-05T14:18:05.461Z] [STDOUT] 102 packages are looking for funding
+[2026-04-05T14:18:05.500Z] [STDOUT] run `npm fund` for details
+[2026-04-05T14:18:05.531Z] [STDOUT] 38 vulnerabilities (3 low, 19 moderate, 16 high)
+[2026-04-05T14:18:05.561Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-05T14:18:05.575Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-05T14:18:05.591Z] [STDOUT] npm audit fix
+[2026-04-05T14:18:05.621Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-05T14:18:05.652Z] [STDOUT] npm audit fix --force
+[2026-04-05T14:18:05.682Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-05T14:18:05.712Z] [STDOUT] a different dependency.
+[2026-04-05T14:18:05.742Z] [STDOUT] Run `npm audit` for details.
+[2026-04-05T14:18:06.418Z] [STDOUT] â„¹ï¸  DATABASE_URL Empty, Using Path
+[2026-04-05T14:18:07.266Z] [STDOUT] âœ… Server Running on Port: 3100
+[2026-04-05T14:18:07.697Z] [STDOUT] âœ… Session File Loaded
+[2026-04-05T14:18:07.843Z] [STDOUT] âœ… Database Synchronized.
+[2026-04-05T14:18:08.297Z] [STDOUT] âœ… Bot Settings Initialized
+[2026-04-05T14:18:08.387Z] [INFO  ] [BERAHOST] âœ“ Bot settings synced (OWNER_NUMBER, PREFIX) â†’ gift/database/database.db
+[2026-04-05T14:18:08.472Z] [STDOUT] âœ… Group Settings Initialized.
+[2026-04-05T14:18:08.826Z] [STDOUT] ðŸ•— Connecting Bot...
+[2026-04-05T14:18:08.831Z] [INFO  ] [BERAHOST] âœ“ Bot settings synced (OWNER_NUMBER, PREFIX) â†’ gift/database/database.db
+[2026-04-05T14:18:10.736Z] [STDOUT] âœ… Connection Instance is Online
+[2026-04-05T14:18:13.153Z] [STDOUT] âœ… LID store initialized => 2875 Mappings from 8 Groups
+[2026-04-05T14:18:18.156Z] [STDOUT] ðŸ’œ Connected to Whatsapp, Active!
+[2026-04-05T14:23:21.297Z] [WARN  ] [BERAHOST] âš  No output for 5 min â€” bot appears stuck, forcing restart...
+[2026-04-05T14:53:19.519Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-05T14:53:19.562Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-05T14:53:20.045Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-05T14:53:20.175Z] [INFO  ] [BERAHOST] Bot started with PID 45
+[2026-04-05T14:58:22.599Z] [WARN  ] [BERAHOST] âš  No output for 5 min â€” bot appears stuck, forcing restart...
+[2026-04-05T14:58:26.299Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=â€”, signal=SIGTERM) â€” scheduling restart...
+[2026-04-05T14:58:26.899Z] [INFO  ] [BERAHOST] â†» Auto-restart 1/5 in 5s...
+[2026-04-05T14:58:34.600Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-05T14:58:35.499Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-05T15:00:08.861Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-05T15:00:13.498Z] [INFO  ] [BERAHOST] Bot started with PID 108
+[2026-04-05T15:02:44.400Z] [STDERR] npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+[2026-04-05T15:02:44.531Z] [STDERR] npm warn deprecated dottie@2.0.7: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+[2026-04-05T15:02:44.601Z] [STDERR] npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+[2026-04-05T15:02:44.601Z] [STDERR] npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+[2026-04-05T15:02:44.699Z] [STDERR] npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+[2026-04-05T15:02:44.718Z] [STDERR] npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+[2026-04-05T15:02:44.725Z] [STDERR] npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+[2026-04-05T15:02:44.730Z] [STDERR] npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[2026-04-05T15:02:44.735Z] [STDERR] npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+[2026-04-05T15:02:45.024Z] [STDERR] npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+[2026-04-05T15:02:45.025Z] [STDERR] npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+[2026-04-05T15:02:45.200Z] [STDERR] npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+[2026-04-05T15:02:45.203Z] [STDERR] npm warn deprecated dottie@2.0.7: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+[2026-04-05T15:02:45.231Z] [STDERR] npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[2026-04-05T15:02:48.302Z] [STDERR] npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+[2026-04-05T15:02:49.238Z] [STDERR] npm warn deprecated querystring@0.2.1: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+[2026-04-05T15:02:49.499Z] [STDERR] npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+[2026-04-05T15:02:50.908Z] [STDERR] npm warn deprecated querystring@0.2.1: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+[2026-04-05T15:02:52.423Z] [STDERR] npm warn deprecated gauge@4.0.4: This package is no longer supported.
+[2026-04-05T15:02:52.630Z] [STDERR] npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
+[2026-04-05T15:02:53.224Z] [STDERR] npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
+[2026-04-05T15:02:53.401Z] [STDERR] npm warn deprecated gauge@4.0.4: This package is no longer supported.
+[2026-04-05T15:02:54.930Z] [STDERR] npm warn deprecated tar@6.2.1: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[2026-04-05T15:02:55.215Z] [STDERR] npm warn deprecated tar@6.2.1: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[2026-04-05T15:02:56.133Z] [STDERR] npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+[2026-04-05T15:02:56.327Z] [STDERR] npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+[2026-04-05T15:03:06.528Z] [STDERR] npm warn deprecated fluent-ffmpeg@2.1.3: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+[2026-04-05T15:03:06.804Z] [STDERR] npm warn deprecated fluent-ffmpeg@2.1.3: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+[2026-04-05T15:03:15.407Z] [STDERR] npm error code 1
+[2026-04-05T15:03:15.501Z] [STDERR] npm notice
+[2026-04-05T15:03:15.535Z] [STDERR] npm notice New minor version of npm available! 11.6.2 -> 11.12.1
+[2026-04-05T15:03:15.610Z] [STDERR] npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.12.1
+[2026-04-05T15:03:15.699Z] [STDERR] npm notice To update run: npm install -g npm@11.12.1
+[2026-04-05T15:03:15.731Z] [STDERR] npm notice
+[2026-04-05T15:03:15.798Z] [STDERR] npm error node:internal/modules/cjs/loader:1424
+[2026-04-05T15:03:15.799Z] [STDERR] npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-04-05T14_53_20_298Z-debug-0.log
+[2026-04-05T15:03:15.800Z] [STDERR] npm error path /tmp/berahost_dep_11/node_modules/wa-sticker-formatter/node_modules/sharp
+[2026-04-05T15:03:15.830Z] [STDERR] npm error   throw err;
+[2026-04-05T15:03:15.831Z] [STDERR] npm error command failed
+[2026-04-05T15:03:15.905Z] [STDERR] npm error   ^
+[2026-04-05T15:03:15.912Z] [STDERR] npm error command sh -c (node install/libvips && node install/dll-copy && prebuild-install) || (node install/can-compile && node-gyp rebuild && node install/dll-copy)
+[2026-04-05T15:03:15.998Z] [STDERR] npm error
+[2026-04-05T15:03:15.998Z] [STDERR] npm error code 1
+[2026-04-05T15:03:15.999Z] [STDERR] npm error path /tmp/berahost_dep_11/node_modules/better-sqlite3
+[2026-04-05T15:03:16.000Z] [STDERR] npm error command failed
+[2026-04-05T15:03:16.030Z] [STDERR] npm error Error: Cannot find module 'detect-libc'
+[2026-04-05T15:03:16.098Z] [STDERR] npm error Require stack:
+[2026-04-05T15:03:16.128Z] [STDERR] npm error - /tmp/berahost_dep_11/node_modules/wa-sticker-formatter/node_modules/sharp/install/libvips.js
+[2026-04-05T15:03:16.199Z] [STDERR] npm error     at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+[2026-04-05T15:03:16.230Z] [STDERR] npm error     at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+[2026-04-05T15:03:16.298Z] [STDERR] npm error     at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+[2026-04-05T15:03:16.299Z] [STDERR] npm error command sh -c prebuild-install || node-gyp rebuild --release
+[2026-04-05T15:03:16.327Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-05T15:03:16.349Z] [STDERR] npm error     at Module._load (node:internal/modules/cjs/loader:1227:37)
+[2026-04-05T15:03:16.360Z] [STDERR] npm error (node:320) [DEP0176] DeprecationWarning: fs.R_OK is deprecated, use fs.constants.R_OK instead
+[2026-04-05T15:03:16.397Z] [STDERR] npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-04-05T15_00_51_824Z-debug-0.log
+[2026-04-05T15:03:16.398Z] [STDERR] npm error     at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+[2026-04-05T15:03:16.398Z] [STDERR] npm error (Use `node --trace-deprecation ...` to show where the warning was created)
+[2026-04-05T15:03:16.427Z] [STDERR] npm error gyp info it worked if it ends with ok
+[2026-04-05T15:03:16.428Z] [STDERR] npm error     at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+[2026-04-05T15:03:16.503Z] [STDERR] npm error     at Module.require (node:internal/modules/cjs/loader:1504:12)
+[2026-04-05T15:03:16.504Z] [STDERR] npm error gyp info using node-gyp@8.4.1
+[2026-04-05T15:03:16.533Z] [STDERR] npm error     at require (node:internal/modules/helpers:152:16)
+[2026-04-05T15:03:16.533Z] [STDERR] npm error gyp info using node@24.13.0 | linux | x64
+[2026-04-05T15:03:16.543Z] [STDERR] node:internal/modules/cjs/loader:1424
+[2026-04-05T15:03:16.562Z] [STDERR] npm error (node:318) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+[2026-04-05T15:03:16.562Z] [STDERR] npm error     at Object.<anonymous> (/tmp/berahost_dep_11/node_modules/wa-sticker-formatter/node_modules/sharp/install/libvips.js:10:20)
+[2026-04-05T15:03:16.598Z] [STDERR] throw err;
+[2026-04-05T15:03:16.598Z] [STDERR] npm error (Use `node --trace-deprecation ...` to show where the warning was created)
+[2026-04-05T15:03:16.599Z] [STDERR] npm error     at Module._compile (node:internal/modules/cjs/loader:1761:14) {
+[2026-04-05T15:03:16.627Z] [STDERR] ^
+[2026-04-05T15:03:16.628Z] [STDERR] npm error gyp ERR! find Python
+[2026-04-05T15:03:16.628Z] [STDERR] npm error   code: 'MODULE_NOT_FOUND',
+[2026-04-05T15:03:16.630Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-05T15:03:16.656Z] [STDERR] Error: Cannot find module 'fs-extra'
+[2026-04-05T15:03:16.657Z] [STDERR] npm error gyp ERR! find Python Python is not set from command line or npm configuration
+[2026-04-05T15:03:16.657Z] [STDERR] npm error   requireStack: [
+[2026-04-05T15:03:16.699Z] [STDERR] Require stack:
+[2026-04-05T15:03:16.699Z] [STDERR] npm error gyp ERR! find Python Python is not set from environment variable PYTHON
+[2026-04-05T15:03:16.700Z] [STDERR] npm error     '/tmp/berahost_dep_11/node_modules/wa-sticker-formatter/node_modules/sharp/install/libvips.js'
+[2026-04-05T15:03:16.729Z] [STDERR] - /tmp/berahost_dep_11/config.js
+[2026-04-05T15:03:16.729Z] [STDERR] npm error gyp ERR! find Python checking if "python3" can be used
+[2026-04-05T15:03:16.730Z] [STDERR] npm error   ]
+[2026-04-05T15:03:16.731Z] [INFO  ] [BERAHOST] â†» Auto-restart 2/5 in 10s...
+[2026-04-05T15:03:16.759Z] [STDERR] - /tmp/berahost_dep_11/gift/database/database.js
+[2026-04-05T15:03:16.759Z] [STDERR] npm error }
+[2026-04-05T15:03:16.759Z] [STDERR] npm error gyp ERR! find Python - "python3" is not in PATH or produced an error
+[2026-04-05T15:03:16.788Z] [STDERR] npm error gyp ERR! find Python checking if "python" can be used
+[2026-04-05T15:03:16.788Z] [STDERR] - /tmp/berahost_dep_11/gift/database/settings.js
+[2026-04-05T15:03:16.789Z] [STDERR] npm error
+[2026-04-05T15:03:16.819Z] [STDERR] npm error gyp ERR! find Python - "python" is not in PATH or produced an error
+[2026-04-05T15:03:16.820Z] [STDERR] - /tmp/berahost_dep_11/gift/gmdHelpers.js
+[2026-04-05T15:03:16.820Z] [STDERR] npm error Node.js v24.13.0
+[2026-04-05T15:03:16.848Z] [STDERR] npm error gyp ERR! find Python
+[2026-04-05T15:03:16.848Z] [STDERR] npm error node:internal/modules/cjs/loader:1424
+[2026-04-05T15:03:16.848Z] [STDERR] - /tmp/berahost_dep_11/index.js
+[2026-04-05T15:03:16.877Z] [STDERR] npm error gyp ERR! find Python **********************************************************
+[2026-04-05T15:03:16.878Z] [STDERR] at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+[2026-04-05T15:03:16.878Z] [STDERR] npm error   throw err;
+[2026-04-05T15:03:16.906Z] [STDERR] npm error gyp ERR! find Python You need to install the latest version of Python.
+[2026-04-05T15:03:16.907Z] [STDERR] at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+[2026-04-05T15:03:16.907Z] [STDERR] npm error   ^
+[2026-04-05T15:03:16.934Z] [STDERR] npm error gyp ERR! find Python Node-gyp should be able to find and use Python. If not,
+[2026-04-05T15:03:16.943Z] [STDERR] npm error
+[2026-04-05T15:03:16.943Z] [STDERR] at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+[2026-04-05T15:03:16.963Z] [STDERR] npm error gyp ERR! find Python you can try one of the following options:
+[2026-04-05T15:03:16.971Z] [STDERR] at Module._load (node:internal/modules/cjs/loader:1227:37)
+[2026-04-05T15:03:16.972Z] [STDERR] npm error Error: Cannot find module '/tmp/berahost_dep_11/node_modules/wa-sticker-formatter/node_modules/sharp/install/can-compile'
+[2026-04-05T15:03:16.992Z] [STDERR] npm error gyp ERR! find Python - Use the switch --python="/path/to/pythonexecutable"
+[2026-04-05T15:03:17.000Z] [STDERR] at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+[2026-04-05T15:03:17.000Z] [STDERR] npm error     at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+[2026-04-05T15:03:17.020Z] [STDERR] npm error gyp ERR! find Python   (accepted by both node-gyp and npm)
+[2026-04-05T15:03:17.028Z] [STDERR] at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+[2026-04-05T15:03:17.029Z] [STDERR] npm error     at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+[2026-04-05T15:03:17.049Z] [STDERR] npm error gyp ERR! find Python - Set the environment variable PYTHON
+[2026-04-05T15:03:17.057Z] [STDERR] at Module.require (node:internal/modules/cjs/loader:1504:12)
+[2026-04-05T15:03:17.057Z] [STDERR] npm error     at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+[2026-04-05T15:03:17.077Z] [STDERR] npm error gyp ERR! find Python - Set the npm configuration variable python:
+[2026-04-05T15:03:17.085Z] [STDERR] at require (node:internal/modules/helpers:152:16)
+[2026-04-05T15:03:17.086Z] [STDERR] npm error     at Module._load (node:internal/modules/cjs/loader:1227:37)
+[2026-04-05T15:03:17.106Z] [STDERR] npm error gyp ERR! find Python   npm config set python "/path/to/pythonexecutable"
+[2026-04-05T15:03:17.115Z] [STDERR] at Object.<anonymous> (/tmp/berahost_dep_11/config.js:1:12)
+[2026-04-05T15:03:17.115Z] [STDERR] npm error     at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+[2026-04-05T15:03:17.135Z] [STDERR] npm error gyp ERR! find Python For more information consult the documentation at:
+[2026-04-05T15:03:17.143Z] [STDERR] at Module._compile (node:internal/modules/cjs/loader:1761:14) {
+[2026-04-05T15:03:17.144Z] [STDERR] npm error     at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+[2026-04-05T15:03:17.163Z] [STDERR] npm error gyp ERR! find Python https://github.com/nodejs/node-gyp#installation
+[2026-04-05T15:03:17.172Z] [STDERR] code: 'MODULE_NOT_FOUND',
+[2026-04-05T15:03:17.172Z] [STDERR] npm error     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+[2026-04-05T15:03:17.192Z] [STDERR] npm error gyp ERR! find Python **********************************************************
+[2026-04-05T15:03:17.200Z] [STDERR] requireStack: [
+[2026-04-05T15:03:17.201Z] [STDERR] npm error     at node:internal/main/run_main_module:33:47 {
+[2026-04-05T15:03:17.221Z] [STDERR] npm error gyp ERR! find Python
+[2026-04-05T15:03:17.229Z] [STDERR] '/tmp/berahost_dep_11/config.js',
+[2026-04-05T15:03:17.229Z] [STDERR] npm error   code: 'MODULE_NOT_FOUND',
+[2026-04-05T15:03:17.250Z] [STDERR] npm error gyp ERR! configure error
+[2026-04-05T15:03:17.258Z] [STDERR] '/tmp/berahost_dep_11/gift/database/database.js',
+[2026-04-05T15:03:17.258Z] [STDERR] npm error   requireStack: []
+[2026-04-05T15:03:17.279Z] [STDERR] npm error gyp ERR! stack Error: Could not find any Python installation to use
+[2026-04-05T15:03:17.286Z] [STDERR] '/tmp/berahost_dep_11/gift/database/settings.js',
+[2026-04-05T15:03:17.287Z] [STDERR] npm error }
+[2026-04-05T15:03:17.308Z] [STDERR] npm error gyp ERR! stack     at PythonFinder.fail (/tmp/berahost_dep_11/node_modules/node-gyp/lib/find-python.js:330:47)
+[2026-04-05T15:03:17.314Z] [STDERR] '/tmp/berahost_dep_11/gift/gmdHelpers.js',
+[2026-04-05T15:03:17.315Z] [STDERR] npm error
+[2026-04-05T15:03:17.337Z] [STDERR] npm error gyp ERR! stack     at PythonFinder.runChecks (/tmp/berahost_dep_11/node_modules/node-gyp/lib/find-python.js:159:21)
+[2026-04-05T15:03:17.343Z] [STDERR] '/tmp/berahost_dep_11/index.js'
+[2026-04-05T15:03:17.345Z] [STDERR] npm error Node.js v24.13.0
+[2026-04-05T15:03:17.366Z] [STDERR] npm error gyp ERR! stack     at PythonFinder.<anonymous> (/tmp/berahost_dep_11/node_modules/node-gyp/lib/find-python.js:202:16)
+[2026-04-05T15:03:17.371Z] [STDERR] ]
+[2026-04-05T15:03:17.395Z] [STDERR] npm error gyp ERR! stack     at PythonFinder.execFileCallback (/tmp/berahost_dep_11/node_modules/node-gyp/lib/find-python.js:294:16)
+[2026-04-05T15:03:17.400Z] [STDERR] }
+[2026-04-05T15:03:17.424Z] [STDERR] npm error gyp ERR! stack     at exithandler (node:child_process:424:5)
+[2026-04-05T15:03:17.428Z] [STDERR] Node.js v24.13.0
+[2026-04-05T15:03:17.452Z] [STDERR] npm error gyp ERR! stack     at ChildProcess.errorhandler (node:child_process:436:5)
+[2026-04-05T15:03:17.481Z] [STDERR] npm error gyp ERR! stack     at ChildProcess.emit (node:events:508:28)
+[2026-04-05T15:03:17.509Z] [STDERR] npm error gyp ERR! stack     at ChildProcess._handle.onexit (node:internal/child_process:292:12)
+[2026-04-05T15:03:17.539Z] [STDERR] npm error gyp ERR! stack     at onErrorNT (node:internal/child_process:484:16)
+[2026-04-05T15:03:17.568Z] [STDERR] npm error gyp ERR! stack     at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+[2026-04-05T15:03:17.597Z] [STDERR] npm error gyp ERR! System Linux 6.9.12
+[2026-04-05T15:03:17.625Z] [STDERR] npm error gyp ERR! command "/nix/store/9cyx2v23dip6p9q98384k9v06c96qskb-nodejs-24.13.0/bin/node" "/tmp/berahost_dep_11/node_modules/.bin/node-gyp" "rebuild" "--release"
+[2026-04-05T15:03:17.654Z] [STDERR] npm error gyp ERR! cwd /tmp/berahost_dep_11/node_modules/better-sqlite3
+[2026-04-05T15:03:17.683Z] [STDERR] npm error gyp ERR! node -v v24.13.0
+[2026-04-05T15:03:17.712Z] [STDERR] npm error gyp ERR! node-gyp -v v8.4.1
+[2026-04-05T15:03:17.741Z] [STDERR] npm error gyp ERR! not ok
+[2026-04-05T15:03:26.820Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-05T15:03:26.848Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-05T15:03:27.199Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-05T15:03:27.294Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_1)...
+[2026-04-05T15:03:27.319Z] [INFO  ] [BERAHOST] Bot started with PID 623
+[2026-04-05T15:03:29.786Z] [STDOUT] 102 packages are looking for funding
+[2026-04-05T15:03:29.786Z] [STDOUT] removed 2 packages, and audited 662 packages in 2s
+[2026-04-05T15:03:29.815Z] [STDOUT] run `npm fund` for details
+[2026-04-05T15:03:29.887Z] [STDOUT] 38 vulnerabilities (3 low, 19 moderate, 16 high)
+[2026-04-05T15:03:29.916Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-05T15:03:29.916Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-05T15:03:29.944Z] [STDOUT] npm audit fix
+[2026-04-05T15:03:29.973Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-05T15:03:30.001Z] [STDOUT] npm audit fix --force
+[2026-04-05T15:03:30.030Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-05T15:03:30.059Z] [STDOUT] a different dependency.
+[2026-04-05T15:03:30.088Z] [STDOUT] Run `npm audit` for details.
+[2026-04-05T15:03:30.805Z] [STDOUT] â„¹ï¸  DATABASE_URL Empty, Using Path
+[2026-04-05T15:03:31.586Z] [STDOUT] âœ… Server Running on Port: 3100
+[2026-04-05T15:03:31.974Z] [STDOUT] âœ… Session File Loaded
+[2026-04-05T15:03:32.003Z] [STDOUT] âœ… Database Synchronized.
+[2026-04-05T15:03:32.127Z] [STDOUT] âœ… Bot Settings Initialized
+[2026-04-05T15:03:32.240Z] [STDOUT] âœ… Group Settings Initialized.
+[2026-04-05T15:03:32.540Z] [INFO  ] [BERAHOST] âœ“ Bot settings synced (OWNER_NUMBER, PREFIX) â†’ gift/database/database.db
+[2026-04-05T15:03:32.572Z] [STDOUT] ðŸ•— Connecting Bot...
+[2026-04-05T15:03:32.658Z] [INFO  ] [BERAHOST] âœ“ Bot settings synced (OWNER_NUMBER, PREFIX) â†’ gift/database/database.db
+[2026-04-05T15:03:34.203Z] [STDOUT] âœ… Connection Instance is Online
+[2026-04-05T15:03:36.310Z] [STDOUT] âœ… LID store initialized => 2875 Mappings from 8 Groups
+[2026-04-05T15:03:41.312Z] [STDOUT] ðŸ’œ Connected to Whatsapp, Active!
+[2026-04-05T15:08:41.314Z] [WARN  ] [BERAHOST] âš  No output for 5 min â€” bot appears stuck, forcing restart...
+[2026-04-05T16:01:11.086Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-05T16:01:11.130Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-05T16:01:11.814Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-05T16:01:11.957Z] [INFO  ] [BERAHOST] Bot started with PID 44
+[2026-04-05T16:06:25.545Z] [WARN  ] [BERAHOST] âš  No output for 5 min â€” bot appears stuck, forcing restart...
+[2026-04-05T16:06:28.249Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=â€”, signal=SIGTERM) â€” scheduling restart...
+[2026-04-05T16:06:30.745Z] [INFO  ] [BERAHOST] â†» Auto-restart 1/5 in 5s...
+[2026-04-05T16:06:37.445Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-05T16:06:38.446Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-05T16:09:56.945Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-05T16:12:20.846Z] [STDERR] [BERAHOST] Error: Command failed: git clone --depth=1 https://github.com/mauricegift/atassa /tmp/berahost_dep_11
+fatal: destination path '/tmp/berahost_dep_11' already exists and is not an empty directory.

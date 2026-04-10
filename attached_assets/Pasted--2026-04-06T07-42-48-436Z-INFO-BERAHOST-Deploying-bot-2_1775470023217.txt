@@ -1,0 +1,731 @@
+[2026-04-06T07:42:48.436Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T07:42:48.472Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-06T07:42:49.685Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-06T07:42:49.823Z] [INFO  ] [BERAHOST] Bot started with PID 46
+[2026-04-06T07:43:08.862Z] [STDERR] npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+[2026-04-06T07:43:08.878Z] [STDERR] npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+[2026-04-06T07:43:08.913Z] [STDERR] npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+[2026-04-06T07:43:08.927Z] [STDERR] npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+[2026-04-06T07:43:08.991Z] [STDERR] npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[2026-04-06T07:43:09.032Z] [STDERR] npm warn deprecated dottie@2.0.7: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+[2026-04-06T07:43:09.061Z] [STDERR] npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+[2026-04-06T07:43:09.521Z] [STDERR] npm warn deprecated gauge@4.0.4: This package is no longer supported.
+[2026-04-06T07:43:09.943Z] [STDERR] npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+[2026-04-06T07:43:10.032Z] [STDERR] npm warn deprecated querystring@0.2.1: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+[2026-04-06T07:43:11.037Z] [STDERR] npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
+[2026-04-06T07:43:11.213Z] [STDERR] npm warn deprecated tar@6.2.1: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[2026-04-06T07:43:11.938Z] [STDERR] npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+[2026-04-06T07:43:15.186Z] [STDERR] npm warn deprecated fluent-ffmpeg@2.1.3: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+[2026-04-06T07:43:19.458Z] [STDOUT] added 663 packages, and audited 664 packages in 29s
+[2026-04-06T07:43:19.528Z] [STDOUT] 38 vulnerabilities (3 low, 19 moderate, 16 high)
+[2026-04-06T07:43:19.559Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T07:43:19.589Z] [STDOUT] npm audit fix
+[2026-04-06T07:43:19.620Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T07:43:19.633Z] [STDOUT] 102 packages are looking for funding
+[2026-04-06T07:43:19.650Z] [STDOUT] npm audit fix --force
+[2026-04-06T07:43:19.663Z] [STDOUT] run `npm fund` for details
+[2026-04-06T07:43:19.681Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T07:43:19.705Z] [STDERR] npm notice
+[2026-04-06T07:43:19.712Z] [STDOUT] a different dependency.
+[2026-04-06T07:43:19.743Z] [STDERR] npm notice New minor version of npm available! 11.6.2 -> 11.12.1
+[2026-04-06T07:43:19.744Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T07:43:19.773Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T07:43:19.774Z] [STDERR] npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.12.1
+[2026-04-06T07:43:19.774Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T07:43:19.806Z] [STDERR] npm notice To update run: npm install -g npm@11.12.1
+[2026-04-06T07:43:19.836Z] [STDERR] npm notice
+[2026-04-06T07:43:19.855Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T07:43:19.863Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T07:43:19.893Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T07:43:19.912Z] [STDOUT] [BERAHOST] AES-GCM patch: pattern not found in ./node_modules/gifted-baileys/lib/Socket/socket.js â€” will fall back to process restart on error
+[2026-04-06T07:43:19.915Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T07:43:20.001Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T07:43:20.254Z] [STDOUT] â„¹ï¸  DATABASE_URL Empty, Using Path
+[2026-04-06T07:43:20.971Z] [STDOUT] âœ… Server Running on Port: 3100
+[2026-04-06T07:43:21.381Z] [STDOUT] âœ… Session File Loaded
+[2026-04-06T07:43:21.423Z] [STDOUT] âœ… Database Synchronized.
+[2026-04-06T07:43:21.574Z] [STDOUT] âœ… Bot Settings Initialized
+[2026-04-06T07:43:21.684Z] [STDOUT] âœ… Group Settings Initialized.
+[2026-04-06T07:43:21.962Z] [INFO  ] [BERAHOST] âœ“ Bot settings synced (OWNER_NUMBER, PREFIX, BOT_NAME) â†’ gift/database/database.db
+[2026-04-06T07:43:22.009Z] [STDOUT] ðŸ•— Connecting Bot...
+[2026-04-06T07:43:22.106Z] [INFO  ] [BERAHOST] âœ“ Bot settings synced (OWNER_NUMBER, PREFIX, BOT_NAME) â†’ gift/database/database.db
+[2026-04-06T07:43:22.563Z] [STDOUT] âœ… Connection Instance is Online
+[2026-04-06T07:43:23.130Z] [STDERR] âŒ Group join failed for LZE4CoZNhLB28z5jtqwNLA: growth-locked
+[2026-04-06T07:43:23.566Z] [STDOUT] âœ… LID store initialized => 2855 Mappings from 8 Groups
+[2026-04-06T07:43:28.568Z] [STDOUT] ðŸ’œ Connected to Whatsapp, Active!
+[2026-04-06T07:50:12.420Z] [STDOUT] Connection closed due to: 408
+[2026-04-06T07:50:12.465Z] [STDOUT] ðŸ•— Reconnecting...
+[2026-04-06T07:50:12.494Z] [STDOUT] ðŸ•— Reconnection attempt 1/50 in 5000ms...
+[2026-04-06T07:50:18.356Z] [STDOUT] ðŸ•— Connecting Bot...
+[2026-04-06T07:50:44.755Z] [STDERR] node:internal/crypto/cipher:170
+[2026-04-06T07:50:44.785Z] [STDERR] const ret = this[kHandle].final();
+[2026-04-06T07:50:44.857Z] [STDERR] ^
+[2026-04-06T07:50:45.157Z] [STDERR] Error: Unsupported state or unable to authenticate data
+[2026-04-06T07:50:45.455Z] [WARN  ] [BERAHOST] â†» WhatsApp reconnection error detected â€” restarting cleanly (no crash count)...
+[2026-04-06T07:50:45.556Z] [STDERR] at Decipheriv.final (node:internal/crypto/cipher:170:29)
+[2026-04-06T07:50:45.656Z] [STDERR] at aesDecryptGCM (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Utils/crypto.js:111:58)
+[2026-04-06T07:50:45.856Z] [STDERR] at decrypt (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Utils/noise-handler.js:31:51)
+[2026-04-06T07:50:46.055Z] [STDERR] at Object.decodeFrame (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Utils/noise-handler.js:140:36)
+[2026-04-06T07:50:46.156Z] [STDERR] at WebSocketClient.onMessageReceived (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Socket/socket.js:211:15)
+[2026-04-06T07:50:46.356Z] [STDERR] at WebSocketClient.emit (node:events:508:28)
+[2026-04-06T07:50:46.556Z] [STDERR] at WebSocket.<anonymous> (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Socket/Client/websocket.js:46:100)
+[2026-04-06T07:50:46.556Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T07:50:46.756Z] [STDERR] at WebSocket.emit (node:events:508:28)
+[2026-04-06T07:50:46.957Z] [STDERR] at Receiver.receiverOnMessage (/tmp/berahost_dep_16/node_modules/ws/lib/websocket.js:1225:20)
+[2026-04-06T07:50:47.256Z] [STDERR] at Receiver.emit (node:events:508:28)
+[2026-04-06T07:50:47.256Z] [INFO  ] [BERAHOST] â†» Auto-restart 1/10 in 0s...
+[2026-04-06T07:50:47.356Z] [STDERR] Node.js v24.13.0
+[2026-04-06T07:50:47.756Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T07:50:47.955Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T07:51:03.204Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-06T07:51:04.457Z] [INFO  ] [BERAHOST] Bot started with PID 289
+[2026-04-06T07:51:04.956Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_1)...
+[2026-04-06T07:51:32.310Z] [STDOUT] removed 3 packages, and audited 662 packages in 23s
+[2026-04-06T07:51:32.311Z] [STDOUT] 102 packages are looking for funding
+[2026-04-06T07:51:32.340Z] [STDOUT] run `npm fund` for details
+[2026-04-06T07:51:32.423Z] [STDOUT] 38 vulnerabilities (3 low, 19 moderate, 16 high)
+[2026-04-06T07:51:32.455Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T07:51:32.470Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T07:51:32.476Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T07:51:32.485Z] [STDOUT] npm audit fix
+[2026-04-06T07:51:32.514Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T07:51:32.555Z] [STDOUT] npm audit fix --force
+[2026-04-06T07:51:32.585Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T07:51:32.614Z] [STDOUT] a different dependency.
+[2026-04-06T07:51:32.643Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T07:51:32.794Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T07:51:32.925Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T07:51:32.954Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T07:51:32.964Z] [STDOUT] [BERAHOST] AES-GCM patch: pattern not found in ./node_modules/gifted-baileys/lib/Socket/socket.js â€” will fall back to process restart on error
+[2026-04-06T07:51:32.967Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T07:51:33.019Z] [STDOUT] [BERAHOST] Pre-injected 3 settings into gift/database/database.db
+[2026-04-06T07:51:33.026Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T07:51:33.234Z] [STDOUT] â„¹ï¸  DATABASE_URL Empty, Using Path
+[2026-04-06T07:51:33.912Z] [STDOUT] âœ… Server Running on Port: 3100
+[2026-04-06T07:51:34.353Z] [STDOUT] âœ… Session File Loaded
+[2026-04-06T07:51:34.376Z] [STDOUT] âœ… Database Synchronized.
+[2026-04-06T07:51:34.516Z] [STDOUT] âœ… Bot Settings Initialized
+[2026-04-06T07:51:34.669Z] [STDOUT] âœ… Group Settings Initialized.
+[2026-04-06T07:51:34.911Z] [INFO  ] [BERAHOST] âœ“ Bot settings synced (OWNER_NUMBER, PREFIX, BOT_NAME) â†’ gift/database/database.db
+[2026-04-06T07:51:35.057Z] [INFO  ] [BERAHOST] âœ“ Bot settings synced (OWNER_NUMBER, PREFIX, BOT_NAME) â†’ gift/database/database.db
+[2026-04-06T07:51:35.062Z] [STDOUT] ðŸ•— Connecting Bot...
+[2026-04-06T07:51:35.778Z] [STDOUT] âœ… Connection Instance is Online
+[2026-04-06T07:51:36.326Z] [STDERR] âŒ Group join failed for LZE4CoZNhLB28z5jtqwNLA: growth-locked
+[2026-04-06T07:51:36.865Z] [STDOUT] âœ… LID store initialized => 2854 Mappings from 8 Groups
+[2026-04-06T07:51:41.866Z] [STDOUT] ðŸ’œ Connected to Whatsapp, Active!
+[2026-04-06T08:21:24.590Z] [STDOUT] Connection closed due to: 408
+[2026-04-06T08:21:24.610Z] [STDOUT] ðŸ•— Reconnecting...
+[2026-04-06T08:21:25.130Z] [STDOUT] ðŸ•— Reconnection attempt 1/50 in 5000ms...
+[2026-04-06T08:21:28.964Z] [STDOUT] ðŸ•— Connecting Bot...
+[2026-04-06T08:21:28.974Z] [STDERR] resolveImageHeader failed: Connection Closed
+[2026-04-06T08:21:28.980Z] [STDERR] Error during download process: Error: Connection Closed
+[2026-04-06T08:21:28.983Z] [STDERR] Reaction error: Error: Connection Closed
+[2026-04-06T08:21:28.987Z] [STDERR] /tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Socket/socket.js:60
+[2026-04-06T08:21:29.009Z] [STDERR] at sendRawMessage (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Socket/socket.js:60:19)
+[2026-04-06T08:21:29.013Z] [STDERR] at sendRawMessage (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Socket/socket.js:60:19)
+[2026-04-06T08:21:29.017Z] [STDERR] throw new boom_1.Boom('Connection Closed', { statusCode: Types_1.DisconnectReason.connectionClosed });
+[2026-04-06T08:21:29.039Z] [STDERR] at sendNode (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Socket/socket.js:79:16)
+[2026-04-06T08:21:29.043Z] [STDERR] at sendNode (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Socket/socket.js:79:16)
+[2026-04-06T08:21:29.043Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T08:21:29.047Z] [STDERR] ^
+[2026-04-06T08:21:29.068Z] [STDERR] at /tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Socket/messages-send.js:765:19
+[2026-04-06T08:21:29.073Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T08:21:29.073Z] [STDERR] at /tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Socket/messages-send.js:765:19
+[2026-04-06T08:21:29.077Z] [STDERR] Error: Connection Closed
+[2026-04-06T08:21:29.097Z] [STDERR] at async Object.transaction (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Utils/auth-utils.js:134:26)
+[2026-04-06T08:21:29.107Z] [STDERR] at async Object.transaction (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Utils/auth-utils.js:134:26)
+[2026-04-06T08:21:29.108Z] [STDERR] at sendRawMessage (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Socket/socket.js:60:19)
+[2026-04-06T08:21:29.127Z] [STDERR] at async Object.relayMessage (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Socket/messages-send.js:406:9)
+[2026-04-06T08:21:29.138Z] [STDERR] at async relayMessage (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Socket/messages-send.js:406:9)
+[2026-04-06T08:21:29.138Z] [STDERR] at sendNode (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Socket/socket.js:79:16)
+[2026-04-06T08:21:29.157Z] [STDERR] at async wVpG (/tmp/berahost_dep_16/node_modules/gifted-btns/gift.js:1617:3)
+[2026-04-06T08:21:29.168Z] [STDERR] at /tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Socket/messages-send.js:765:19
+[2026-04-06T08:21:29.168Z] [STDERR] at async Object.sendMessage (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Socket/messages-send.js:1034:17)
+[2026-04-06T08:21:29.186Z] [STDERR] at async Object.function (/tmp/berahost_dep_16/gifted/play.js:233:7)
+[2026-04-06T08:21:29.199Z] [STDERR] at async react (/tmp/berahost_dep_16/gift/connection/commandHandler.js:67:13)
+[2026-04-06T08:21:29.199Z] [STDERR] at async Object.transaction (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Utils/auth-utils.js:134:26)
+[2026-04-06T08:21:29.216Z] [STDERR] at async EventEmitter.<anonymous> (/tmp/berahost_dep_16/index.js:808:17) {
+[2026-04-06T08:21:29.230Z] [STDERR] at async relayMessage (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Socket/messages-send.js:406:9)
+[2026-04-06T08:21:29.230Z] [STDERR] at async Object.function (/tmp/berahost_dep_16/gifted/play.js:313:7)
+[2026-04-06T08:21:29.246Z] [STDERR] data: null,
+[2026-04-06T08:21:29.260Z] [STDERR] at async EventEmitter.<anonymous> (/tmp/berahost_dep_16/index.js:808:17) {
+[2026-04-06T08:21:29.260Z] [STDERR] at async Object.sendMessage (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Socket/messages-send.js:1034:17) {
+[2026-04-06T08:21:29.276Z] [STDERR] isBoom: true,
+[2026-04-06T08:21:29.290Z] [STDERR] data: null,
+[2026-04-06T08:21:29.291Z] [STDERR] data: null,
+[2026-04-06T08:21:29.306Z] [STDERR] isServer: false,
+[2026-04-06T08:21:29.322Z] [STDERR] isBoom: true,
+[2026-04-06T08:21:29.322Z] [STDERR] isBoom: true,
+[2026-04-06T08:21:29.335Z] [STDERR] output: {
+[2026-04-06T08:21:29.353Z] [STDERR] isServer: false,
+[2026-04-06T08:21:29.353Z] [STDERR] isServer: false,
+[2026-04-06T08:21:29.365Z] [STDERR] statusCode: 428,
+[2026-04-06T08:21:29.383Z] [STDERR] output: {
+[2026-04-06T08:21:29.384Z] [STDERR] output: {
+[2026-04-06T08:21:29.395Z] [STDERR] payload: {
+[2026-04-06T08:21:29.415Z] [STDERR] statusCode: 428,
+[2026-04-06T08:21:29.415Z] [STDERR] statusCode: 428,
+[2026-04-06T08:21:29.417Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-06T08:21:29.424Z] [STDERR] statusCode: 428,
+[2026-04-06T08:21:29.446Z] [STDERR] payload: {
+[2026-04-06T08:21:29.447Z] [STDERR] payload: {
+[2026-04-06T08:21:29.453Z] [STDERR] error: 'Precondition Required',
+[2026-04-06T08:21:29.476Z] [STDERR] statusCode: 428,
+[2026-04-06T08:21:29.476Z] [STDERR] statusCode: 428,
+[2026-04-06T08:21:29.481Z] [STDERR] message: 'Connection Closed'
+[2026-04-06T08:21:29.510Z] [STDERR] error: 'Precondition Required',
+[2026-04-06T08:21:29.510Z] [STDERR] },
+[2026-04-06T08:21:29.510Z] [STDERR] error: 'Precondition Required',
+[2026-04-06T08:21:29.513Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_1)...
+[2026-04-06T08:21:29.539Z] [INFO  ] [BERAHOST] Bot started with PID 1150
+[2026-04-06T08:21:29.539Z] [STDERR] headers: {}
+[2026-04-06T08:21:29.540Z] [STDERR] message: 'Connection Closed'
+[2026-04-06T08:21:29.540Z] [STDERR] message: 'Connection Closed'
+[2026-04-06T08:21:29.568Z] [STDERR] }
+[2026-04-06T08:21:29.569Z] [STDERR] },
+[2026-04-06T08:21:29.569Z] [STDERR] },
+[2026-04-06T08:21:29.598Z] [STDERR] }
+[2026-04-06T08:21:29.599Z] [STDERR] headers: {}
+[2026-04-06T08:21:29.599Z] [STDERR] headers: {}
+[2026-04-06T08:21:29.629Z] [STDERR] }
+[2026-04-06T08:21:29.630Z] [STDERR] }
+[2026-04-06T08:21:29.660Z] [STDERR] }
+[2026-04-06T08:21:29.660Z] [STDERR] }
+[2026-04-06T08:21:29.690Z] [STDERR] Node.js v24.13.0
+[2026-04-06T08:21:31.820Z] [STDOUT] removed 1 package, and audited 662 packages in 2s
+[2026-04-06T08:21:31.821Z] [STDOUT] 102 packages are looking for funding
+[2026-04-06T08:21:31.871Z] [STDOUT] run `npm fund` for details
+[2026-04-06T08:21:31.891Z] [STDOUT] 38 vulnerabilities (3 low, 19 moderate, 16 high)
+[2026-04-06T08:21:31.909Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T08:21:31.927Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T08:21:31.927Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T08:21:31.957Z] [STDOUT] npm audit fix
+[2026-04-06T08:21:31.989Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T08:21:32.020Z] [STDOUT] npm audit fix --force
+[2026-04-06T08:21:32.050Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T08:21:32.081Z] [STDOUT] a different dependency.
+[2026-04-06T08:21:32.112Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T08:21:32.165Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T08:21:32.280Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T08:21:32.311Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T08:21:32.323Z] [STDOUT] [BERAHOST] AES-GCM patch: pattern not found in ./node_modules/gifted-baileys/lib/Socket/socket.js â€” will fall back to process restart on error
+[2026-04-06T08:21:32.327Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T08:21:32.375Z] [STDOUT] [BERAHOST] Pre-injected 3 settings into gift/database/database.db
+[2026-04-06T08:21:32.383Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T08:21:32.607Z] [STDOUT] â„¹ï¸  DATABASE_URL Empty, Using Path
+[2026-04-06T08:21:36.818Z] [STDOUT] âœ… Server Running on Port: 3100
+[2026-04-06T08:21:37.229Z] [STDOUT] âœ… Session File Loaded
+[2026-04-06T08:21:37.253Z] [STDOUT] âœ… Database Synchronized.
+[2026-04-06T08:21:37.348Z] [STDOUT] âœ… Bot Settings Initialized
+[2026-04-06T08:21:38.057Z] [INFO  ] [BERAHOST] âœ“ Bot settings synced (OWNER_NUMBER, PREFIX, BOT_NAME) â†’ gift/database/database.db
+[2026-04-06T08:21:38.556Z] [INFO  ] [BERAHOST] âœ“ Bot settings synced (OWNER_NUMBER, PREFIX, BOT_NAME) â†’ gift/database/database.db
+[2026-04-06T08:21:39.062Z] [STDOUT] âœ… Group Settings Initialized.
+[2026-04-06T08:21:39.333Z] [STDOUT] ðŸ•— Connecting Bot...
+[2026-04-06T08:21:39.935Z] [STDOUT] âœ… Connection Instance is Online
+[2026-04-06T08:21:40.416Z] [STDERR] âŒ Group join failed for LZE4CoZNhLB28z5jtqwNLA: growth-locked
+[2026-04-06T08:21:40.930Z] [STDOUT] âœ… LID store initialized => 2855 Mappings from 8 Groups
+[2026-04-06T08:21:45.931Z] [STDOUT] ðŸ’œ Connected to Whatsapp, Active!
+[2026-04-06T08:31:30.911Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T08:31:30.943Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-06T08:31:31.632Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-06T08:31:31.764Z] [INFO  ] [BERAHOST] Bot started with PID 46
+[2026-04-06T08:37:34.794Z] [STDOUT] Connection closed due to: 408
+[2026-04-06T08:37:35.456Z] [STDOUT] ðŸ•— Reconnecting...
+[2026-04-06T08:37:35.956Z] [STDOUT] ðŸ•— Reconnection attempt 1/50 in 5000ms...
+[2026-04-06T08:38:29.955Z] [STDOUT] ðŸ•— Connecting Bot...
+[2026-04-06T08:38:46.756Z] [STDERR] node:internal/crypto/cipher:170
+[2026-04-06T08:38:46.956Z] [STDERR] const ret = this[kHandle].final();
+[2026-04-06T08:38:47.156Z] [STDERR] ^
+[2026-04-06T08:38:47.356Z] [STDERR] Error: Unsupported state or unable to authenticate data
+[2026-04-06T08:38:47.556Z] [WARN  ] [BERAHOST] â†» WhatsApp reconnection error detected â€” restarting cleanly (no crash count)...
+[2026-04-06T08:38:47.756Z] [STDERR] at Decipheriv.final (node:internal/crypto/cipher:170:29)
+[2026-04-06T08:38:48.058Z] [STDERR] at aesDecryptGCM (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Utils/crypto.js:111:58)
+[2026-04-06T08:38:48.256Z] [STDERR] at decrypt (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Utils/noise-handler.js:31:51)
+[2026-04-06T08:38:48.756Z] [STDERR] at Object.decodeFrame (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Utils/noise-handler.js:140:36)
+[2026-04-06T08:38:49.056Z] [STDERR] at WebSocketClient.onMessageReceived (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Socket/socket.js:211:15)
+[2026-04-06T08:38:49.256Z] [STDERR] at WebSocketClient.emit (node:events:508:28)
+[2026-04-06T08:38:49.456Z] [STDERR] at WebSocket.<anonymous> (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Socket/Client/websocket.js:46:100)
+[2026-04-06T08:38:49.956Z] [STDERR] at WebSocket.emit (node:events:508:28)
+[2026-04-06T08:38:50.456Z] [STDERR] at Receiver.receiverOnMessage (/tmp/berahost_dep_16/node_modules/ws/lib/websocket.js:1225:20)
+[2026-04-06T08:38:50.956Z] [STDERR] at Receiver.emit (node:events:508:28)
+[2026-04-06T08:38:51.456Z] [STDERR] Node.js v24.13.0
+[2026-04-06T08:38:51.956Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T08:38:52.356Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T08:39:04.965Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-06T08:39:07.856Z] [INFO  ] [BERAHOST] Bot started with PID 2480
+[2026-04-06T08:39:18.456Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_1)...
+[2026-04-06T08:41:42.048Z] [WARN  ] [BERAHOST] âš  No output for 10 min â€” bot appears stuck, forcing restart...
+[2026-04-06T08:41:42.948Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=â€”, signal=SIGTERM) â€” scheduling restart...
+[2026-04-06T08:41:43.849Z] [INFO  ] [BERAHOST] â†» Auto-restart 1/10 in 0s...
+[2026-04-06T08:41:47.949Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T08:41:48.548Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T08:42:10.757Z] [STDOUT] 102 packages are looking for funding
+[2026-04-06T08:42:10.758Z] [STDOUT] removed 1 package, and audited 662 packages in 2m
+[2026-04-06T08:42:11.156Z] [STDOUT] run `npm fund` for details
+[2026-04-06T08:42:15.655Z] [STDOUT] 38 vulnerabilities (3 low, 19 moderate, 16 high)
+[2026-04-06T08:42:16.656Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T08:42:16.659Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T08:42:17.156Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T08:42:17.156Z] [STDOUT] npm audit fix
+[2026-04-06T08:42:17.656Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T08:42:18.156Z] [STDOUT] npm audit fix --force
+[2026-04-06T08:42:18.656Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T08:42:18.856Z] [STDOUT] a different dependency.
+[2026-04-06T08:42:18.956Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T08:42:35.961Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T08:42:35.973Z] [STDOUT] [BERAHOST] AES-GCM patch: pattern not found in ./node_modules/gifted-baileys/lib/Socket/socket.js â€” will fall back to process restart on error
+[2026-04-06T08:42:38.455Z] [STDOUT] [BERAHOST] Pre-injected 3 settings into gift/database/database.db
+[2026-04-06T08:42:39.255Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T08:42:39.755Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T08:42:40.156Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T08:42:40.261Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T08:43:08.249Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-06T08:43:08.555Z] [STDOUT] â„¹ï¸  DATABASE_URL Empty, Using Path
+[2026-04-06T08:43:18.949Z] [INFO  ] [BERAHOST] Bot started with PID 108
+[2026-04-06T08:43:43.255Z] [STDOUT] âœ… Server Running on Port: 3100
+[2026-04-06T08:43:47.055Z] [STDOUT] âœ… Session File Loaded
+[2026-04-06T08:43:56.855Z] [STDOUT] âœ… Database Synchronized.
+[2026-04-06T08:43:59.456Z] [INFO  ] [BERAHOST] âœ“ Bot settings synced (OWNER_NUMBER, PREFIX, BOT_NAME) â†’ gift/database/database.db
+[2026-04-06T08:44:09.092Z] [STDOUT] âœ… Bot Settings Initialized
+[2026-04-06T08:44:10.298Z] [INFO  ] [BERAHOST] âœ“ Bot settings synced (OWNER_NUMBER, PREFIX, BOT_NAME) â†’ gift/database/database.db
+[2026-04-06T08:44:10.328Z] [STDOUT] âœ… Group Settings Initialized.
+[2026-04-06T08:44:39.855Z] [STDOUT] Connection closed due to: 408
+[2026-04-06T08:44:39.856Z] [STDOUT] ðŸ•— Connecting Bot...
+[2026-04-06T08:44:42.655Z] [STDOUT] ðŸ•— Reconnecting...
+[2026-04-06T08:44:43.955Z] [STDOUT] ðŸ•— Reconnection attempt 1/50 in 5000ms...
+[2026-04-06T08:44:54.855Z] [STDOUT] ðŸ•— Connecting Bot...
+[2026-04-06T08:45:07.976Z] [STDERR] node:internal/crypto/cipher:170
+[2026-04-06T08:45:08.006Z] [STDERR] const ret = this[kHandle].final();
+[2026-04-06T08:45:08.030Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T08:45:08.035Z] [STDERR] ^
+[2026-04-06T08:45:08.358Z] [STDERR] Error: Unsupported state or unable to authenticate data
+[2026-04-06T08:45:10.357Z] [WARN  ] [BERAHOST] â†» WhatsApp reconnection error detected â€” restarting cleanly (no crash count)...
+[2026-04-06T08:45:11.157Z] [STDERR] at Decipheriv.final (node:internal/crypto/cipher:170:29)
+[2026-04-06T08:45:11.159Z] [INFO  ] [BERAHOST] â†» Auto-restart 2/10 in 5s...
+[2026-04-06T08:45:12.056Z] [STDERR] at aesDecryptGCM (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Utils/crypto.js:111:58)
+[2026-04-06T08:45:13.898Z] [STDERR] at decrypt (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Utils/noise-handler.js:31:51)
+[2026-04-06T08:45:13.931Z] [STDERR] at Object.decodeFrame (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Utils/noise-handler.js:140:36)
+[2026-04-06T08:45:13.962Z] [STDERR] at WebSocketClient.onMessageReceived (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Socket/socket.js:211:15)
+[2026-04-06T08:45:13.991Z] [STDERR] at WebSocketClient.emit (node:events:508:28)
+[2026-04-06T08:45:14.021Z] [STDERR] at WebSocket.<anonymous> (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Socket/Client/websocket.js:46:100)
+[2026-04-06T08:45:14.355Z] [STDERR] at WebSocket.emit (node:events:508:28)
+[2026-04-06T08:45:14.563Z] [STDERR] at Receiver.receiverOnMessage (/tmp/berahost_dep_16/node_modules/ws/lib/websocket.js:1225:20)
+[2026-04-06T08:45:15.056Z] [STDERR] at Receiver.emit (node:events:508:28)
+[2026-04-06T08:45:15.555Z] [STDERR] Node.js v24.13.0
+[2026-04-06T08:45:17.455Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T08:45:17.755Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T08:45:41.033Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-06T08:45:41.161Z] [INFO  ] [BERAHOST] Bot started with PID 2594
+[2026-04-06T08:45:42.059Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_1)...
+[2026-04-06T08:46:41.256Z] [STDOUT] 102 packages are looking for funding
+[2026-04-06T08:46:41.855Z] [STDOUT] removed 1 package, and audited 662 packages in 57s
+[2026-04-06T08:46:41.857Z] [STDOUT] run `npm fund` for details
+[2026-04-06T08:46:46.055Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T08:46:46.056Z] [STDOUT] 38 vulnerabilities (3 low, 19 moderate, 16 high)
+[2026-04-06T08:46:46.255Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T08:46:46.256Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T08:46:46.755Z] [STDOUT] npm audit fix
+[2026-04-06T08:46:47.355Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T08:46:47.856Z] [STDOUT] npm audit fix --force
+[2026-04-06T08:46:48.455Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T08:46:48.637Z] [STDOUT] a different dependency.
+[2026-04-06T08:46:48.667Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T08:46:48.777Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T08:46:48.926Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T08:46:48.956Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T08:46:48.973Z] [STDOUT] [BERAHOST] AES-GCM patch: pattern not found in ./node_modules/gifted-baileys/lib/Socket/socket.js â€” will fall back to process restart on error
+[2026-04-06T08:46:48.976Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T08:46:49.045Z] [STDOUT] [BERAHOST] Pre-injected 3 settings into gift/database/database.db
+[2026-04-06T08:46:49.052Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T08:47:12.156Z] [STDOUT] â„¹ï¸  DATABASE_URL Empty, Using Path
+[2026-04-06T08:48:14.357Z] [STDOUT] âœ… Server Running on Port: 3100
+[2026-04-06T08:48:14.447Z] [STDOUT] âœ… Bot Settings Initialized
+[2026-04-06T08:48:14.468Z] [STDOUT] âœ… Session File Loaded
+[2026-04-06T08:48:14.514Z] [STDOUT] âœ… Database Synchronized.
+[2026-04-06T08:48:16.657Z] [INFO  ] [BERAHOST] âœ“ Bot settings synced (OWNER_NUMBER, PREFIX, BOT_NAME) â†’ gift/database/database.db
+[2026-04-06T08:48:16.857Z] [INFO  ] [BERAHOST] âœ“ Bot settings synced (OWNER_NUMBER, PREFIX, BOT_NAME) â†’ gift/database/database.db
+[2026-04-06T08:48:23.656Z] [STDOUT] âœ… Group Settings Initialized.
+[2026-04-06T08:48:48.555Z] [STDOUT] ðŸ•— Reconnecting...
+[2026-04-06T08:48:48.755Z] [STDOUT] ðŸ•— Reconnection attempt 1/50 in 5000ms...
+[2026-04-06T08:48:48.755Z] [STDOUT] Connection closed due to: 408
+[2026-04-06T08:48:49.356Z] [STDOUT] ðŸ•— Connecting Bot...
+[2026-04-06T08:48:54.455Z] [STDOUT] ðŸ•— Connecting Bot...
+[2026-04-06T08:49:24.267Z] [STDERR] node:internal/crypto/cipher:170
+[2026-04-06T08:49:24.456Z] [STDERR] const ret = this[kHandle].final();
+[2026-04-06T08:49:24.756Z] [STDERR] ^
+[2026-04-06T08:49:24.956Z] [STDERR] Error: Unsupported state or unable to authenticate data
+[2026-04-06T08:49:25.156Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T08:49:25.156Z] [WARN  ] [BERAHOST] â†» WhatsApp reconnection error detected â€” restarting cleanly (no crash count)...
+[2026-04-06T08:49:25.357Z] [STDERR] at Decipheriv.final (node:internal/crypto/cipher:170:29)
+[2026-04-06T08:49:25.556Z] [STDERR] at aesDecryptGCM (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Utils/crypto.js:111:58)
+[2026-04-06T08:49:25.756Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T08:49:25.756Z] [STDERR] at decrypt (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Utils/noise-handler.js:31:51)
+[2026-04-06T08:49:26.658Z] [STDERR] at Object.decodeFrame (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Utils/noise-handler.js:140:36)
+[2026-04-06T08:49:27.356Z] [STDERR] at WebSocketClient.onMessageReceived (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Socket/socket.js:211:15)
+[2026-04-06T08:49:27.556Z] [STDERR] at WebSocketClient.emit (node:events:508:28)
+[2026-04-06T08:49:27.756Z] [STDERR] at WebSocket.<anonymous> (/tmp/berahost_dep_16/node_modules/gifted-baileys/lib/Socket/Client/websocket.js:46:100)
+[2026-04-06T08:49:27.956Z] [STDERR] at WebSocket.emit (node:events:508:28)
+[2026-04-06T08:49:28.256Z] [STDERR] at Receiver.receiverOnMessage (/tmp/berahost_dep_16/node_modules/ws/lib/websocket.js:1225:20)
+[2026-04-06T08:49:28.456Z] [STDERR] at Receiver.emit (node:events:508:28)
+[2026-04-06T08:49:28.656Z] [STDERR] Node.js v24.13.0
+[2026-04-06T08:49:53.855Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-06T08:49:55.755Z] [INFO  ] [BERAHOST] Bot started with PID 2687
+[2026-04-06T08:49:57.156Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_1)...
+[2026-04-06T08:51:09.230Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T08:51:09.259Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-06T08:51:12.870Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T08:51:12.901Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-06T08:51:13.372Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-06T08:51:14.869Z] [INFO  ] [BERAHOST] Bot started with PID 77
+[2026-04-06T08:51:36.794Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-06T08:51:42.560Z] [INFO  ] [BERAHOST] Bot started with PID 74
+[2026-04-06T08:53:58.707Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T08:53:58.735Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-06T08:53:59.182Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-06T08:54:01.054Z] [INFO  ] [BERAHOST] Bot started with PID 74
+[2026-04-06T09:04:13.254Z] [WARN  ] [BERAHOST] âš  No output for 10 min â€” bot appears stuck, forcing restart...
+[2026-04-06T09:04:15.256Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=â€”, signal=SIGTERM) â€” scheduling restart...
+[2026-04-06T09:04:16.255Z] [INFO  ] [BERAHOST] â†» Auto-restart 1/10 in 0s...
+[2026-04-06T09:04:18.155Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T09:04:19.255Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T09:05:03.939Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-06T09:05:04.956Z] [INFO  ] [BERAHOST] Bot started with PID 190
+[2026-04-06T09:14:00.056Z] [STDERR] npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+[2026-04-06T09:18:22.255Z] [STDERR] npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[2026-04-06T09:18:57.855Z] [STDERR] npm warn deprecated dottie@2.0.7: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+[2026-04-06T09:19:28.654Z] [STDERR] npm warn deprecated gauge@4.0.4: This package is no longer supported.
+[2026-04-06T09:23:24.654Z] [STDERR] npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+[2026-04-06T09:25:45.755Z] [STDERR] npm warn deprecated querystring@0.2.1: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+[2026-04-06T09:27:29.454Z] [STDERR] npm warn deprecated tar@6.2.1: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[2026-04-06T09:36:00.355Z] [STDERR] npm warn tar TAR_ENTRY_ERROR ENOENT: no such file or directory, open '/tmp/berahost_dep_16/node_modules/undici/lib/dispatcher/client-h1.js'
+[2026-04-06T09:36:00.454Z] [STDERR] npm warn tar TAR_ENTRY_ERROR ENOENT: no such file or directory, open '/tmp/berahost_dep_16/node_modules/extrareqp2/lib/adapters/xhr.js'
+[2026-04-06T09:36:00.455Z] [STDERR] npm warn tar TAR_ENTRY_ERROR ENOENT: no such file or directory, open '/tmp/berahost_dep_16/node_modules/ast-types/lib/node-path.d.ts'
+[2026-04-06T09:36:03.255Z] [STDERR] npm warn tar TAR_ENTRY_ERROR ENOENT: no such file or directory, lstat '/tmp/berahost_dep_16/node_modules/jimp/dist/esm'
+[2026-04-06T09:36:31.454Z] [STDERR] npm warn tar TAR_ENTRY_ERROR ENOENT: no such file or directory, lstat '/tmp/berahost_dep_16/node_modules/qified/node_modules/hookified/dist/node'
+[2026-04-06T09:38:51.755Z] [STDERR] npm warn tar TAR_ENTRY_ERROR ENOENT: no such file or directory, lstat '/tmp/berahost_dep_16/node_modules/cheerio/dist/esm/api'
+[2026-04-06T09:40:32.183Z] [STDERR] npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+[2026-04-06T09:40:32.256Z] [STDERR] npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+[2026-04-06T09:40:32.356Z] [STDERR] npm warn deprecated dottie@2.0.7: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+[2026-04-06T09:40:32.672Z] [STDERR] npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+[2026-04-06T09:40:32.758Z] [STDERR] npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+[2026-04-06T09:40:32.961Z] [STDERR] npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[2026-04-06T09:40:33.268Z] [STDERR] npm warn deprecated querystring@0.2.1: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+[2026-04-06T09:40:33.572Z] [STDERR] npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
+[2026-04-06T09:40:33.671Z] [STDERR] npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+[2026-04-06T09:40:33.692Z] [STDERR] npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+[2026-04-06T09:40:34.366Z] [STDERR] npm warn deprecated gauge@4.0.4: This package is no longer supported.
+[2026-04-06T09:40:34.590Z] [STDERR] npm warn deprecated tar@6.2.1: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[2026-04-06T09:40:34.691Z] [STDERR] npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+[2026-04-06T09:40:37.086Z] [STDERR] npm warn deprecated fluent-ffmpeg@2.1.3: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+[2026-04-06T09:40:37.464Z] [STDERR] npm error code ENOTEMPTY
+[2026-04-06T09:40:37.464Z] [STDERR] npm error ENOTEMPTY: directory not empty, rmdir '/tmp/berahost_dep_16/node_modules/image-size/dist/types'
+[2026-04-06T09:40:37.468Z] [STDERR] npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-04-06T09_05_37_156Z-debug-0.log
+[2026-04-06T09:40:37.493Z] [STDERR] npm error syscall rmdir
+[2026-04-06T09:40:37.522Z] [STDERR] npm error path /tmp/berahost_dep_16/node_modules/image-size/dist/types
+[2026-04-06T09:40:37.554Z] [STDERR] npm error errno -39
+[2026-04-06T09:40:37.657Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T09:40:37.670Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T09:40:38.576Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T09:40:38.660Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T09:40:38.689Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T09:40:38.773Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T09:40:38.890Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T09:40:38.896Z] [STDERR] npm error network Client network socket disconnected before secure TLS connection was established
+[2026-04-06T09:40:38.897Z] [STDERR] npm error code ECONNRESET
+[2026-04-06T09:40:38.955Z] [STDERR] npm error network This is a problem related to network connectivity.
+[2026-04-06T09:40:38.983Z] [STDERR] npm error network In most cases you are behind a proxy or have bad network settings.
+[2026-04-06T09:40:39.000Z] [STDERR] node:internal/modules/cjs/loader:1424
+[2026-04-06T09:40:39.011Z] [STDERR] npm error network
+[2026-04-06T09:40:39.029Z] [STDERR] throw err;
+[2026-04-06T09:40:39.039Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T09:40:39.039Z] [STDERR] npm error network If you are behind a proxy, please make sure that the
+[2026-04-06T09:40:39.058Z] [STDERR] ^
+[2026-04-06T09:40:39.067Z] [STDERR] npm error network 'proxy' config is set properly.  See: 'npm help config'
+[2026-04-06T09:40:39.088Z] [STDERR] Error: Cannot find module 'fs-extra'
+[2026-04-06T09:40:39.095Z] [STDERR] npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-04-06T08_54_09_091Z-debug-0.log
+[2026-04-06T09:40:39.117Z] [STDERR] Require stack:
+[2026-04-06T09:40:39.125Z] [INFO  ] [BERAHOST] â†» Auto-restart 2/10 in 5s...
+[2026-04-06T09:40:39.146Z] [STDERR] - /tmp/berahost_dep_16/config.js
+[2026-04-06T09:40:39.176Z] [STDERR] - /tmp/berahost_dep_16/gift/database/database.js
+[2026-04-06T09:40:39.206Z] [STDERR] - /tmp/berahost_dep_16/gift/database/settings.js
+[2026-04-06T09:40:39.236Z] [STDERR] - /tmp/berahost_dep_16/gift/gmdHelpers.js
+[2026-04-06T09:40:39.265Z] [STDERR] - /tmp/berahost_dep_16/index.js
+[2026-04-06T09:40:39.295Z] [STDERR] at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+[2026-04-06T09:40:39.324Z] [STDERR] at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+[2026-04-06T09:40:39.353Z] [STDERR] at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+[2026-04-06T09:40:39.383Z] [STDERR] at Module._load (node:internal/modules/cjs/loader:1227:37)
+[2026-04-06T09:40:39.412Z] [STDERR] at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+[2026-04-06T09:40:39.442Z] [STDERR] at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+[2026-04-06T09:40:39.471Z] [STDERR] at Module.require (node:internal/modules/cjs/loader:1504:12)
+[2026-04-06T09:40:39.500Z] [STDERR] at require (node:internal/modules/helpers:152:16)
+[2026-04-06T09:40:39.531Z] [STDERR] at Object.<anonymous> (/tmp/berahost_dep_16/config.js:1:12)
+[2026-04-06T09:40:39.561Z] [STDERR] at Module._compile (node:internal/modules/cjs/loader:1761:14) {
+[2026-04-06T09:40:39.591Z] [STDERR] code: 'MODULE_NOT_FOUND',
+[2026-04-06T09:40:39.620Z] [STDERR] requireStack: [
+[2026-04-06T09:40:39.650Z] [STDERR] '/tmp/berahost_dep_16/config.js',
+[2026-04-06T09:40:39.681Z] [STDERR] '/tmp/berahost_dep_16/gift/database/database.js',
+[2026-04-06T09:40:39.710Z] [STDERR] '/tmp/berahost_dep_16/gift/database/settings.js',
+[2026-04-06T09:40:39.740Z] [STDERR] '/tmp/berahost_dep_16/gift/gmdHelpers.js',
+[2026-04-06T09:40:39.769Z] [STDERR] '/tmp/berahost_dep_16/index.js'
+[2026-04-06T09:40:39.799Z] [STDERR] ]
+[2026-04-06T09:40:39.829Z] [STDERR] }
+[2026-04-06T09:40:39.859Z] [STDERR] Node.js v24.13.0
+[2026-04-06T09:40:44.212Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T09:40:44.251Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T09:40:44.631Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-06T09:40:44.764Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_1)...
+[2026-04-06T09:40:44.789Z] [INFO  ] [BERAHOST] Bot started with PID 538
+[2026-04-06T09:40:52.296Z] [STDERR] npm warn deprecated tar@6.2.1: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[2026-04-06T09:40:55.475Z] [STDOUT] added 62 packages, removed 59 packages, changed 36 packages, and audited 667 packages in 10s
+[2026-04-06T09:40:55.475Z] [STDOUT] 100 packages are looking for funding
+[2026-04-06T09:40:55.505Z] [STDOUT] run `npm fund` for details
+[2026-04-06T09:40:55.569Z] [STDOUT] 36 vulnerabilities (4 low, 19 moderate, 13 high)
+[2026-04-06T09:40:55.599Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T09:40:55.654Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T09:40:55.655Z] [STDOUT] npm audit fix
+[2026-04-06T09:40:55.685Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T09:40:55.768Z] [STDOUT] npm audit fix --force
+[2026-04-06T09:40:55.798Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T09:40:55.858Z] [STDOUT] a different dependency.
+[2026-04-06T09:40:55.887Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T09:40:55.917Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T09:40:56.513Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T09:40:56.770Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T09:40:56.799Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T09:40:56.813Z] [STDOUT] [BERAHOST] AES-GCM patch: pattern not found in ./node_modules/gifted-baileys/lib/Socket/socket.js â€” will fall back to process restart on error
+[2026-04-06T09:40:56.817Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T09:40:56.902Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T09:40:56.982Z] [STDERR] node:internal/modules/cjs/loader:686
+[2026-04-06T09:40:57.012Z] [STDERR] throw e;
+[2026-04-06T09:40:57.015Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T09:40:57.042Z] [STDERR] ^
+[2026-04-06T09:40:57.072Z] [STDERR] Error: Cannot find module '/tmp/berahost_dep_16/node_modules/fs-extra/lib/index.js'
+[2026-04-06T09:40:57.102Z] [STDERR] at createEsmNotFoundErr (node:internal/modules/cjs/loader:1458:15)
+[2026-04-06T09:40:57.108Z] [INFO  ] [BERAHOST] â†» Auto-restart 3/10 in 10s...
+[2026-04-06T09:40:57.132Z] [STDERR] at finalizeEsmResolution (node:internal/modules/cjs/loader:1447:9)
+[2026-04-06T09:40:57.162Z] [STDERR] at resolveExports (node:internal/modules/cjs/loader:679:14)
+[2026-04-06T09:40:57.192Z] [STDERR] at Module._findPath (node:internal/modules/cjs/loader:746:31)
+[2026-04-06T09:40:57.224Z] [STDERR] at Module._resolveFilename (node:internal/modules/cjs/loader:1406:27)
+[2026-04-06T09:40:57.256Z] [STDERR] at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+[2026-04-06T09:40:57.286Z] [STDERR] at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+[2026-04-06T09:40:57.315Z] [STDERR] at Module._load (node:internal/modules/cjs/loader:1227:37)
+[2026-04-06T09:40:57.344Z] [STDERR] at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+[2026-04-06T09:40:57.374Z] [STDERR] at wrapModuleLoad (node:internal/modules/cjs/loader:245:24) {
+[2026-04-06T09:40:57.403Z] [STDERR] code: 'MODULE_NOT_FOUND',
+[2026-04-06T09:40:57.432Z] [STDERR] path: '/tmp/berahost_dep_16/node_modules/fs-extra'
+[2026-04-06T09:40:57.462Z] [STDERR] }
+[2026-04-06T09:40:57.491Z] [STDERR] Node.js v24.13.0
+[2026-04-06T09:41:07.198Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T09:41:07.228Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T09:41:07.561Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-06T09:41:07.691Z] [INFO  ] [BERAHOST] Bot started with PID 682
+[2026-04-06T09:41:07.838Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_1)...
+[2026-04-06T09:41:09.299Z] [STDERR] npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+[2026-04-06T09:41:09.328Z] [STDERR] npm warn deprecated tar@6.2.1: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[2026-04-06T09:41:10.285Z] [STDOUT] 102 packages are looking for funding
+[2026-04-06T09:41:10.285Z] [STDOUT] added 19 packages, removed 11 packages, and audited 676 packages in 2s
+[2026-04-06T09:41:10.316Z] [STDOUT] run `npm fund` for details
+[2026-04-06T09:41:10.347Z] [STDOUT] 37 vulnerabilities (3 low, 19 moderate, 15 high)
+[2026-04-06T09:41:10.375Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T09:41:10.378Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T09:41:10.404Z] [STDOUT] npm audit fix
+[2026-04-06T09:41:10.432Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T09:41:10.461Z] [STDOUT] npm audit fix --force
+[2026-04-06T09:41:10.489Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T09:41:10.517Z] [STDOUT] a different dependency.
+[2026-04-06T09:41:10.549Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T09:41:10.567Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T09:41:16.006Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T09:41:22.519Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T09:41:22.566Z] [STDERR] node:internal/modules/cjs/loader:686
+[2026-04-06T09:41:22.590Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T09:41:22.596Z] [STDERR] throw e;
+[2026-04-06T09:41:22.755Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T09:41:22.955Z] [STDERR] ^
+[2026-04-06T09:41:23.556Z] [STDERR] Error: Cannot find module '/tmp/berahost_dep_16/node_modules/fs-extra/lib/index.js'
+[2026-04-06T09:41:24.155Z] [STDERR] at createEsmNotFoundErr (node:internal/modules/cjs/loader:1458:15)
+[2026-04-06T09:41:24.355Z] [STDERR] at finalizeEsmResolution (node:internal/modules/cjs/loader:1447:9)
+[2026-04-06T09:41:24.555Z] [STDERR] at resolveExports (node:internal/modules/cjs/loader:679:14)
+[2026-04-06T09:41:24.758Z] [STDOUT] [BERAHOST] AES-GCM patch: pattern not found in ./node_modules/gifted-baileys/lib/Socket/socket.js â€” will fall back to process restart on error
+[2026-04-06T09:41:24.758Z] [STDERR] at Module._findPath (node:internal/modules/cjs/loader:746:31)
+[2026-04-06T09:41:24.955Z] [STDERR] at Module._resolveFilename (node:internal/modules/cjs/loader:1406:27)
+[2026-04-06T09:41:24.955Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T09:41:25.155Z] [STDERR] at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+[2026-04-06T09:41:25.255Z] [STDERR] at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+[2026-04-06T09:41:25.455Z] [STDERR] at Module._load (node:internal/modules/cjs/loader:1227:37)
+[2026-04-06T09:41:25.556Z] [STDERR] at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+[2026-04-06T09:41:25.655Z] [STDERR] at wrapModuleLoad (node:internal/modules/cjs/loader:245:24) {
+[2026-04-06T09:41:25.754Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T09:41:25.755Z] [STDERR] code: 'MODULE_NOT_FOUND',
+[2026-04-06T09:41:25.855Z] [STDERR] path: '/tmp/berahost_dep_16/node_modules/fs-extra'
+[2026-04-06T09:41:25.955Z] [STDERR] }
+[2026-04-06T09:41:26.054Z] [INFO  ] [BERAHOST] â†» Auto-restart 4/10 in 20s...
+[2026-04-06T09:41:26.055Z] [STDERR] Node.js v24.13.0
+[2026-04-06T09:41:52.854Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T09:41:53.354Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T09:41:55.030Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-06T09:41:55.507Z] [INFO  ] [BERAHOST] Bot started with PID 735
+[2026-04-06T09:41:55.653Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_1)...
+[2026-04-06T09:42:19.513Z] [STDOUT] 37 vulnerabilities (3 low, 19 moderate, 15 high)
+[2026-04-06T09:42:19.536Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T09:42:19.541Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T09:42:19.542Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T09:42:19.571Z] [STDOUT] npm audit fix
+[2026-04-06T09:42:19.602Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T09:42:19.619Z] [STDOUT] removed 1 package, and audited 676 packages in 23s
+[2026-04-06T09:42:19.619Z] [STDOUT] 102 packages are looking for funding
+[2026-04-06T09:42:19.631Z] [STDOUT] npm audit fix --force
+[2026-04-06T09:42:19.648Z] [STDOUT] run `npm fund` for details
+[2026-04-06T09:42:19.660Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T09:42:19.689Z] [STDOUT] a different dependency.
+[2026-04-06T09:42:19.719Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T09:42:49.983Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T09:42:50.060Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T09:42:50.090Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T09:42:50.612Z] [STDOUT] [BERAHOST] AES-GCM patch: pattern not found in ./node_modules/gifted-baileys/lib/Socket/socket.js â€” will fall back to process restart on error
+[2026-04-06T09:42:50.615Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T09:42:50.668Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T09:42:50.712Z] [STDERR] node:internal/modules/cjs/loader:686
+[2026-04-06T09:42:50.741Z] [STDERR] throw e;
+[2026-04-06T09:42:50.746Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T09:42:50.769Z] [STDERR] ^
+[2026-04-06T09:42:50.797Z] [STDERR] Error: Cannot find module '/tmp/berahost_dep_16/node_modules/fs-extra/lib/index.js'
+[2026-04-06T09:42:50.826Z] [STDERR] at createEsmNotFoundErr (node:internal/modules/cjs/loader:1458:15)
+[2026-04-06T09:42:50.834Z] [INFO  ] [BERAHOST] â†» Auto-restart 5/10 in 40s...
+[2026-04-06T09:42:50.854Z] [STDERR] at finalizeEsmResolution (node:internal/modules/cjs/loader:1447:9)
+[2026-04-06T09:42:50.883Z] [STDERR] at resolveExports (node:internal/modules/cjs/loader:679:14)
+[2026-04-06T09:42:50.954Z] [STDERR] at Module._findPath (node:internal/modules/cjs/loader:746:31)
+[2026-04-06T09:42:51.055Z] [STDERR] at Module._resolveFilename (node:internal/modules/cjs/loader:1406:27)
+[2026-04-06T09:42:51.156Z] [STDERR] at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+[2026-04-06T09:42:51.184Z] [STDERR] at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+[2026-04-06T09:42:51.255Z] [STDERR] at Module._load (node:internal/modules/cjs/loader:1227:37)
+[2026-04-06T09:42:51.355Z] [STDERR] at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+[2026-04-06T09:42:51.455Z] [STDERR] at wrapModuleLoad (node:internal/modules/cjs/loader:245:24) {
+[2026-04-06T09:42:51.554Z] [STDERR] code: 'MODULE_NOT_FOUND',
+[2026-04-06T09:42:51.654Z] [STDERR] path: '/tmp/berahost_dep_16/node_modules/fs-extra'
+[2026-04-06T09:42:51.954Z] [STDERR] }
+[2026-04-06T09:42:52.155Z] [STDERR] Node.js v24.13.0
+[2026-04-06T09:43:31.655Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T09:43:31.755Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T09:44:00.555Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-06T09:44:05.055Z] [INFO  ] [BERAHOST] Bot started with PID 794
+[2026-04-06T09:44:06.753Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_1)...
+[2026-04-06T09:47:00.458Z] [STDOUT] removed 1 package in 3m
+[2026-04-06T09:47:00.630Z] [STDOUT] 102 packages are looking for funding
+[2026-04-06T09:47:00.649Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T09:47:01.254Z] [STDOUT] run `npm fund` for details
+[2026-04-06T09:47:22.155Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T09:48:03.954Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T09:48:36.654Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T09:48:38.954Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T09:48:39.854Z] [STDOUT] [BERAHOST] AES-GCM patch: pattern not found in ./node_modules/gifted-baileys/lib/Socket/socket.js â€” will fall back to process restart on error
+[2026-04-06T09:48:39.855Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T09:48:40.156Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T09:49:05.555Z] [STDERR] node:internal/modules/cjs/loader:686
+[2026-04-06T09:49:05.755Z] [STDERR] throw e;
+[2026-04-06T09:49:06.054Z] [STDERR] ^
+[2026-04-06T09:49:06.055Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T09:49:06.256Z] [STDERR] Error: Cannot find module '/tmp/berahost_dep_16/node_modules/fs-extra/lib/index.js'
+[2026-04-06T09:49:06.454Z] [STDERR] at createEsmNotFoundErr (node:internal/modules/cjs/loader:1458:15)
+[2026-04-06T09:49:06.754Z] [STDERR] at finalizeEsmResolution (node:internal/modules/cjs/loader:1447:9)
+[2026-04-06T09:49:06.755Z] [INFO  ] [BERAHOST] â†» Auto-restart 6/10 in 80s...
+[2026-04-06T09:49:07.156Z] [STDERR] at resolveExports (node:internal/modules/cjs/loader:679:14)
+[2026-04-06T09:49:07.354Z] [STDERR] at Module._findPath (node:internal/modules/cjs/loader:746:31)
+[2026-04-06T09:49:07.560Z] [STDERR] at Module._resolveFilename (node:internal/modules/cjs/loader:1406:27)
+[2026-04-06T09:49:07.854Z] [STDERR] at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+[2026-04-06T09:49:07.954Z] [STDERR] at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+[2026-04-06T09:49:08.255Z] [STDERR] at Module._load (node:internal/modules/cjs/loader:1227:37)
+[2026-04-06T09:49:08.556Z] [STDERR] at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+[2026-04-06T09:49:08.954Z] [STDERR] at wrapModuleLoad (node:internal/modules/cjs/loader:245:24) {
+[2026-04-06T09:49:09.255Z] [STDERR] code: 'MODULE_NOT_FOUND',
+[2026-04-06T09:49:09.555Z] [STDERR] path: '/tmp/berahost_dep_16/node_modules/fs-extra'
+[2026-04-06T09:49:10.554Z] [STDERR] }
+[2026-04-06T09:49:10.655Z] [STDERR] Node.js v24.13.0
+[2026-04-06T09:50:37.136Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T09:50:37.755Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T09:51:05.869Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-06T09:51:08.754Z] [INFO  ] [BERAHOST] Bot started with PID 855
+[2026-04-06T09:51:10.855Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_1)...
+[2026-04-06T09:56:12.798Z] [STDOUT] 102 packages are looking for funding
+[2026-04-06T09:56:12.801Z] [STDOUT] removed 1 package, and audited 676 packages in 4m
+[2026-04-06T09:56:12.828Z] [STDOUT] run `npm fund` for details
+[2026-04-06T09:56:12.873Z] [STDOUT] 37 vulnerabilities (3 low, 19 moderate, 15 high)
+[2026-04-06T09:56:12.890Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T09:56:12.893Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T09:56:12.903Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T09:56:13.255Z] [STDOUT] npm audit fix
+[2026-04-06T09:56:13.286Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T09:56:13.555Z] [STDOUT] npm audit fix --force
+[2026-04-06T09:56:13.755Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T09:56:13.956Z] [STDOUT] a different dependency.
+[2026-04-06T09:56:14.057Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T09:57:13.114Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T09:57:33.555Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T09:57:33.655Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T09:57:43.507Z] [STDOUT] [BERAHOST] AES-GCM patch: pattern not found in ./node_modules/gifted-baileys/lib/Socket/socket.js â€” will fall back to process restart on error
+[2026-04-06T09:57:43.574Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T09:57:43.626Z] [STDERR] node:internal/modules/cjs/loader:686
+[2026-04-06T09:57:43.655Z] [STDERR] throw e;
+[2026-04-06T09:57:43.683Z] [STDERR] ^
+[2026-04-06T09:57:43.754Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T09:57:43.755Z] [STDERR] Error: Cannot find module '/tmp/berahost_dep_16/node_modules/fs-extra/lib/index.js'
+[2026-04-06T09:57:44.055Z] [STDERR] at createEsmNotFoundErr (node:internal/modules/cjs/loader:1458:15)
+[2026-04-06T09:57:44.654Z] [STDERR] at finalizeEsmResolution (node:internal/modules/cjs/loader:1447:9)
+[2026-04-06T09:57:44.755Z] [STDERR] at resolveExports (node:internal/modules/cjs/loader:679:14)
+[2026-04-06T09:57:44.955Z] [STDERR] at Module._findPath (node:internal/modules/cjs/loader:746:31)
+[2026-04-06T09:57:45.255Z] [STDERR] at Module._resolveFilename (node:internal/modules/cjs/loader:1406:27)
+[2026-04-06T09:57:45.355Z] [STDERR] at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+[2026-04-06T09:57:45.754Z] [STDERR] at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+[2026-04-06T09:57:45.856Z] [STDERR] at Module._load (node:internal/modules/cjs/loader:1227:37)
+[2026-04-06T09:57:46.055Z] [STDERR] at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+[2026-04-06T09:57:46.254Z] [STDERR] at wrapModuleLoad (node:internal/modules/cjs/loader:245:24) {
+[2026-04-06T09:57:46.354Z] [STDERR] code: 'MODULE_NOT_FOUND',
+[2026-04-06T09:57:46.355Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T09:57:46.755Z] [STDERR] path: '/tmp/berahost_dep_16/node_modules/fs-extra'
+[2026-04-06T09:57:46.954Z] [STDERR] }
+[2026-04-06T09:57:47.155Z] [STDERR] Node.js v24.13.0
+[2026-04-06T09:57:47.155Z] [INFO  ] [BERAHOST] â†» Auto-restart 7/10 in 120s...
+[2026-04-06T09:59:49.755Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T09:59:50.055Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T10:00:26.554Z] [INFO  ] [BERAHOST] Starting bot (node ./index.js)...
+[2026-04-06T10:00:29.754Z] [INFO  ] [BERAHOST] Bot started with PID 946
+[2026-04-06T10:00:30.855Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_1)...
+[2026-04-06T10:04:25.698Z] [STDOUT] removed 1 package, and audited 676 packages in 3m
+[2026-04-06T10:04:25.699Z] [STDOUT] 102 packages are looking for funding
+[2026-04-06T10:04:25.756Z] [STDOUT] run `npm fund` for details
+[2026-04-06T10:04:26.114Z] [STDOUT] 37 vulnerabilities (3 low, 19 moderate, 15 high)
+[2026-04-06T10:04:26.156Z] [STDOUT] To address issues that do not require attention, run:
+[2026-04-06T10:04:26.162Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T10:04:26.196Z] [STDOUT] npm audit fix
+[2026-04-06T10:04:26.254Z] [STDOUT] To address all issues possible (including breaking changes), run:
+[2026-04-06T10:04:26.283Z] [STDOUT] npm audit fix --force
+[2026-04-06T10:04:26.313Z] [STDOUT] Some issues need review, and may require choosing
+[2026-04-06T10:04:26.341Z] [STDOUT] a different dependency.
+[2026-04-06T10:04:26.370Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T10:04:26.391Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T10:04:38.256Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T10:04:38.366Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T10:04:38.394Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T10:04:38.418Z] [STDOUT] [BERAHOST] AES-GCM patch: pattern not found in ./node_modules/gifted-baileys/lib/Socket/socket.js â€” will fall back to process restart on error
+[2026-04-06T10:04:38.425Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T10:04:38.514Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T10:04:38.600Z] [STDERR] node:internal/modules/cjs/loader:686
+[2026-04-06T10:04:38.629Z] [STDERR] throw e;
+[2026-04-06T10:04:38.636Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T10:04:38.658Z] [STDERR] ^
+[2026-04-06T10:04:38.687Z] [STDERR] Error: Cannot find module '/tmp/berahost_dep_16/node_modules/fs-extra/lib/index.js'
+[2026-04-06T10:04:38.716Z] [STDERR] at createEsmNotFoundErr (node:internal/modules/cjs/loader:1458:15)
+[2026-04-06T10:04:38.727Z] [INFO  ] [BERAHOST] â†» Auto-restart 8/10 in 120s...
+[2026-04-06T10:04:38.745Z] [STDERR] at finalizeEsmResolution (node:internal/modules/cjs/loader:1447:9)
+[2026-04-06T10:04:39.055Z] [STDERR] at resolveExports (node:internal/modules/cjs/loader:679:14)
+[2026-04-06T10:04:39.155Z] [STDERR] at Module._findPath (node:internal/modules/cjs/loader:746:31)
+[2026-04-06T10:04:39.455Z] [STDERR] at Module._resolveFilename (node:internal/modules/cjs/loader:1406:27)
+[2026-04-06T10:04:39.655Z] [STDERR] at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+[2026-04-06T10:04:39.855Z] [STDERR] at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+[2026-04-06T10:04:40.055Z] [STDERR] at Module._load (node:internal/modules/cjs/loader:1227:37)
+[2026-04-06T10:04:40.255Z] [STDERR] at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+[2026-04-06T10:04:40.455Z] [STDERR] at wrapModuleLoad (node:internal/modules/cjs/loader:245:24) {
+[2026-04-06T10:04:40.655Z] [STDERR] code: 'MODULE_NOT_FOUND',
+[2026-04-06T10:04:40.955Z] [STDERR] path: '/tmp/berahost_dep_16/node_modules/fs-extra'
+[2026-04-06T10:04:41.155Z] [STDERR] }
+[2026-04-06T10:04:41.255Z] [STDERR] Node.js v24.13.0

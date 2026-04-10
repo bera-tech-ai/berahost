@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "BERAHOST"
+version = "1.0.0"
+id = "artifacts/berahost"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23312
+
+[services.development]
+run = "pnpm --filter @workspace/berahost run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/berahost", "run", "build" ]
+publicDir = "artifacts/berahost/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23312"
+BASE_PATH = "/"

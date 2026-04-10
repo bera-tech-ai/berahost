@@ -1,0 +1,495 @@
+[2026-04-06T10:55:43.116Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T10:55:43.145Z] [INFO  ] [BERAHOST] Cloning repository (shallow)...
+[2026-04-06T10:55:43.896Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-06T10:55:44.009Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_2)...
+[2026-04-06T10:55:44.022Z] [INFO  ] [BERAHOST] Bot started with PID 1350
+[2026-04-06T10:55:44.729Z] [STDOUT] [BERAHOST] wolf.js patch: pattern not found (may already be fixed upstream)
+[2026-04-06T10:55:46.328Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T10:55:46.359Z] [STDERR] npm warn EBADENGINE   package: 'silent-wolf-bot@2.1.0',
+[2026-04-06T10:55:46.389Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x' },
+[2026-04-06T10:55:46.421Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T10:55:46.452Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T10:55:46.746Z] [STDOUT] 96 packages are looking for funding
+[2026-04-06T10:55:46.746Z] [STDOUT] up to date, audited 398 packages in 2s
+[2026-04-06T10:55:46.753Z] [STDOUT] 7 vulnerabilities (1 moderate, 6 high)
+[2026-04-06T10:55:46.776Z] [STDOUT] run `npm fund` for details
+[2026-04-06T10:55:46.781Z] [STDOUT] To address all issues (including breaking changes), run:
+[2026-04-06T10:55:46.810Z] [STDOUT] npm audit fix --force
+[2026-04-06T10:55:46.838Z] [STDOUT] [BERAHOST] Cache integrity check failed â€” clearing cache and reinstalling from scratch...
+[2026-04-06T10:55:46.839Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T10:55:47.649Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T10:55:47.679Z] [STDERR] npm warn EBADENGINE   package: 'silent-wolf-bot@2.1.0',
+[2026-04-06T10:55:47.708Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x' },
+[2026-04-06T10:55:47.737Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T10:55:47.767Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T10:55:48.036Z] [STDOUT] > silent-wolf-bot@2.1.0 postinstall
+[2026-04-06T10:55:48.065Z] [STDOUT] > node scripts/patch-modules.cjs 2>/dev/null || true
+[2026-04-06T10:55:48.101Z] [STDOUT] up to date, audited 398 packages in 1s
+[2026-04-06T10:55:48.108Z] [STDOUT] 7 vulnerabilities (1 moderate, 6 high)
+[2026-04-06T10:55:48.130Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T10:55:48.131Z] [STDOUT] 96 packages are looking for funding
+[2026-04-06T10:55:48.136Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T10:55:48.137Z] [STDOUT] To address all issues (including breaking changes), run:
+[2026-04-06T10:55:48.159Z] [STDOUT] run `npm fund` for details
+[2026-04-06T10:55:48.166Z] [STDOUT] npm audit fix --force
+[2026-04-06T10:55:48.195Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T10:55:48.558Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T10:55:48.566Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T10:55:48.595Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T10:55:48.621Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T10:55:48.669Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T10:55:48.829Z] [STDOUT] > silent-wolf-bot@2.1.0 start
+[2026-04-06T10:55:48.858Z] [STDOUT] > node --no-warnings --expose-gc --max-old-space-size=1024 --max-semi-space-size=64 --experimental-global-webcrypto index.js
+[2026-04-06T10:55:48.986Z] [STDOUT] 
+[2026-04-06T10:55:49.015Z] [STDOUT] â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•®
+[2026-04-06T10:55:49.044Z] [STDOUT] â”‚   ðŸº WOLFBOT v1.1.5              â”‚
+[2026-04-06T10:55:49.073Z] [STDOUT] â”‚   Loader  : initializing...      â”‚
+[2026-04-06T10:55:49.102Z] [STDOUT] â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯
+[2026-04-06T10:55:49.131Z] [STDOUT] 
+[2026-04-06T10:55:49.608Z] [STDOUT] \nâ”Œ[ âš  WARNING ]â”€â”€â”€ 10:55:49 AM
+[2026-04-06T10:55:49.609Z] [STDERR] [10:55:49 AM] âŒ  No bot directory found â€” download may have failed.
+[2026-04-06T10:55:49.609Z] [STDERR] [10:55:49 AM] âŒ  Place bot files in a "core" folder and retry.
+[2026-04-06T10:55:49.625Z] [STDERR] [10:55:49 AM] âŒ  Setup failed: Extraction completed but core directory was not found.
+[2026-04-06T10:55:49.637Z] [STDOUT] â””â€¢â€¢ Attempting to start from existing files...\n
+[2026-04-06T10:55:49.657Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T10:55:49.744Z] [INFO  ] [BERAHOST] â†» Auto-restart 1/10 in 0s...
+[2026-04-06T10:55:49.832Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T10:55:49.861Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T10:55:50.196Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-06T10:55:50.291Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_2)...
+[2026-04-06T10:55:50.316Z] [INFO  ] [BERAHOST] Bot started with PID 1455
+[2026-04-06T10:55:50.758Z] [STDOUT] [BERAHOST] wolf.js patch: pattern not found (may already be fixed upstream)
+[2026-04-06T10:55:51.359Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T10:55:51.404Z] [STDERR] npm warn EBADENGINE   package: 'silent-wolf-bot@2.1.0',
+[2026-04-06T10:55:51.433Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x' },
+[2026-04-06T10:55:51.462Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T10:55:51.492Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T10:55:52.237Z] [STDOUT] 96 packages are looking for funding
+[2026-04-06T10:55:52.238Z] [STDOUT] removed 1 package, and audited 398 packages in 1s
+[2026-04-06T10:55:52.242Z] [STDOUT] 7 vulnerabilities (1 moderate, 6 high)
+[2026-04-06T10:55:52.266Z] [STDOUT] run `npm fund` for details
+[2026-04-06T10:55:52.271Z] [STDOUT] To address all issues (including breaking changes), run:
+[2026-04-06T10:55:52.300Z] [STDOUT] npm audit fix --force
+[2026-04-06T10:55:52.310Z] [STDOUT] [BERAHOST] Cache integrity check failed â€” clearing cache and reinstalling from scratch...
+[2026-04-06T10:55:52.329Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T10:55:53.089Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T10:55:53.119Z] [STDERR] npm warn EBADENGINE   package: 'silent-wolf-bot@2.1.0',
+[2026-04-06T10:55:53.149Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x' },
+[2026-04-06T10:55:53.178Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T10:55:53.207Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T10:55:53.482Z] [STDOUT] > silent-wolf-bot@2.1.0 postinstall
+[2026-04-06T10:55:53.512Z] [STDOUT] > node scripts/patch-modules.cjs 2>/dev/null || true
+[2026-04-06T10:55:53.545Z] [STDOUT] up to date, audited 398 packages in 1s
+[2026-04-06T10:55:53.545Z] [STDOUT] 96 packages are looking for funding
+[2026-04-06T10:55:53.552Z] [STDOUT] 7 vulnerabilities (1 moderate, 6 high)
+[2026-04-06T10:55:53.575Z] [STDOUT] run `npm fund` for details
+[2026-04-06T10:55:53.575Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T10:55:53.579Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T10:55:53.580Z] [STDOUT] To address all issues (including breaking changes), run:
+[2026-04-06T10:55:53.609Z] [STDOUT] npm audit fix --force
+[2026-04-06T10:55:53.638Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T10:55:53.975Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T10:55:53.982Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T10:55:54.011Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T10:55:54.037Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T10:55:54.093Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T10:55:54.253Z] [STDOUT] > silent-wolf-bot@2.1.0 start
+[2026-04-06T10:55:54.282Z] [STDOUT] > node --no-warnings --expose-gc --max-old-space-size=1024 --max-semi-space-size=64 --experimental-global-webcrypto index.js
+[2026-04-06T10:55:54.440Z] [STDOUT] 
+[2026-04-06T10:55:54.469Z] [STDOUT] â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•®
+[2026-04-06T10:55:54.498Z] [STDOUT] â”‚   ðŸº WOLFBOT v1.1.5              â”‚
+[2026-04-06T10:55:54.527Z] [STDOUT] â”‚   Loader  : initializing...      â”‚
+[2026-04-06T10:55:54.556Z] [STDOUT] â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯
+[2026-04-06T10:55:54.586Z] [STDOUT] 
+[2026-04-06T10:55:55.047Z] [STDOUT] \nâ”Œ[ âš  WARNING ]â”€â”€â”€ 10:55:55 AM
+[2026-04-06T10:55:55.047Z] [STDERR] [10:55:55 AM] âŒ  Setup failed: Extraction completed but core directory was not found.
+[2026-04-06T10:55:55.047Z] [STDERR] [10:55:55 AM] âŒ  No bot directory found â€” download may have failed.
+[2026-04-06T10:55:55.077Z] [STDOUT] â””â€¢â€¢ Attempting to start from existing files...\n
+[2026-04-06T10:55:55.077Z] [STDERR] [10:55:55 AM] âŒ  Place bot files in a "core" folder and retry.
+[2026-04-06T10:55:55.094Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T10:55:55.180Z] [INFO  ] [BERAHOST] â†» Auto-restart 2/10 in 5s...
+[2026-04-06T10:56:00.267Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T10:56:00.296Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T10:56:00.654Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-06T10:56:00.757Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_2)...
+[2026-04-06T10:56:00.781Z] [INFO  ] [BERAHOST] Bot started with PID 1560
+[2026-04-06T10:56:01.193Z] [STDOUT] [BERAHOST] wolf.js patch: pattern not found (may already be fixed upstream)
+[2026-04-06T10:56:01.803Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T10:56:01.831Z] [STDERR] npm warn EBADENGINE   package: 'silent-wolf-bot@2.1.0',
+[2026-04-06T10:56:01.860Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x' },
+[2026-04-06T10:56:01.890Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T10:56:01.919Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T10:56:02.656Z] [STDOUT] removed 1 package, and audited 398 packages in 1s
+[2026-04-06T10:56:02.656Z] [STDOUT] 96 packages are looking for funding
+[2026-04-06T10:56:02.661Z] [STDOUT] 7 vulnerabilities (1 moderate, 6 high)
+[2026-04-06T10:56:02.686Z] [STDOUT] run `npm fund` for details
+[2026-04-06T10:56:02.689Z] [STDOUT] To address all issues (including breaking changes), run:
+[2026-04-06T10:56:02.718Z] [STDOUT] npm audit fix --force
+[2026-04-06T10:56:02.729Z] [STDOUT] [BERAHOST] Cache integrity check failed â€” clearing cache and reinstalling from scratch...
+[2026-04-06T10:56:02.747Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T10:56:03.534Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T10:56:03.563Z] [STDERR] npm warn EBADENGINE   package: 'silent-wolf-bot@2.1.0',
+[2026-04-06T10:56:03.592Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x' },
+[2026-04-06T10:56:03.621Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T10:56:03.650Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T10:56:03.958Z] [STDOUT] > silent-wolf-bot@2.1.0 postinstall
+[2026-04-06T10:56:03.987Z] [STDOUT] > node scripts/patch-modules.cjs 2>/dev/null || true
+[2026-04-06T10:56:04.023Z] [STDOUT] up to date, audited 398 packages in 1s
+[2026-04-06T10:56:04.023Z] [STDOUT] run `npm fund` for details
+[2026-04-06T10:56:04.024Z] [STDOUT] 96 packages are looking for funding
+[2026-04-06T10:56:04.030Z] [STDOUT] 7 vulnerabilities (1 moderate, 6 high)
+[2026-04-06T10:56:04.059Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T10:56:04.060Z] [STDOUT] To address all issues (including breaking changes), run:
+[2026-04-06T10:56:04.091Z] [STDOUT] npm audit fix --force
+[2026-04-06T10:56:04.120Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T10:56:04.235Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T10:56:04.439Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T10:56:04.450Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T10:56:04.479Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T10:56:04.500Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T10:56:04.552Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T10:56:04.699Z] [STDOUT] > silent-wolf-bot@2.1.0 start
+[2026-04-06T10:56:04.729Z] [STDOUT] > node --no-warnings --expose-gc --max-old-space-size=1024 --max-semi-space-size=64 --experimental-global-webcrypto index.js
+[2026-04-06T10:56:04.864Z] [STDOUT] 
+[2026-04-06T10:56:04.894Z] [STDOUT] â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•®
+[2026-04-06T10:56:04.925Z] [STDOUT] â”‚   ðŸº WOLFBOT v1.1.5              â”‚
+[2026-04-06T10:56:04.955Z] [STDOUT] â”‚   Loader  : initializing...      â”‚
+[2026-04-06T10:56:04.985Z] [STDOUT] â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯
+[2026-04-06T10:56:05.015Z] [STDOUT] 
+[2026-04-06T10:56:05.547Z] [STDOUT] \nâ”Œ[ âš  WARNING ]â”€â”€â”€ 10:56:05 AM
+[2026-04-06T10:56:05.547Z] [STDERR] [10:56:05 AM] âŒ  Setup failed: Extraction completed but core directory was not found.
+[2026-04-06T10:56:05.547Z] [STDERR] [10:56:05 AM] âŒ  Place bot files in a "core" folder and retry.
+[2026-04-06T10:56:05.548Z] [STDERR] [10:56:05 AM] âŒ  No bot directory found â€” download may have failed.
+[2026-04-06T10:56:05.576Z] [STDOUT] â””â€¢â€¢ Attempting to start from existing files...\n
+[2026-04-06T10:56:05.598Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T10:56:05.932Z] [INFO  ] [BERAHOST] â†» Auto-restart 3/10 in 10s...
+[2026-04-06T10:56:16.192Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T10:56:16.221Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T10:56:16.564Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-06T10:56:16.688Z] [INFO  ] [BERAHOST] Bot started with PID 1665
+[2026-04-06T10:56:16.846Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_2)...
+[2026-04-06T10:56:17.101Z] [STDOUT] [BERAHOST] wolf.js patch: pattern not found (may already be fixed upstream)
+[2026-04-06T10:56:17.717Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T10:56:17.747Z] [STDERR] npm warn EBADENGINE   package: 'silent-wolf-bot@2.1.0',
+[2026-04-06T10:56:17.776Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x' },
+[2026-04-06T10:56:17.806Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T10:56:17.835Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T10:56:18.585Z] [STDOUT] 96 packages are looking for funding
+[2026-04-06T10:56:18.585Z] [STDOUT] removed 1 package, and audited 398 packages in 1s
+[2026-04-06T10:56:18.614Z] [STDOUT] run `npm fund` for details
+[2026-04-06T10:56:18.661Z] [STDOUT] [BERAHOST] Cache integrity check failed â€” clearing cache and reinstalling from scratch...
+[2026-04-06T10:56:18.777Z] [STDOUT] 7 vulnerabilities (1 moderate, 6 high)
+[2026-04-06T10:56:18.807Z] [STDOUT] To address all issues (including breaking changes), run:
+[2026-04-06T10:56:18.838Z] [STDOUT] npm audit fix --force
+[2026-04-06T10:56:18.869Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T10:56:19.482Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T10:56:19.514Z] [STDERR] npm warn EBADENGINE   package: 'silent-wolf-bot@2.1.0',
+[2026-04-06T10:56:19.544Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x' },
+[2026-04-06T10:56:19.574Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T10:56:19.604Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T10:56:19.860Z] [STDOUT] > silent-wolf-bot@2.1.0 postinstall
+[2026-04-06T10:56:19.890Z] [STDOUT] > node scripts/patch-modules.cjs 2>/dev/null || true
+[2026-04-06T10:56:19.916Z] [STDOUT] up to date, audited 398 packages in 1s
+[2026-04-06T10:56:19.917Z] [STDOUT] 96 packages are looking for funding
+[2026-04-06T10:56:19.923Z] [STDOUT] 7 vulnerabilities (1 moderate, 6 high)
+[2026-04-06T10:56:19.947Z] [STDOUT] run `npm fund` for details
+[2026-04-06T10:56:19.949Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T10:56:19.952Z] [STDOUT] To address all issues (including breaking changes), run:
+[2026-04-06T10:56:19.981Z] [STDOUT] npm audit fix --force
+[2026-04-06T10:56:20.011Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T10:56:20.119Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T10:56:20.318Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T10:56:20.337Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T10:56:20.367Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T10:56:20.386Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T10:56:20.445Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T10:56:20.592Z] [STDOUT] > silent-wolf-bot@2.1.0 start
+[2026-04-06T10:56:20.621Z] [STDOUT] > node --no-warnings --expose-gc --max-old-space-size=1024 --max-semi-space-size=64 --experimental-global-webcrypto index.js
+[2026-04-06T10:56:20.776Z] [STDOUT] 
+[2026-04-06T10:56:20.805Z] [STDOUT] â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•®
+[2026-04-06T10:56:20.833Z] [STDOUT] â”‚   ðŸº WOLFBOT v1.1.5              â”‚
+[2026-04-06T10:56:20.862Z] [STDOUT] â”‚   Loader  : initializing...      â”‚
+[2026-04-06T10:56:20.891Z] [STDOUT] â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯
+[2026-04-06T10:56:20.919Z] [STDOUT] 
+[2026-04-06T10:56:21.461Z] [STDERR] [10:56:21 AM] âŒ  Setup failed: Extraction completed but core directory was not found.
+[2026-04-06T10:56:21.462Z] [STDERR] [10:56:21 AM] âŒ  No bot directory found â€” download may have failed.
+[2026-04-06T10:56:21.462Z] [STDERR] [10:56:21 AM] âŒ  Place bot files in a "core" folder and retry.
+[2026-04-06T10:56:21.463Z] [STDOUT] \nâ”Œ[ âš  WARNING ]â”€â”€â”€ 10:56:21 AM
+[2026-04-06T10:56:21.492Z] [STDOUT] â””â€¢â€¢ Attempting to start from existing files...\n
+[2026-04-06T10:56:21.692Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T10:56:21.779Z] [INFO  ] [BERAHOST] â†» Auto-restart 4/10 in 20s...
+[2026-04-06T10:56:42.059Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T10:56:42.089Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T10:56:42.447Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-06T10:56:42.573Z] [INFO  ] [BERAHOST] Bot started with PID 1770
+[2026-04-06T10:56:42.721Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_2)...
+[2026-04-06T10:56:42.990Z] [STDOUT] [BERAHOST] wolf.js patch: pattern not found (may already be fixed upstream)
+[2026-04-06T10:56:43.606Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T10:56:43.634Z] [STDERR] npm warn EBADENGINE   package: 'silent-wolf-bot@2.1.0',
+[2026-04-06T10:56:43.663Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x' },
+[2026-04-06T10:56:43.691Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T10:56:43.720Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T10:56:44.406Z] [STDOUT] removed 1 package, and audited 398 packages in 1s
+[2026-04-06T10:56:44.406Z] [STDOUT] 96 packages are looking for funding
+[2026-04-06T10:56:44.435Z] [STDOUT] run `npm fund` for details
+[2026-04-06T10:56:44.484Z] [STDOUT] [BERAHOST] Cache integrity check failed â€” clearing cache and reinstalling from scratch...
+[2026-04-06T10:56:44.587Z] [STDOUT] 7 vulnerabilities (1 moderate, 6 high)
+[2026-04-06T10:56:44.617Z] [STDOUT] To address all issues (including breaking changes), run:
+[2026-04-06T10:56:44.646Z] [STDOUT] npm audit fix --force
+[2026-04-06T10:56:44.676Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T10:56:45.240Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T10:56:45.270Z] [STDERR] npm warn EBADENGINE   package: 'silent-wolf-bot@2.1.0',
+[2026-04-06T10:56:45.303Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x' },
+[2026-04-06T10:56:45.332Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T10:56:45.361Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T10:56:45.744Z] [STDOUT] > silent-wolf-bot@2.1.0 postinstall
+[2026-04-06T10:56:45.774Z] [STDOUT] > node scripts/patch-modules.cjs 2>/dev/null || true
+[2026-04-06T10:56:45.803Z] [STDOUT] 96 packages are looking for funding
+[2026-04-06T10:56:45.803Z] [STDOUT] up to date, audited 398 packages in 1s
+[2026-04-06T10:56:45.809Z] [STDOUT] 7 vulnerabilities (1 moderate, 6 high)
+[2026-04-06T10:56:45.831Z] [STDOUT] run `npm fund` for details
+[2026-04-06T10:56:45.834Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T10:56:45.838Z] [STDOUT] To address all issues (including breaking changes), run:
+[2026-04-06T10:56:45.866Z] [STDOUT] npm audit fix --force
+[2026-04-06T10:56:45.895Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T10:56:46.008Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T10:56:46.200Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T10:56:46.207Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T10:56:46.236Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T10:56:46.257Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T10:56:46.306Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T10:56:46.458Z] [STDOUT] > silent-wolf-bot@2.1.0 start
+[2026-04-06T10:56:46.489Z] [STDOUT] > node --no-warnings --expose-gc --max-old-space-size=1024 --max-semi-space-size=64 --experimental-global-webcrypto index.js
+[2026-04-06T10:56:46.630Z] [STDOUT] 
+[2026-04-06T10:56:46.660Z] [STDOUT] â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•®
+[2026-04-06T10:56:46.690Z] [STDOUT] â”‚   ðŸº WOLFBOT v1.1.5              â”‚
+[2026-04-06T10:56:46.721Z] [STDOUT] â”‚   Loader  : initializing...      â”‚
+[2026-04-06T10:56:46.751Z] [STDOUT] â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯
+[2026-04-06T10:56:46.781Z] [STDOUT] 
+[2026-04-06T10:56:47.378Z] [STDERR] [10:56:47 AM] âŒ  Setup failed: Extraction completed but core directory was not found.
+[2026-04-06T10:56:47.378Z] [STDOUT] \nâ”Œ[ âš  WARNING ]â”€â”€â”€ 10:56:47 AM
+[2026-04-06T10:56:47.381Z] [STDERR] [10:56:47 AM] âŒ  Place bot files in a "core" folder and retry.
+[2026-04-06T10:56:47.381Z] [STDERR] [10:56:47 AM] âŒ  No bot directory found â€” download may have failed.
+[2026-04-06T10:56:47.408Z] [STDOUT] â””â€¢â€¢ Attempting to start from existing files...\n
+[2026-04-06T10:56:47.605Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T10:56:47.691Z] [INFO  ] [BERAHOST] â†» Auto-restart 5/10 in 40s...
+[2026-04-06T10:57:27.958Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T10:57:27.988Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T10:57:28.352Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-06T10:57:28.471Z] [INFO  ] [BERAHOST] Bot started with PID 1875
+[2026-04-06T10:57:28.628Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_2)...
+[2026-04-06T10:57:28.910Z] [STDOUT] [BERAHOST] wolf.js patch: pattern not found (may already be fixed upstream)
+[2026-04-06T10:57:29.572Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T10:57:29.602Z] [STDERR] npm warn EBADENGINE   package: 'silent-wolf-bot@2.1.0',
+[2026-04-06T10:57:29.632Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x' },
+[2026-04-06T10:57:29.663Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T10:57:29.694Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T10:57:30.406Z] [STDOUT] 96 packages are looking for funding
+[2026-04-06T10:57:30.407Z] [STDOUT] removed 1 package, and audited 398 packages in 1s
+[2026-04-06T10:57:30.436Z] [STDOUT] run `npm fund` for details
+[2026-04-06T10:57:30.474Z] [STDOUT] [BERAHOST] Cache integrity check failed â€” clearing cache and reinstalling from scratch...
+[2026-04-06T10:57:30.587Z] [STDOUT] 7 vulnerabilities (1 moderate, 6 high)
+[2026-04-06T10:57:30.616Z] [STDOUT] To address all issues (including breaking changes), run:
+[2026-04-06T10:57:30.645Z] [STDOUT] npm audit fix --force
+[2026-04-06T10:57:30.675Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T10:57:31.248Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T10:57:31.277Z] [STDERR] npm warn EBADENGINE   package: 'silent-wolf-bot@2.1.0',
+[2026-04-06T10:57:31.306Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x' },
+[2026-04-06T10:57:31.335Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T10:57:31.364Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T10:57:31.611Z] [STDOUT] > silent-wolf-bot@2.1.0 postinstall
+[2026-04-06T10:57:31.641Z] [STDOUT] > node scripts/patch-modules.cjs 2>/dev/null || true
+[2026-04-06T10:57:31.687Z] [STDOUT] up to date, audited 398 packages in 997ms
+[2026-04-06T10:57:31.687Z] [STDOUT] 96 packages are looking for funding
+[2026-04-06T10:57:31.694Z] [STDOUT] 7 vulnerabilities (1 moderate, 6 high)
+[2026-04-06T10:57:31.718Z] [STDOUT] run `npm fund` for details
+[2026-04-06T10:57:31.723Z] [STDOUT] To address all issues (including breaking changes), run:
+[2026-04-06T10:57:31.724Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T10:57:31.756Z] [STDOUT] npm audit fix --force
+[2026-04-06T10:57:31.786Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T10:57:31.901Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T10:57:32.092Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T10:57:32.104Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T10:57:32.134Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T10:57:32.157Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T10:57:32.203Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T10:57:32.346Z] [STDOUT] > silent-wolf-bot@2.1.0 start
+[2026-04-06T10:57:32.376Z] [STDOUT] > node --no-warnings --expose-gc --max-old-space-size=1024 --max-semi-space-size=64 --experimental-global-webcrypto index.js
+[2026-04-06T10:57:32.500Z] [STDOUT] 
+[2026-04-06T10:57:32.530Z] [STDOUT] â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•®
+[2026-04-06T10:57:32.559Z] [STDOUT] â”‚   ðŸº WOLFBOT v1.1.5              â”‚
+[2026-04-06T10:57:32.589Z] [STDOUT] â”‚   Loader  : initializing...      â”‚
+[2026-04-06T10:57:32.618Z] [STDOUT] â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯
+[2026-04-06T10:57:32.648Z] [STDOUT] 
+[2026-04-06T10:57:33.149Z] [STDERR] [10:57:33 AM] âŒ  No bot directory found â€” download may have failed.
+[2026-04-06T10:57:33.150Z] [STDERR] [10:57:33 AM] âŒ  Setup failed: Extraction completed but core directory was not found.
+[2026-04-06T10:57:33.150Z] [STDERR] [10:57:33 AM] âŒ  Place bot files in a "core" folder and retry.
+[2026-04-06T10:57:33.150Z] [STDOUT] \nâ”Œ[ âš  WARNING ]â”€â”€â”€ 10:57:33 AM
+[2026-04-06T10:57:33.180Z] [STDOUT] â””â€¢â€¢ Attempting to start from existing files...\n
+[2026-04-06T10:57:33.386Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T10:57:33.474Z] [INFO  ] [BERAHOST] â†» Auto-restart 6/10 in 80s...
+[2026-04-06T10:58:53.737Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T10:58:53.766Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T10:58:54.107Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-06T10:58:54.226Z] [INFO  ] [BERAHOST] Bot started with PID 1980
+[2026-04-06T10:58:54.389Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_2)...
+[2026-04-06T10:58:54.677Z] [STDOUT] [BERAHOST] wolf.js patch: pattern not found (may already be fixed upstream)
+[2026-04-06T10:58:55.452Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T10:58:55.481Z] [STDERR] npm warn EBADENGINE   package: 'silent-wolf-bot@2.1.0',
+[2026-04-06T10:58:55.510Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x' },
+[2026-04-06T10:58:55.539Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T10:58:55.570Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T10:58:56.319Z] [STDOUT] 96 packages are looking for funding
+[2026-04-06T10:58:56.319Z] [STDOUT] removed 1 package, and audited 398 packages in 2s
+[2026-04-06T10:58:56.348Z] [STDOUT] run `npm fund` for details
+[2026-04-06T10:58:56.393Z] [STDOUT] [BERAHOST] Cache integrity check failed â€” clearing cache and reinstalling from scratch...
+[2026-04-06T10:58:56.507Z] [STDOUT] 7 vulnerabilities (1 moderate, 6 high)
+[2026-04-06T10:58:56.539Z] [STDOUT] To address all issues (including breaking changes), run:
+[2026-04-06T10:58:56.568Z] [STDOUT] npm audit fix --force
+[2026-04-06T10:58:56.599Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T10:58:57.162Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T10:58:57.192Z] [STDERR] npm warn EBADENGINE   package: 'silent-wolf-bot@2.1.0',
+[2026-04-06T10:58:57.223Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x' },
+[2026-04-06T10:58:57.253Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T10:58:57.283Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T10:58:57.565Z] [STDOUT] > silent-wolf-bot@2.1.0 postinstall
+[2026-04-06T10:58:57.595Z] [STDOUT] > node scripts/patch-modules.cjs 2>/dev/null || true
+[2026-04-06T10:58:57.628Z] [STDOUT] 96 packages are looking for funding
+[2026-04-06T10:58:57.628Z] [STDOUT] up to date, audited 398 packages in 1s
+[2026-04-06T10:58:57.635Z] [STDOUT] 7 vulnerabilities (1 moderate, 6 high)
+[2026-04-06T10:58:57.656Z] [STDOUT] run `npm fund` for details
+[2026-04-06T10:58:57.661Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T10:58:57.663Z] [STDOUT] To address all issues (including breaking changes), run:
+[2026-04-06T10:58:57.692Z] [STDOUT] npm audit fix --force
+[2026-04-06T10:58:57.721Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T10:58:57.827Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T10:58:58.056Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T10:58:58.071Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T10:58:58.100Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T10:58:58.121Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T10:58:58.169Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T10:58:58.341Z] [STDOUT] > silent-wolf-bot@2.1.0 start
+[2026-04-06T10:58:58.370Z] [STDOUT] > node --no-warnings --expose-gc --max-old-space-size=1024 --max-semi-space-size=64 --experimental-global-webcrypto index.js
+[2026-04-06T10:58:58.527Z] [STDOUT] 
+[2026-04-06T10:58:58.556Z] [STDOUT] â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•®
+[2026-04-06T10:58:58.584Z] [STDOUT] â”‚   ðŸº WOLFBOT v1.1.5              â”‚
+[2026-04-06T10:58:58.612Z] [STDOUT] â”‚   Loader  : initializing...      â”‚
+[2026-04-06T10:58:58.640Z] [STDOUT] â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯
+[2026-04-06T10:58:58.669Z] [STDOUT] 
+[2026-04-06T10:58:59.216Z] [STDERR] [10:58:59 AM] âŒ  Setup failed: Extraction completed but core directory was not found.
+[2026-04-06T10:58:59.217Z] [STDERR] [10:58:59 AM] âŒ  Place bot files in a "core" folder and retry.
+[2026-04-06T10:58:59.217Z] [STDOUT] \nâ”Œ[ âš  WARNING ]â”€â”€â”€ 10:58:59 AM
+[2026-04-06T10:58:59.217Z] [STDERR] [10:58:59 AM] âŒ  No bot directory found â€” download may have failed.
+[2026-04-06T10:58:59.246Z] [STDOUT] â””â€¢â€¢ Attempting to start from existing files...\n
+[2026-04-06T10:58:59.277Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T10:58:59.366Z] [INFO  ] [BERAHOST] â†» Auto-restart 7/10 in 120s...
+[2026-04-06T11:01:00.280Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T11:01:00.318Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T11:01:00.680Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-06T11:01:00.805Z] [INFO  ] [BERAHOST] Bot started with PID 2085
+[2026-04-06T11:01:00.964Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_2)...
+[2026-04-06T11:01:01.239Z] [STDOUT] [BERAHOST] wolf.js patch: pattern not found (may already be fixed upstream)
+[2026-04-06T11:01:01.862Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T11:01:01.902Z] [STDERR] npm warn EBADENGINE   package: 'silent-wolf-bot@2.1.0',
+[2026-04-06T11:01:01.931Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x' },
+[2026-04-06T11:01:01.959Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T11:01:01.988Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T11:01:02.621Z] [STDOUT] removed 1 package, and audited 398 packages in 1s
+[2026-04-06T11:01:02.621Z] [STDOUT] 96 packages are looking for funding
+[2026-04-06T11:01:02.651Z] [STDOUT] run `npm fund` for details
+[2026-04-06T11:01:02.691Z] [STDOUT] [BERAHOST] Cache integrity check failed â€” clearing cache and reinstalling from scratch...
+[2026-04-06T11:01:02.819Z] [STDOUT] 7 vulnerabilities (1 moderate, 6 high)
+[2026-04-06T11:01:02.850Z] [STDOUT] To address all issues (including breaking changes), run:
+[2026-04-06T11:01:02.879Z] [STDOUT] npm audit fix --force
+[2026-04-06T11:01:02.908Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T11:01:03.414Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T11:01:03.443Z] [STDERR] npm warn EBADENGINE   package: 'silent-wolf-bot@2.1.0',
+[2026-04-06T11:01:03.473Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x' },
+[2026-04-06T11:01:03.502Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T11:01:03.531Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T11:01:03.780Z] [STDOUT] > silent-wolf-bot@2.1.0 postinstall
+[2026-04-06T11:01:03.810Z] [STDOUT] > node scripts/patch-modules.cjs 2>/dev/null || true
+[2026-04-06T11:01:03.837Z] [STDOUT] 96 packages are looking for funding
+[2026-04-06T11:01:03.838Z] [STDOUT] up to date, audited 398 packages in 941ms
+[2026-04-06T11:01:03.844Z] [STDOUT] 7 vulnerabilities (1 moderate, 6 high)
+[2026-04-06T11:01:03.866Z] [STDOUT] run `npm fund` for details
+[2026-04-06T11:01:03.872Z] [STDOUT] To address all issues (including breaking changes), run:
+[2026-04-06T11:01:03.874Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T11:01:03.901Z] [STDOUT] npm audit fix --force
+[2026-04-06T11:01:03.930Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T11:01:04.069Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T11:01:04.245Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T11:01:04.252Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T11:01:04.281Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T11:01:04.316Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T11:01:04.362Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T11:01:04.516Z] [STDOUT] > silent-wolf-bot@2.1.0 start
+[2026-04-06T11:01:04.546Z] [STDOUT] > node --no-warnings --expose-gc --max-old-space-size=1024 --max-semi-space-size=64 --experimental-global-webcrypto index.js
+[2026-04-06T11:01:04.691Z] [STDOUT] 
+[2026-04-06T11:01:04.720Z] [STDOUT] â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•®
+[2026-04-06T11:01:04.751Z] [STDOUT] â”‚   ðŸº WOLFBOT v1.1.5              â”‚
+[2026-04-06T11:01:04.781Z] [STDOUT] â”‚   Loader  : initializing...      â”‚
+[2026-04-06T11:01:04.810Z] [STDOUT] â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯
+[2026-04-06T11:01:04.840Z] [STDOUT] 
+[2026-04-06T11:01:05.505Z] [STDERR] [11:01:05 AM] âŒ  No bot directory found â€” download may have failed.
+[2026-04-06T11:01:05.506Z] [STDOUT] \nâ”Œ[ âš  WARNING ]â”€â”€â”€ 11:01:05 AM
+[2026-04-06T11:01:05.507Z] [STDERR] [11:01:05 AM] âŒ  Place bot files in a "core" folder and retry.
+[2026-04-06T11:01:05.508Z] [STDERR] [11:01:05 AM] âŒ  Setup failed: Extraction completed but core directory was not found.
+[2026-04-06T11:01:05.537Z] [STDOUT] â””â€¢â€¢ Attempting to start from existing files...\n
+[2026-04-06T11:01:05.739Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T11:01:05.843Z] [INFO  ] [BERAHOST] â†» Auto-restart 8/10 in 120s...
+[2026-04-06T11:03:06.002Z] [INFO  ] [BERAHOST] Deploying bot...
+[2026-04-06T11:03:06.103Z] [INFO  ] [BERAHOST] Updating existing code...
+[2026-04-06T11:03:16.092Z] [INFO  ] [BERAHOST] Starting bot (npm start)...
+[2026-04-06T11:03:16.217Z] [INFO  ] [BERAHOST] Bot started with PID 2190
+[2026-04-06T11:03:16.703Z] [STDOUT] [BERAHOST] Restoring node_modules from cache (bot_2)...
+[2026-04-06T11:03:17.834Z] [STDOUT] [BERAHOST] wolf.js patch: pattern not found (may already be fixed upstream)
+[2026-04-06T11:03:19.136Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T11:03:19.166Z] [STDERR] npm warn EBADENGINE   package: 'silent-wolf-bot@2.1.0',
+[2026-04-06T11:03:19.206Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x' },
+[2026-04-06T11:03:19.236Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T11:03:19.265Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T11:03:19.949Z] [STDOUT] removed 1 package, and audited 398 packages in 2s
+[2026-04-06T11:03:19.949Z] [STDOUT] 96 packages are looking for funding
+[2026-04-06T11:03:19.955Z] [STDOUT] 7 vulnerabilities (1 moderate, 6 high)
+[2026-04-06T11:03:19.979Z] [STDOUT] run `npm fund` for details
+[2026-04-06T11:03:19.984Z] [STDOUT] To address all issues (including breaking changes), run:
+[2026-04-06T11:03:20.015Z] [STDOUT] npm audit fix --force
+[2026-04-06T11:03:20.034Z] [STDOUT] [BERAHOST] Cache integrity check failed â€” clearing cache and reinstalling from scratch...
+[2026-04-06T11:03:20.046Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T11:03:20.864Z] [STDERR] npm warn EBADENGINE Unsupported engine {
+[2026-04-06T11:03:20.894Z] [STDERR] npm warn EBADENGINE   package: 'silent-wolf-bot@2.1.0',
+[2026-04-06T11:03:20.924Z] [STDERR] npm warn EBADENGINE   required: { node: '20.x' },
+[2026-04-06T11:03:20.956Z] [STDERR] npm warn EBADENGINE   current: { node: 'v24.13.0', npm: '11.6.2' }
+[2026-04-06T11:03:20.990Z] [STDERR] npm warn EBADENGINE }
+[2026-04-06T11:03:21.337Z] [STDOUT] > silent-wolf-bot@2.1.0 postinstall
+[2026-04-06T11:03:21.368Z] [STDOUT] > node scripts/patch-modules.cjs 2>/dev/null || true
+[2026-04-06T11:03:21.407Z] [STDOUT] up to date, audited 398 packages in 1s
+[2026-04-06T11:03:21.407Z] [STDOUT] 96 packages are looking for funding
+[2026-04-06T11:03:21.412Z] [STDOUT] 7 vulnerabilities (1 moderate, 6 high)
+[2026-04-06T11:03:21.436Z] [STDOUT] run `npm fund` for details
+[2026-04-06T11:03:21.441Z] [STDOUT] To address all issues (including breaking changes), run:
+[2026-04-06T11:03:21.446Z] [STDOUT] [BERAHOST] Updating node_modules cache...
+[2026-04-06T11:03:21.452Z] [STDOUT] [BERAHOST] Copying node_modules to cache (this may take a moment)...
+[2026-04-06T11:03:21.470Z] [STDOUT] npm audit fix --force
+[2026-04-06T11:03:21.499Z] [STDOUT] Run `npm audit` for details.
+[2026-04-06T11:03:21.832Z] [STDOUT] [BERAHOST] Cache copy done, swapping...
+[2026-04-06T11:03:21.841Z] [STDOUT] [BERAHOST] Cache updated.
+[2026-04-06T11:03:21.871Z] [STDOUT] [BERAHOST] Applying library patches...
+[2026-04-06T11:03:21.888Z] [STDOUT] [BERAHOST] Running pre-start settings injection...
+[2026-04-06T11:03:21.934Z] [STDOUT] [BERAHOST] Launching bot...
+[2026-04-06T11:03:22.089Z] [STDOUT] > silent-wolf-bot@2.1.0 start
+[2026-04-06T11:03:22.119Z] [STDOUT] > node --no-warnings --expose-gc --max-old-space-size=1024 --max-semi-space-size=64 --experimental-global-webcrypto index.js
+[2026-04-06T11:03:22.263Z] [STDOUT] 
+[2026-04-06T11:03:22.292Z] [STDOUT] â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•®
+[2026-04-06T11:03:22.324Z] [STDOUT] â”‚   ðŸº WOLFBOT v1.1.5              â”‚
+[2026-04-06T11:03:22.353Z] [STDOUT] â”‚   Loader  : initializing...      â”‚
+[2026-04-06T11:03:22.383Z] [STDOUT] â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯
+[2026-04-06T11:03:22.413Z] [STDOUT] 
+[2026-04-06T11:03:23.460Z] [STDERR] [11:03:23 AM] âŒ  Setup failed: Extraction completed but core directory was not found.
+[2026-04-06T11:03:23.461Z] [STDOUT] \nâ”Œ[ âš  WARNING ]â”€â”€â”€ 11:03:23 AM
+[2026-04-06T11:03:23.461Z] [STDERR] [11:03:23 AM] âŒ  Place bot files in a "core" folder and retry.
+[2026-04-06T11:03:23.461Z] [STDERR] [11:03:23 AM] âŒ  No bot directory found â€” download may have failed.
+[2026-04-06T11:03:23.490Z] [STDOUT] â””â€¢â€¢ Attempting to start from existing files...\n
+[2026-04-06T11:03:23.697Z] [ERROR ] [BERAHOST] âœ– Process exited unexpectedly (code=1, signal=â€”) â€” scheduling restart...
+[2026-04-06T11:03:23.794Z] [INFO  ] [BERAHOST] â†» Auto-restart 9/10 in 120s...
