@@ -429,7 +429,7 @@ router.post("/admin/bots/sync-vars", requireAdmin, async (req, res): Promise<voi
 
 router.get("/admin/bots", requireAdmin, async (req, res): Promise<void> => {
   const bots = await db.select().from(botsTable).orderBy(desc(botsTable.createdAt));
-  res.json(bots.map(serializeBot));
+  res.json(bots.map(b => serializeBot(b, true)));
 });
 
 router.post("/admin/bots", requireAdmin, async (req, res): Promise<void> => {
@@ -445,7 +445,7 @@ router.post("/admin/bots", requireAdmin, async (req, res): Promise<void> => {
     .values({ name, repoUrl, description, platform, isFeatured: isFeatured || false, requiredVars, optionalVars, sessionGuideUrl, sessionPrefix, sqliteSettingsPaths, systemDeps, startCommand })
     .returning();
 
-  res.status(201).json(serializeBot(bot));
+  res.status(201).json(serializeBot(bot, true));
 });
 
 router.put("/admin/bots/:id", requireAdmin, async (req, res): Promise<void> => {
@@ -463,7 +463,7 @@ router.put("/admin/bots/:id", requireAdmin, async (req, res): Promise<void> => {
     return;
   }
 
-  res.json(serializeBot(bot));
+  res.json(serializeBot(bot, true));
 });
 
 router.delete("/admin/bots/:id", requireAdmin, async (req, res): Promise<void> => {

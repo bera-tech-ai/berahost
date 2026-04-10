@@ -15,7 +15,13 @@ import {
   CheckCircle2, 
   XCircle,
   Loader2,
-  AlertTriangle
+  AlertTriangle,
+  Smartphone,
+  Link2,
+  KeyRound,
+  Wifi,
+  ListChecks,
+  Info
 } from "lucide-react";
 import { useGetBot, useCreateDeployment } from "@workspace/api-client-react";
 import { useToast } from "@/hooks/use-toast";
@@ -315,33 +321,89 @@ export default function BotDetails() {
         </div>
 
         <div className="space-y-6">
+          {/* Technical Specs — repo URL intentionally hidden from users */}
           <Card className="border-border/50 bg-card/40 backdrop-blur-sm">
             <CardHeader>
-              <CardTitle className="font-mono text-sm text-muted-foreground">Technical Specs</CardTitle>
+              <CardTitle className="font-mono text-sm text-muted-foreground flex items-center gap-2">
+                <Info className="h-3.5 w-3.5" /> QUICK STATS
+              </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-3">
               <div className="flex justify-between items-center pb-2 border-b border-border/30">
                 <span className="text-xs font-mono text-muted-foreground">Platform</span>
-                <span className="text-sm font-medium">{bot.platform}</span>
+                <span className="text-sm font-medium capitalize">{bot.platform}</span>
               </div>
               <div className="flex justify-between items-center pb-2 border-b border-border/30">
-                <span className="text-xs font-mono text-muted-foreground">Repository</span>
-                <a href={bot.repoUrl} target="_blank" rel="noreferrer" className="text-sm font-medium text-primary hover:underline flex items-center">
-                  Source <ExternalLink className="ml-1 h-3 w-3" />
-                </a>
+                <span className="text-xs font-mono text-muted-foreground">Managed by</span>
+                <span className="text-xs font-mono text-accent font-bold">BERAHOST</span>
               </div>
               <div className="flex justify-between items-center pb-2 border-b border-border/30">
-                <span className="text-xs font-mono text-muted-foreground">Start Cmd</span>
-                <code className="text-xs font-mono bg-background/80 px-2 py-1 rounded text-secondary">
-                  {bot.startCommand || 'npm start'}
-                </code>
+                <span className="text-xs font-mono text-muted-foreground">Version</span>
+                <span className="text-sm font-medium">v{bot.version}.0</span>
               </div>
               <div className="flex justify-between items-center pb-2 border-b border-border/30">
-                <span className="text-xs font-mono text-muted-foreground">Base Cost</span>
-                <span className="text-sm font-bold text-accent">Free to Deploy</span>
+                <span className="text-xs font-mono text-muted-foreground">Deploy Cost</span>
+                <span className="text-sm font-bold text-accent">Free</span>
               </div>
             </CardContent>
           </Card>
+
+          {/* Connection Setup Guide */}
+          {!sessionKey && (
+            <Card className="border-primary/30 bg-card/40 backdrop-blur-sm relative overflow-hidden">
+              <div className="absolute top-0 inset-x-0 h-0.5 bg-gradient-to-r from-primary/60 via-secondary/60 to-primary/60" />
+              <CardHeader className="pb-3">
+                <CardTitle className="font-mono text-sm flex items-center gap-2 text-primary">
+                  <Link2 className="h-4 w-4" /> HOW TO CONNECT
+                </CardTitle>
+                <CardDescription className="font-mono text-[10px]">
+                  Pairing code — no QR scan needed
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                {[
+                  { icon: Play, step: "1", text: "Enter your WhatsApp number below and click INITIATE DEPLOYMENT" },
+                  { icon: Wifi, step: "2", text: "Bot starts up and requests a pairing code from WhatsApp" },
+                  { icon: KeyRound, step: "3", text: "A pairing code (e.g. AB12-CD34) appears in your deployment console" },
+                  { icon: Smartphone, step: "4", text: "Open WhatsApp → Settings → Linked Devices → Link a Device" },
+                  { icon: Link2, step: "5", text: "Tap \"Link with phone number instead\" and enter the code" },
+                  { icon: CheckCircle2, step: "6", text: "Bot connects, sends you a confirmation message, and is live!" },
+                ].map(({ icon: Icon, step, text }) => (
+                  <div key={step} className="flex gap-3 items-start">
+                    <div className="shrink-0 h-5 w-5 rounded-full bg-primary/15 border border-primary/30 flex items-center justify-center">
+                      <span className="text-[10px] font-bold font-mono text-primary">{step}</span>
+                    </div>
+                    <p className="text-[11px] font-mono text-muted-foreground leading-relaxed">{text}</p>
+                  </div>
+                ))}
+
+                <div className="mt-3 p-2 rounded bg-yellow-500/10 border border-yellow-500/20 flex gap-2 items-start">
+                  <AlertTriangle className="h-3 w-3 text-yellow-400 shrink-0 mt-0.5" />
+                  <p className="text-[10px] font-mono text-yellow-300">
+                    Pairing codes expire in ~60 seconds. Enter it in WhatsApp quickly after it appears.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          )}
+
+          {/* Session-based bots: keep existing session guide link */}
+          {sessionKey && bot.sessionGuideUrl && (
+            <Card className="border-border/50 bg-card/40 backdrop-blur-sm">
+              <CardHeader className="pb-3">
+                <CardTitle className="font-mono text-sm flex items-center gap-2 text-primary">
+                  <ListChecks className="h-4 w-4" /> GET SESSION ID
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <a href={(bot as any).sessionGuideUrl} target="_blank" rel="noreferrer">
+                  <Button variant="outline" size="sm" className="w-full font-mono text-xs border-accent/50 text-accent hover:bg-accent/10">
+                    <ExternalLink className="mr-2 h-3 w-3" /> Open Session Generator
+                  </Button>
+                </a>
+              </CardContent>
+            </Card>
+          )}
         </div>
       </div>
     </motion.div>

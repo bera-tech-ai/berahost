@@ -4,11 +4,12 @@ import { eq } from "drizzle-orm";
 
 const router = Router();
 
-function serializeBot(bot: typeof botsTable.$inferSelect) {
+function serializeBot(bot: typeof botsTable.$inferSelect, includeRepoUrl = false) {
   return {
     id: bot.id,
     name: bot.name,
-    repoUrl: bot.repoUrl,
+    // repoUrl intentionally excluded from public API — it may contain private tokens
+    ...(includeRepoUrl ? { repoUrl: bot.repoUrl } : {}),
     description: bot.description,
     platform: bot.platform,
     isFeatured: bot.isFeatured,

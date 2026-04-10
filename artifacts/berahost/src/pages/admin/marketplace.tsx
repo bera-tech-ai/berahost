@@ -101,7 +101,7 @@ export default function AdminMarketplacePage() {
                             </div>
                             <p className="text-sm text-muted-foreground line-clamp-2 mb-2">{s.description}</p>
                             <div className="flex items-center gap-4 text-xs text-muted-foreground">
-                              <span className="flex items-center gap-1"><Github className="w-3 h-3" />{s.repoUrl?.replace("https://github.com/", "")}</span>
+                              <span className="flex items-center gap-1"><Github className="w-3 h-3" />{s.repoUrl?.replace(/https?:\/\/[^@]*@github\.com\//, "").replace("https://github.com/", "")}</span>
                               <span>by {s.submittedByEmail}</span>
                               <span>{format(new Date(s.createdAt), "MMM d, yyyy")}</span>
                             </div>
@@ -137,9 +137,10 @@ export default function AdminMarketplacePage() {
               </div>
               <div>
                 <Label className="text-xs text-muted-foreground">Repository</Label>
-                <a href={selected.repoUrl} target="_blank" rel="noopener noreferrer" className="text-sm text-cyan-400 hover:underline mt-1 flex items-center gap-1">
-                  <Github className="w-3 h-3" />{selected.repoUrl}
-                </a>
+                <p className="text-sm text-cyan-400 mt-1 flex items-center gap-1 font-mono">
+                  <Github className="w-3 h-3 shrink-0" />
+                  {selected.repoUrl?.replace(/https?:\/\/[^@]*@github\.com\//, "").replace("https://github.com/", "") || "—"}
+                </p>
               </div>
               {selected.requiredVars && (
                 <div>

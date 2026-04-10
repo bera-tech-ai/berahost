@@ -461,7 +461,7 @@ export default function AdminBots() {
                           </a>
                         )}
                         <a
-                          href={bot.repoUrl}
+                          href={bot.repoUrl?.replace(/https?:\/\/[^@]*@github\.com\//, "https://github.com/")}
                           target="_blank"
                           rel="noreferrer"
                           className="flex items-center gap-1 text-primary hover:underline"
