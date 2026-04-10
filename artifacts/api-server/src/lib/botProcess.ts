@@ -440,9 +440,11 @@ export function clearPairingCode(deploymentId: number): void {
   pairingCodes.delete(deploymentId);
 }
 
-// Regex: matches 4 groups of 4 alphanumeric chars separated by dashes/spaces
-// e.g.  "ABCD-EFGH-IJKL-MNOP"  or  "ABCD EFGH IJKL MNOP"
-const PAIRING_CODE_RE = /([A-Z0-9]{4}[-\s][A-Z0-9]{4}[-\s][A-Z0-9]{4}[-\s][A-Z0-9]{4})/i;
+// Regex: matches Baileys pairing codes in both formats:
+//   8-char:  "XXXX-XXXX"        (toxic-baileys / newer baileys forks)
+//   16-char: "XXXX-XXXX-XXXX-XXXX"  (standard @whiskeysockets/baileys)
+// Separators can be dashes or spaces.
+const PAIRING_CODE_RE = /([A-Z0-9]{4}[-\s][A-Z0-9]{4}(?:[-\s][A-Z0-9]{4}[-\s][A-Z0-9]{4})?)\b/i;
 
 async function emitLog(deploymentId: number, line: string, logType: string) {
   await db.insert(botLogsTable).values({
@@ -761,7 +763,7 @@ export async function startBotProcess(
     const npmInstallCmd = [
       heartbeatCmd,
       `if [ "$BERAHOST_CACHE_HIT" = "1" ]; then`,
-      `  ${npmInstallEnv}npm install --prefer-offline --ignore-scripts`,
+      `  ${npmInstallEnv}npm install --prefer-offline --ignore-scripts --legacy-peer-deps`,
       // Integrity check — verify that key modules actually resolve correctly.
       // Checks ONLY modules listed in the bot's own package.json so that bots
       // that don't have (e.g.) fs-extra never fail the check spuriously.
@@ -780,13 +782,13 @@ export async function startBotProcess(
       // npm's cache is almost always valid; only the BERAHOST hard-link copy
       // was corrupted.  --prefer-offline will use npm's cache for the reinstall.
       `    rm -rf node_modules 2>/dev/null || true`,
-      `    ${npmInstallEnv}npm install --prefer-offline`,
+      `    ${npmInstallEnv}npm install --prefer-offline --legacy-peer-deps`,
       `  fi`,
       `else`,
       // No BERAHOST cache hit — clean any partial node_modules left by a
       // previously interrupted install (fixes ENOTEMPTY on retry).
       `  rm -rf node_modules 2>/dev/null || true`,
-      `  ${npmInstallEnv}npm install --prefer-offline`,
+      `  ${npmInstallEnv}npm install --prefer-offline --legacy-peer-deps`,
       `fi`,
       heartbeatStop,
     ].join("\n");
@@ -1098,6 +1100,20 @@ for (const candidate of candidates) {
       // Wolf bot: set up core/ directory from k-7 GitHub archive (after npm
       // install so adm-zip is available; skipped for non-wolf bots).
       wolfCoreSetupCmd,
+      // ── setenv.js platform override patch ───────────────────────────────────
+      // Many bots ship a setenv.js that calls process.env.VARNAME = 'hardcoded'
+      // directly, overwriting the values BERAHOST writes to .env.  We rewrite
+      // every such assignment to process.env.VARNAME = process.env.VARNAME || 'hardcoded'
+      // so platform-provided env vars always win while the bot's defaults still
+      // work when no override is set.
+      `if [ -f "setenv.js" ] || [ -f "setEnv.js" ] || [ -f "set_env.js" ]; then`,
+      `  SETENV_FILE=$(ls setenv.js setEnv.js set_env.js 2>/dev/null | head -1)`,
+      `  if [ -n "$SETENV_FILE" ]; then`,
+      `    echo "[BERAHOST] Patching $SETENV_FILE to respect platform env vars..."`,
+      `    sed -i "s/process\\.env\\.\\([A-Z_][A-Z0-9_]*\\)\\s*=\\s*['\\"]/process.env.\\1 = process.env.\\1 || '/g" "$SETENV_FILE" 2>/dev/null || true`,
+      `    echo "[BERAHOST] $SETENV_FILE patched."`,
+      `  fi`,
+      `fi`,
       // Apply gifted-baileys AES-GCM patch (only modifies files if needed; safe to re-run)
       `echo "[BERAHOST] Applying library patches..."`,
       `node .berahost_gifted_baileys_patch.cjs 2>/dev/null || true`,
@@ -1216,9 +1232,16 @@ for (const candidate of candidates) {
         // pairing-code mode.  We detect it here and emit a dedicated socket
         // event so the frontend can show it prominently instead of burying it
         // in the log stream.  Any line that contains "pairing code" (case
-        // insensitive) is checked for a 4×4 alphanumeric pattern.
+        // insensitive) is checked for a code pattern.
+        //
+        // IMPORTANT: we first look for the code AFTER a colon (e.g. "CODE: XXXX-XXXX")
+        // to avoid matching "RING-CODE" from inside "PAIRING CODE" itself.
         if (lower.includes("pairing") && lower.includes("code")) {
-          const match = clean.match(PAIRING_CODE_RE);
+          // Priority 1: code appears after a colon → "PAIRING CODE: XXXX-XXXX"
+          const afterColon = clean.match(/code\s*:\s*([A-Z0-9]{4}[-\s][A-Z0-9]{4}(?:[-\s][A-Z0-9]{4}[-\s][A-Z0-9]{4})?)/i);
+          // Priority 2: standalone code token not inside a word (not "PAIRING CODE" itself)
+          const standalone = clean.match(/(?<![A-Z0-9])([A-Z0-9]{4}[-][A-Z0-9]{4}(?:[-][A-Z0-9]{4}[-][A-Z0-9]{4})?)(?![A-Z0-9])/i);
+          const match = afterColon || standalone;
           if (match) {
             const rawCode = match[1];
             // Normalise separator to dashes for a consistent display
