@@ -55,12 +55,12 @@ export async function deductCoins(
   });
 }
 
-// Deployment costs per platform — 0 = free (matches the "Free" label in the UI)
+// Deployment costs per platform (coins). Override via platform_settings in admin panel.
 export const DEPLOYMENT_COSTS: Record<string, number> = {
-  whatsapp: 0,
-  "whatsapp-premium": 0,
-  telegram: 0,
-  discord: 0,
+  whatsapp: 10,
+  "whatsapp-premium": 20,
+  telegram: 8,
+  discord: 10,
 };
 
 // Coin packages — affordable KES pricing for Kenyan users

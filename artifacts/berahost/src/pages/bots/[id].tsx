@@ -56,8 +56,9 @@ export default function BotDetails() {
           error?.data?.error ??
           error?.message ??
           "Something went wrong. Please try again.";
+        const isInsufficientCoins = message.toLowerCase().includes("insufficient");
         toast({
-          title: "Deployment Failed",
+          title: isInsufficientCoins ? "Insufficient Coins" : "Deployment Failed",
           description: message,
           variant: "destructive",
         });
@@ -347,7 +348,9 @@ export default function BotDetails() {
               </div>
               <div className="flex justify-between items-center pb-2 border-b border-border/30">
                 <span className="text-xs font-mono text-muted-foreground">Deploy Cost</span>
-                <span className="text-sm font-bold text-accent">Free</span>
+                <span className="text-sm font-bold text-accent">
+                  {bot.deployCost === 0 ? "Free" : `${bot.deployCost ?? 10} Coins`}
+                </span>
               </div>
             </CardContent>
           </Card>

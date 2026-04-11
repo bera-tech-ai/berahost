@@ -355,8 +355,8 @@ async function seedDatabase() {
     { key: "maintenance_mode",       value: false },
     { key: "daily_claim_coins",      value: 5 },
     { key: "referral_coins",         value: 20 },
-    { key: "deploy_cost_whatsapp",   value: 0 },  // bots are free to deploy
-    { key: "deploy_cost_telegram",   value: 0 },
+    { key: "deploy_cost_whatsapp",   value: 10 }, // coins per WhatsApp deployment
+    { key: "deploy_cost_telegram",   value: 8 },  // coins per Telegram deployment
   ];
 
   for (const setting of defaultSettings) {
