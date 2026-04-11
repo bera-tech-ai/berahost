@@ -346,19 +346,31 @@ async function seedDatabase() {
   }
   if (seededCount > 0) logger.info({ count: seededCount }, "Seeded missing bot templates");
 
-  // ── Platform settings ───────────────────────────────────────────────────
-  const [{ settingsCount }] = await db.select({ settingsCount: count() }).from(platformSettingsTable);
+  // ── Platform settings ─────────────────────────────────────────────────────
+  // Upsert every default so that existing DBs always pick up new keys (e.g.
+  // deploy_cost_whatsapp added after initial deploy) without wiping admin edits
+  // on keys that already exist.
+  const defaultSettings: { key: string; value: any }[] = [
+    { key: "site_name",              value: "BERAHOST" },
+    { key: "maintenance_mode",       value: false },
+    { key: "daily_claim_coins",      value: 5 },
+    { key: "referral_coins",         value: 20 },
+    { key: "deploy_cost_whatsapp",   value: 0 },  // bots are free to deploy
+    { key: "deploy_cost_telegram",   value: 0 },
+  ];
 
-  if (settingsCount === 0) {
-    await db.insert(platformSettingsTable).values([
-      { key: "site_name",        value: "BERAHOST" as any },
-      { key: "maintenance_mode", value: false as any },
-      { key: "daily_claim_coins", value: 5 as any },
-      { key: "referral_coins",   value: 20 as any },
-    ]);
+  for (const setting of defaultSettings) {
+    const [existing] = await db
+      .select({ key: platformSettingsTable.key })
+      .from(platformSettingsTable)
+      .where(eq(platformSettingsTable.key, setting.key));
 
-    logger.info("Seeded platform settings");
+    if (!existing) {
+      await db.insert(platformSettingsTable).values(setting as any);
+    }
   }
+
+  logger.info("Platform settings check complete");
 }
 
 main().catch((err) => {

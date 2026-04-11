@@ -55,12 +55,12 @@ export async function deductCoins(
   });
 }
 
-// Deployment costs per platform — kept affordable
+// Deployment costs per platform — 0 = free (matches the "Free" label in the UI)
 export const DEPLOYMENT_COSTS: Record<string, number> = {
-  whatsapp: 10,
-  "whatsapp-premium": 20,
-  telegram: 8,
-  discord: 10,
+  whatsapp: 0,
+  "whatsapp-premium": 0,
+  telegram: 0,
+  discord: 0,
 };
 
 // Coin packages — affordable KES pricing for Kenyan users

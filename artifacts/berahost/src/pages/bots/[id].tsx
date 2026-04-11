@@ -51,10 +51,14 @@ export default function BotDetails() {
         });
         setLocation(`/deployments/${data.id}`);
       },
-      onError: (error) => {
+      onError: (error: any) => {
+        const message =
+          error?.data?.error ??
+          error?.message ??
+          "Something went wrong. Please try again.";
         toast({
           title: "Deployment Failed",
-          description: error.error || "Something went wrong",
+          description: message,
           variant: "destructive",
         });
       }
