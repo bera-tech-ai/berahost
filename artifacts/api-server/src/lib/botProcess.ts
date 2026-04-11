@@ -322,43 +322,23 @@ const eaddrInUseIds = new Set<number>();
 // After a bot runs stably for 2 minutes we reset its crash counter.
 const restartResetTimers = new Map<number, NodeJS.Timeout>();
 
-// Per-deployment watchdog timer — STARTUP PHASE ONLY.
-// If the bot produces no output for 20 minutes during startup (npm install +
-// WhatsApp handshake), it is assumed genuinely stuck and force-restarted.
+// Per-deployment watchdog — DISABLED.
+// Bots are only restarted when they actually crash (non-zero exit code).
+// Killing for silence / idle / no-output during startup breaks pairing-code
+// bots that wait quietly for the user to enter a code, and connected bots
+// that are simply idle (no incoming messages).
 //
-// Once the bot logs a successful WhatsApp connection the watchdog is cancelled
-// permanently.  A connected-but-idle bot (no incoming messages) is silent by
-// design — killing it for that would be wrong.
-const WATCHDOG_STARTUP_MS = 20 * 60 * 1000; // 20 min: startup only (npm install + WA handshake)
+// max_idle_time = 0  →  infinite (no idle kill)
+// startup silence detection  →  disabled
+// 20-minute force-kill rule  →  removed
+const WATCHDOG_STARTUP_MS = 0; // 0 = disabled
 const watchdogTimers       = new Map<number, NodeJS.Timeout>();
 const connectedDeployments = new Set<number>(); // bots that have reached WhatsApp
 const startingDeployments  = new Set<number>(); // guard: prevent concurrent spawns of same deploymentId
 
-function resetWatchdog(deploymentId: number, proc: ChildProcess) {
-  const existing = watchdogTimers.get(deploymentId);
-  if (existing) clearTimeout(existing);
-
-  // Once a bot is confirmed connected to WhatsApp, NEVER kill it for silence.
-  // A healthy idle bot (no incoming messages) produces zero output — that is
-  // normal, not a sign of being stuck.  Only the startup phase (npm install +
-  // WA handshake) needs a timeout so genuinely hung deploys don't sit forever.
-  if (connectedDeployments.has(deploymentId)) return;
-
-  const t = setTimeout(async () => {
-    watchdogTimers.delete(deploymentId);
-    await emitLog(
-      deploymentId,
-      `[BERAHOST] ⚠ No output for ${WATCHDOG_STARTUP_MS / 60000} min during startup — bot appears stuck, forcing restart...`,
-      "warn"
-    ).catch(() => {});
-    if (proc.pid) {
-      try { process.kill(-proc.pid, "SIGTERM"); } catch { /* already dead */ }
-      setTimeout(() => {
-        if (proc.pid) try { process.kill(-proc.pid, "SIGKILL"); } catch { /* already dead */ }
-      }, 2000);
-    }
-  }, WATCHDOG_STARTUP_MS);
-  watchdogTimers.set(deploymentId, t);
+function resetWatchdog(_deploymentId: number, _proc: ChildProcess) {
+  // Watchdog disabled — bots are never killed for being silent or idle.
+  // They restart only on actual process exit (crash handler below).
 }
 
 function clearWatchdog(deploymentId: number) {
@@ -1495,8 +1475,9 @@ for (const candidate of candidates) {
         "error"
       ).catch(() => {});
 
-      // Auto-restart with exponential backoff (max 10 attempts)
-      const MAX_RESTARTS = 10;
+      // Auto-restart with exponential backoff — no restart cap.
+      // Bots only restart on actual process exit (crash); never for idle/silence.
+      // Backoff caps at 120 s to prevent a fast crash-loop from burning resources.
       let dep: (typeof deploymentsTable.$inferSelect) | undefined;
       try {
         [dep] = await db
@@ -1510,17 +1491,8 @@ for (const candidate of candidates) {
 
       if (!dep) return;
 
-      if ((dep.restartCount ?? 0) >= MAX_RESTARTS) {
-        await emitLog(
-          deploymentId,
-          `[BERAHOST] ✖ Max restart attempts (${MAX_RESTARTS}) reached. Manual restart required.`,
-          "error"
-        ).catch(() => {});
-        return;
-      }
-
       const attempt   = (dep.restartCount ?? 0) + 1;
-      // Exponential backoff: 0 → 5 → 10 → 20 → 40 → 80 seconds (first attempt is instant)
+      // Exponential backoff: 0 → 5 → 10 → 20 → 40 → 80 → 120 s (capped)
       const backoffMs = attempt === 1 ? 0 : Math.min(5000 * Math.pow(2, attempt - 2), 120_000);
 
       await db
@@ -1530,7 +1502,7 @@ for (const candidate of candidates) {
 
       await emitLog(
         deploymentId,
-        `[BERAHOST] ↻ Auto-restart ${attempt}/${MAX_RESTARTS} in ${backoffMs / 1000}s...`,
+        `[BERAHOST] ↻ Auto-restart #${attempt} in ${backoffMs / 1000}s (crash recovery — no restart limit)...`,
         "info"
       ).catch(() => {});
 
