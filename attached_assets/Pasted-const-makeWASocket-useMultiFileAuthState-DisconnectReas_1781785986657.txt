@@ -1,0 +1,168 @@
+const {
+    makeWASocket,
+    useMultiFileAuthState,
+    DisconnectReason,
+    fetchLatestBaileysVersion,
+    makeCacheableSignalKeyStore,
+    jidNormalizedUser
+} = require('@whiskeysockets/baileys')
+const { Boom } = require('@hapi/boom')
+const pino     = require('pino')
+const fs       = require('fs')
+const path     = require('path')
+const readline = require('readline')
+const SESSION_DIR = path.resolve('./session')
+const PHONE_FILE  = path.join(SESSION_DIR, '.phone')
+const logger      = pino({ level: 'silent' })
+if (!fs.existsSync(SESSION_DIR)) fs.mkdirSync(SESSION_DIR, { recursive: true })
+let _activeConn   = null
+let _reconnecting = false
+const closeActiveConn = async () => {
+    if (!_activeConn) return
+    const c = _activeConn
+    _activeConn = null
+    try { c.ev.removeAllListeners() } catch {}
+    try { c.ws?.terminate?.() }       catch {}
+    await new Promise(r => setTimeout(r, 800))
+}
+const scheduleReconnect = (delayMs = 5000) => {
+    if (_reconnecting) return
+    _reconnecting = true
+    setTimeout(async () => {
+        _reconnecting = false
+        await closeActiveConn()
+        startBot().catch(() => setTimeout(startBot, 10000))
+    }, delayMs)
+}
+const getSavedPhone = () => {
+    try { return fs.readFileSync(PHONE_FILE, 'utf8').trim() } catch { return null }
+}
+const savePhone = (number) => {
+    fs.writeFileSync(PHONE_FILE, number, 'utf8')
+}
+const askPhoneNumber = () => new Promise((resolve) => {
+    console.log('\nEnter your WhatsApp number (country code, no + or spaces)')
+    console.log('Example: 254712345678\n')
+    const rl = readline.createInterface({ input: process.stdin, output: process.stdout })
+    rl.question('➤ Number: ', (answer) => {
+        rl.close()
+        resolve(answer.trim().replace(/[^0-9]/g, ''))
+    })
+})
+const showPairingCode = (code) => {
+    const fmt = code.match(/.{1,4}/g)?.join('-') || code
+    console.log(`\n  ┌──────────────────────────────────┐`)
+    console.log(`  │  PAIRING CODE: ${fmt.padEnd(16)}    │`)
+    console.log(`  ├──────────────────────────────────┤`)
+    console.log(`  │  WhatsApp → Linked Devices        │`)
+    console.log(`  │  → Link with phone number         │`)
+    console.log(`  │  → Enter the code above           │`)
+    console.log(`  └──────────────────────────────────┘\n`)
+}
+const startBot = async () => {
+    const { state, saveCreds } = await useMultiFileAuthState(SESSION_DIR)
+    const { version }          = await fetchLatestBaileysVersion()
+    let phoneNumber    = null
+    let pairingRequested = false
+    if (!state.creds.registered) {
+        phoneNumber = getSavedPhone()
+        if (!phoneNumber) {
+            phoneNumber = await askPhoneNumber()
+            if (!phoneNumber || phoneNumber.length < 7) {
+                console.log('Invalid number. Restart and try again.')
+                process.exit(1)
+            }
+            savePhone(phoneNumber)
+        }
+    }
+    const conn = makeWASocket({
+        version,
+        logger,
+        auth: {
+            creds: state.creds,
+            keys: makeCacheableSignalKeyStore(state.keys, logger)
+        },
+        printQRInTerminal: false,
+        browser: ['Ubuntu', 'Chrome', '22.0.0'],
+        markOnlineOnConnect: true,
+        keepAliveIntervalMs: 20000,
+        connectTimeoutMs:    90000,
+        retryRequestDelayMs: 250,
+        maxMsgRetryCount:    3,
+    })
+    _activeConn  = conn
+    global.conn  = conn
+    conn.ev.on('connection.update', async (update) => {
+        const { connection, lastDisconnect, qr } = update
+        // QR event fires first — intercept it to request a pairing code instead
+        if (qr && phoneNumber && !pairingRequested) {
+            pairingRequested = true
+            try {
+                const code = await conn.requestPairingCode(phoneNumber)
+                showPairingCode(code)
+            } catch (e) {
+                console.log('Pairing failed, retrying in 10s...')
+                setTimeout(async () => {
+                    try {
+                        const code = await conn.requestPairingCode(phoneNumber)
+                        showPairingCode(code)
+                    } catch (e2) {
+                        console.log('Pairing retry failed:', e2.message)
+                    }
+                }, 10000)
+            }
+        }
+        if (connection === 'close') {
+            const statusCode = lastDisconnect?.error instanceof Boom
+                ? lastDisconnect.error.output.statusCode
+                : null
+            if (statusCode === DisconnectReason.loggedOut) {
+                console.log('Logged out — clearing session...')
+                fs.rmSync(SESSION_DIR, { recursive: true, force: true })
+                fs.mkdirSync(SESSION_DIR, { recursive: true })
+                scheduleReconnect(3000)
+            } else if (statusCode === 408) {
+                pairingRequested = false
+                console.log('Timed out — reconnecting in 6s...')
+                scheduleReconnect(6000)
+            } else if (statusCode === 515) {
+                console.log('WA restart requested — reconnecting in 8s...')
+                scheduleReconnect(8000)
+            } else {
+                console.log(`Disconnected (${statusCode}) — reconnecting in 5s...`)
+                scheduleReconnect(5000)
+            }
+        }
+        if (connection === 'open') {
+            if (fs.existsSync(PHONE_FILE)) fs.unlinkSync(PHONE_FILE)
+            const botJid = jidNormalizedUser(conn.user?.id || '')
+            console.log(`\n✅ Connected as ${conn.user?.name} (${botJid})\n`)
+        }
+    })
+    conn.ev.on('creds.update', saveCreds)
+    // Your message handler goes here
+    conn.ev.on('messages.upsert', async ({ messages, type }) => {
+        if (type !== 'notify') return
+        for (const msg of messages) {
+            console.log('Message from:', msg.key.remoteJid)
+            // handle msg here
+        }
+    })
+    return conn
+}
+process.on('uncaughtException', (err) => {
+    console.error('[UNCAUGHT]', err.message)
+    scheduleReconnect(8000)
+})
+startBot().catch(e => {
+    console.error('[FATAL]', e.message)
+    setTimeout(startBot, 10000)
+})
+
+Install
+npm install @whiskeysockets/baileys @hapi/boom pino
+
+How it pairs — in 3 steps
+First run → no ./session/ files → asks for your number in terminal
+Prints a code like ABCD-EFGH → you enter it in WhatsApp → Settings → Linked Devices → Link with phone number
+Next run → session files exist → connects instantly, no code needed

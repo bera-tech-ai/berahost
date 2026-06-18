@@ -186,11 +186,12 @@ export async function connectViaPair(
 
     const baileys = _require("@whiskeysockets/baileys");
     const {
-      default: makeWASocket,
+      makeWASocket,
       useMultiFileAuthState,
       fetchLatestBaileysVersion,
       makeCacheableSignalKeyStore,
       DisconnectReason,
+      jidNormalizedUser,
     } = baileys;
     const { Boom } = _require("@hapi/boom");
 
@@ -257,7 +258,8 @@ export async function connectViaPair(
         done = true;
         _status = "connected";
         fireConnected();
-        logger.info("Platform WA sender: connected via pairing code");
+        const botJid = jidNormalizedUser(sock.user?.id || "");
+        logger.info({ name: sock.user?.name, jid: botJid }, "Platform WA sender: connected via pairing code");
         await extractAndEmitSession(sessDir, onSession, onError, setStatus);
         return;
       }
@@ -344,7 +346,7 @@ export async function initFromSession(sessionId: string): Promise<void> {
     _sessionDir = sessDir;
 
     const baileys = _require("@whiskeysockets/baileys");
-    const { default: makeWASocket, useMultiFileAuthState, fetchLatestBaileysVersion, makeCacheableSignalKeyStore } = baileys;
+    const { makeWASocket, useMultiFileAuthState, fetchLatestBaileysVersion, makeCacheableSignalKeyStore, jidNormalizedUser } = baileys;
     const pinoLog = makeSilentLogger();
     const { version } = await fetchLatestBaileysVersion();
     const { state, saveCreds } = await useMultiFileAuthState(sessDir);
@@ -378,7 +380,8 @@ export async function initFromSession(sessionId: string): Promise<void> {
       if (connection === "open") {
         _status = "connected";
         fireConnected();
-        logger.info("Platform WA sender connected successfully");
+        const botJid = jidNormalizedUser(sock.user?.id || "");
+        logger.info({ name: sock.user?.name, jid: botJid }, "Platform WA sender connected successfully");
       } else if (connection === "close") {
         const code = (lastDisconnect?.error as any)?.output?.statusCode;
         _status = "disconnected";
