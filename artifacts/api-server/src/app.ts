@@ -8,6 +8,9 @@ import { createSessionMiddleware } from "./lib/session";
 
 const app: Express = express();
 
+// Trust Replit's reverse proxy so req.ip, secure cookies, and X-Forwarded-* work correctly
+app.set("trust proxy", 1);
+
 app.use(
   pinoHttp({
     logger,
