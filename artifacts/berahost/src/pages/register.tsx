@@ -71,7 +71,7 @@ export default function Register() {
     setSendingOtp(true);
     try {
       const phone = values.phone.replace(/\D/g, "");
-      const res = await fetch(`${BASE}api/auth/otp/send`, {
+      const res = await fetch(`/api/auth/otp/send`, {
         method: "POST",
         credentials: "include",
         headers: { "Content-Type": "application/json" },
