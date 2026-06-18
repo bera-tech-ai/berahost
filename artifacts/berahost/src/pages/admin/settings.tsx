@@ -24,7 +24,8 @@ import {
   WifiOff,
   Copy,
   XCircle,
-  AlertCircle
+  AlertCircle,
+  RotateCcw
 } from "lucide-react";
 import { 
   useAdminGetSettings,
@@ -98,6 +99,7 @@ export default function AdminSettings() {
   const [waPairPhone, setWaPairPhone] = useState("");
   const [waConnecting, setWaConnecting] = useState(false);
   const [waDisconnecting, setWaDisconnecting] = useState(false);
+  const [waRestarting, setWaRestarting] = useState(false);
   const waSseRef = useRef<EventSource | null>(null);
 
   useEffect(() => {
@@ -162,6 +164,42 @@ export default function AdminSettings() {
       toast({ title: "Error", description: "Could not disconnect", variant: "destructive" });
     } finally {
       setWaDisconnecting(false);
+    }
+  }
+
+  async function restartWa() {
+    setWaRestarting(true);
+    closeSse();
+    setWaStatus("connecting");
+    try {
+      const res = await fetch(`${BASE}api/admin/platform-wa/restart`, { method: "POST", credentials: "include" });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Restart failed");
+      toast({ title: "Restarting…", description: "Reconnecting with saved session." });
+      // Poll until connected or timeout
+      let attempts = 0;
+      const poll = setInterval(async () => {
+        attempts++;
+        try {
+          const s = await fetch(`${BASE}api/admin/platform-wa/status`, { credentials: "include" });
+          const d = await s.json();
+          if (d.status === "connected") {
+            setWaStatus("connected");
+            clearInterval(poll);
+            setWaRestarting(false);
+            toast({ title: "✅ Reconnected", description: "Platform WhatsApp sender is live again." });
+          } else if (d.status === "disconnected" && attempts > 15) {
+            clearInterval(poll);
+            setWaStatus("disconnected");
+            setWaRestarting(false);
+            toast({ title: "Restart failed", description: "Session may have expired. Re-pair the device.", variant: "destructive" });
+          }
+        } catch { /* ignore poll errors */ }
+      }, 2000);
+    } catch (err: any) {
+      setWaStatus("disconnected");
+      setWaRestarting(false);
+      toast({ title: "Error", description: err.message ?? "Could not restart", variant: "destructive" });
     }
   }
 
@@ -423,15 +461,26 @@ export default function AdminSettings() {
                     <p className="text-xs font-mono text-muted-foreground mt-0.5">OTP codes and crash alerts will be delivered via this number.</p>
                   </div>
                 </div>
-                <Button
-                  variant="outline"
-                  className="font-mono border-destructive/40 text-destructive hover:bg-destructive/10"
-                  onClick={disconnectWa}
-                  disabled={waDisconnecting}
-                >
-                  {waDisconnecting ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <XCircle className="mr-2 h-4 w-4" />}
-                  DISCONNECT SENDER
-                </Button>
+                <div className="flex gap-3">
+                  <Button
+                    variant="outline"
+                    className="font-mono border-yellow-500/40 text-yellow-400 hover:bg-yellow-500/10"
+                    onClick={restartWa}
+                    disabled={waRestarting || waDisconnecting}
+                  >
+                    {waRestarting ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <RotateCcw className="mr-2 h-4 w-4" />}
+                    RESTART
+                  </Button>
+                  <Button
+                    variant="outline"
+                    className="font-mono border-destructive/40 text-destructive hover:bg-destructive/10"
+                    onClick={disconnectWa}
+                    disabled={waDisconnecting || waRestarting}
+                  >
+                    {waDisconnecting ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <XCircle className="mr-2 h-4 w-4" />}
+                    STOP
+                  </Button>
+                </div>
               </div>
             ) : (
               <div className="space-y-4">

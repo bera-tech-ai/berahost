@@ -4,7 +4,7 @@ import { db, usersTable, deploymentsTable, botsTable, coinTransactionsTable, pay
 import { eq, desc, count, sum, sql, ilike, or, and } from "drizzle-orm";
 import { requireAdmin } from "../middlewares/requireAdmin";
 import { logger } from "../lib/logger";
-import { getWASenderStatus, connectViaPair, disconnect as waDisconnect } from "../lib/waSender";
+import { getWASenderStatus, connectViaPair, disconnect as waDisconnect, initFromSession } from "../lib/waSender";
 
 import { serializeBot } from "./bots";
 import { serializeUser } from "../lib/auth";
@@ -1090,6 +1090,26 @@ router.post("/admin/platform-wa/disconnect", requireAdmin, async (_req, res): Pr
     .delete(platformSettingsTable)
     .where(eq(platformSettingsTable.key, "platform_wa_session"));
   res.json({ message: "Disconnected" });
+});
+
+router.post("/admin/platform-wa/restart", requireAdmin, async (_req, res): Promise<void> => {
+  waDisconnect();
+  await new Promise((r) => setTimeout(r, 1000));
+  const [row] = await db
+    .select()
+    .from(platformSettingsTable)
+    .where(eq(platformSettingsTable.key, "platform_wa_session"));
+  if (!row?.value || typeof row.value !== "string") {
+    res.status(400).json({ error: "No saved session found. Please pair the device first." });
+    return;
+  }
+  try {
+    await initFromSession(row.value);
+    res.json({ message: "Restarting — will reconnect with saved session." });
+  } catch (err: any) {
+    logger.error({ err }, "Platform WA restart failed");
+    res.status(500).json({ error: err?.message ?? "Restart failed." });
+  }
 });
 
 function sseSetup(res: any) {
